@@ -1,0 +1,174 @@
+[
+    {
+        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-mergeDebugResources-67:\\layout\\fragment_search.xml",
+        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\fragment_search.xml"
+    },
+    {
+        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-mergeDebugResources-67:\\layout\\item_show_image.xml",
+        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\item_show_image.xml"
+    },
+    {
+        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-mergeDebugResources-67:\\layout\\fragment_full_registration3.xml",
+        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\fragment_full_registration3.xml"
+    },
+    {
+        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-mergeDebugResources-67:\\layout\\activity_show_image.xml",
+        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\activity_show_image.xml"
+    },
+    {
+        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-mergeDebugResources-67:\\layout\\activity_refresh.xml",
+        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\activity_refresh.xml"
+    },
+    {
+        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-mergeDebugResources-67:\\layout\\fragment_update.xml",
+        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\fragment_update.xml"
+    },
+    {
+        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-mergeDebugResources-67:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-mergeDebugResources-67:\\layout\\activity_google_sign_in.xml",
+        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\activity_google_sign_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-mergeDebugResources-67:\\layout\\fragment_show_image.xml",
+        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\fragment_show_image.xml"
+    },
+    {
+        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-mergeDebugResources-67:\\layout\\fragment_settings.xml",
+        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\fragment_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-mergeDebugResources-67:\\layout\\fragment_full_registration.xml",
+        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\fragment_full_registration.xml"
+    },
+    {
+        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-mergeDebugResources-67:\\layout\\activity_home.xml",
+        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\activity_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-mergeDebugResources-67:\\layout\\fragment_registration.xml",
+        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\fragment_registration.xml"
+    },
+    {
+        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-mergeDebugResources-67:\\layout\\fragment_calendar.xml",
+        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\fragment_calendar.xml"
+    },
+    {
+        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-mergeDebugResources-67:\\layout\\dialog_error_auth.xml",
+        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\dialog_error_auth.xml"
+    },
+    {
+        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-mergeDebugResources-67:\\layout\\item_tovar.xml",
+        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\item_tovar.xml"
+    },
+    {
+        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-mergeDebugResources-67:\\layout\\fragment_splash.xml",
+        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\fragment_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-mergeDebugResources-67:\\layout\\fragment_authorization.xml",
+        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\fragment_authorization.xml"
+    },
+    {
+        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-mergeDebugResources-67:\\layout\\fragment_message_chat.xml",
+        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\fragment_message_chat.xml"
+    },
+    {
+        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-mergeDebugResources-67:\\layout\\fragment_full_registration2.xml",
+        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\fragment_full_registration2.xml"
+    },
+    {
+        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-mergeDebugResources-67:\\layout\\fragment_create.xml",
+        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\fragment_create.xml"
+    },
+    {
+        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-mergeDebugResources-67:\\layout\\fragment_chad.xml",
+        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\fragment_chad.xml"
+    },
+    {
+        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-mergeDebugResources-67:\\layout\\fragment_reset.xml",
+        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\fragment_reset.xml"
+    },
+    {
+        "merged": "product.truckkz.app-mergeDebugResources-67:/layout/fragment_splash.xml",
+        "source": "product.truckkz.app-main-70:/layout/fragment_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-mergeDebugResources-67:\\layout\\test.xml",
+        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\test.xml"
+    },
+    {
+        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-mergeDebugResources-67:\\layout\\dialog_succes_register.xml",
+        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\dialog_succes_register.xml"
+    },
+    {
+        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-mergeDebugResources-67:\\layout\\fragment_home.xml",
+        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-mergeDebugResources-67:\\layout\\fragment_profile.xml",
+        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\fragment_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-mergeDebugResources-67:\\layout\\item_update_image_array.xml",
+        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\item_update_image_array.xml"
+    },
+    {
+        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-mergeDebugResources-67:\\layout\\fragment_my_ads.xml",
+        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\fragment_my_ads.xml"
+    },
+    {
+        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-mergeDebugResources-67:\\layout\\item_chat.xml",
+        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\item_chat.xml"
+    },
+    {
+        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-mergeDebugResources-67:\\layout\\activity_favorite.xml",
+        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\activity_favorite.xml"
+    },
+    {
+        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-mergeDebugResources-67:\\layout\\dialog_user_remove.xml",
+        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\dialog_user_remove.xml"
+    },
+    {
+        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-mergeDebugResources-67:\\layout\\fragment_favorite.xml",
+        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\fragment_favorite.xml"
+    },
+    {
+        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-mergeDebugResources-67:\\layout\\activity_create.xml",
+        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\activity_create.xml"
+    },
+    {
+        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-mergeDebugResources-67:\\layout\\fragment_home_info.xml",
+        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\fragment_home_info.xml"
+    },
+    {
+        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-mergeDebugResources-67:\\layout\\app_bar_main.xml",
+        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\app_bar_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-mergeDebugResources-67:\\layout\\swipe_instructor.xml",
+        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\swipe_instructor.xml"
+    },
+    {
+        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-mergeDebugResources-67:\\layout\\item_category.xml",
+        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\item_category.xml"
+    },
+    {
+        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-mergeDebugResources-67:\\layout\\bottom_category.xml",
+        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\bottom_category.xml"
+    },
+    {
+        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-mergeDebugResources-67:\\layout\\item_recomend.xml",
+        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\item_recomend.xml"
+    },
+    {
+        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-mergeDebugResources-67:\\layout\\item_selected_category.xml",
+        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\item_selected_category.xml"
+    },
+    {
+        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-mergeDebugResources-67:\\layout\\fragment_my_products.xml",
+        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\fragment_my_products.xml"
+    }
+]

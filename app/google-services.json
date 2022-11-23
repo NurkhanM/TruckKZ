@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "189872741809",
+    "project_id": "promikz",
+    "storage_bucket": "promikz.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:189872741809:android:a71e49097d4ccbfba4f190",
+        "android_client_info": {
+          "package_name": "product.truckkz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "189872741809-ab8gr3svhnu7dsqlhjdsgcar9i902dl8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "product.promikz",
+            "certificate_hash": "7e642a517e2fd992e5f2f106c6dc3c555de08369"
+          }
+        },
+        {
+          "client_id": "189872741809-mrlgv2osjonlu85g474qld6bgonfirrm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_aAqoxnn4PUDHjtq9brNn1XlXkD9kL6E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "189872741809-mrlgv2osjonlu85g474qld6bgonfirrm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

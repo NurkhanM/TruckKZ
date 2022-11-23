@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Rentit</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="todo">что-то</string>
+    <string name="server_error">На данный момент \n сервер обновляется… \n пожалуйста подождите немного</string>
+    <string name="text_big">Floxy 1.0 - женская модель начального уровня для прогулок. Хороша для нерегулярного использования на плоском рельефе в спокойном режиме езды. Относительно небольшой диаметр колеса делает этой велосипед универсальным для использования как взрослыми, так и подростками. </string>
+    <string name="text_big2">Диаметр: 26\nПередний переключатель: Shimano TZ-500\nЗадний переключатель: MicroShift RD-M21\nТип тормозов: Ободные\nРама: Alloy 6061\nКоличество скоростей: 21</string>
+    \nВилка: Hagen ES-245 Alloy/Steel 60mm
+    <string name="text_big3">Серьезный подход к своему делу. Велосипед выкатили чистый, все работает. Причем цена  очень адекватная. В общем данным сервисом остался очень доволен.</string>
+    <string name="no_connection">Нет соединения</string>
+    <string name="check_connections_internet">Пожалуйста проверьте соединения с интернетом</string>
+</resources>
