@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.RatingBar;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -46,23 +45,16 @@ public final class ItemTovarBinding implements ViewBinding {
   public final ConstraintLayout rowCostom;
 
   @NonNull
-  public final RatingBar svgRating;
-
-  @NonNull
   public final TextView textName;
 
   @NonNull
   public final TextView textPrice;
 
-  @NonNull
-  public final TextView textRatingSize;
-
   private ItemTovarBinding(@NonNull ConstraintLayout rootView, @NonNull CardView cardV,
       @NonNull ConstraintLayout constraintLayout, @NonNull ImageView imgFavorite,
       @NonNull LinearLayout itemFavorite, @NonNull GifImageView itemHomeImages,
       @NonNull CardView itemStateFast, @NonNull ConstraintLayout rowCostom,
-      @NonNull RatingBar svgRating, @NonNull TextView textName, @NonNull TextView textPrice,
-      @NonNull TextView textRatingSize) {
+      @NonNull TextView textName, @NonNull TextView textPrice) {
     this.rootView = rootView;
     this.cardV = cardV;
     this.constraintLayout = constraintLayout;
@@ -71,10 +63,8 @@ public final class ItemTovarBinding implements ViewBinding {
     this.itemHomeImages = itemHomeImages;
     this.itemStateFast = itemStateFast;
     this.rowCostom = rowCostom;
-    this.svgRating = svgRating;
     this.textName = textName;
     this.textPrice = textPrice;
-    this.textRatingSize = textRatingSize;
   }
 
   @Override
@@ -142,12 +132,6 @@ public final class ItemTovarBinding implements ViewBinding {
 
       ConstraintLayout rowCostom = (ConstraintLayout) rootView;
 
-      id = R.id.svgRating;
-      RatingBar svgRating = ViewBindings.findChildViewById(rootView, id);
-      if (svgRating == null) {
-        break missingId;
-      }
-
       id = R.id.text_name;
       TextView textName = ViewBindings.findChildViewById(rootView, id);
       if (textName == null) {
@@ -160,15 +144,8 @@ public final class ItemTovarBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.text_rating_size;
-      TextView textRatingSize = ViewBindings.findChildViewById(rootView, id);
-      if (textRatingSize == null) {
-        break missingId;
-      }
-
       return new ItemTovarBinding((ConstraintLayout) rootView, cardV, constraintLayout, imgFavorite,
-          itemFavorite, itemHomeImages, itemStateFast, rowCostom, svgRating, textName, textPrice,
-          textRatingSize);
+          itemFavorite, itemHomeImages, itemStateFast, rowCostom, textName, textPrice);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

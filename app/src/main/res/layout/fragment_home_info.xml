@@ -96,7 +96,7 @@
                         android:id="@+id/textPrice"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="350 сом/ день"
+                        android:text="350 $"
                         android:textColor="@color/black_txt"
                         android:textSize="22sp" />
 
@@ -123,6 +123,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:numStars="5"
+                        android:visibility="gone"
                         android:progressTint="@color/fon"
                         android:rating="3"
                         android:scaleX="0.8"
@@ -135,6 +136,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="5dp"
                         android:maxLines="1"
+                        android:visibility="gone"
                         android:text="12 отзывов"
                         android:textColor="@color/black_txt3"
                         android:textSize="18sp"
@@ -171,7 +173,7 @@
                     android:layout_marginEnd="5dp"
                     android:layout_weight="1"
                     android:backgroundTint="@color/fon"
-                    android:text="Забронировать"
+                    android:text="Позвонить"
                     android:textAllCaps="false"
                     android:textSize="16sp"
                     android:textStyle="bold"
@@ -271,10 +273,12 @@
                         android:text="Инструкция по приобретению товара"
                         android:textColor="@color/black_txt"
                         android:textSize="22sp"
+                        android:visibility="gone"
                         android:textStyle="bold|normal" />
 
 
-                    <include layout="@layout/swipe_instructor" />
+                    <include layout="@layout/swipe_instructor"
+                        android:visibility="gone"/>
 
 
                 </LinearLayout>

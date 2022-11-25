@@ -1,9 +1,11 @@
 package product.truckkz.windows.home
 
 import android.annotation.SuppressLint
+import android.content.ContentValues.TAG
 import android.content.Intent
 import android.content.res.Resources
 import android.os.Bundle
+import android.util.Log
 import android.util.TypedValue
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -54,7 +56,7 @@ class HomeInfoFragment : Fragment() {
         viewModels.myProductInfo.observe(viewLifecycleOwner) { list ->
             if (list.isSuccessful) {
                 view.textTitle.text = list.body()?.data?.title
-                view.textPrice.text = list.body()?.data?.price.toString() + " сом/ день"
+                view.textPrice.text = list.body()?.data?.price.toString() + " $"
                 view.textDescription.text = list.body()?.data?.description.toString()
 //                if (list.body()?.favorite == true){
 //                    view.img_favorite.setImageDrawable(requireContext().resources.getDrawable(R.drawable.ic_favorite2))
@@ -62,11 +64,21 @@ class HomeInfoFragment : Fragment() {
 //                    view.img_favorite.setImageDrawable(requireContext().resources.getDrawable(R.drawable.ic_favorite))
 //                }
 
-                view.textHarakter.text =
-                    " ✯ " + removeStartEnDChars(list.body()?.data?.characteristics.toString()).replace(
-                        ",",
-                        "\n ✯"
-                    ).replace("=", ":  ➤  ")
+
+
+
+                val arrayList = ArrayList<String>()
+                for (i in 0 until list.body()?.data?.characteristics?.size!!){
+                    arrayList.add(list.body()?.data?.characteristics!![i].name + ": ")
+                    arrayList.add(list.body()?.data?.characteristics!![i].value + "\n\n")
+                }
+
+
+                view.textHarakter.text = removeStartEnDChars(arrayList.toString()).replace(",","")
+
+
+
+
                 IMAGES_INFO_ARRAY.clear()
                 for (i in 0 until list?.body()?.data?.gallery?.size!!) {
 
@@ -119,13 +131,13 @@ class HomeInfoFragment : Fragment() {
         }
 
         view.btnBook.setOnClickListener {
-            if (USER_STATUS_FULL) {
-                Navigation.findNavController(view)
-                    .navigate(R.id.action_homeInfoFragment_to_calendarFragment)
-            } else {
-                Navigation.findNavController(view)
-                    .navigate(R.id.action_homeInfoFragment_to_fullRegistrationFragment)
-            }
+//            if (USER_STATUS_FULL) {
+//                Navigation.findNavController(view)
+//                    .navigate(R.id.action_homeInfoFragment_to_calendarFragment)
+//            } else {
+//                Navigation.findNavController(view)
+//                    .navigate(R.id.action_homeInfoFragment_to_fullRegistrationFragment)
+//            }
         }
 
         view.fragmentContainerUpdate.setOnScrollChangeListener(NestedScrollView.OnScrollChangeListener { _, _, scrollY, _, _ ->

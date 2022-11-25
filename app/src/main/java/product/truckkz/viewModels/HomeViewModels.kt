@@ -3,6 +3,7 @@ package product.truckkz.viewModels
 import android.content.ContentValues
 import android.util.Log
 import androidx.lifecycle.*
+import androidx.paging.cachedIn
 import product.truckkz.models.createProducts.fieldsCategory.FieldsCategoryModels
 import product.truckkz.models.createProducts.newProducts.NewProductsModels
 import product.truckkz.models.full.FullModels
@@ -28,8 +29,9 @@ class HomeViewModels : ViewModel() {
     val myProductInfo: MutableLiveData<Response<ProductShowModels>> = MutableLiveData()
 
     val myCategory: MutableLiveData<Response<CategoryModels>> = MutableLiveData()
-    val myShowProducts: MutableLiveData<Response<ProductsModels>> = MutableLiveData()
+    private val  myShowProducts = MutableLiveData<String>()
     val myRequestSearch: MutableLiveData<Response<ProductsModels>> = MutableLiveData()
+    val myProduct2: MutableLiveData<Response<ProductsModels>> = MutableLiveData()
     val myFieldsCategory: MutableLiveData<Response<FieldsCategoryModels>> = MutableLiveData()
     val myFavorite: MutableLiveData<Response<ProductsModels>> = MutableLiveData()
     val myCategoryProduct: MutableLiveData<Response<ProductsModels>> = MutableLiveData()
@@ -37,7 +39,7 @@ class HomeViewModels : ViewModel() {
     val myImageCreate: MutableLiveData<Response<String>> = MutableLiveData()
     val myAddFavorite: MutableLiveData<Response<String>> = MutableLiveData()
     val myDeleteFavorite: MutableLiveData<Response<String>> = MutableLiveData()
-
+    private val currentQuery = MutableLiveData<HashMap<String, String>>()
 
 
     fun getUser(auth: String, number: Int) {
@@ -81,15 +83,41 @@ class HomeViewModels : ViewModel() {
         }
     }
 
-    fun getProduct(auth: String) {
-        viewModelScope.launch {
-            myShowProducts.value = repo.getProductRepository(auth)
-        }
+    val mySortProducts = currentQuery.switchMap {
+        repo.getSortRepository(it).cachedIn(viewModelScope)
     }
+
+    fun mySortProducts2(
+        allPro: HashMap<String, String>,
+    ) {
+        currentQuery.value = allPro
+    }
+
+    val myGetProduct = myShowProducts.switchMap {
+        repo.getProductRepository(it).cachedIn(viewModelScope)
+    }
+
+    fun getProduct(
+        auth: String
+    ) {
+        myShowProducts.value = auth
+    }
+
+//    fun getProduct() {
+//        viewModelScope.launch {
+//            myShowProducts.value = repo.getProductRepository()
+//        }
+//    }
 
     fun requestSearch(auth: String, text: String) {
         viewModelScope.launch {
             myRequestSearch.value = repo.requestSearchRepository(auth, text)
+        }
+    }
+
+    fun getProduct2(auth: String) {
+        viewModelScope.launch {
+            myProduct2.value = repo.getProduct2Repository(auth)
         }
     }
 

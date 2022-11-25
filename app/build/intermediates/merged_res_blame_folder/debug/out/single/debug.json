@@ -20,6 +20,10 @@
         "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\fragment_splash.xml"
     },
     {
+        "merged": "product.truckkz.app-merged_res-68:/layout_fragment_home.xml.flat",
+        "source": "product.truckkz.app-main-70:/layout/fragment_home.xml"
+    },
+    {
         "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\anim_slide_out_left.xml.flat",
         "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\anim\\slide_out_left.xml"
     },
@@ -28,12 +32,12 @@
         "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\anim\\slide_in_left.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable-xxhdpi_info_3.png.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-pngs-63:\\drawable-xxhdpi\\info_3.png"
-    },
-    {
         "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_test_image4.png.flat",
         "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\test_image4.png"
+    },
+    {
+        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable-xxhdpi_info_3.png.flat",
+        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-pngs-63:\\drawable-xxhdpi\\info_3.png"
     },
     {
         "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_circular_background.xml.flat",
@@ -476,16 +480,16 @@
         "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-pngs-63:\\drawable-hdpi\\info_3.png"
     },
     {
+        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\menu_bottom_navigation_menu.xml.flat",
+        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\menu\\bottom_navigation_menu.xml"
+    },
+    {
         "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\layout_item_selected_category.xml.flat",
         "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\item_selected_category.xml"
     },
     {
         "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\mipmap-hdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-debug-69:\\mipmap-hdpi\\ic_launcher_round.png"
-    },
-    {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\menu_bottom_navigation_menu.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\menu\\bottom_navigation_menu.xml"
     },
     {
         "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable-v24_prev.png.flat",
@@ -506,10 +510,6 @@
     {
         "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\layout_fragment_profile.xml.flat",
         "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\fragment_profile.xml"
-    },
-    {
-        "merged": "product.truckkz.app-merged_res-68:/layout_fragment_splash.xml.flat",
-        "source": "product.truckkz.app-main-70:/layout/fragment_splash.xml"
     },
     {
         "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_gif_aut.gif.flat",
@@ -626,5 +626,9 @@
     {
         "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\layout_fragment_chad.xml.flat",
         "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\fragment_chad.xml"
+    },
+    {
+        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_logo_truck.png.flat",
+        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-debug-69:\\drawable\\logo_truck.png"
     }
 ]

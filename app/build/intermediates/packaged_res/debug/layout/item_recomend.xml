@@ -73,40 +73,11 @@
             android:id="@+id/textDescription"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="600 сом/ день"
+            android:text="600 $"
             android:textColor="@color/black_txt3"
             android:textSize="13sp"
             app:layout_constraintTop_toBottomOf="@+id/textTitle"
             app:layout_constraintStart_toStartOf="parent"/>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:orientation="horizontal"
-            app:layout_constraintTop_toBottomOf="@+id/textDescription"
-            app:layout_constraintStart_toStartOf="parent">
-            <RatingBar
-                android:id="@+id/svgRating"
-                style="?android:attr/ratingBarStyleSmall"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:numStars="5"
-                android:progressTint="@color/fon"
-                android:rating="4" />
-
-            <TextView
-                android:id="@+id/text_rating_size"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
-                android:maxLines="1"
-                android:text="12"
-                android:textColor="@color/black_txt3"
-                android:textSize="13sp"
-                android:textStyle="bold|normal" />
-
-        </LinearLayout>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

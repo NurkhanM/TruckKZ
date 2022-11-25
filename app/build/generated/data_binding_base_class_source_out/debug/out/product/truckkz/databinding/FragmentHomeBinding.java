@@ -39,6 +39,9 @@ public final class FragmentHomeBinding implements ViewBinding {
   public final RecyclerView rvProduct;
 
   @NonNull
+  public final RecyclerView rvProduct2;
+
+  @NonNull
   public final RecyclerView rvRecomend;
 
   @NonNull
@@ -50,14 +53,16 @@ public final class FragmentHomeBinding implements ViewBinding {
   private FragmentHomeBinding(@NonNull ConstraintLayout rootView,
       @NonNull NestedScrollView fragmentContainerUpdate, @NonNull ConstraintLayout homeToolbar,
       @NonNull ImageView imgAuthHome, @NonNull RecyclerView rvCategory,
-      @NonNull RecyclerView rvProduct, @NonNull RecyclerView rvRecomend,
-      @NonNull SwipeRefreshLayout tiRefreshLayout, @NonNull TextView txtTitleRecomend) {
+      @NonNull RecyclerView rvProduct, @NonNull RecyclerView rvProduct2,
+      @NonNull RecyclerView rvRecomend, @NonNull SwipeRefreshLayout tiRefreshLayout,
+      @NonNull TextView txtTitleRecomend) {
     this.rootView = rootView;
     this.fragmentContainerUpdate = fragmentContainerUpdate;
     this.homeToolbar = homeToolbar;
     this.imgAuthHome = imgAuthHome;
     this.rvCategory = rvCategory;
     this.rvProduct = rvProduct;
+    this.rvProduct2 = rvProduct2;
     this.rvRecomend = rvRecomend;
     this.tiRefreshLayout = tiRefreshLayout;
     this.txtTitleRecomend = txtTitleRecomend;
@@ -120,6 +125,12 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.rv_product2;
+      RecyclerView rvProduct2 = ViewBindings.findChildViewById(rootView, id);
+      if (rvProduct2 == null) {
+        break missingId;
+      }
+
       id = R.id.rv_recomend;
       RecyclerView rvRecomend = ViewBindings.findChildViewById(rootView, id);
       if (rvRecomend == null) {
@@ -139,7 +150,7 @@ public final class FragmentHomeBinding implements ViewBinding {
       }
 
       return new FragmentHomeBinding((ConstraintLayout) rootView, fragmentContainerUpdate,
-          homeToolbar, imgAuthHome, rvCategory, rvProduct, rvRecomend, tiRefreshLayout,
+          homeToolbar, imgAuthHome, rvCategory, rvProduct, rvProduct2, rvRecomend, tiRefreshLayout,
           txtTitleRecomend);
     }
     String missingId = rootView.getResources().getResourceName(id);

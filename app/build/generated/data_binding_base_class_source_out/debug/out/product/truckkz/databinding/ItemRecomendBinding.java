@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.RatingBar;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -39,13 +38,7 @@ public final class ItemRecomendBinding implements ViewBinding {
   public final ConstraintLayout rowCostom;
 
   @NonNull
-  public final RatingBar svgRating;
-
-  @NonNull
   public final TextView textDescription;
-
-  @NonNull
-  public final TextView textRatingSize;
 
   @NonNull
   public final TextView textTitle;
@@ -53,17 +46,14 @@ public final class ItemRecomendBinding implements ViewBinding {
   private ItemRecomendBinding(@NonNull ConstraintLayout rootView, @NonNull CardView cardV,
       @NonNull ConstraintLayout constraintLayout, @NonNull LinearLayout itemFavorite,
       @NonNull ImageView itemHomeImages, @NonNull ConstraintLayout rowCostom,
-      @NonNull RatingBar svgRating, @NonNull TextView textDescription,
-      @NonNull TextView textRatingSize, @NonNull TextView textTitle) {
+      @NonNull TextView textDescription, @NonNull TextView textTitle) {
     this.rootView = rootView;
     this.cardV = cardV;
     this.constraintLayout = constraintLayout;
     this.itemFavorite = itemFavorite;
     this.itemHomeImages = itemHomeImages;
     this.rowCostom = rowCostom;
-    this.svgRating = svgRating;
     this.textDescription = textDescription;
-    this.textRatingSize = textRatingSize;
     this.textTitle = textTitle;
   }
 
@@ -120,21 +110,9 @@ public final class ItemRecomendBinding implements ViewBinding {
 
       ConstraintLayout rowCostom = (ConstraintLayout) rootView;
 
-      id = R.id.svgRating;
-      RatingBar svgRating = ViewBindings.findChildViewById(rootView, id);
-      if (svgRating == null) {
-        break missingId;
-      }
-
       id = R.id.textDescription;
       TextView textDescription = ViewBindings.findChildViewById(rootView, id);
       if (textDescription == null) {
-        break missingId;
-      }
-
-      id = R.id.text_rating_size;
-      TextView textRatingSize = ViewBindings.findChildViewById(rootView, id);
-      if (textRatingSize == null) {
         break missingId;
       }
 
@@ -145,8 +123,7 @@ public final class ItemRecomendBinding implements ViewBinding {
       }
 
       return new ItemRecomendBinding((ConstraintLayout) rootView, cardV, constraintLayout,
-          itemFavorite, itemHomeImages, rowCostom, svgRating, textDescription, textRatingSize,
-          textTitle);
+          itemFavorite, itemHomeImages, rowCostom, textDescription, textTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

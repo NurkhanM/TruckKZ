@@ -2828,6 +2828,7 @@ drawable loader
 drawable loader2
 drawable logo_gif
 drawable logo_svg
+drawable logo_truck
 drawable m3_appbar_background
 drawable m3_popupmenu_background_overlay
 drawable m3_radiobutton_ripple
@@ -3513,6 +3514,7 @@ id rv_category
 id rv_favorite
 id rv_media
 id rv_product
+id rv_product2
 id rv_recomend
 id rv_selected_media
 id rv_sort_search

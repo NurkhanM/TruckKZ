@@ -108,6 +108,7 @@ drawable loader
 drawable loader2
 drawable logo_gif
 drawable logo_svg
+drawable logo_truck
 drawable map_image
 drawable next
 drawable no_wifi
@@ -335,6 +336,7 @@ id rowCostom
 id rv_category
 id rv_favorite
 id rv_product
+id rv_product2
 id rv_recomend
 id rv_sort_search
 id rv_title_calendar

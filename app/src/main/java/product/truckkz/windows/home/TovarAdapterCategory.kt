@@ -50,9 +50,9 @@ class TovarAdapterCategory(private val mIClickListnear: IClickListnearHomeTest) 
         holder.itemView.text_name.text = currentItem.name
 
 
-//        holder.itemView.rowCostom.setOnClickListener {
-//            mIClickListnear.clickListener(position)
-//        }
+        holder.itemView.rowCostom.setOnClickListener {
+            mIClickListnear.clickListener(currentItem.id)
+        }
     }
 
     override fun getItemCount(): Int {

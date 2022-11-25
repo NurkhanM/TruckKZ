@@ -17,20 +17,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <pl.droidsonroids.gif.GifImageView
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:scaleType="fitXY"
-            android:background="@color/fon"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
+        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/lato_black"
+            android:padding="40dp"
+            android:src="@drawable/logo_truck"
             android:text="TRUCK"
             android:textColor="@color/white"
             android:textSize="76sp"

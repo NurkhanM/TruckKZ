@@ -40,15 +40,14 @@ class ProfileFragment : Fragment() {
             view.isProfileLiner.visibility = View.GONE
             view.nextMyAds.visibility = View.GONE
             view.nextSettings.visibility = View.GONE
-            stateFullRegister(view)
-            view.nextFullRegister.visibility = View.GONE
+//            stateFullRegister(view)
             view.nextExitUser.visibility = View.GONE
 
         } else {
             view.isProfileLiner.visibility = View.VISIBLE
             view.nextMyAds.visibility = View.VISIBLE
             view.nextSettings.visibility = View.VISIBLE
-            stateFullRegister(view)
+//            stateFullRegister(view)
             view.nextExitUser.visibility = View.VISIBLE
 //            viewModel.getUser("Bearer $TOKEN_USER", idUser.toInt())
         }

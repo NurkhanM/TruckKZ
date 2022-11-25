@@ -5,22 +5,13 @@
         app:showAsAction="ifRoom"
         android:icon="@drawable/ic_main_icon"
         android:title="Главная" />
-    <item
-        android:id="@+id/favoriteFragment"
-        app:showAsAction="ifRoom"
-        android:icon="@drawable/ic_favorite2"
-        android:title="Избранные" />
+
 
     <item
         android:id="@+id/holder"
-        android:title=""
+        android:title="  создать"
         app:showAsAction="ifRoom"/>
 
-    <item
-        android:id="@+id/chadFragment"
-        app:showAsAction="ifRoom"
-        android:icon="@drawable/ic_chad_icon"
-        android:title="Чаты" />
 
     <item
         android:id="@+id/profileFragment"

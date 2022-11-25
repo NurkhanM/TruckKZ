@@ -1,9 +1,11 @@
 package product.truckkz.windows.home
 
 import android.annotation.SuppressLint
+import android.content.ContentValues.TAG
 import android.content.Context
 import android.content.SharedPreferences
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -23,20 +25,26 @@ import product.truckkz.`interface`.IClickListnearHomeTest
 import product.truckkz.models.TestRecomendModel
 import product.truckkz.viewModels.HomeViewModels
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.fragment_full_registration2.*
 import kotlinx.android.synthetic.main.fragment_home.view.*
 import kotlinx.android.synthetic.main.item_tovar.view.*
 import me.farahani.spaceitemdecoration.SpaceItemDecoration
 import product.truckkz.models.category.Data
+import java.util.HashMap
+import kotlin.math.log
 
 class HomeFragment : Fragment() {
 
     lateinit var recyclerViewRecomend: RecyclerView
     lateinit var recyclerViewCategory: RecyclerView
     lateinit var recyclerViewProduct: RecyclerView
+    lateinit var recyclerViewProduct2: RecyclerView
     private lateinit var adapterRecomend: TovarAdapterRecomend
     private lateinit var adapterCategory: TovarAdapterCategory
     private lateinit var adapterProduct: TovarAdapterProduct
+    private lateinit var adapterProduct2: TovarAdapterProduct2
     private var arrayRecomend = ArrayList<TestRecomendModel>()
+    private val map = HashMap<String, String>()
 
     private lateinit var viewModel: HomeViewModels
 
@@ -96,29 +104,32 @@ class HomeFragment : Fragment() {
 
 
 
-        viewModel.myCategoryProduct.observe(viewLifecycleOwner) { list ->
-            if (list.isSuccessful) {
-                list.body()?.data?.let { adapterProduct.setList(it) }
-            }
 
-        }
+
 
         recyclerViewCategory = view.rv_category
 //        recyclerViewCategory.addItemDecoration(SpaceItemDecoration(50, true))
         adapterCategory = TovarAdapterCategory(object : IClickListnearHomeTest {
             override fun clickListener(baseID: Int) {
-                viewModel.getCategoryProducts(0, baseID)
+                map.clear()
+                map["category"] = baseID.toString()
+                rfCategory()
+                recyclerViewProduct.removeAllViewsInLayout()
+                adapterProduct.notifyDataSetChanged()
+                view.rv_product.visibility = View.VISIBLE
+                view.rv_product2.visibility = View.GONE
             }
         })
         recyclerViewCategory.adapter = adapterCategory
         recyclerViewCategory.setHasFixedSize(true)
 
 
+
+
         viewModel.getCategory()
         viewModel.myCategory.observe(viewLifecycleOwner) { list ->
             if (list.isSuccessful) {
                 list.body()?.data!![0].children.let {  adapterCategory.setList(it) }
-
             }
 
         }
@@ -126,23 +137,49 @@ class HomeFragment : Fragment() {
 
 
         view.tiRefreshLayout.setOnRefreshListener {
-            onResume()
-//            adapterCategory.setList(ar)
+            rfCategory()
             adapterRecomend.setList(arrayRecomend)
             recyclerViewRecomend.removeAllViewsInLayout()
-//            recyclerViewCategory.removeAllViewsInLayout()
+            recyclerViewCategory.removeAllViewsInLayout()
             recyclerViewProduct.removeAllViewsInLayout()
 
             adapterProduct.notifyDataSetChanged()
-//            adapterCategory.notifyDataSetChanged()
+            adapterCategory.notifyDataSetChanged()
             adapterRecomend.notifyDataSetChanged()
             view.tiRefreshLayout.isRefreshing = false
         }
 
 
+
         recyclerViewProduct = view.rv_product
         recyclerViewProduct.addItemDecoration(SpaceItemDecoration(30, false))
         adapterProduct = TovarAdapterProduct(
+            object : IClickListnearHomeFavorite {
+                override fun clickListener(baseID: Int) {
+                    if (!USER_STATUS) {
+                        Navigation.findNavController(view)
+                            .navigate(R.id.action_homeFragment_to_authorizationFragment)
+                    } else {
+                        ALL_ID_PRODUCTS = baseID
+                        Navigation.findNavController(view)
+                            .navigate(R.id.action_homeFragment_to_homeInfoFragment)
+                    }
+                }
+
+                override fun clickListenerFavorite(baseID: Int, v: View, boolean: Boolean, pos: Int) {
+
+                }
+            })
+
+        recyclerViewProduct.adapter = adapterProduct
+        recyclerViewProduct.setHasFixedSize(true)
+
+
+
+
+        recyclerViewProduct2 = view.rv_product2
+        recyclerViewProduct2.addItemDecoration(SpaceItemDecoration(30, false))
+        adapterProduct2 = TovarAdapterProduct2(
             object : IClickListnearHomeFavorite {
                 override fun clickListener(baseID: Int) {
                     if (!USER_STATUS) {
@@ -179,24 +216,36 @@ class HomeFragment : Fragment() {
                 }
             })
 
-        recyclerViewProduct.adapter = adapterProduct
-        recyclerViewProduct.setHasFixedSize(true)
-
+        recyclerViewProduct2.adapter = adapterProduct2
+        recyclerViewProduct2.setHasFixedSize(true)
+        rfProduct()
 
 
         return view
     }
 
-    override fun onResume() {
-        super.onResume()
 
-        viewModel.getProduct("Bearer $TOKEN_USER")
-        viewModel.myShowProducts.observe(viewLifecycleOwner) { list ->
-            if (list.isSuccessful) {
-                list.body()?.data?.let { adapterProduct.setList(it) }
+    private fun rfProduct(){
+        viewModel.getProduct2("Bearer $TOKEN_USER")
+        viewModel.myProduct2.observe(viewLifecycleOwner){ list ->
+            if (list.isSuccessful){
+                list.body()?.data?.let { adapterProduct2.setList(it) }
             }
         }
+//        viewModel.getProduct("Bearer $TOKEN_USER")
+//        viewModel.myGetProduct.observe(viewLifecycleOwner) {
+//            adapterProduct.submitData(viewLifecycleOwner.lifecycle, it)
+//        }
+
     }
+
+    private fun rfCategory(){
+        viewModel.mySortProducts2(map)
+        viewModel.mySortProducts.observe(viewLifecycleOwner) {
+            adapterProduct.submitData(viewLifecycleOwner.lifecycle, it)
+        }
+    }
+
 
 
 }

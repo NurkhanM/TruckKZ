@@ -68,7 +68,7 @@ class FavoriteFragment : Fragment() {
                         )
                     }
                     Toast.makeText(requireContext(), "Удалено", Toast.LENGTH_SHORT).show()
-                    adapterProduct.deleteMyEducations(pos)
+//                    adapterProduct.deleteMyEducations(pos)
                 }
             })
 
@@ -84,10 +84,8 @@ class FavoriteFragment : Fragment() {
         super.onResume()
 
         viewModel.getFavorite("Bearer ${UserDate.TOKEN_USER}")
-        viewModel.myFavorite.observe(viewLifecycleOwner) { list ->
-            if (list.isSuccessful) {
-                list.body()?.data?.let { adapterProduct.setList(it) }
-            }
+        viewModel.myGetProduct.observe(viewLifecycleOwner) {
+            adapterProduct.submitData(viewLifecycleOwner.lifecycle, it)
         }
     }
 

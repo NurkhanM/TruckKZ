@@ -56,7 +56,7 @@
     <color name="white3">#F5F5F5</color>
     <color name="white_alpha">#CDFFFFFF</color>
     <color name="yellow">#FFEB3B</color>
-    <string name="app_name">Rentit</string>
+    <string name="app_name">GeneralMachineGroup</string>
     <string name="check_connections_internet">Пожалуйста проверьте соединения с интернетом</string>
     <string name="default_web_client_id" translatable="false">189872741809-mrlgv2osjonlu85g474qld6bgonfirrm.apps.googleusercontent.com</string>
     <string name="gcm_defaultSenderId" translatable="false">189872741809</string>

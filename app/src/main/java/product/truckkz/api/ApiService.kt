@@ -38,6 +38,19 @@ interface ApiService {
         @Header("Authorization") auth: String
     ): Response<ProductsModels>
 
+    @GET("api/products")
+    suspend fun getProduct2(
+        @Header("Authorization") auth: String
+    ): Response<ProductsModels>
+
+    @GET("api/products")
+    suspend fun getSortProducts(
+        @Header("Authorization") auth: String,
+        @QueryMap allPro: HashMap<String, String>,
+        @Query("page") page: Int,
+    ): Response<ProductsModels>
+
+
     @GET("/products/get/search/{text}")
     suspend fun requestSearch(
         @Header("Authorization") auth: String,

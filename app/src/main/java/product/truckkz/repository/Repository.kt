@@ -2,6 +2,9 @@ package product.truckkz.repository
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.liveData
+import androidx.paging.Pager
+import androidx.paging.PagingConfig
+import androidx.paging.liveData
 import product.truckkz.api.RetroFitInstance
 import product.truckkz.models.createProducts.fieldsCategory.FieldsCategoryModels
 import product.truckkz.models.createProducts.newProducts.NewProductsModels
@@ -9,6 +12,8 @@ import product.truckkz.models.full.FullModels
 import product.truckkz.models.nepolnyi.NepolModel
 import com.google.gson.JsonObject
 import okhttp3.MultipartBody
+import product.truckkz.api.ProductPaging
+import product.truckkz.api.SearchPaging
 import product.truckkz.models.category.CategoryModels
 import product.truckkz.models.products.index.ProductsModels
 import product.truckkz.models.products.show.ProductShowModels
@@ -107,16 +112,22 @@ class Repository {
         )
     }
 
-    suspend fun getProductRepository(
-        auth: String
-    ): Response<ProductsModels> {
-        return RetroFitInstance.api.getProduct(auth)
-    }
+//    suspend fun getProductRepository(
+//        auth: String
+//    ): Response<ProductsModels> {
+//        return RetroFitInstance.api.getProduct(auth)
+//    }
     suspend fun requestSearchRepository(
         auth: String,
         text: String
     ): Response<ProductsModels> {
         return RetroFitInstance.api.requestSearch(auth, text)
+    }
+
+    suspend fun getProduct2Repository(
+        auth: String
+    ): Response<ProductsModels> {
+        return RetroFitInstance.api.getProduct2(auth)
     }
 
     suspend fun getFavoriteRepository(
@@ -129,6 +140,26 @@ class Repository {
     ): Response<CategoryModels> {
         return RetroFitInstance.api.getCategory()
     }
+
+    fun getSortRepository(
+        allPro: HashMap<String, String>,
+    ) = Pager(
+        config = PagingConfig(
+            pageSize = 1,
+            enablePlaceholders = false
+        ),
+        pagingSourceFactory = { SearchPaging(RetroFitInstance.api, allPro) }
+    ).liveData
+
+    fun getProductRepository(
+        auth: String
+    ) = Pager(
+        config = PagingConfig(
+            pageSize = 1,
+            enablePlaceholders = false
+        ),
+        pagingSourceFactory = { ProductPaging(RetroFitInstance.api, auth) }
+    ).liveData
 
     suspend fun getFieldsCategoryRepository(
         number: Int,

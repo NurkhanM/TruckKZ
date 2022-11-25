@@ -92,10 +92,6 @@
         "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\fragment_reset.xml"
     },
     {
-        "merged": "product.truckkz.app-mergeDebugResources-67:/layout/fragment_splash.xml",
-        "source": "product.truckkz.app-main-70:/layout/fragment_splash.xml"
-    },
-    {
         "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-mergeDebugResources-67:\\layout\\test.xml",
         "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\test.xml"
     },
@@ -170,5 +166,9 @@
     {
         "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-mergeDebugResources-67:\\layout\\fragment_my_products.xml",
         "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\fragment_my_products.xml"
+    },
+    {
+        "merged": "product.truckkz.app-mergeDebugResources-67:/layout/fragment_home.xml",
+        "source": "product.truckkz.app-main-70:/layout/fragment_home.xml"
     }
 ]

@@ -1,47 +1,58 @@
 package product.truckkz.windows.home
 
 import android.annotation.SuppressLint
-import android.content.Context
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
+import androidx.paging.PagingDataAdapter
+import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import gun0912.tedimagepicker.util.ToastUtil.context
 import product.truckkz.R
 import product.truckkz.`interface`.IClickListnearHomeFavorite
 import kotlinx.android.synthetic.main.item_tovar.view.*
+import product.truckkz.databinding.ItemTovarBinding
 import product.truckkz.models.products.index.Data
-import kotlin.collections.ArrayList
+import java.text.SimpleDateFormat
+import java.util.*
 
 class TovarAdapterProduct(private val mIClickListnear: IClickListnearHomeFavorite) :
+    PagingDataAdapter<Data,
+            TovarAdapterProduct.ImageViewHolder>(diffCallback) {
 
-    RecyclerView.Adapter<TovarAdapterProduct.TovarViewHolder>() {
-    lateinit var context: Context
+    inner class ImageViewHolder(
+        binding: ItemTovarBinding,
+    ) :
+        RecyclerView.ViewHolder(binding.root)
 
-    var listTovar = ArrayList<Data>()
+    companion object {
+        val diffCallback = object : DiffUtil.ItemCallback<Data>() {
+            override fun areItemsTheSame(oldItem: Data, newItem: Data): Boolean {
+                return oldItem.id == newItem.id
+            }
 
-    class TovarViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
-
-    @SuppressLint("NotifyDataSetChanged")
-    fun deleteMyEducations(position: Int) {
-        listTovar.removeAt(position)
-        notifyItemRemoved(position)
-        notifyItemRangeChanged(position, listTovar.size)
-        notifyDataSetChanged()
+            override fun areContentsTheSame(oldItem: Data, newItem: Data): Boolean {
+                return oldItem == newItem
+            }
+        }
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TovarViewHolder {
-        val view =
-            LayoutInflater.from(parent.context).inflate(R.layout.item_tovar, parent, false)
-        context = parent.context
-        return TovarViewHolder(view)
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ImageViewHolder {
+        return ImageViewHolder(
+            ItemTovarBinding.inflate(
+                LayoutInflater.from(parent.context),
+                parent, false
+            )
+        )
     }
+
 
     @SuppressLint("NewApi", "SetTextI18n", "UseCompatLoadingForDrawables")
-    override fun onBindViewHolder(holder: TovarViewHolder, position: Int) {
-        val currentItem = listTovar[position]
+    override fun onBindViewHolder(holder: ImageViewHolder, position: Int) {
+        val currentItem = getItem(position)
 
-        Glide.with(context).load(currentItem.img)
+        Glide.with(context).load(currentItem?.img)
             .thumbnail(Glide.with(context).load(R.drawable.loader2))
 //            .fitCenter()
             .into(holder.itemView.item_home_images)
@@ -55,11 +66,11 @@ class TovarAdapterProduct(private val mIClickListnear: IClickListnearHomeFavorit
 //        }
 
 
-        holder.itemView.text_name.text = currentItem.title
-        holder.itemView.text_price.text = currentItem.price + " сом/ день"
+        holder.itemView.text_name.text = currentItem?.title
+        holder.itemView.text_price.text = currentItem?.price + " $"
 
         holder.itemView.rowCostom.setOnClickListener {
-            mIClickListnear.clickListener(currentItem.id)
+            currentItem?.id?.let { it1 -> mIClickListnear.clickListener(it1) }
         }
 //        holder.itemView.item_favorite.setOnClickListener {
 //            mIClickListnear.clickListenerFavorite(currentItem.id, holder.itemView, currentItem.favorite, position)
@@ -68,14 +79,14 @@ class TovarAdapterProduct(private val mIClickListnear: IClickListnearHomeFavorit
 //        }
     }
 
-    override fun getItemCount(): Int {
-        return listTovar.size
-    }
+    @SuppressLint("SimpleDateFormat")
+    private fun getDateTime(s: String): Boolean {
+        //Сегодняшняя дата
+        val currentTime: Date = Calendar.getInstance().time
+        //Преобразование приходяшее дата
+        val dateParse = SimpleDateFormat("dd.MM.yyyy HH:mm").parse(s) as Date
 
-    @SuppressLint("NotifyDataSetChanged")
-    fun setList(list: ArrayList<Data>) {
-        listTovar = list
-        notifyDataSetChanged()
+        return dateParse.time >= currentTime.time
     }
 
 }
