@@ -38,7 +38,7 @@
     <color name="green_txt">#76C737</color>
     <color name="green_txt2">#22BB14</color>
     <color name="green_txt3">#4cAF50</color>
-    <color name="ic_launcher_background">#FFFFFF</color>
+    <color name="ic_launcher_background">#F3F3F3</color>
     <color name="orange">#FFA200</color>
     <color name="orange_txt">#EA6C6C</color>
     <color name="purple_200">#FFBB86FC</color>
@@ -56,7 +56,7 @@
     <color name="white3">#F5F5F5</color>
     <color name="white_alpha">#CDFFFFFF</color>
     <color name="yellow">#FFEB3B</color>
-    <string name="app_name">GeneralMachineGroup</string>
+    <string name="app_name">General Machinery Group</string>
     <string name="check_connections_internet">Пожалуйста проверьте соединения с интернетом</string>
     <string name="default_web_client_id" translatable="false">189872741809-mrlgv2osjonlu85g474qld6bgonfirrm.apps.googleusercontent.com</string>
     <string name="gcm_defaultSenderId" translatable="false">189872741809</string>

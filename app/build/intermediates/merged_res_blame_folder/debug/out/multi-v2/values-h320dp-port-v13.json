@@ -4,7 +4,7 @@
             "outputFile": "product.truckkz.app-mergeDebugResources-66:/values-h320dp-port-v13/values-h320dp-port-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Atlas\\.gradle\\caches\\transforms-3\\882f8d22719aeffb2f0597dca0a1a044\\transformed\\material-1.6.1\\res\\values-h320dp-port-v13\\values-h320dp-port-v13.xml",
+                    "source": "/Users/nurxan/.gradle/caches/transforms-3/dc485af91ede353a668ce7354f60f7d0/transformed/material-1.6.1/res/values-h320dp-port-v13/values-h320dp-port-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

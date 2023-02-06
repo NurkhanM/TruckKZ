@@ -16,7 +16,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.google.android.material.button.MaterialButton;
-import com.google.android.material.textfield.TextInputEditText;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -33,13 +32,13 @@ public final class FragmentHomeInfoBinding implements ViewBinding {
   public final MaterialButton btnBook;
 
   @NonNull
+  public final MaterialButton btnMessage;
+
+  @NonNull
   public final ImageView clickUpdateBackCard;
 
   @NonNull
   public final TextView dopTextUpdate;
-
-  @NonNull
-  public final TextInputEditText editName;
 
   @NonNull
   public final NestedScrollView fragmentContainerUpdate;
@@ -75,12 +74,6 @@ public final class FragmentHomeInfoBinding implements ViewBinding {
   public final RecyclerView recyclerUpdate;
 
   @NonNull
-  public final RatingBar svgRating;
-
-  @NonNull
-  public final RatingBar svgRatingReview;
-
-  @NonNull
   public final TextView textDescription;
 
   @NonNull
@@ -103,23 +96,22 @@ public final class FragmentHomeInfoBinding implements ViewBinding {
 
   private FragmentHomeInfoBinding(@NonNull ConstraintLayout rootView,
       @NonNull LinearLayout UpdateWorkError, @NonNull MaterialButton btnBook,
-      @NonNull ImageView clickUpdateBackCard, @NonNull TextView dopTextUpdate,
-      @NonNull TextInputEditText editName, @NonNull NestedScrollView fragmentContainerUpdate,
+      @NonNull MaterialButton btnMessage, @NonNull ImageView clickUpdateBackCard,
+      @NonNull TextView dopTextUpdate, @NonNull NestedScrollView fragmentContainerUpdate,
       @NonNull ImageView imageMove, @NonNull ImageView imageShow, @NonNull ImageView imgFavorite,
       @NonNull LinearLayout itemFavorite, @NonNull LinearLayout liner2first,
       @NonNull LinearLayout linerImageMove, @NonNull LinearLayout linerRating,
       @NonNull LinearLayout linerfirst, @NonNull RatingBar productRating,
-      @NonNull RecyclerView recyclerUpdate, @NonNull RatingBar svgRating,
-      @NonNull RatingBar svgRatingReview, @NonNull TextView textDescription,
+      @NonNull RecyclerView recyclerUpdate, @NonNull TextView textDescription,
       @NonNull TextView textHarakter, @NonNull TextView textPrice, @NonNull TextView textRatingSize,
       @NonNull TextView textTitle, @NonNull TextView updatePrice,
       @NonNull ConstraintLayout updateToolbar) {
     this.rootView = rootView;
     this.UpdateWorkError = UpdateWorkError;
     this.btnBook = btnBook;
+    this.btnMessage = btnMessage;
     this.clickUpdateBackCard = clickUpdateBackCard;
     this.dopTextUpdate = dopTextUpdate;
-    this.editName = editName;
     this.fragmentContainerUpdate = fragmentContainerUpdate;
     this.imageMove = imageMove;
     this.imageShow = imageShow;
@@ -131,8 +123,6 @@ public final class FragmentHomeInfoBinding implements ViewBinding {
     this.linerfirst = linerfirst;
     this.productRating = productRating;
     this.recyclerUpdate = recyclerUpdate;
-    this.svgRating = svgRating;
-    this.svgRatingReview = svgRatingReview;
     this.textDescription = textDescription;
     this.textHarakter = textHarakter;
     this.textPrice = textPrice;
@@ -181,6 +171,12 @@ public final class FragmentHomeInfoBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.btnMessage;
+      MaterialButton btnMessage = ViewBindings.findChildViewById(rootView, id);
+      if (btnMessage == null) {
+        break missingId;
+      }
+
       id = R.id.clickUpdateBackCard;
       ImageView clickUpdateBackCard = ViewBindings.findChildViewById(rootView, id);
       if (clickUpdateBackCard == null) {
@@ -190,12 +186,6 @@ public final class FragmentHomeInfoBinding implements ViewBinding {
       id = R.id.dop_text_update;
       TextView dopTextUpdate = ViewBindings.findChildViewById(rootView, id);
       if (dopTextUpdate == null) {
-        break missingId;
-      }
-
-      id = R.id.editName;
-      TextInputEditText editName = ViewBindings.findChildViewById(rootView, id);
-      if (editName == null) {
         break missingId;
       }
 
@@ -265,18 +255,6 @@ public final class FragmentHomeInfoBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.svgRating;
-      RatingBar svgRating = ViewBindings.findChildViewById(rootView, id);
-      if (svgRating == null) {
-        break missingId;
-      }
-
-      id = R.id.svgRatingReview;
-      RatingBar svgRatingReview = ViewBindings.findChildViewById(rootView, id);
-      if (svgRatingReview == null) {
-        break missingId;
-      }
-
       id = R.id.textDescription;
       TextView textDescription = ViewBindings.findChildViewById(rootView, id);
       if (textDescription == null) {
@@ -320,10 +298,10 @@ public final class FragmentHomeInfoBinding implements ViewBinding {
       }
 
       return new FragmentHomeInfoBinding((ConstraintLayout) rootView, UpdateWorkError, btnBook,
-          clickUpdateBackCard, dopTextUpdate, editName, fragmentContainerUpdate, imageMove,
+          btnMessage, clickUpdateBackCard, dopTextUpdate, fragmentContainerUpdate, imageMove,
           imageShow, imgFavorite, itemFavorite, liner2first, linerImageMove, linerRating,
-          linerfirst, productRating, recyclerUpdate, svgRating, svgRatingReview, textDescription,
-          textHarakter, textPrice, textRatingSize, textTitle, updatePrice, updateToolbar);
+          linerfirst, productRating, recyclerUpdate, textDescription, textHarakter, textPrice,
+          textRatingSize, textTitle, updatePrice, updateToolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

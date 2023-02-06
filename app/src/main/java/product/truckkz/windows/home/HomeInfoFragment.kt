@@ -1,35 +1,32 @@
 package product.truckkz.windows.home
 
 import android.annotation.SuppressLint
-import android.content.ContentValues.TAG
 import android.content.Intent
 import android.content.res.Resources
+import android.net.Uri
 import android.os.Bundle
-import android.util.Log
 import android.util.TypedValue
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.NestedScrollView
+import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.fragment_home_info.view.*
 import product.truckkz.DataAllProducts.ALL_ID_PRODUCTS
 import product.truckkz.DataAllProducts.IMAGES_INFO_ARRAY
 import product.truckkz.R
 import product.truckkz.UserDate
-import product.truckkz.UserDate.USER_STATUS_FULL
 import product.truckkz.`interface`.IClickListnearUpdateImage
 import product.truckkz.models.get.productInfo.Images
 import product.truckkz.viewModels.HomeViewModels
 import product.truckkz.windows.home.showImage.ShowImageActivity
-import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.fragment_home_info.view.*
-import kotlinx.android.synthetic.main.fragment_home_info.view.img_favorite
-import kotlinx.android.synthetic.main.item_tovar.view.*
+import kotlin.reflect.jvm.internal.impl.builtins.StandardNames.FqNames.number
+
 
 class HomeInfoFragment : Fragment() {
 
@@ -39,6 +36,8 @@ class HomeInfoFragment : Fragment() {
     lateinit var viewModels: HomeViewModels
     private var isMoreState: Boolean = true
     private var indexShow: Int = 0
+
+    var callInfo = ""
 
     @SuppressLint("SetTextI18n", "UseCompatLoadingForDrawables")
     override fun onCreateView(
@@ -57,7 +56,13 @@ class HomeInfoFragment : Fragment() {
             if (list.isSuccessful) {
                 view.textTitle.text = list.body()?.data?.title
                 view.textPrice.text = list.body()?.data?.price.toString() + " $"
-                view.textDescription.text = list.body()?.data?.description.toString()
+                if (list.body()?.data?.description.toString() == "null"){
+                    view.textDescription.text = ""
+                } else{
+                    view.textDescription.text = list.body()?.data?.description.toString()
+                }
+
+                callInfo = list.body()?.data?.user?.phone.toString()
 //                if (list.body()?.favorite == true){
 //                    view.img_favorite.setImageDrawable(requireContext().resources.getDrawable(R.drawable.ic_favorite2))
 //                }else{
@@ -131,6 +136,7 @@ class HomeInfoFragment : Fragment() {
         }
 
         view.btnBook.setOnClickListener {
+            callPhone()
 //            if (USER_STATUS_FULL) {
 //                Navigation.findNavController(view)
 //                    .navigate(R.id.action_homeInfoFragment_to_calendarFragment)
@@ -138,6 +144,13 @@ class HomeInfoFragment : Fragment() {
 //                Navigation.findNavController(view)
 //                    .navigate(R.id.action_homeInfoFragment_to_fullRegistrationFragment)
 //            }
+        }
+
+        view.btnMessage.setOnClickListener {
+            val url = "https://api.whatsapp.com/send?phone=$callInfo"
+            val i = Intent(Intent.ACTION_VIEW)
+            i.data = Uri.parse(url)
+            startActivity(i)
         }
 
         view.fragmentContainerUpdate.setOnScrollChangeListener(NestedScrollView.OnScrollChangeListener { _, _, scrollY, _, _ ->
@@ -154,7 +167,17 @@ class HomeInfoFragment : Fragment() {
             }
         })
 
+        view.clickUpdateBackCard.setOnClickListener {
+            activity?.onBackPressed()
+        }
+
         return view
+    }
+
+    private fun callPhone() {
+        val intent = Intent(Intent.ACTION_DIAL)
+        intent.data = Uri.parse("tel:$callInfo")
+        startActivity(intent)
     }
 
     private fun removeStartEnDChars(str: String): String {

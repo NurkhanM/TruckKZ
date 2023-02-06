@@ -4,7 +4,7 @@
             "outputFile": "product.truckkz.app-mergeDebugResources-66:/values-uk-rUA/values-uk-rUA.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Atlas\\.gradle\\caches\\transforms-3\\57ad60267a32238e192d00543f444a0e\\transformed\\jetified-material-calendar-view-1.9.0-rc03\\res\\values-uk-rUA\\values-uk-rUA.xml",
+                    "source": "/Users/nurxan/.gradle/caches/transforms-3/bf3143788941c8b19339f674430f7c50/transformed/jetified-material-calendar-view-1.9.0-rc03/res/values-uk-rUA/values-uk-rUA.xml",
                     "from": {
                         "startLines": "2,11,25,26,27,28,29,30,31,32,33,34",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",

@@ -4,7 +4,7 @@
             "outputFile": "product.truckkz.app-mergeDebugResources-66:/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Atlas\\.gradle\\caches\\transforms-3\\f5dbd72e4ac5be148c4debec1ab47673\\transformed\\core-1.9.0\\res\\values-v16\\values-v16.xml",
+                    "source": "/Users/nurxan/.gradle/caches/transforms-3/5d5aac20f6aabe30089de33c19ae87e0/transformed/core-1.9.0/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Atlas\\.gradle\\caches\\transforms-3\\e8ecccb83beac1acf400396e7c64aa00\\transformed\\appcompat-1.5.1\\res\\values-v16\\values-v16.xml",
+                    "source": "/Users/nurxan/.gradle/caches/transforms-3/cb864f3364999d296f9d07be976b5875/transformed/appcompat-1.5.1/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

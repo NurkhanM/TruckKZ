@@ -24,6 +24,9 @@ public final class FragmentHomeBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final ImageView clickUpdateBackCard;
+
+  @NonNull
   public final NestedScrollView fragmentContainerUpdate;
 
   @NonNull
@@ -50,13 +53,18 @@ public final class FragmentHomeBinding implements ViewBinding {
   @NonNull
   public final TextView txtTitleRecomend;
 
+  @NonNull
+  public final ConstraintLayout updateToolbar;
+
   private FragmentHomeBinding(@NonNull ConstraintLayout rootView,
-      @NonNull NestedScrollView fragmentContainerUpdate, @NonNull ConstraintLayout homeToolbar,
-      @NonNull ImageView imgAuthHome, @NonNull RecyclerView rvCategory,
-      @NonNull RecyclerView rvProduct, @NonNull RecyclerView rvProduct2,
-      @NonNull RecyclerView rvRecomend, @NonNull SwipeRefreshLayout tiRefreshLayout,
-      @NonNull TextView txtTitleRecomend) {
+      @NonNull ImageView clickUpdateBackCard, @NonNull NestedScrollView fragmentContainerUpdate,
+      @NonNull ConstraintLayout homeToolbar, @NonNull ImageView imgAuthHome,
+      @NonNull RecyclerView rvCategory, @NonNull RecyclerView rvProduct,
+      @NonNull RecyclerView rvProduct2, @NonNull RecyclerView rvRecomend,
+      @NonNull SwipeRefreshLayout tiRefreshLayout, @NonNull TextView txtTitleRecomend,
+      @NonNull ConstraintLayout updateToolbar) {
     this.rootView = rootView;
+    this.clickUpdateBackCard = clickUpdateBackCard;
     this.fragmentContainerUpdate = fragmentContainerUpdate;
     this.homeToolbar = homeToolbar;
     this.imgAuthHome = imgAuthHome;
@@ -66,6 +74,7 @@ public final class FragmentHomeBinding implements ViewBinding {
     this.rvRecomend = rvRecomend;
     this.tiRefreshLayout = tiRefreshLayout;
     this.txtTitleRecomend = txtTitleRecomend;
+    this.updateToolbar = updateToolbar;
   }
 
   @Override
@@ -95,6 +104,12 @@ public final class FragmentHomeBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.clickUpdateBackCard;
+      ImageView clickUpdateBackCard = ViewBindings.findChildViewById(rootView, id);
+      if (clickUpdateBackCard == null) {
+        break missingId;
+      }
+
       id = R.id.fragmentContainerUpdate;
       NestedScrollView fragmentContainerUpdate = ViewBindings.findChildViewById(rootView, id);
       if (fragmentContainerUpdate == null) {
@@ -149,9 +164,15 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentHomeBinding((ConstraintLayout) rootView, fragmentContainerUpdate,
-          homeToolbar, imgAuthHome, rvCategory, rvProduct, rvProduct2, rvRecomend, tiRefreshLayout,
-          txtTitleRecomend);
+      id = R.id.updateToolbar;
+      ConstraintLayout updateToolbar = ViewBindings.findChildViewById(rootView, id);
+      if (updateToolbar == null) {
+        break missingId;
+      }
+
+      return new FragmentHomeBinding((ConstraintLayout) rootView, clickUpdateBackCard,
+          fragmentContainerUpdate, homeToolbar, imgAuthHome, rvCategory, rvProduct, rvProduct2,
+          rvRecomend, tiRefreshLayout, txtTitleRecomend, updateToolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -161,6 +161,7 @@ id back_auth
 id bottomAppBar
 id bottom_navigatin_view
 id btnBook
+id btnMessage
 id btnSendCreate
 id btnSignInFaceBook
 id btnSignInGoogle
@@ -344,8 +345,6 @@ id scrollConst
 id settingsFragment
 id splashFragment
 id splashScreen1
-id svgRating
-id svgRatingReview
 id text1
 id textDate
 id textDay
@@ -443,6 +442,7 @@ layout swipe_instructor
 layout test
 menu bottom_navigation_menu
 mipmap ic_launcher
+mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 navigation nav_create
 navigation nav_graph

@@ -156,14 +156,14 @@ class HomeFragment : Fragment() {
         adapterProduct = TovarAdapterProduct(
             object : IClickListnearHomeFavorite {
                 override fun clickListener(baseID: Int) {
-                    if (!USER_STATUS) {
-                        Navigation.findNavController(view)
-                            .navigate(R.id.action_homeFragment_to_authorizationFragment)
-                    } else {
+//                    if (!USER_STATUS) {
+//                        Navigation.findNavController(view)
+//                            .navigate(R.id.action_homeFragment_to_authorizationFragment)
+//                    } else {
                         ALL_ID_PRODUCTS = baseID
                         Navigation.findNavController(view)
                             .navigate(R.id.action_homeFragment_to_homeInfoFragment)
-                    }
+//                    }
                 }
 
                 override fun clickListenerFavorite(baseID: Int, v: View, boolean: Boolean, pos: Int) {
@@ -182,14 +182,14 @@ class HomeFragment : Fragment() {
         adapterProduct2 = TovarAdapterProduct2(
             object : IClickListnearHomeFavorite {
                 override fun clickListener(baseID: Int) {
-                    if (!USER_STATUS) {
-                        Navigation.findNavController(view)
-                            .navigate(R.id.action_homeFragment_to_authorizationFragment)
-                    } else {
+//                    if (!USER_STATUS) {
+//                        Navigation.findNavController(view)
+//                            .navigate(R.id.action_homeFragment_to_authorizationFragment)
+//                    } else {
                         ALL_ID_PRODUCTS = baseID
                         Navigation.findNavController(view)
                             .navigate(R.id.action_homeFragment_to_homeInfoFragment)
-                    }
+//                    }
                 }
 
                 override fun clickListenerFavorite(baseID: Int, v: View, boolean: Boolean, pos: Int) {

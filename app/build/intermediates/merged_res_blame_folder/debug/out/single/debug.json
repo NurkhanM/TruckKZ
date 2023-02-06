@@ -1,634 +1,654 @@
 [
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_test_image.png.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\test_image.png"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_ic_profile_icon.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/ic_profile_icon.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\layout_fragment_reset.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\fragment_reset.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_buttontab_backgraund.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/buttontab_backgraund.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_ic_eye.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\ic_eye.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-debug-69:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_button_background2.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\button_background2.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/layout_activity_show_image.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/activity_show_image.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\layout_fragment_splash.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\fragment_splash.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_button_background2.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/button_background2.xml"
+    },
+    {
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_test_image3.png.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/test_image3.png"
     },
     {
         "merged": "product.truckkz.app-merged_res-68:/layout_fragment_home.xml.flat",
         "source": "product.truckkz.app-main-70:/layout/fragment_home.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\anim_slide_out_left.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\anim\\slide_out_left.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/layout_item_tovar.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/item_tovar.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\anim_slide_in_left.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\anim\\slide_in_left.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/font_lato_black.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/font/lato_black.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_test_image4.png.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\test_image4.png"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_ic_edit.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/ic_edit.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable-xxhdpi_info_3.png.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-pngs-63:\\drawable-xxhdpi\\info_3.png"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/layout_dialog_error_auth.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/dialog_error_auth.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_circular_background.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\circular_background.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/layout_fragment_calendar.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/fragment_calendar.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\layout_fragment_full_registration2.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\fragment_full_registration2.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_bottom.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/bottom.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_no_wifi.gif.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\no_wifi.gif"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_circular_background.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/circular_background.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable-v24_next.png.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable-v24\\next.png"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_ic_line_step2.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/ic_line_step2.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\xml_backup_rules.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\xml\\backup_rules.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/layout_fragment_reset.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/fragment_reset.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\layout_item_tovar.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\item_tovar.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_ic_facebook.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/ic_facebook.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_verifiedd.png.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\verifiedd.png"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_test_svg_category2.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/test_svg_category2.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\layout_fragment_home_info.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\fragment_home_info.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-debug-69:/mipmap-xxxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\layout_activity_favorite.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\activity_favorite.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable-v24_next.png.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable-v24/next.png"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_logo_gif.gif.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\logo_gif.gif"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_map_image.png.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/map_image.png"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable-ldpi_info_3.png.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-pngs-63:\\drawable-ldpi\\info_3.png"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/layout_activity_refresh.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/activity_refresh.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable-v24_btn_bottom_left.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable-v24\\btn_bottom_left.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/layout_fragment_my_ads.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/fragment_my_ads.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\layout_fragment_full_registration3.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\fragment_full_registration3.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_ic_exit.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/ic_exit.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\layout_test.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\test.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/layout_fragment_chad.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/fragment_chad.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_tenge.png.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\tenge.png"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/layout_fragment_profile.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/fragment_profile.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_ic_line_step2.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\ic_line_step2.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-debug-69:/drawable/ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_ic_back_arrow.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\ic_back_arrow.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_test_image4.png.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/test_image4.png"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\anim_zoom_out.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\anim\\zoom_out.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_success.png.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/success.png"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_bottom_sheet_top_corve.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\bottom_sheet_top_corve.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-debug-69:/mipmap-xhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\layout_dialog_user_remove.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\dialog_user_remove.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/layout_fragment_full_registration2.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/fragment_full_registration2.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_ic_exit.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\ic_exit.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/anim_slide_in_right.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/anim/slide_in_right.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_ic_calendar_icon.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\ic_calendar_icon.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_logo_gif.gif.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/logo_gif.gif"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable-xxxhdpi_info_3.png.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-pngs-63:\\drawable-xxxhdpi\\info_3.png"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_gif_aut.gif.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/gif_aut.gif"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_test_image3.png.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\test_image3.png"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/layout_activity_main.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\layout_item_update_image_array.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\item_update_image_array.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_bottom_sheet_top_corve.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/bottom_sheet_top_corve.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_ic_favorite.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\ic_favorite.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/xml_data_extraction_rules.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\font_pacifico.ttf.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\font\\pacifico.ttf"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/layout_fragment_favorite.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/fragment_favorite.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-debug-69:\\drawable\\ic_launcher_foreground.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable-ldpi_info_3.png.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-pngs-63:/drawable-ldpi/info_3.png"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_test_svg_category2.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\test_svg_category2.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/layout_dialog_succes_register.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/dialog_succes_register.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\layout_activity_home.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\activity_home.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/layout_item_recomend.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/item_recomend.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\layout_swipe_instructor.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\swipe_instructor.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_no_wifi.gif.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/no_wifi.gif"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\color_bottom_nav_item_selector.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\color\\bottom_nav_item_selector.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-debug-69:/mipmap-hdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_ic_close.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\ic_close.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/layout_fragment_show_image.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/fragment_show_image.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\layout_app_bar_main.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\app_bar_main.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_ic_close.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/ic_close.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_buttontab_backgraund.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\buttontab_backgraund.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_image_add.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/image_add.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_info_1.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\info_1.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-debug-69:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_dot_red.png.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\dot_red.png"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/anim_zoom_out.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/anim/zoom_out.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\layout_fragment_my_ads.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\fragment_my_ads.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/layout_item_update_image_array.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/item_update_image_array.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable-mdpi_info_3.png.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-pngs-63:\\drawable-mdpi\\info_3.png"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_test_svg_category4.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/test_svg_category4.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable-xhdpi_info_3.png.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-pngs-63:\\drawable-xhdpi\\info_3.png"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_buttontab_backgraund2.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/buttontab_backgraund2.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_ic_line_step1.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\ic_line_step1.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/layout_fragment_home_info.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/fragment_home_info.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_bottom_right.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\bottom_right.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable-xhdpi_info_3.png.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-pngs-63:/drawable-xhdpi/info_3.png"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_buttontab_backgraund2.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\buttontab_backgraund2.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_ic_warning.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/ic_warning.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-debug-69:\\mipmap-xhdpi\\ic_launcher.png"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_ic_step2.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/ic_step2.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_map_image.png.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\map_image.png"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-debug-69:/mipmap-xhdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\layout_item_chat.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\item_chat.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_image_success_register.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/image_success_register.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_test_svg_category3.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\test_svg_category3.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_ic_search.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/ic_search.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\layout_fragment_my_products.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\fragment_my_products.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/menu_bottom_navigation_menu.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/menu/bottom_navigation_menu.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-debug-69:\\mipmap-xxhdpi\\ic_launcher_round.png"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/layout_test.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/test.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\layout_bottom_category.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\bottom_category.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/layout_fragment_search.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/fragment_search.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_ic_step2.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\ic_step2.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_test_image2.png.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/test_image2.png"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\layout_activity_refresh.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\activity_refresh.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-debug-69:/mipmap-xhdpi/ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_ic_warning.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\ic_warning.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/color_bottom_nav_item_selector.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/color/bottom_nav_item_selector.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_ic_more.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\ic_more.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_logo_svg.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/logo_svg.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_ic_google.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\ic_google.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_fon_header.png.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/fon_header.png"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_arrow_right.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\arrow_right.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_verifiedd.png.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/verifiedd.png"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_logo_svg.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\logo_svg.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/font_pacifico.ttf.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/font/pacifico.ttf"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\layout_item_category.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\item_category.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/layout_activity_create.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/activity_create.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-debug-69:\\mipmap-xhdpi\\ic_launcher_round.png"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/layout_bottom_category.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/bottom_category.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_ic_search.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\ic_search.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/layout_app_bar_main.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/app_bar_main.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\ic_launcher_background.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/layout_fragment_full_registration3.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/fragment_full_registration3.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_baby_splash.png.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\baby_splash.png"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable-mdpi_info_3.png.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-pngs-63:/drawable-mdpi/info_3.png"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-debug-69:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-debug-69:/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\layout_dialog_error_auth.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\dialog_error_auth.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/font_jost.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/font/jost.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\layout_fragment_favorite.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\fragment_favorite.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-debug-69:/mipmap-xxhdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_ic_add2.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\ic_add2.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-debug-69:/mipmap-mdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_ic_edit.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\ic_edit.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable-anydpi-v24_info_3.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-pngs-63:/drawable-anydpi-v24/info_3.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\layout_fragment_authorization.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\fragment_authorization.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_info_1.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/info_1.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_image_add.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\image_add.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_ic_line_step1.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/ic_line_step1.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\layout_activity_create.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\activity_create.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_circle_background.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/circle_background.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\layout_dialog_succes_register.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\dialog_succes_register.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_ic_google.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/ic_google.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_bottom.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\bottom.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/font_jost_medium.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/font/jost_medium.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-debug-69:\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/layout_activity_home.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/activity_home.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\layout_activity_google_sign_in.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\activity_google_sign_in.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/anim_slide_out_right.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/anim/slide_out_right.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\anim_zoom_back.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\anim\\zoom_back.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_ic_eye.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/ic_eye.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_fon_header.png.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\fon_header.png"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-debug-69:/mipmap-hdpi/ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\font_nunito_sans.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\font\\nunito_sans.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_ic_main_icon.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/ic_main_icon.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\font_lato_black.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\font\\lato_black.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/layout_item_category.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/item_category.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_ic_clock.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\ic_clock.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_tenge.png.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/tenge.png"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\layout_fragment_show_image.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\fragment_show_image.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/layout_fragment_update.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/fragment_update.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_success.png.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\success.png"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/layout_dialog_user_remove.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/dialog_user_remove.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-debug-69:\\mipmap-xxxhdpi\\ic_launcher.png"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_dot_red.png.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/dot_red.png"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_circular.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\circular.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/layout_item_selected_category.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/item_selected_category.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_ic_user_remove.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\ic_user_remove.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_circular.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/circular.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_ic_main_icon.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\ic_main_icon.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_ic_launcher_background.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\layout_fragment_full_registration.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\fragment_full_registration.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_info_2.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/info_2.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\layout_fragment_message_chat.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\fragment_message_chat.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable-v24_calendar_vector.png.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable-v24/calendar_vector.png"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\navigation_nav_graph.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\navigation\\nav_graph.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/navigation_nav_graph.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/navigation/nav_graph.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable-v24_ic_add.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable-v24\\ic_add.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_test_image.png.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/test_image.png"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-debug-69:\\mipmap-mdpi\\ic_launcher_round.png"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_ic_favorite2.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/ic_favorite2.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\layout_activity_show_image.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\activity_show_image.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_ic_clock.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/ic_clock.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_test_svg_category.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\test_svg_category.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_loader2.gif.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/loader2.gif"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable-anydpi-v24_info_3.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-pngs-63:\\drawable-anydpi-v24\\info_3.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-debug-69:/mipmap-xxhdpi/ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\font_lato.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\font\\lato.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_ic_lamp_icon.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/ic_lamp_icon.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\xml_data_extraction_rules.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\xml\\data_extraction_rules.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_arrow_right.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/arrow_right.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\layout_fragment_search.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\fragment_search.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/layout_item_show_image.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/item_show_image.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\anim_zoom_exit.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\anim\\zoom_exit.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-debug-69:/mipmap-hdpi/ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_circle_background.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\circle_background.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/layout_fragment_home.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/fragment_home.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\layout_fragment_update.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\fragment_update.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_bottom_right.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/bottom_right.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_ic_favorite2.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\ic_favorite2.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_test_svg_category5.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/test_svg_category5.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_button_background.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\button_background.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/layout_fragment_message_chat.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/fragment_message_chat.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_test_svg_category5.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\test_svg_category5.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/layout_activity_google_sign_in.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/activity_google_sign_in.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\mipmap-mdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-debug-69:\\mipmap-mdpi\\ic_launcher.png"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_loader.gif.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/loader.gif"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\layout_fragment_settings.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\fragment_settings.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_baby_splash.png.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/baby_splash.png"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable-v24_authtet.png.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable-v24\\authtet.png"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/layout_fragment_settings.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/fragment_settings.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\font_jost.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\font\\jost.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/layout_activity_favorite.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/activity_favorite.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\anim_slide_in_right.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\anim\\slide_in_right.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/anim_slide_in_left.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/anim/slide_in_left.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_ic_lamp_icon.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\ic_lamp_icon.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_ic_chad_icon.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/ic_chad_icon.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\anim_slide_out_right.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\anim\\slide_out_right.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/layout_fragment_authorization.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/fragment_authorization.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable-hdpi_info_3.png.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-pngs-63:\\drawable-hdpi\\info_3.png"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_ic_trash.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/ic_trash.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\menu_bottom_navigation_menu.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\menu\\bottom_navigation_menu.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-debug-69:/mipmap-mdpi/ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\layout_item_selected_category.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\item_selected_category.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable-v24_authtet.png.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable-v24/authtet.png"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-debug-69:\\mipmap-hdpi\\ic_launcher_round.png"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable-xxhdpi_info_3.png.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-pngs-63:/drawable-xxhdpi/info_3.png"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable-v24_prev.png.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable-v24\\prev.png"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable-v24_bx_time.png.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable-v24/bx_time.png"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-debug-69:\\mipmap-xxxhdpi\\ic_launcher_round.png"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-debug-69:/mipmap-xxxhdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_loader.gif.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\loader.gif"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_dot_orange.png.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/dot_orange.png"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_ic_trash.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\ic_trash.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-debug-69:/mipmap-xxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\layout_fragment_profile.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\fragment_profile.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/font_nunito_sans.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/font/nunito_sans.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_gif_aut.gif.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\gif_aut.gif"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_dot_green.png.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/dot_green.png"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_dot_orange.png.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\dot_orange.png"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_test_svg_category.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/test_svg_category.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_ic_facebook.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\ic_facebook.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/layout_fragment_create.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/fragment_create.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\navigation_nav_create.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\navigation\\nav_create.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable-v24_prev.png.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable-v24/prev.png"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_test_image2.png.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\test_image2.png"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable-v24_ic_add.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable-v24/ic_add.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\anim_zoom_enter.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\anim\\zoom_enter.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/navigation_nav_create.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/navigation/nav_create.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable-v24_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable-v24\\ic_launcher_background.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_ic_more.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/ic_more.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_loader2.gif.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\loader2.gif"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_ic_user_remove.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/ic_user_remove.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_ic_drawer.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\ic_drawer.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/layout_fragment_splash.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/fragment_splash.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\layout_item_recomend.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\item_recomend.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_ic_drawer.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/ic_drawer.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_ic_profile_icon.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\ic_profile_icon.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/layout_fragment_registration.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/fragment_registration.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_info_2.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\info_2.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_ic_favorite.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/ic_favorite.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\font_jost_medium.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\font\\jost_medium.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-debug-69:/mipmap-mdpi/ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\layout_fragment_home.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\fragment_home.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable-v24_btn_bottom_left.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable-v24/btn_bottom_left.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable-v24_calendar_vector.png.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable-v24\\calendar_vector.png"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_ic_add2.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/ic_add2.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_image_success_register.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\image_success_register.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable-hdpi_info_3.png.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-pngs-63:/drawable-hdpi/info_3.png"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable-v24_bx_time.png.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable-v24\\bx_time.png"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/layout_fragment_full_registration.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/fragment_full_registration.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-debug-69:\\mipmap-hdpi\\ic_launcher.png"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/layout_item_chat.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/item_chat.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_test_svg_category4.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\test_svg_category4.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/xml_backup_rules.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/xml/backup_rules.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-debug-69:\\mipmap-xxhdpi\\ic_launcher.png"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/anim_zoom_back.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/anim/zoom_back.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_dot_green.png.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\dot_green.png"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/font_lato.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/font/lato.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\layout_item_show_image.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\item_show_image.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_button_background.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/button_background.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\layout_fragment_registration.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\fragment_registration.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/anim_slide_out_left.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/anim/slide_out_left.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\activity_main.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/layout_fragment_my_products.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/fragment_my_products.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\layout_fragment_create.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\fragment_create.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_ic_back_arrow.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/ic_back_arrow.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\layout_fragment_calendar.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\fragment_calendar.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_ic_step1.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/ic_step1.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_ic_chad_icon.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\ic_chad_icon.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/anim_zoom_enter.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/anim/zoom_enter.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_ic_step1.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\drawable\\ic_step1.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_ic_calendar_icon.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/ic_calendar_icon.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\layout_fragment_chad.xml.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-main-70:\\layout\\fragment_chad.xml"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable-v24_ic_launcher_background.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable-v24/ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-merged_res-68:\\drawable_logo_truck.png.flat",
-        "source": "C:\\Users\\Atlas\\.gradle\\daemon\\7.4\\product.truckkz.app-debug-69:\\drawable\\logo_truck.png"
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable-xxxhdpi_info_3.png.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-pngs-63:/drawable-xxxhdpi/info_3.png"
+    },
+    {
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/layout_swipe_instructor.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/swipe_instructor.xml"
+    },
+    {
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/anim_zoom_exit.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/anim/zoom_exit.xml"
+    },
+    {
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_logo_truck.png.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-debug-69:/drawable/logo_truck.png"
+    },
+    {
+        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-merged_res-68:/drawable_test_svg_category3.xml.flat",
+        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/drawable/test_svg_category3.xml"
     }
 ]

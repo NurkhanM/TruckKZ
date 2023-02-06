@@ -4,7 +4,7 @@
             "outputFile": "product.truckkz.app-mergeDebugResources-66:/values-en-rXC/values-en-rXC.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Atlas\\.gradle\\caches\\transforms-3\\f5dbd72e4ac5be148c4debec1ab47673\\transformed\\core-1.9.0\\res\\values-en-rXC\\values-en-rXC.xml",
+                    "source": "/Users/nurxan/.gradle/caches/transforms-3/5d5aac20f6aabe30089de33c19ae87e0/transformed/core-1.9.0/res/values-en-rXC/values-en-rXC.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Atlas\\.gradle\\caches\\transforms-3\\e8ecccb83beac1acf400396e7c64aa00\\transformed\\appcompat-1.5.1\\res\\values-en-rXC\\values-en-rXC.xml",
+                    "source": "/Users/nurxan/.gradle/caches/transforms-3/cb864f3364999d296f9d07be976b5875/transformed/appcompat-1.5.1/res/values-en-rXC/values-en-rXC.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
