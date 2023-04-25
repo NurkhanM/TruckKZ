@@ -6,4 +6,6 @@ object DataAllProducts {
 
     var ALL_ID_PRODUCTS = -1
     val IMAGES_INFO_ARRAY = ArrayList<Images>()
+
+    var ID_CATEGORY_SELECTED = -1
 }

@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.RatingBar;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -30,9 +29,6 @@ public final class FragmentHomeInfoBinding implements ViewBinding {
 
   @NonNull
   public final MaterialButton btnBook;
-
-  @NonNull
-  public final MaterialButton btnMessage;
 
   @NonNull
   public final ImageView clickUpdateBackCard;
@@ -62,13 +58,7 @@ public final class FragmentHomeInfoBinding implements ViewBinding {
   public final LinearLayout linerImageMove;
 
   @NonNull
-  public final LinearLayout linerRating;
-
-  @NonNull
   public final LinearLayout linerfirst;
-
-  @NonNull
-  public final RatingBar productRating;
 
   @NonNull
   public final RecyclerView recyclerUpdate;
@@ -83,9 +73,6 @@ public final class FragmentHomeInfoBinding implements ViewBinding {
   public final TextView textPrice;
 
   @NonNull
-  public final TextView textRatingSize;
-
-  @NonNull
   public final TextView textTitle;
 
   @NonNull
@@ -96,20 +83,17 @@ public final class FragmentHomeInfoBinding implements ViewBinding {
 
   private FragmentHomeInfoBinding(@NonNull ConstraintLayout rootView,
       @NonNull LinearLayout UpdateWorkError, @NonNull MaterialButton btnBook,
-      @NonNull MaterialButton btnMessage, @NonNull ImageView clickUpdateBackCard,
-      @NonNull TextView dopTextUpdate, @NonNull NestedScrollView fragmentContainerUpdate,
-      @NonNull ImageView imageMove, @NonNull ImageView imageShow, @NonNull ImageView imgFavorite,
+      @NonNull ImageView clickUpdateBackCard, @NonNull TextView dopTextUpdate,
+      @NonNull NestedScrollView fragmentContainerUpdate, @NonNull ImageView imageMove,
+      @NonNull ImageView imageShow, @NonNull ImageView imgFavorite,
       @NonNull LinearLayout itemFavorite, @NonNull LinearLayout liner2first,
-      @NonNull LinearLayout linerImageMove, @NonNull LinearLayout linerRating,
-      @NonNull LinearLayout linerfirst, @NonNull RatingBar productRating,
+      @NonNull LinearLayout linerImageMove, @NonNull LinearLayout linerfirst,
       @NonNull RecyclerView recyclerUpdate, @NonNull TextView textDescription,
-      @NonNull TextView textHarakter, @NonNull TextView textPrice, @NonNull TextView textRatingSize,
-      @NonNull TextView textTitle, @NonNull TextView updatePrice,
-      @NonNull ConstraintLayout updateToolbar) {
+      @NonNull TextView textHarakter, @NonNull TextView textPrice, @NonNull TextView textTitle,
+      @NonNull TextView updatePrice, @NonNull ConstraintLayout updateToolbar) {
     this.rootView = rootView;
     this.UpdateWorkError = UpdateWorkError;
     this.btnBook = btnBook;
-    this.btnMessage = btnMessage;
     this.clickUpdateBackCard = clickUpdateBackCard;
     this.dopTextUpdate = dopTextUpdate;
     this.fragmentContainerUpdate = fragmentContainerUpdate;
@@ -119,14 +103,11 @@ public final class FragmentHomeInfoBinding implements ViewBinding {
     this.itemFavorite = itemFavorite;
     this.liner2first = liner2first;
     this.linerImageMove = linerImageMove;
-    this.linerRating = linerRating;
     this.linerfirst = linerfirst;
-    this.productRating = productRating;
     this.recyclerUpdate = recyclerUpdate;
     this.textDescription = textDescription;
     this.textHarakter = textHarakter;
     this.textPrice = textPrice;
-    this.textRatingSize = textRatingSize;
     this.textTitle = textTitle;
     this.updatePrice = updatePrice;
     this.updateToolbar = updateToolbar;
@@ -168,12 +149,6 @@ public final class FragmentHomeInfoBinding implements ViewBinding {
       id = R.id.btnBook;
       MaterialButton btnBook = ViewBindings.findChildViewById(rootView, id);
       if (btnBook == null) {
-        break missingId;
-      }
-
-      id = R.id.btnMessage;
-      MaterialButton btnMessage = ViewBindings.findChildViewById(rootView, id);
-      if (btnMessage == null) {
         break missingId;
       }
 
@@ -231,21 +206,9 @@ public final class FragmentHomeInfoBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.linerRating;
-      LinearLayout linerRating = ViewBindings.findChildViewById(rootView, id);
-      if (linerRating == null) {
-        break missingId;
-      }
-
       id = R.id.linerfirst;
       LinearLayout linerfirst = ViewBindings.findChildViewById(rootView, id);
       if (linerfirst == null) {
-        break missingId;
-      }
-
-      id = R.id.productRating;
-      RatingBar productRating = ViewBindings.findChildViewById(rootView, id);
-      if (productRating == null) {
         break missingId;
       }
 
@@ -273,12 +236,6 @@ public final class FragmentHomeInfoBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.text_rating_size;
-      TextView textRatingSize = ViewBindings.findChildViewById(rootView, id);
-      if (textRatingSize == null) {
-        break missingId;
-      }
-
       id = R.id.textTitle;
       TextView textTitle = ViewBindings.findChildViewById(rootView, id);
       if (textTitle == null) {
@@ -298,10 +255,9 @@ public final class FragmentHomeInfoBinding implements ViewBinding {
       }
 
       return new FragmentHomeInfoBinding((ConstraintLayout) rootView, UpdateWorkError, btnBook,
-          btnMessage, clickUpdateBackCard, dopTextUpdate, fragmentContainerUpdate, imageMove,
-          imageShow, imgFavorite, itemFavorite, liner2first, linerImageMove, linerRating,
-          linerfirst, productRating, recyclerUpdate, textDescription, textHarakter, textPrice,
-          textRatingSize, textTitle, updatePrice, updateToolbar);
+          clickUpdateBackCard, dopTextUpdate, fragmentContainerUpdate, imageMove, imageShow,
+          imgFavorite, itemFavorite, liner2first, linerImageMove, linerfirst, recyclerUpdate,
+          textDescription, textHarakter, textPrice, textTitle, updatePrice, updateToolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

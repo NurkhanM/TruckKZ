@@ -18,14 +18,4 @@ public class ProfileFragmentDirections {
   public static NavDirections actionProfileFragmentToSettingsFragment() {
     return new ActionOnlyNavDirections(R.id.action_profileFragment_to_settingsFragment);
   }
-
-  @NonNull
-  public static NavDirections actionProfileFragmentToFullRegistrationFragment() {
-    return new ActionOnlyNavDirections(R.id.action_profileFragment_to_fullRegistrationFragment);
-  }
-
-  @NonNull
-  public static NavDirections actionProfileFragmentToAuthorizationFragment() {
-    return new ActionOnlyNavDirections(R.id.action_profileFragment_to_authorizationFragment);
-  }
 }

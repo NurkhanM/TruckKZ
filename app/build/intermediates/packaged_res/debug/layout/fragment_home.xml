@@ -127,37 +127,6 @@
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
-
-                <TextView
-                    android:id="@+id/txt_title_recomend"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:fontFamily="@font/jost"
-                    android:text="Рекомендации"
-                    android:textColor="@color/black"
-                    android:textSize="18sp"
-                    android:textStyle="bold|normal"
-                    android:visibility="gone"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/homeToolbar" />
-
-
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/rv_recomend"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="10dp"
-                    android:orientation="horizontal"
-                    android:visibility="gone"
-                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/txt_title_recomend"
-                    tools:listitem="@layout/item_recomend" />
-
-
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/rv_category"
                     android:layout_width="match_parent"
@@ -167,7 +136,7 @@
                     app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/rv_recomend"
+                    app:layout_constraintTop_toBottomOf="@+id/homeToolbar"
                     tools:listitem="@layout/item_category" />
 
                 <androidx.recyclerview.widget.RecyclerView

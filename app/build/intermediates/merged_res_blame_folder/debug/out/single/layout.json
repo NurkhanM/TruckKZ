@@ -1,174 +1,150 @@
 [
     {
-        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-mergeDebugResources-67:/layout/test.xml",
-        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/test.xml"
+        "merged": "product.truckkz.app-mergeDebugResources-68:/layout/item_show_image.xml",
+        "source": "product.truckkz.app-main-71:/layout/item_show_image.xml"
     },
     {
-        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-mergeDebugResources-67:/layout/fragment_create.xml",
-        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/fragment_create.xml"
+        "merged": "product.truckkz.app-mergeDebugResources-68:/layout/test.xml",
+        "source": "product.truckkz.app-main-71:/layout/test.xml"
     },
     {
-        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-mergeDebugResources-67:/layout/fragment_profile.xml",
-        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/fragment_profile.xml"
+        "merged": "product.truckkz.app-mergeDebugResources-68:/layout/fragment_chat.xml",
+        "source": "product.truckkz.app-main-71:/layout/fragment_chat.xml"
     },
     {
-        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-mergeDebugResources-67:/layout/fragment_show_image.xml",
-        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/fragment_show_image.xml"
+        "merged": "product.truckkz.app-mergeDebugResources-68:/layout/fragment_search.xml",
+        "source": "product.truckkz.app-main-71:/layout/fragment_search.xml"
     },
     {
-        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-mergeDebugResources-67:/layout/fragment_calendar.xml",
-        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/fragment_calendar.xml"
+        "merged": "product.truckkz.app-mergeDebugResources-68:/layout/bottom_category.xml",
+        "source": "product.truckkz.app-main-71:/layout/bottom_category.xml"
     },
     {
-        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-mergeDebugResources-67:/layout/activity_main.xml",
-        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/activity_main.xml"
+        "merged": "product.truckkz.app-mergeDebugResources-68:/layout/dialog_succes_register.xml",
+        "source": "product.truckkz.app-main-71:/layout/dialog_succes_register.xml"
     },
     {
-        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-mergeDebugResources-67:/layout/item_category.xml",
-        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/item_category.xml"
+        "merged": "product.truckkz.app-mergeDebugResources-68:/layout/fragment_message_chat.xml",
+        "source": "product.truckkz.app-main-71:/layout/fragment_message_chat.xml"
     },
     {
-        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-mergeDebugResources-67:/layout/swipe_instructor.xml",
-        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/swipe_instructor.xml"
+        "merged": "product.truckkz.app-mergeDebugResources-68:/layout/activity_main.xml",
+        "source": "product.truckkz.app-main-71:/layout/activity_main.xml"
     },
     {
-        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-mergeDebugResources-67:/layout/fragment_settings.xml",
-        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/fragment_settings.xml"
+        "merged": "product.truckkz.app-mergeDebugResources-68:/layout/activity_refresh.xml",
+        "source": "product.truckkz.app-main-71:/layout/activity_refresh.xml"
     },
     {
-        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-mergeDebugResources-67:/layout/fragment_search.xml",
-        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/fragment_search.xml"
+        "merged": "product.truckkz.app-mergeDebugResources-68:/layout/item_category.xml",
+        "source": "product.truckkz.app-main-71:/layout/item_category.xml"
     },
     {
-        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-mergeDebugResources-67:/layout/fragment_message_chat.xml",
-        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/fragment_message_chat.xml"
+        "merged": "product.truckkz.app-mergeDebugResources-68:/layout/item_selected_category.xml",
+        "source": "product.truckkz.app-main-71:/layout/item_selected_category.xml"
     },
     {
-        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-mergeDebugResources-67:/layout/fragment_full_registration2.xml",
-        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/fragment_full_registration2.xml"
+        "merged": "product.truckkz.app-mergeDebugResources-68:/layout/item_tovar.xml",
+        "source": "product.truckkz.app-main-71:/layout/item_tovar.xml"
     },
     {
-        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-mergeDebugResources-67:/layout/item_show_image.xml",
-        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/item_show_image.xml"
+        "merged": "product.truckkz.app-mergeDebugResources-68:/layout/swipe_instructor.xml",
+        "source": "product.truckkz.app-main-71:/layout/swipe_instructor.xml"
     },
     {
-        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-mergeDebugResources-67:/layout/activity_google_sign_in.xml",
-        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/activity_google_sign_in.xml"
+        "merged": "product.truckkz.app-mergeDebugResources-68:/layout/item_chat.xml",
+        "source": "product.truckkz.app-main-71:/layout/item_chat.xml"
     },
     {
-        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-mergeDebugResources-67:/layout/dialog_succes_register.xml",
-        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/dialog_succes_register.xml"
+        "merged": "product.truckkz.app-mergeDebugResources-68:/layout/fragment_authorization.xml",
+        "source": "product.truckkz.app-main-71:/layout/fragment_authorization.xml"
     },
     {
-        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-mergeDebugResources-67:/layout/item_chat.xml",
-        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/item_chat.xml"
+        "merged": "product.truckkz.app-mergeDebugResources-68:/layout/activity_home.xml",
+        "source": "product.truckkz.app-main-71:/layout/activity_home.xml"
     },
     {
-        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-mergeDebugResources-67:/layout/fragment_update.xml",
-        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/fragment_update.xml"
+        "merged": "product.truckkz.app-mergeDebugResources-68:/layout/dialog_error_auth.xml",
+        "source": "product.truckkz.app-main-71:/layout/dialog_error_auth.xml"
     },
     {
-        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-mergeDebugResources-67:/layout/item_tovar.xml",
-        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/item_tovar.xml"
+        "merged": "product.truckkz.app-mergeDebugResources-68:/layout/fragment_favorite.xml",
+        "source": "product.truckkz.app-main-71:/layout/fragment_favorite.xml"
     },
     {
-        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-mergeDebugResources-67:/layout/fragment_chad.xml",
-        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/fragment_chad.xml"
+        "merged": "product.truckkz.app-mergeDebugResources-68:/layout/activity_favorite.xml",
+        "source": "product.truckkz.app-main-71:/layout/activity_favorite.xml"
     },
     {
-        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-mergeDebugResources-67:/layout/fragment_reset.xml",
-        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/fragment_reset.xml"
+        "merged": "product.truckkz.app-mergeDebugResources-68:/layout/fragment_my_products.xml",
+        "source": "product.truckkz.app-main-71:/layout/fragment_my_products.xml"
     },
     {
-        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-mergeDebugResources-67:/layout/dialog_error_auth.xml",
-        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/dialog_error_auth.xml"
+        "merged": "product.truckkz.app-mergeDebugResources-68:/layout/app_bar_main.xml",
+        "source": "product.truckkz.app-main-71:/layout/app_bar_main.xml"
     },
     {
-        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-mergeDebugResources-67:/layout/activity_home.xml",
-        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/activity_home.xml"
+        "merged": "product.truckkz.app-mergeDebugResources-68:/layout/fragment_home_info.xml",
+        "source": "product.truckkz.app-main-71:/layout/fragment_home_info.xml"
     },
     {
-        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-mergeDebugResources-67:/layout/activity_show_image.xml",
-        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/activity_show_image.xml"
+        "merged": "product.truckkz.app-mergeDebugResources-68:/layout/fragment_reset.xml",
+        "source": "product.truckkz.app-main-71:/layout/fragment_reset.xml"
     },
     {
-        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-mergeDebugResources-67:/layout/item_update_image_array.xml",
-        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/item_update_image_array.xml"
+        "merged": "product.truckkz.app-mergeDebugResources-68:/layout/activity_show_image.xml",
+        "source": "product.truckkz.app-main-71:/layout/activity_show_image.xml"
     },
     {
-        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-mergeDebugResources-67:/layout/fragment_splash.xml",
-        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/fragment_splash.xml"
+        "merged": "product.truckkz.app-mergeDebugResources-68:/layout/item_update_image_array.xml",
+        "source": "product.truckkz.app-main-71:/layout/item_update_image_array.xml"
     },
     {
-        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-mergeDebugResources-67:/layout/fragment_home.xml",
-        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/fragment_home.xml"
+        "merged": "product.truckkz.app-mergeDebugResources-68:/layout/dialog_user_remove.xml",
+        "source": "product.truckkz.app-main-71:/layout/dialog_user_remove.xml"
     },
     {
-        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-mergeDebugResources-67:/layout/fragment_registration.xml",
-        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/fragment_registration.xml"
+        "merged": "product.truckkz.app-mergeDebugResources-68:/layout/fragment_home.xml",
+        "source": "product.truckkz.app-main-71:/layout/fragment_home.xml"
     },
     {
-        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-mergeDebugResources-67:/layout/activity_create.xml",
-        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/activity_create.xml"
+        "merged": "product.truckkz.app-mergeDebugResources-68:/layout/fragment_create.xml",
+        "source": "product.truckkz.app-main-71:/layout/fragment_create.xml"
     },
     {
-        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-mergeDebugResources-67:/layout/fragment_authorization.xml",
-        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/fragment_authorization.xml"
+        "merged": "product.truckkz.app-mergeDebugResources-68:/layout/fragment_splash.xml",
+        "source": "product.truckkz.app-main-71:/layout/fragment_splash.xml"
     },
     {
-        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-mergeDebugResources-67:/layout/fragment_favorite.xml",
-        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/fragment_favorite.xml"
+        "merged": "product.truckkz.app-mergeDebugResources-68:/layout/fragment_profile.xml",
+        "source": "product.truckkz.app-main-71:/layout/fragment_profile.xml"
     },
     {
-        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-mergeDebugResources-67:/layout/fragment_full_registration.xml",
-        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/fragment_full_registration.xml"
+        "merged": "product.truckkz.app-mergeDebugResources-68:/layout/fragment_registration.xml",
+        "source": "product.truckkz.app-main-71:/layout/fragment_registration.xml"
     },
     {
-        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-mergeDebugResources-67:/layout/app_bar_main.xml",
-        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/app_bar_main.xml"
+        "merged": "product.truckkz.app-mergeDebugResources-68:/layout/fragment_show_image.xml",
+        "source": "product.truckkz.app-main-71:/layout/fragment_show_image.xml"
     },
     {
-        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-mergeDebugResources-67:/layout/fragment_my_ads.xml",
-        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/fragment_my_ads.xml"
+        "merged": "product.truckkz.app-mergeDebugResources-68:/layout/item_recomend.xml",
+        "source": "product.truckkz.app-main-71:/layout/item_recomend.xml"
     },
     {
-        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-mergeDebugResources-67:/layout/bottom_category.xml",
-        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/bottom_category.xml"
+        "merged": "product.truckkz.app-mergeDebugResources-68:/layout/fragment_my_ads.xml",
+        "source": "product.truckkz.app-main-71:/layout/fragment_my_ads.xml"
     },
     {
-        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-mergeDebugResources-67:/layout/activity_favorite.xml",
-        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/activity_favorite.xml"
+        "merged": "product.truckkz.app-mergeDebugResources-68:/layout/fragment_settings.xml",
+        "source": "product.truckkz.app-main-71:/layout/fragment_settings.xml"
     },
     {
-        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-mergeDebugResources-67:/layout/activity_refresh.xml",
-        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/activity_refresh.xml"
+        "merged": "product.truckkz.app-mergeDebugResources-68:/layout/fragment_update.xml",
+        "source": "product.truckkz.app-main-71:/layout/fragment_update.xml"
     },
     {
-        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-mergeDebugResources-67:/layout/fragment_my_products.xml",
-        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/fragment_my_products.xml"
-    },
-    {
-        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-mergeDebugResources-67:/layout/item_selected_category.xml",
-        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/item_selected_category.xml"
-    },
-    {
-        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-mergeDebugResources-67:/layout/fragment_home_info.xml",
-        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/fragment_home_info.xml"
-    },
-    {
-        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-mergeDebugResources-67:/layout/dialog_user_remove.xml",
-        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/dialog_user_remove.xml"
-    },
-    {
-        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-mergeDebugResources-67:/layout/item_recomend.xml",
-        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/item_recomend.xml"
-    },
-    {
-        "merged": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-mergeDebugResources-67:/layout/fragment_full_registration3.xml",
-        "source": "/Users/nurxan/.gradle/daemon/7.4/product.truckkz.app-main-70:/layout/fragment_full_registration3.xml"
-    },
-    {
-        "merged": "product.truckkz.app-mergeDebugResources-67:/layout/fragment_home.xml",
-        "source": "product.truckkz.app-main-70:/layout/fragment_home.xml"
+        "merged": "product.truckkz.app-mergeDebugResources-68:/layout/activity_create.xml",
+        "source": "product.truckkz.app-main-71:/layout/activity_create.xml"
     }
 ]

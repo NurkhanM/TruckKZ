@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "product.truckkz.app-mergeDebugResources-66:/values-uk-rUA/values-uk-rUA.xml",
+            "outputFile": "product.truckkz.app-mergeDebugResources-67:/values-uk-rUA/values-uk-rUA.xml",
             "map": [
                 {
-                    "source": "/Users/nurxan/.gradle/caches/transforms-3/bf3143788941c8b19339f674430f7c50/transformed/jetified-material-calendar-view-1.9.0-rc03/res/values-uk-rUA/values-uk-rUA.xml",
+                    "source": "/Users/nurxan/.gradle/caches/transforms-3/8d2de2caddd9ed7a5008d22824bd60f7/transformed/jetified-material-calendar-view-1.9.0-rc03/res/values-uk-rUA/values-uk-rUA.xml",
                     "from": {
                         "startLines": "2,11,25,26,27,28,29,30,31,32,33,34",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",

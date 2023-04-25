@@ -3,48 +3,37 @@ package product.truckkz.windows.newCreateProduct
 import android.annotation.SuppressLint
 import android.content.Context
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import product.truckkz.R
+import gun0912.tedimagepicker.util.ToastUtil
+import product.truckkz.databinding.ItemSelectedCategoryBinding
 import product.truckkz.`interface`.IClickListnearHomeCategory
-import kotlinx.android.synthetic.main.item_selected_category.view.*
 import product.truckkz.models.category.Children
 import kotlin.collections.ArrayList
 
 class SelectedAdapterCategory(private val mIClickListnear: IClickListnearHomeCategory) :
 
-    RecyclerView.Adapter<SelectedAdapterCategory.TovarViewHolder>() {
+    RecyclerView.Adapter<SelectedAdapterCategory.MyViewHolder>() {
     lateinit var context: Context
 
     var listTovar = ArrayList<Children>()
 
-    class TovarViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
-
-    @SuppressLint("NotifyDataSetChanged")
-    fun deleteMyEducations(position: Int) {
-        listTovar.removeAt(position)
-        notifyItemRemoved(position)
-        notifyItemRangeChanged(position, listTovar.size)
-        notifyDataSetChanged()
-    }
-
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TovarViewHolder {
-        val view =
-            LayoutInflater.from(parent.context).inflate(R.layout.item_selected_category, parent, false)
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
+        val binding = ItemSelectedCategoryBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         context = parent.context
-        return TovarViewHolder(view)
+        return MyViewHolder(binding)
     }
 
     @SuppressLint("NewApi")
-    override fun onBindViewHolder(holder: TovarViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         val currentItem = listTovar[position]
 
-        holder.itemView.text_name.text = currentItem.name
+        holder.binding.textName.text = currentItem.name
 
 //        holder.itemView.rowCostom.setOnClickListener {
 //            mIClickListnear.clickListener(currentItem.categoryId, currentItem.name)
 //        }
+
     }
 
     override fun getItemCount(): Int {
@@ -56,5 +45,8 @@ class SelectedAdapterCategory(private val mIClickListnear: IClickListnearHomeCat
         listTovar = list
         notifyDataSetChanged()
     }
+
+    inner class MyViewHolder(val binding: ItemSelectedCategoryBinding) : RecyclerView.ViewHolder(binding.root)
+
 
 }

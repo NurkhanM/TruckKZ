@@ -1,11 +1,9 @@
 package product.truckkz.windows.home
 
 import android.annotation.SuppressLint
-import android.content.ContentValues.TAG
 import android.content.Context
 import android.content.SharedPreferences
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -24,22 +22,18 @@ import product.truckkz.`interface`.IClickListnearHomeFavorite
 import product.truckkz.`interface`.IClickListnearHomeTest
 import product.truckkz.models.TestRecomendModel
 import product.truckkz.viewModels.HomeViewModels
-import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.fragment_full_registration2.*
-import kotlinx.android.synthetic.main.fragment_home.view.*
-import kotlinx.android.synthetic.main.item_tovar.view.*
 import me.farahani.spaceitemdecoration.SpaceItemDecoration
-import product.truckkz.models.category.Data
+import product.truckkz.databinding.FragmentHomeBinding
 import java.util.HashMap
-import kotlin.math.log
 
 class HomeFragment : Fragment() {
 
-    lateinit var recyclerViewRecomend: RecyclerView
+    private var _binding: FragmentHomeBinding? = null
+    private val binding get() = _binding!!
+
     lateinit var recyclerViewCategory: RecyclerView
     lateinit var recyclerViewProduct: RecyclerView
     lateinit var recyclerViewProduct2: RecyclerView
-    private lateinit var adapterRecomend: TovarAdapterRecomend
     private lateinit var adapterCategory: TovarAdapterCategory
     private lateinit var adapterProduct: TovarAdapterProduct
     private lateinit var adapterProduct2: TovarAdapterProduct2
@@ -58,9 +52,10 @@ class HomeFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         viewModel = ViewModelProvider(this)[HomeViewModels::class.java]
-        val view = inflater.inflate(R.layout.fragment_home, container, false)
-        (activity as AppCompatActivity).bottomAppBar.visibility = View.VISIBLE
-        (activity as AppCompatActivity).floatBottom.visibility = View.VISIBLE
+        _binding = FragmentHomeBinding.inflate(inflater, container, false)
+        val view = binding
+//        (activity as AppCompatActivity).bottomAppBar.visibility = View.VISIBLE
+//        (activity as AppCompatActivity).floatBottom.visibility = View.VISIBLE
 //        (activity as AppCompatActivity).mainConst.setBackgroundColor(resources.getColor(R.color.white))
 
         preferencesUSERSTATUS = (activity as AppCompatActivity).getSharedPreferences(
@@ -84,30 +79,11 @@ class HomeFragment : Fragment() {
             TestRecomendModel(R.drawable.test_image)
         )
 
-        recyclerViewRecomend = view.rv_recomend
-//        recyclerViewRecomend.addItemDecoration(SpaceItemDecoration(50, true))
-        adapterRecomend = TovarAdapterRecomend(object : IClickListnearHomeTest {
-            override fun clickListener(baseID: Int) {
-                if (!USER_STATUS) {
-                    Navigation.findNavController(view)
-                        .navigate(R.id.action_homeFragment_to_authorizationFragment)
-                } else {
-                    ALL_ID_PRODUCTS = baseID
-                    Navigation.findNavController(view)
-                        .navigate(R.id.action_homeFragment_to_homeInfoFragment)
-                }
-            }
-        })
-        recyclerViewRecomend.adapter = adapterRecomend
-        recyclerViewRecomend.setHasFixedSize(true)
-        adapterRecomend.setList(arrayRecomend)
 
 
 
 
-
-
-        recyclerViewCategory = view.rv_category
+        recyclerViewCategory = view.rvCategory
 //        recyclerViewCategory.addItemDecoration(SpaceItemDecoration(50, true))
         adapterCategory = TovarAdapterCategory(object : IClickListnearHomeTest {
             override fun clickListener(baseID: Int) {
@@ -116,8 +92,8 @@ class HomeFragment : Fragment() {
                 rfCategory()
                 recyclerViewProduct.removeAllViewsInLayout()
                 adapterProduct.notifyDataSetChanged()
-                view.rv_product.visibility = View.VISIBLE
-                view.rv_product2.visibility = View.GONE
+                view.rvProduct.visibility = View.VISIBLE
+                view.rvProduct2.visibility = View.GONE
             }
         })
         recyclerViewCategory.adapter = adapterCategory
@@ -129,7 +105,7 @@ class HomeFragment : Fragment() {
         viewModel.getCategory()
         viewModel.myCategory.observe(viewLifecycleOwner) { list ->
             if (list.isSuccessful) {
-                list.body()?.data!![0].children.let {  adapterCategory.setList(it) }
+                list.body()?.data!![0].children.let { adapterCategory.setList(it) }
             }
 
         }
@@ -138,20 +114,17 @@ class HomeFragment : Fragment() {
 
         view.tiRefreshLayout.setOnRefreshListener {
             rfCategory()
-            adapterRecomend.setList(arrayRecomend)
-            recyclerViewRecomend.removeAllViewsInLayout()
             recyclerViewCategory.removeAllViewsInLayout()
             recyclerViewProduct.removeAllViewsInLayout()
 
             adapterProduct.notifyDataSetChanged()
             adapterCategory.notifyDataSetChanged()
-            adapterRecomend.notifyDataSetChanged()
             view.tiRefreshLayout.isRefreshing = false
         }
 
 
 
-        recyclerViewProduct = view.rv_product
+        recyclerViewProduct = view.rvProduct
         recyclerViewProduct.addItemDecoration(SpaceItemDecoration(30, false))
         adapterProduct = TovarAdapterProduct(
             object : IClickListnearHomeFavorite {
@@ -160,13 +133,18 @@ class HomeFragment : Fragment() {
 //                        Navigation.findNavController(view)
 //                            .navigate(R.id.action_homeFragment_to_authorizationFragment)
 //                    } else {
-                        ALL_ID_PRODUCTS = baseID
-                        Navigation.findNavController(view)
-                            .navigate(R.id.action_homeFragment_to_homeInfoFragment)
+                    ALL_ID_PRODUCTS = baseID
+                    Navigation.findNavController(view.root)
+                        .navigate(R.id.action_homeFragment_to_homeInfoFragment)
 //                    }
                 }
 
-                override fun clickListenerFavorite(baseID: Int, v: View, boolean: Boolean, pos: Int) {
+                override fun clickListenerFavorite(
+                    baseID: Int,
+                    v: View,
+                    boolean: Boolean,
+                    pos: Int
+                ) {
 
                 }
             })
@@ -177,7 +155,7 @@ class HomeFragment : Fragment() {
 
 
 
-        recyclerViewProduct2 = view.rv_product2
+        recyclerViewProduct2 = view.rvProduct2
         recyclerViewProduct2.addItemDecoration(SpaceItemDecoration(30, false))
         adapterProduct2 = TovarAdapterProduct2(
             object : IClickListnearHomeFavorite {
@@ -186,33 +164,34 @@ class HomeFragment : Fragment() {
 //                        Navigation.findNavController(view)
 //                            .navigate(R.id.action_homeFragment_to_authorizationFragment)
 //                    } else {
-                        ALL_ID_PRODUCTS = baseID
-                        Navigation.findNavController(view)
-                            .navigate(R.id.action_homeFragment_to_homeInfoFragment)
+                    ALL_ID_PRODUCTS = baseID
+                    Navigation.findNavController(view.root)
+                        .navigate(R.id.action_homeFragment_to_homeInfoFragment)
 //                    }
                 }
 
-                override fun clickListenerFavorite(baseID: Int, v: View, boolean: Boolean, pos: Int) {
-                    if (!USER_STATUS) {
-                        Navigation.findNavController(view)
-                            .navigate(R.id.action_homeFragment_to_authorizationFragment)
-                    } else {
-                        if (!boolean) {
-                            viewModel.addFavorite("Bearer $TOKEN_USER", baseID)
-                            v.img_favorite?.setImageDrawable(
-                                requireContext().resources.getDrawable(
-                                    R.drawable.ic_favorite2
-                                )
-                            )
-                        } else {
-                            viewModel.deleteFavorite("Bearer $TOKEN_USER", baseID)
-                            v.img_favorite?.setImageDrawable(
-                                requireContext().resources.getDrawable(
-                                    R.drawable.ic_favorite
-                                )
-                            )
-                        }
-                    }
+                override fun clickListenerFavorite(
+                    baseID: Int,
+                    v: View,
+                    boolean: Boolean,
+                    pos: Int
+                ) {
+//                    if (!boolean) {
+//                        viewModel.addFavorite("Bearer $TOKEN_USER", baseID)
+//                        v.img_favorite?.setImageDrawable(
+//                            requireContext().resources.getDrawable(
+//                                R.drawable.ic_favorite2
+//                            )
+//                        )
+//                    } else {
+//                        viewModel.deleteFavorite("Bearer $TOKEN_USER", baseID)
+//                        v.img_favorite?.setImageDrawable(
+//                            requireContext().resources.getDrawable(
+//                                R.drawable.ic_favorite
+//                            )
+//                        )
+//
+//                    }
                 }
             })
 
@@ -221,14 +200,14 @@ class HomeFragment : Fragment() {
         rfProduct()
 
 
-        return view
+        return view.root
     }
 
 
-    private fun rfProduct(){
+    private fun rfProduct() {
         viewModel.getProduct2("Bearer $TOKEN_USER")
-        viewModel.myProduct2.observe(viewLifecycleOwner){ list ->
-            if (list.isSuccessful){
+        viewModel.myProduct2.observe(viewLifecycleOwner) { list ->
+            if (list.isSuccessful) {
                 list.body()?.data?.let { adapterProduct2.setList(it) }
             }
         }
@@ -239,13 +218,17 @@ class HomeFragment : Fragment() {
 
     }
 
-    private fun rfCategory(){
+    private fun rfCategory() {
         viewModel.mySortProducts2(map)
         viewModel.mySortProducts.observe(viewLifecycleOwner) {
             adapterProduct.submitData(viewLifecycleOwner.lifecycle, it)
         }
     }
 
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
 
 
 }

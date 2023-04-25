@@ -10,20 +10,13 @@ import com.bumptech.glide.Glide
 import gun0912.tedimagepicker.util.ToastUtil.context
 import product.truckkz.R
 import product.truckkz.`interface`.IClickListnearHomeFavorite
-import kotlinx.android.synthetic.main.item_tovar.view.*
 import product.truckkz.databinding.ItemTovarBinding
 import product.truckkz.models.products.index.Data
-import java.text.SimpleDateFormat
-import java.util.*
 
 class TovarAdapterProduct(private val mIClickListnear: IClickListnearHomeFavorite) :
     PagingDataAdapter<Data,
-            TovarAdapterProduct.ImageViewHolder>(diffCallback) {
+            TovarAdapterProduct.MyViewHolder>(diffCallback) {
 
-    inner class ImageViewHolder(
-        binding: ItemTovarBinding,
-    ) :
-        RecyclerView.ViewHolder(binding.root)
 
     companion object {
         val diffCallback = object : DiffUtil.ItemCallback<Data>() {
@@ -38,24 +31,21 @@ class TovarAdapterProduct(private val mIClickListnear: IClickListnearHomeFavorit
     }
 
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ImageViewHolder {
-        return ImageViewHolder(
-            ItemTovarBinding.inflate(
-                LayoutInflater.from(parent.context),
-                parent, false
-            )
-        )
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
+        val binding = ItemTovarBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        context = parent.context
+        return MyViewHolder(binding)
     }
 
 
     @SuppressLint("NewApi", "SetTextI18n", "UseCompatLoadingForDrawables")
-    override fun onBindViewHolder(holder: ImageViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         val currentItem = getItem(position)
 
         Glide.with(context).load(currentItem?.img)
             .thumbnail(Glide.with(context).load(R.drawable.loader2))
 //            .fitCenter()
-            .into(holder.itemView.item_home_images)
+            .into(holder.binding.itemHomeImages)
 
 
 
@@ -66,10 +56,10 @@ class TovarAdapterProduct(private val mIClickListnear: IClickListnearHomeFavorit
 //        }
 
 
-        holder.itemView.text_name.text = currentItem?.title
-        holder.itemView.text_price.text = currentItem?.price + " $"
+        holder.binding.textName.text = currentItem?.title
+        holder.binding.textPrice.text = currentItem?.price + " $"
 
-        holder.itemView.rowCostom.setOnClickListener {
+        holder.binding.rowCostom.setOnClickListener {
             currentItem?.id?.let { it1 -> mIClickListnear.clickListener(it1) }
         }
 //        holder.itemView.item_favorite.setOnClickListener {
@@ -79,14 +69,9 @@ class TovarAdapterProduct(private val mIClickListnear: IClickListnearHomeFavorit
 //        }
     }
 
-    @SuppressLint("SimpleDateFormat")
-    private fun getDateTime(s: String): Boolean {
-        //Сегодняшняя дата
-        val currentTime: Date = Calendar.getInstance().time
-        //Преобразование приходяшее дата
-        val dateParse = SimpleDateFormat("dd.MM.yyyy HH:mm").parse(s) as Date
 
-        return dateParse.time >= currentTime.time
-    }
+    inner class MyViewHolder(val binding: ItemTovarBinding) : RecyclerView.ViewHolder(binding.root)
+
+
 
 }

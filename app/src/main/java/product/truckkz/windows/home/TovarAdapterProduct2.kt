@@ -3,51 +3,39 @@ package product.truckkz.windows.home
 import android.annotation.SuppressLint
 import android.content.Context
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import gun0912.tedimagepicker.util.ToastUtil
 import product.truckkz.R
 import product.truckkz.`interface`.IClickListnearHomeFavorite
-import kotlinx.android.synthetic.main.item_tovar.view.*
+import product.truckkz.databinding.ItemTovarBinding
 import product.truckkz.models.products.index.Data
 import java.text.SimpleDateFormat
 import java.util.*
 
 class TovarAdapterProduct2(private val mIClickListnear: IClickListnearHomeFavorite) :
 
-    RecyclerView.Adapter<TovarAdapterProduct2.TovarViewHolder>() {
+    RecyclerView.Adapter<TovarAdapterProduct2.MyViewHolder>() {
     lateinit var context: Context
 
     var listTovar = ArrayList<Data>()
 
-    class TovarViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
 
-    @SuppressLint("NotifyDataSetChanged")
-    fun deleteMyEducations(position: Int) {
-        listTovar.removeAt(position)
-        notifyItemRemoved(position)
-        notifyItemRangeChanged(position, listTovar.size)
-        notifyDataSetChanged()
-    }
-
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TovarViewHolder {
-        val view =
-            LayoutInflater.from(parent.context).inflate(R.layout.item_tovar, parent, false)
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
+        val binding = ItemTovarBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         context = parent.context
-        return TovarViewHolder(view)
+        return MyViewHolder(binding)
     }
 
     @SuppressLint("NewApi", "SetTextI18n", "UseCompatLoadingForDrawables")
-    override fun onBindViewHolder(holder: TovarViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         val currentItem = listTovar[position]
 
         Glide.with(context).load(currentItem.img)
             .thumbnail(Glide.with(context).load(R.drawable.loader2))
 //            .fitCenter()
-            .into(holder.itemView.item_home_images)
-
-
+            .into(holder.binding.itemHomeImages)
 
 //        if (currentItem.favorite) {
 //            holder.itemView.img_favorite?.setImageDrawable(context.resources.getDrawable(R.drawable.ic_favorite2))
@@ -56,10 +44,10 @@ class TovarAdapterProduct2(private val mIClickListnear: IClickListnearHomeFavori
 //        }
 
 
-        holder.itemView.text_name.text = currentItem.title
-        holder.itemView.text_price.text = currentItem.price + " $"
+        holder.binding.textName.text = currentItem.title
+        holder.binding.textPrice.text = currentItem.price + " $"
 
-        holder.itemView.rowCostom.setOnClickListener {
+        holder.binding.rowCostom.setOnClickListener {
             mIClickListnear.clickListener(currentItem.id)
         }
 //        holder.itemView.item_favorite.setOnClickListener {
@@ -89,6 +77,8 @@ class TovarAdapterProduct2(private val mIClickListnear: IClickListnearHomeFavori
         listTovar = list
         notifyDataSetChanged()
     }
+
+    inner class MyViewHolder(val binding: ItemTovarBinding) : RecyclerView.ViewHolder(binding.root)
 
 
 }

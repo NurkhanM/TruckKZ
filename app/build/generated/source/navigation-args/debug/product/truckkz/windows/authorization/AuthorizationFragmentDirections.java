@@ -20,7 +20,7 @@ public class AuthorizationFragmentDirections {
   }
 
   @NonNull
-  public static NavDirections actionAuthorizationFragmentToHomeFragment() {
-    return new ActionOnlyNavDirections(R.id.action_authorizationFragment_to_homeFragment);
+  public static NavDirections actionAuthorizationFragmentToProfileFragment() {
+    return new ActionOnlyNavDirections(R.id.action_authorizationFragment_to_profileFragment);
   }
 }

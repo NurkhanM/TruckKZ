@@ -10,11 +10,6 @@ public class HomeFragmentDirections {
   }
 
   @NonNull
-  public static NavDirections actionHomeFragmentToAuthorizationFragment() {
-    return new ActionOnlyNavDirections(R.id.action_homeFragment_to_authorizationFragment);
-  }
-
-  @NonNull
   public static NavDirections actionHomeFragmentToHomeInfoFragment() {
     return new ActionOnlyNavDirections(R.id.action_homeFragment_to_homeInfoFragment);
   }

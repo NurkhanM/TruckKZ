@@ -6,21 +6,18 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.Navigation
-import com.bumptech.glide.Glide
-import product.truckkz.FormFullRegistration.idUser
 import product.truckkz.R
 import product.truckkz.UserDate.TOKEN_USER
-import product.truckkz.UserDate.USER_STATUS_FULL
 import product.truckkz.viewModels.HomeViewModels
 import product.truckkz.windows.refresh.RefreshActivity
-import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.fragment_profile.view.*
+import product.truckkz.databinding.FragmentProfileBinding
 
 class ProfileFragment : Fragment() {
+
+    private var _binding: FragmentProfileBinding? = null
+    private val binding get() = _binding!!
 
     private lateinit var viewModel: HomeViewModels
 
@@ -31,10 +28,11 @@ class ProfileFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         viewModel = ViewModelProvider(this)[HomeViewModels::class.java]
-        val view = inflater.inflate(R.layout.fragment_profile, container, false)
+        _binding = FragmentProfileBinding.inflate(inflater, container, false)
+        val view = binding
 
-        (activity as AppCompatActivity).bottomAppBar.visibility = View.VISIBLE
-        (activity as AppCompatActivity).floatBottom.visibility = View.VISIBLE
+//        (activity as AppCompatActivity).bottomAppBar.visibility = View.VISIBLE
+//        (activity as AppCompatActivity).floatBottom.visibility = View.VISIBLE
 
         if (TOKEN_USER == "") {
             view.isProfileLiner.visibility = View.GONE
@@ -79,21 +77,21 @@ class ProfileFragment : Fragment() {
 
 
         view.textMyAds.setOnClickListener {
-            Navigation.findNavController(view)
+            Navigation.findNavController(view.root)
                 .navigate(R.id.action_profileFragment_to_myAdsFragment)
         }
 
         view.textSettings.setOnClickListener {
-            Navigation.findNavController(view)
+            Navigation.findNavController(view.root)
                 .navigate(R.id.action_profileFragment_to_settingsFragment)
         }
 
-        view.nextFullRegister.setOnClickListener {
+//        view.nextFullRegister.setOnClickListener {
 //                Navigation.findNavController(view)
 //                    .navigate(R.id.action_profileFragment_to_authorizationFragment)
-            Navigation.findNavController(view)
-                .navigate(R.id.action_profileFragment_to_fullRegistrationFragment)
-        }
+//            Navigation.findNavController(view)
+//                .navigate(R.id.action_profileFragment_to_fullRegistrationFragment)
+//        }
 
         view.nextExitUser.setOnClickListener {
             val intent = Intent(requireContext(), RefreshActivity::class.java)
@@ -103,16 +101,12 @@ class ProfileFragment : Fragment() {
         }
 
 
-        return view
+        return view.root
     }
 
-    private fun stateFullRegister(v: View){
-
-        if (USER_STATUS_FULL) {
-            v.nextFullRegister.visibility = View.GONE
-        } else {
-            v.nextFullRegister.visibility = View.VISIBLE
-        }
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 
 }

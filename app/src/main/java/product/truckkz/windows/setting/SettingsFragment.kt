@@ -12,9 +12,12 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import product.truckkz.R
-import kotlinx.android.synthetic.main.fragment_settings.view.*
+import product.truckkz.databinding.FragmentSettingsBinding
 
 class SettingsFragment : Fragment() {
+
+    private var _binding: FragmentSettingsBinding? = null
+    private val binding get() = _binding!!
 
     lateinit var dialog: Dialog
 
@@ -23,7 +26,8 @@ class SettingsFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val view = inflater.inflate(R.layout.fragment_settings, container, false)
+        _binding = FragmentSettingsBinding.inflate(inflater, container, false)
+        val view = binding
         dialog = Dialog(requireContext())
 
 
@@ -32,7 +36,7 @@ class SettingsFragment : Fragment() {
         }
 
 
-        return view
+        return view.root
     }
 
     private fun alertDialogCancel() {
@@ -56,5 +60,11 @@ class SettingsFragment : Fragment() {
         dialog.show()
 
     }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
+
 
 }

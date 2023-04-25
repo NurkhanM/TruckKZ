@@ -12,31 +12,30 @@ import android.view.ViewGroup
 import android.view.WindowInsetsController.APPEARANCE_LIGHT_STATUS_BARS
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.Navigation
-import product.truckkz.FormFullRegistration.idUser
 import product.truckkz.R
 import product.truckkz.UserDate.APP_PREFERENCES
 import product.truckkz.UserDate.KEY_TOKEN
-import product.truckkz.UserDate.KEY_USER_ID
-import product.truckkz.UserDate.KEY_USER_STATUS_FULL
 import product.truckkz.UserDate.TOKEN_USER
-import product.truckkz.UserDate.USER_STATUS_FULL
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
+import product.truckkz.databinding.FragmentSplashBinding
 
 class SplashFragment : Fragment() {
 
+    private var _binding: FragmentSplashBinding? = null
+    private val binding get() = _binding!!
+
     private lateinit var preferencesTOKEN: SharedPreferences
-    private lateinit var preferencesUserStatus: SharedPreferences
-    private lateinit var preferencesUserId: SharedPreferences
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val view = inflater.inflate(R.layout.fragment_splash, container, false)
+        _binding = FragmentSplashBinding.inflate(inflater, container, false)
+        val view = binding
 //        (activity as AppCompatActivity).window.statusBarColor = ContextCompat.getColor(requireContext(),R.color.white)
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
             activity?.window!!.decorView.windowInsetsController!!.setSystemBarsAppearance(0, APPEARANCE_LIGHT_STATUS_BARS)
@@ -47,28 +46,16 @@ class SplashFragment : Fragment() {
             Context.MODE_PRIVATE
         )
 
-        preferencesUserStatus = (activity as AppCompatActivity).getSharedPreferences(
-            APP_PREFERENCES,
-            Context.MODE_PRIVATE
-        )
-
-        preferencesUserId = (activity as AppCompatActivity).getSharedPreferences(
-            APP_PREFERENCES,
-            Context.MODE_PRIVATE
-        )
-
         TOKEN_USER = preferencesTOKEN.getString(KEY_TOKEN, "").toString()
-        USER_STATUS_FULL = preferencesUserStatus.getBoolean(KEY_USER_STATUS_FULL, false)
-        idUser = preferencesUserId.getString(KEY_USER_ID, "15").toString()
-
 
         // Метод для показа полно экранного режима
         fullScreen()
         CoroutineScope(Dispatchers.Main).launch {
             delay(2000)
-            Navigation.findNavController(view).navigate(R.id.action_splashFragment_to_homeFragment)
+            Navigation.findNavController(view.root).navigate(R.id.action_splashFragment_to_homeFragment)
         }
-        return view
+
+        return view.root
     }
 
     @SuppressLint("ObsoleteSdkInt")

@@ -15,20 +15,21 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.fragment_home_info.view.*
 import product.truckkz.DataAllProducts.ALL_ID_PRODUCTS
 import product.truckkz.DataAllProducts.IMAGES_INFO_ARRAY
 import product.truckkz.R
 import product.truckkz.UserDate
+import product.truckkz.databinding.FragmentHomeInfoBinding
 import product.truckkz.`interface`.IClickListnearUpdateImage
 import product.truckkz.models.get.productInfo.Images
 import product.truckkz.viewModels.HomeViewModels
 import product.truckkz.windows.home.showImage.ShowImageActivity
-import kotlin.reflect.jvm.internal.impl.builtins.StandardNames.FqNames.number
 
 
 class HomeInfoFragment : Fragment() {
+
+    private var _binding: FragmentHomeInfoBinding? = null
+    private val binding get() = _binding!!
 
     lateinit var recyclerView: RecyclerView
     lateinit var adapter: UpdateDataAdapter
@@ -46,10 +47,11 @@ class HomeInfoFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         viewModels = ViewModelProvider(this)[HomeViewModels::class.java]
-        val view = inflater.inflate(R.layout.fragment_home_info, container, false)
+        _binding = FragmentHomeInfoBinding.inflate(inflater, container, false)
+        val view = binding
 
-        (activity as AppCompatActivity).bottomAppBar.visibility = View.VISIBLE
-        (activity as AppCompatActivity).floatBottom.visibility = View.VISIBLE
+//        (activity as AppCompatActivity).bottomAppBar.visibility = View.VISIBLE
+//        (activity as AppCompatActivity).floatBottom.visibility = View.VISIBLE
 
         viewModels.getProductInfo("Bearer ${UserDate.TOKEN_USER}", ALL_ID_PRODUCTS)
         viewModels.myProductInfo.observe(viewLifecycleOwner) { list ->
@@ -92,7 +94,7 @@ class HomeInfoFragment : Fragment() {
                 Glide.with(requireContext()).load(list.body()?.data?.img)
                     .thumbnail(Glide.with(requireContext()).load(R.drawable.loader))
                     .fitCenter()
-                    .into(view.image_show)
+                    .into(view.imageShow)
                 adapter.setListImage(IMAGES_INFO_ARRAY)
 
             }
@@ -103,7 +105,7 @@ class HomeInfoFragment : Fragment() {
             override fun clickListener(baseID: String, index: Int) {
                 Glide.with(requireContext()).load(baseID)
                     .thumbnail(Glide.with(requireContext()).load(R.drawable.loader))
-                    .fitCenter().into(view.image_show)
+                    .fitCenter().into(view.imageShow)
                 indexShow = index
             }
 
@@ -113,7 +115,7 @@ class HomeInfoFragment : Fragment() {
 
 
 
-        view.image_show.setOnClickListener {
+        view.imageShow.setOnClickListener {
             val intent = Intent(requireActivity(), ShowImageActivity::class.java)
             intent.putExtra("index", indexShow)
             startActivity(intent)
@@ -146,12 +148,6 @@ class HomeInfoFragment : Fragment() {
 //            }
         }
 
-        view.btnMessage.setOnClickListener {
-            val url = "https://api.whatsapp.com/send?phone=$callInfo"
-            val i = Intent(Intent.ACTION_VIEW)
-            i.data = Uri.parse(url)
-            startActivity(i)
-        }
 
         view.fragmentContainerUpdate.setOnScrollChangeListener(NestedScrollView.OnScrollChangeListener { _, _, scrollY, _, _ ->
             if (scrollY > 650) {
@@ -171,7 +167,7 @@ class HomeInfoFragment : Fragment() {
             activity?.onBackPressed()
         }
 
-        return view
+        return view.root
     }
 
     private fun callPhone() {
@@ -183,4 +179,10 @@ class HomeInfoFragment : Fragment() {
     private fun removeStartEnDChars(str: String): String {
         return str.substring(1, str.length - 1)
     }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
+
 }

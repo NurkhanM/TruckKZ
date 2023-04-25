@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "product.truckkz.app-mergeDebugResources-66:/values-nl-rNL/values-nl-rNL.xml",
+            "outputFile": "product.truckkz.app-mergeDebugResources-67:/values-nl-rNL/values-nl-rNL.xml",
             "map": [
                 {
-                    "source": "/Users/nurxan/.gradle/caches/transforms-3/bf3143788941c8b19339f674430f7c50/transformed/jetified-material-calendar-view-1.9.0-rc03/res/values-nl-rNL/values-nl-rNL.xml",
+                    "source": "/Users/nurxan/.gradle/caches/transforms-3/8d2de2caddd9ed7a5008d22824bd60f7/transformed/jetified-material-calendar-view-1.9.0-rc03/res/values-nl-rNL/values-nl-rNL.xml",
                     "from": {
                         "startLines": "2,16,17,18,19,20,21,22,23,24,25",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",

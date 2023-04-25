@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -45,13 +44,7 @@ public final class FragmentHomeBinding implements ViewBinding {
   public final RecyclerView rvProduct2;
 
   @NonNull
-  public final RecyclerView rvRecomend;
-
-  @NonNull
   public final SwipeRefreshLayout tiRefreshLayout;
-
-  @NonNull
-  public final TextView txtTitleRecomend;
 
   @NonNull
   public final ConstraintLayout updateToolbar;
@@ -60,8 +53,7 @@ public final class FragmentHomeBinding implements ViewBinding {
       @NonNull ImageView clickUpdateBackCard, @NonNull NestedScrollView fragmentContainerUpdate,
       @NonNull ConstraintLayout homeToolbar, @NonNull ImageView imgAuthHome,
       @NonNull RecyclerView rvCategory, @NonNull RecyclerView rvProduct,
-      @NonNull RecyclerView rvProduct2, @NonNull RecyclerView rvRecomend,
-      @NonNull SwipeRefreshLayout tiRefreshLayout, @NonNull TextView txtTitleRecomend,
+      @NonNull RecyclerView rvProduct2, @NonNull SwipeRefreshLayout tiRefreshLayout,
       @NonNull ConstraintLayout updateToolbar) {
     this.rootView = rootView;
     this.clickUpdateBackCard = clickUpdateBackCard;
@@ -71,9 +63,7 @@ public final class FragmentHomeBinding implements ViewBinding {
     this.rvCategory = rvCategory;
     this.rvProduct = rvProduct;
     this.rvProduct2 = rvProduct2;
-    this.rvRecomend = rvRecomend;
     this.tiRefreshLayout = tiRefreshLayout;
-    this.txtTitleRecomend = txtTitleRecomend;
     this.updateToolbar = updateToolbar;
   }
 
@@ -146,21 +136,9 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.rv_recomend;
-      RecyclerView rvRecomend = ViewBindings.findChildViewById(rootView, id);
-      if (rvRecomend == null) {
-        break missingId;
-      }
-
       id = R.id.tiRefreshLayout;
       SwipeRefreshLayout tiRefreshLayout = ViewBindings.findChildViewById(rootView, id);
       if (tiRefreshLayout == null) {
-        break missingId;
-      }
-
-      id = R.id.txt_title_recomend;
-      TextView txtTitleRecomend = ViewBindings.findChildViewById(rootView, id);
-      if (txtTitleRecomend == null) {
         break missingId;
       }
 
@@ -172,7 +150,7 @@ public final class FragmentHomeBinding implements ViewBinding {
 
       return new FragmentHomeBinding((ConstraintLayout) rootView, clickUpdateBackCard,
           fragmentContainerUpdate, homeToolbar, imgAuthHome, rvCategory, rvProduct, rvProduct2,
-          rvRecomend, tiRefreshLayout, txtTitleRecomend, updateToolbar);
+          tiRefreshLayout, updateToolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

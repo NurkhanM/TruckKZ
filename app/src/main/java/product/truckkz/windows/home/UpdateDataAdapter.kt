@@ -7,42 +7,39 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import gun0912.tedimagepicker.util.ToastUtil
 import product.truckkz.R
+import product.truckkz.databinding.ItemUpdateImageArrayBinding
 import product.truckkz.`interface`.IClickListnearUpdateImage
 import product.truckkz.models.get.productInfo.Images
-import kotlinx.android.synthetic.main.item_update_image_array.view.*
 
 class UpdateDataAdapter(private val mIClickListnear: IClickListnearUpdateImage) :
-    RecyclerView.Adapter<UpdateDataAdapter.UpdateDataAdapterHolder>() {
+    RecyclerView.Adapter<UpdateDataAdapter.MyViewHolder>() {
     lateinit var context: Context
     private var focusedPosition = -1
 
     private var listImage = emptyList<Images>()
 
-    class UpdateDataAdapterHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
-
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): UpdateDataAdapterHolder {
-        val view =
-            LayoutInflater.from(parent.context)
-                .inflate(R.layout.item_update_image_array, parent, false)
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
+        val binding = ItemUpdateImageArrayBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         context = parent.context
-        return UpdateDataAdapterHolder(view)
+        return MyViewHolder(binding)
     }
 
     @SuppressLint("NotifyDataSetChanged")
     override fun onBindViewHolder(
-        holder: UpdateDataAdapterHolder,
+        holder: MyViewHolder,
         @SuppressLint("RecyclerView") position: Int,
     ) {
         val currentItemImages = listImage[position]
 
         Glide.with(context).load(currentItemImages.imageUrl)
             .thumbnail(Glide.with(context).load(R.drawable.loader2))
-            .fitCenter().into(holder.itemView.image_array_update)
+            .fitCenter().into(holder.binding.imageArrayUpdate)
 
-        holder.itemView.image_array_update.setOnClickListener {
+        holder.binding.imageArrayUpdate.setOnClickListener {
             mIClickListnear.clickListener(currentItemImages.imageUrl, position)
-            holder.itemView.item_image_focus.visibility = View.VISIBLE
+            holder.binding.itemImageFocus.visibility = View.VISIBLE
             if (focusedPosition != position) {
                 notifyItemChanged(position)
                 focusedPosition = position
@@ -51,16 +48,14 @@ class UpdateDataAdapter(private val mIClickListnear: IClickListnearUpdateImage) 
         }
 
         if (focusedPosition == -1) {
-            holder.itemView.item_image_focus.visibility = View.GONE
+            holder.binding.itemImageFocus.visibility = View.GONE
         } else {
             if (focusedPosition == position) {
-                holder.itemView.item_image_focus.visibility = View.VISIBLE
+                holder.binding.itemImageFocus.visibility = View.VISIBLE
             } else {
-                holder.itemView.item_image_focus.visibility = View.GONE
+                holder.binding.itemImageFocus.visibility = View.GONE
             }
         }
-
-
     }
 
     override fun getItemCount(): Int {
@@ -72,4 +67,7 @@ class UpdateDataAdapter(private val mIClickListnear: IClickListnearUpdateImage) 
         listImage = list
         notifyDataSetChanged()
     }
+
+    inner class MyViewHolder(val binding: ItemUpdateImageArrayBinding) : RecyclerView.ViewHolder(binding.root)
+
 }

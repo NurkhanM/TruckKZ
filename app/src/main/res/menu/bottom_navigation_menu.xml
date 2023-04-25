@@ -14,7 +14,7 @@
 
 
     <item
-        android:id="@+id/profileFragment"
+        android:id="@+id/authorizationFragment"
         app:showAsAction="ifRoom"
         android:icon="@drawable/ic_profile_icon"
         android:title="Профиль" />

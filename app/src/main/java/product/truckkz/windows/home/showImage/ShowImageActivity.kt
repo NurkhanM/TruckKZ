@@ -7,24 +7,27 @@ import androidx.fragment.app.FragmentTransaction
 import androidx.lifecycle.Observer
 import product.truckkz.NetworkConnection
 import product.truckkz.R
-import kotlinx.android.synthetic.main.activity_show_image.*
+import product.truckkz.databinding.ActivityShowImageBinding
 
 class ShowImageActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityShowImageBinding
 
     private lateinit var showFragment: ShowImageFragment
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_show_image)
+        binding = ActivityShowImageBinding.inflate(layoutInflater)
+        setContentView(binding.root)
         val networkConnection = NetworkConnection(applicationContext)
 
         networkConnection.observe(this, Observer { isConnected ->
             if (isConnected){
-                ShowDisconnect.visibility = View.GONE
-                ShowConnect.visibility = View.VISIBLE
+                binding.ShowDisconnect.visibility = View.GONE
+                binding.ShowConnect.visibility = View.VISIBLE
             } else {
-                ShowDisconnect.visibility = View.VISIBLE
-                ShowConnect.visibility = View.GONE
+                binding.ShowDisconnect.visibility = View.VISIBLE
+                binding.ShowConnect.visibility = View.GONE
             }
         })
 

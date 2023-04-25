@@ -5,9 +5,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import product.truckkz.R
+import product.truckkz.databinding.FragmentMyAdsBinding
 
 class MyAdsFragment : Fragment() {
+
+    private var _binding: FragmentMyAdsBinding? = null
+    private val binding get() = _binding!!
 
 
     override fun onCreateView(
@@ -15,8 +18,16 @@ class MyAdsFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_my_ads, container, false)
+        _binding = FragmentMyAdsBinding.inflate(inflater, container, false)
+
+
+        return binding.root
     }
 
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
 
 }

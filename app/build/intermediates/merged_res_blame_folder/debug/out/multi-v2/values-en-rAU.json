@@ -1,27 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "product.truckkz.app-mergeDebugResources-66:/values-en-rAU/values-en-rAU.xml",
+            "outputFile": "product.truckkz.app-mergeDebugResources-67:/values-en-rAU/values-en-rAU.xml",
             "map": [
                 {
-                    "source": "/Users/nurxan/.gradle/caches/transforms-3/9e5535ba6053757e49018dfbf40329c9/transformed/navigation-ui-2.5.2/res/values-en-rAU/values-en-rAU.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,161",
-                        "endColumns": "105,116",
-                        "endOffsets": "156,273"
-                    },
-                    "to": {
-                        "startLines": "29,30",
-                        "startColumns": "4,4",
-                        "startOffsets": "2762,2868",
-                        "endColumns": "105,116",
-                        "endOffsets": "2863,2980"
-                    }
-                },
-                {
-                    "source": "/Users/nurxan/.gradle/caches/transforms-3/cb864f3364999d296f9d07be976b5875/transformed/appcompat-1.5.1/res/values-en-rAU/values-en-rAU.xml",
+                    "source": "/Users/nurxan/.gradle/caches/transforms-3/8a1f6e53d249f8f04198c5f0d9f5d9c5/transformed/appcompat-1.6.1/res/values-en-rAU/values-en-rAU.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -38,7 +21,24 @@
                     }
                 },
                 {
-                    "source": "/Users/nurxan/.gradle/caches/transforms-3/5d5aac20f6aabe30089de33c19ae87e0/transformed/core-1.9.0/res/values-en-rAU/values-en-rAU.xml",
+                    "source": "/Users/nurxan/.gradle/caches/transforms-3/675e84a9196f802235e22e0a7bd41be9/transformed/navigation-ui-2.5.3/res/values-en-rAU/values-en-rAU.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,161",
+                        "endColumns": "105,116",
+                        "endOffsets": "156,273"
+                    },
+                    "to": {
+                        "startLines": "29,30",
+                        "startColumns": "4,4",
+                        "startOffsets": "2762,2868",
+                        "endColumns": "105,116",
+                        "endOffsets": "2863,2980"
+                    }
+                },
+                {
+                    "source": "/Users/nurxan/.gradle/caches/transforms-3/c961de5340f0768fc0218bac6037f1a9/transformed/core-1.9.0/res/values-en-rAU/values-en-rAU.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

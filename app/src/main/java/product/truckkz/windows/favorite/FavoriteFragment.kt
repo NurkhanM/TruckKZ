@@ -11,16 +11,18 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import product.truckkz.DataAllProducts.ALL_ID_PRODUCTS
-import kotlinx.android.synthetic.main.fragment_favorite.view.*
-import kotlinx.android.synthetic.main.item_tovar.view.*
 import me.farahani.spaceitemdecoration.SpaceItemDecoration
 import product.truckkz.R
 import product.truckkz.UserDate
+import product.truckkz.databinding.FragmentFavoriteBinding
 import product.truckkz.`interface`.IClickListnearHomeFavorite
 import product.truckkz.viewModels.HomeViewModels
 import product.truckkz.windows.home.TovarAdapterProduct
 
 class FavoriteFragment : Fragment() {
+
+    private var _binding: FragmentFavoriteBinding? = null
+    private val binding get() = _binding!!
 
     private lateinit var viewModel: HomeViewModels
     lateinit var recyclerViewProduct: RecyclerView
@@ -33,39 +35,40 @@ class FavoriteFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         viewModel = ViewModelProvider(this)[HomeViewModels::class.java]
-        val view =  inflater.inflate(R.layout.fragment_favorite, container, false)
+        _binding = FragmentFavoriteBinding.inflate(inflater, container, false)
+        val view = binding
 
-        recyclerViewProduct = view.rv_favorite
+        recyclerViewProduct = view.rvFavorite
         recyclerViewProduct.addItemDecoration(SpaceItemDecoration(30, false))
         adapterProduct = TovarAdapterProduct(
             object : IClickListnearHomeFavorite {
                 override fun clickListener(baseID: Int) {
-                    if (!UserDate.USER_STATUS) {
-                        Navigation.findNavController(view)
-                            .navigate(R.id.action_homeFragment_to_authorizationFragment)
-                    } else {
-                       ALL_ID_PRODUCTS = baseID
-                        Navigation.findNavController(view)
-                            .navigate(R.id.action_homeFragment_to_homeInfoFragment)
-                    }
+                    ALL_ID_PRODUCTS = baseID
+                    Navigation.findNavController(view.root)
+                        .navigate(R.id.action_homeFragment_to_homeInfoFragment)
                 }
 
                 @SuppressLint("UseCompatLoadingForDrawables", "NotifyDataSetChanged")
-                override fun clickListenerFavorite(baseID: Int, v: View, boolean: Boolean, pos: Int) {
+                override fun clickListenerFavorite(
+                    baseID: Int,
+                    v: View,
+                    boolean: Boolean,
+                    pos: Int
+                ) {
                     if (!boolean) {
-                        viewModel.addFavorite("Bearer ${UserDate.TOKEN_USER}", baseID)
-                        v.img_favorite?.setImageDrawable(
-                            requireContext().resources.getDrawable(
-                                R.drawable.ic_favorite2
-                            )
-                        )
+//                        viewModel.addFavorite("Bearer ${UserDate.TOKEN_USER}", baseID)
+//                        v.img_favorite?.setImageDrawable(
+//                            requireContext().resources.getDrawable(
+//                                R.drawable.ic_favorite2
+//                            )
+//                        )
                     } else {
-                        viewModel.deleteFavorite("Bearer ${UserDate.TOKEN_USER}", baseID)
-                        v.img_favorite?.setImageDrawable(
-                            requireContext().resources.getDrawable(
-                                R.drawable.ic_favorite
-                            )
-                        )
+//                        viewModel.deleteFavorite("Bearer ${UserDate.TOKEN_USER}", baseID)
+//                        v.img_favorite?.setImageDrawable(
+//                            requireContext().resources.getDrawable(
+//                                R.drawable.ic_favorite
+//                            )
+//                        )
                     }
                     Toast.makeText(requireContext(), "Удалено", Toast.LENGTH_SHORT).show()
 //                    adapterProduct.deleteMyEducations(pos)
@@ -76,7 +79,7 @@ class FavoriteFragment : Fragment() {
         recyclerViewProduct.setHasFixedSize(true)
 
 
-        return view
+        return view.root
     }
 
 
@@ -87,6 +90,11 @@ class FavoriteFragment : Fragment() {
         viewModel.myGetProduct.observe(viewLifecycleOwner) {
             adapterProduct.submitData(viewLifecycleOwner.lifecycle, it)
         }
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 
 }

@@ -28,17 +28,14 @@
             android:id="@+id/action_authorizationFragment_to_resetFragment"
             app:destination="@id/resetFragment" />
         <action
-            android:id="@+id/action_authorizationFragment_to_homeFragment"
-            app:destination="@id/homeFragment" />
+            android:id="@+id/action_authorizationFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
     </fragment>
     <fragment
         android:id="@+id/homeFragment"
         android:name="product.truckkz.windows.home.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
-        <action
-            android:id="@+id/action_homeFragment_to_authorizationFragment"
-            app:destination="@id/authorizationFragment" />
         <action
             android:id="@+id/action_homeFragment_to_homeInfoFragment"
             app:destination="@id/homeInfoFragment" />
@@ -62,7 +59,7 @@
         android:id="@+id/chadFragment"
         android:name="product.truckkz.windows.chad.ChadFragment"
         android:label="fragment_chad"
-        tools:layout="@layout/fragment_chad" />
+        tools:layout="@layout/fragment_chat" />
     <fragment
         android:id="@+id/profileFragment"
         android:name="product.truckkz.windows.profile.ProfileFragment"
@@ -74,25 +71,12 @@
         <action
             android:id="@+id/action_profileFragment_to_settingsFragment"
             app:destination="@id/settingsFragment" />
-        <action
-            android:id="@+id/action_profileFragment_to_fullRegistrationFragment"
-            app:destination="@id/fullRegistrationFragment" />
-        <action
-            android:id="@+id/action_profileFragment_to_authorizationFragment"
-            app:destination="@id/authorizationFragment" />
     </fragment>
     <fragment
         android:id="@+id/homeInfoFragment"
         android:name="product.truckkz.windows.home.HomeInfoFragment"
         android:label="fragment_home_info"
-        tools:layout="@layout/fragment_home_info" >
-        <action
-            android:id="@+id/action_homeInfoFragment_to_fullRegistrationFragment"
-            app:destination="@id/fullRegistrationFragment" />
-        <action
-            android:id="@+id/action_homeInfoFragment_to_calendarFragment"
-            app:destination="@id/calendarFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_home_info" />
     <fragment
         android:id="@+id/myAdsFragment"
         android:name="product.truckkz.windows.profile.myAds.MyAdsFragment"
@@ -108,36 +92,4 @@
         android:name="product.truckkz.windows.favorite.FavoriteFragment"
         android:label="fragment_favorite"
         tools:layout="@layout/fragment_favorite" />
-    <fragment
-        android:id="@+id/fullRegistrationFragment"
-        android:name="product.truckkz.windows.authorization.fullRegistration.FullRegistrationFragment"
-        android:label="fragment_full_registration"
-        tools:layout="@layout/fragment_full_registration" >
-        <action
-            android:id="@+id/action_fullRegistrationFragment_to_fullRegistrationFragment2"
-            app:destination="@id/fullRegistrationFragment2" />
-    </fragment>
-    <fragment
-        android:id="@+id/fullRegistrationFragment2"
-        android:name="product.truckkz.windows.authorization.fullRegistration.FullRegistrationFragment2"
-        android:label="FullRegistrationFragment2"
-        tools:layout="@layout/fragment_full_registration2">
-        <action
-            android:id="@+id/action_fullRegistrationFragment2_to_fullRegistrationFragment3"
-            app:destination="@id/fullRegistrationFragment3" />
-    </fragment>
-    <fragment
-        android:id="@+id/fullRegistrationFragment3"
-        android:name="product.truckkz.windows.authorization.fullRegistration.FullRegistrationFragment3"
-        android:label="FullRegistrationFragment3"
-        tools:layout="@layout/fragment_full_registration3">
-        <action
-            android:id="@+id/action_fullRegistrationFragment3_to_homeFragment"
-            app:destination="@id/homeFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/calendarFragment"
-        android:name="product.truckkz.windows.calendar.CalendarFragment"
-        android:label="fragment_calendar"
-        tools:layout="@layout/fragment_calendar" />
 </navigation>

@@ -22,8 +22,6 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import product.truckkz.FormCreateProducts.ID_CATEGORY_SELECTED
-import product.truckkz.FormCreateProducts.category_Name
 import product.truckkz.R
 import product.truckkz.UserDate.TOKEN_USER
 import product.truckkz.`interface`.IClickListnearHomeCategory
@@ -31,34 +29,35 @@ import product.truckkz.viewModels.HomeViewModels
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.gson.JsonObject
 import gun0912.tedimagepicker.builder.TedImagePicker
-import kotlinx.android.synthetic.main.fragment_create.view.*
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import okhttp3.MultipartBody
 import okhttp3.RequestBody.Companion.toRequestBody
 import org.json.JSONObject
+import product.truckkz.DataAllProducts.ID_CATEGORY_SELECTED
+import product.truckkz.databinding.FragmentCreateBinding
 import java.io.ByteArrayOutputStream
 
 
 class CreateFragment : Fragment() {
 
-//    private lateinit var recyclerViewCategory: RecyclerView
-
+    private var _binding: FragmentCreateBinding? = null
+    private val binding get() = _binding!!
 
     private lateinit var viewModel: HomeViewModels
     private val edString = ArrayList<String>()
     private val edValue = ArrayList<EditText>()
     private val oneJSONObject = JsonObject()
     private val oneJSONObject2 = JsonObject()
-    var filePart1: MultipartBody.Part? = null
-    var filePart2: MultipartBody.Part? = null
-    var filePart3: MultipartBody.Part? = null
-    var filePart4: MultipartBody.Part? = null
-    var filePart5: MultipartBody.Part? = null
-    var shaffle = ArrayList<Int>()
-    var filePartAll = ArrayList<MultipartBody.Part?>()
-    var chet = 1
-    lateinit var dialog: Dialog
-    lateinit var dialog2: Dialog
+    private var filePart1: MultipartBody.Part? = null
+    private var filePart2: MultipartBody.Part? = null
+    private var filePart3: MultipartBody.Part? = null
+    private var filePart4: MultipartBody.Part? = null
+    private var filePart5: MultipartBody.Part? = null
+    private var shaffle = ArrayList<Int>()
+    private var filePartAll = ArrayList<MultipartBody.Part?>()
+    private var chet = 1
+    private lateinit var dialog: Dialog
+    private lateinit var dialog2: Dialog
     lateinit var dialogSheet: BottomSheetDialog
 
 
@@ -68,7 +67,8 @@ class CreateFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         viewModel = ViewModelProvider(this)[HomeViewModels::class.java]
-        val view = inflater.inflate(R.layout.fragment_create, container, false)
+        _binding = FragmentCreateBinding.inflate(inflater, container, false)
+        val view = binding
 
         dialog = Dialog(requireContext())
         dialog2 = Dialog(requireContext())
@@ -77,15 +77,15 @@ class CreateFragment : Fragment() {
 
 
 
-        view.cardImage_Add.setOnClickListener {
+        view.cardImageAdd.setOnClickListener {
 
             chet = stateIntSHAFFLE()
             when (chet) {
-                1 -> filePart1 = setNormalSingleButton(view.image_1, view.cardImage_1)
-                2 -> filePart2 = setNormalSingleButton(view.image_2, view.cardImage_2)
-                3 -> filePart3 = setNormalSingleButton(view.image_3, view.cardImage_3)
-                4 -> filePart4 = setNormalSingleButton(view.image_4, view.cardImage_4)
-                5 -> filePart5 = setNormalSingleButton(view.image_5, view.cardImage_5)
+                1 -> filePart1 = setNormalSingleButton(view.image1, view.cardImage1)
+                2 -> filePart2 = setNormalSingleButton(view.image2, view.cardImage2)
+                3 -> filePart3 = setNormalSingleButton(view.image3, view.cardImage3)
+                4 -> filePart4 = setNormalSingleButton(view.image4, view.cardImage4)
+                5 -> filePart5 = setNormalSingleButton(view.image5, view.cardImage5)
                 else -> Toast.makeText(
                     requireContext(),
                     "Максимальная колличества 5",
@@ -98,36 +98,36 @@ class CreateFragment : Fragment() {
 
 
 
-        view.imageDelete_1.setOnClickListener {
-            view.cardImage_1.visibility = View.GONE
+        view.imageDelete1.setOnClickListener {
+            view.cardImage1.visibility = View.GONE
             filePart1 = null
             chet--
             shaffle = removeItem(shaffle, 1)
             filePartAll.removeAt(0)
         }
-        view.imageDelete_2.setOnClickListener {
-            view.cardImage_2.visibility = View.GONE
+        view.imageDelete2.setOnClickListener {
+            view.cardImage2.visibility = View.GONE
             filePart2 = null
             chet--
             shaffle = removeItem(shaffle, 2)
             filePartAll.removeAt(1)
         }
-        view.imageDelete_3.setOnClickListener {
-            view.cardImage_3.visibility = View.GONE
+        view.imageDelete3.setOnClickListener {
+            view.cardImage3.visibility = View.GONE
             filePart3 = null
             chet--
             shaffle = removeItem(shaffle, 3)
             filePartAll.removeAt(2)
         }
-        view.imageDelete_4.setOnClickListener {
-            view.cardImage_4.visibility = View.GONE
+        view.imageDelete4.setOnClickListener {
+            view.cardImage4.visibility = View.GONE
             filePart4 = null
             chet--
             shaffle = removeItem(shaffle, 4)
             filePartAll.removeAt(3)
         }
-        view.imageDelete_5.setOnClickListener {
-            view.cardImage_5.visibility = View.GONE
+        view.imageDelete5.setOnClickListener {
+            view.cardImage5.visibility = View.GONE
             filePart5 = null
             chet--
             shaffle = removeItem(shaffle, 5)
@@ -137,7 +137,7 @@ class CreateFragment : Fragment() {
 
         view.nextSelectedCategory.setOnClickListener {
 //            Navigation.findNavController(view).navigate(R.id.action_createFragment2_to_selectedCategoryFragment)
-            bottomSheetsDialog(view)
+            bottomSheetsDialog()
         }
 
         view.clickBackCard.setOnClickListener {
@@ -245,7 +245,7 @@ class CreateFragment : Fragment() {
 
         }
 
-        return view
+        return view.root
     }
 
     private fun stateIntSHAFFLE(): Int {
@@ -333,7 +333,7 @@ class CreateFragment : Fragment() {
             Glide.with(requireContext()).load(R.drawable.image_add)
                 .thumbnail(Glide.with(requireContext()).load(R.drawable.loader))
                 .fitCenter()
-                .into(image.image_1)
+                .into(image)
             Toast.makeText(requireContext(), "ErrorImage", Toast.LENGTH_LONG)
                 .show()
 
@@ -361,7 +361,7 @@ class CreateFragment : Fragment() {
 
     @SuppressLint("UseCompatLoadingForDrawables")
     @Suppress("DEPRECATION")
-    private fun uploadProductElectronic(v: View) {
+    private fun uploadProductElectronic() {
 
 
         viewModel.getFieldsCategory(ID_CATEGORY_SELECTED)
@@ -394,13 +394,13 @@ class CreateFragment : Fragment() {
 
         viewModel.myFieldsCategory.observe(viewLifecycleOwner) { list ->
 
-            v.linFieldsFill.removeAllViews()
+            binding.linFieldsFill.removeAllViews()
             edString.clear()
             edValue.clear()
 
             for (i in 0 until list.body()?.size!!) {
 
-                val linearLayout2 = LinearLayout(v.linFieldsFill.context)
+                val linearLayout2 = LinearLayout(binding.linFieldsFill.context)
                 linearLayout2.removeAllViews()
                 linearLayout2.setPadding(15, 10, 15, 10)
                 linearLayout2.background =
@@ -425,17 +425,17 @@ class CreateFragment : Fragment() {
                 linearLayout2.addView(textView)
                 linearLayout2.addView(editText)
 
-                v.linFieldsFill.addView(linearLayout2)
+                binding.linFieldsFill.addView(linearLayout2)
                 edString.add(list.body()!![i])
                 edValue.add(editText)
             }
 
-            val linearLayout = LinearLayout(v.linFieldsFill.context)
+            val linearLayout = LinearLayout(binding.linFieldsFill.context)
             linearLayout.layoutParams = layoutParams
             val view = View(linearLayout.context)
             view.layoutParams = layoutView
             linearLayout.addView(view)
-            v.linFieldsFill.addView(linearLayout)
+            binding.linFieldsFill.addView(linearLayout)
         }
 
     }
@@ -472,7 +472,6 @@ class CreateFragment : Fragment() {
         buttonYES.setOnClickListener {
             dialog2.dismiss()
             ID_CATEGORY_SELECTED = -1
-            category_Name = "Ошибка"
             activity?.onBackPressed()
         }
         dialog2.show()
@@ -480,16 +479,16 @@ class CreateFragment : Fragment() {
     }
 
     @SuppressLint("UseCompatLoadingForDrawables")
-    private fun bottomSheetsDialog(v: View) {
+    private fun bottomSheetsDialog() {
 
         dialogSheet.setContentView(R.layout.bottom_category)
         val recyclerViewCategory = dialogSheet.findViewById<RecyclerView>(R.id.rv_category)
         val adapterCategory = SelectedAdapterCategory(object : IClickListnearHomeCategory {
             override fun clickListener(baseID: Int, name: String) {
                 ID_CATEGORY_SELECTED = baseID
-                v.txtNameCategory.text = name
-                v.txtNameCategory.setTextColor(ContextCompat.getColor(requireContext(), R.color.black))
-                uploadProductElectronic(v)
+                binding.txtNameCategory.text = name
+                binding.txtNameCategory.setTextColor(ContextCompat.getColor(requireContext(), R.color.black))
+                uploadProductElectronic()
                 dialogSheet.dismiss()
             }
         })
@@ -505,6 +504,11 @@ class CreateFragment : Fragment() {
 
         dialogSheet.show()
 
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 
 }

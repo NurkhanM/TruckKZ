@@ -102,58 +102,6 @@
                 </LinearLayout>
             </LinearLayout>
 
-            <LinearLayout
-                android:id="@+id/linerRating"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/linerfirst">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_vertical">
-
-                    <RatingBar
-                        android:id="@+id/productRating"
-                        style="?android:attr/ratingBarStyleIndicator"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:numStars="5"
-                        android:visibility="gone"
-                        android:progressTint="@color/fon"
-                        android:rating="3"
-                        android:scaleX="0.8"
-                        android:scaleY="0.8" />
-
-
-                    <TextView
-                        android:id="@+id/text_rating_size"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="5dp"
-                        android:maxLines="1"
-                        android:visibility="gone"
-                        android:text="12 отзывов"
-                        android:textColor="@color/black_txt3"
-                        android:textSize="18sp"
-                        android:textStyle="bold|normal" />
-
-                </LinearLayout>
-
-                <TextView
-                    android:visibility="gone"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:text="243 просмотра"
-                    android:textColor="@color/black_txt3"
-                    android:textSize="18sp" />
-
-
-            </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/liner2first"
@@ -161,36 +109,24 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginTop="10dp"
+                android:gravity="end"
                 android:orientation="horizontal"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/linerRating">
+                app:layout_constraintTop_toBottomOf="@+id/linerfirst">
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btnBook"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="5dp"
-                    android:layout_weight="1"
                     android:backgroundTint="@color/fon"
-                    android:text="Позвонить"
+                    android:drawableLeft="@drawable/ic_call"
+                    android:text="Пgзвонить"
                     android:textAllCaps="false"
                     android:textSize="16sp"
                     android:textStyle="bold"
-                    app:cornerRadius="6dp" />
-
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btnMessage"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    android:layout_weight="1"
-                    android:backgroundTint="@color/fon"
-                    android:text="Написать"
-                    android:textAllCaps="false"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    app:cornerRadius="6dp" />
+                    app:cornerRadius="6dp"
+                    tools:ignore="RtlHardcoded" />
             </LinearLayout>
 
 
@@ -205,6 +141,14 @@
                 app:layout_constraintTop_toBottomOf="@+id/liner2first">
 
                 <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Описание"
+                    android:textColor="@color/black_txt"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
                     android:id="@+id/textDescription"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -214,7 +158,6 @@
                     android:id="@+id/linerImageMove"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="10dp"
                     android:layout_marginTop="25dp"
                     android:orientation="horizontal">
 
@@ -244,8 +187,6 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:textSize="18sp" />
-
-
 
 
                 <View

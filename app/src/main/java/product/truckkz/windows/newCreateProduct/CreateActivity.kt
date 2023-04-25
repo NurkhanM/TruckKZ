@@ -5,21 +5,25 @@ import android.os.Bundle
 import android.view.View
 import product.truckkz.NetworkConnection
 import product.truckkz.R
-import kotlinx.android.synthetic.main.activity_create.*
+import product.truckkz.databinding.ActivityCreateBinding
 
 class CreateActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityCreateBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_create)
+        binding = ActivityCreateBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         val networkConnection = NetworkConnection(applicationContext)
         networkConnection.observe(this) { isConnected ->
             if (isConnected) {
-                createProductDisconnect.visibility = View.GONE
-                createProductConnect.visibility = View.VISIBLE
+                binding.createProductDisconnect.visibility = View.GONE
+                binding.createProductConnect.visibility = View.VISIBLE
             } else {
-                createProductDisconnect.visibility = View.VISIBLE
-                createProductConnect.visibility = View.GONE
+                binding.createProductDisconnect.visibility = View.VISIBLE
+                binding.createProductConnect.visibility = View.GONE
             }
         }
     }
