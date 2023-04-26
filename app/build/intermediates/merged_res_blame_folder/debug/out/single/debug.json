@@ -1,634 +1,634 @@
 [
     {
-        "merged": "product.truckkz.app-merged_res-69:/layout_dialog_succes_register.xml.flat",
-        "source": "product.truckkz.app-main-71:/layout/dialog_succes_register.xml"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_ic_google.xml.flat",
+        "source": "product.truckkz.app-main-72:/drawable/ic_google.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/layout_bottom_category.xml.flat",
-        "source": "product.truckkz.app-main-71:/layout/bottom_category.xml"
+        "merged": "product.truckkz.app-merged_res-70:/layout_dialog_error_auth.xml.flat",
+        "source": "product.truckkz.app-main-72:/layout/dialog_error_auth.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/font_lato_black.xml.flat",
-        "source": "product.truckkz.app-main-71:/font/lato_black.xml"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_test_svg_category3.xml.flat",
+        "source": "product.truckkz.app-main-72:/drawable/test_svg_category3.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/anim_slide_out_right.xml.flat",
-        "source": "product.truckkz.app-main-71:/anim/slide_out_right.xml"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_ic_close.xml.flat",
+        "source": "product.truckkz.app-main-72:/drawable/ic_close.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/xml_backup_rules.xml.flat",
-        "source": "product.truckkz.app-main-71:/xml/backup_rules.xml"
+        "merged": "product.truckkz.app-merged_res-70:/layout_dialog_succes_register.xml.flat",
+        "source": "product.truckkz.app-main-72:/layout/dialog_succes_register.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_test_svg_category.xml.flat",
-        "source": "product.truckkz.app-main-71:/drawable/test_svg_category.xml"
+        "merged": "product.truckkz.app-merged_res-70:/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "product.truckkz.app-debug-71:/mipmap-xxhdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_ic_favorite2.xml.flat",
-        "source": "product.truckkz.app-main-71:/drawable/ic_favorite2.xml"
+        "merged": "product.truckkz.app-merged_res-70:/menu_bottom_navigation_menu.xml.flat",
+        "source": "product.truckkz.app-main-72:/menu/bottom_navigation_menu.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/layout_fragment_authorization.xml.flat",
-        "source": "product.truckkz.app-main-71:/layout/fragment_authorization.xml"
+        "merged": "product.truckkz.app-merged_res-70:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "product.truckkz.app-debug-71:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_circular_background.xml.flat",
-        "source": "product.truckkz.app-main-71:/drawable/circular_background.xml"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_ic_chad_icon.xml.flat",
+        "source": "product.truckkz.app-main-72:/drawable/ic_chad_icon.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_bottom.xml.flat",
-        "source": "product.truckkz.app-main-71:/drawable/bottom.xml"
+        "merged": "product.truckkz.app-merged_res-70:/layout_bottom_category.xml.flat",
+        "source": "product.truckkz.app-main-72:/layout/bottom_category.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/layout_fragment_my_ads.xml.flat",
-        "source": "product.truckkz.app-main-71:/layout/fragment_my_ads.xml"
+        "merged": "product.truckkz.app-merged_res-70:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "product.truckkz.app-debug-71:/mipmap-xhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_ic_add2.xml.flat",
-        "source": "product.truckkz.app-main-71:/drawable/ic_add2.xml"
+        "merged": "product.truckkz.app-merged_res-70:/layout_activity_main.xml.flat",
+        "source": "product.truckkz.app-main-72:/layout/activity_main.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_circle_background.xml.flat",
-        "source": "product.truckkz.app-main-71:/drawable/circle_background.xml"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_ic_drawer.xml.flat",
+        "source": "product.truckkz.app-main-72:/drawable/ic_drawer.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/mipmap-mdpi_ic_launcher_foreground.png.flat",
-        "source": "product.truckkz.app-debug-70:/mipmap-mdpi/ic_launcher_foreground.png"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_image_add.xml.flat",
+        "source": "product.truckkz.app-main-72:/drawable/image_add.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_logo_svg.xml.flat",
-        "source": "product.truckkz.app-main-71:/drawable/logo_svg.xml"
+        "merged": "product.truckkz.app-merged_res-70:/font_jost_medium.xml.flat",
+        "source": "product.truckkz.app-main-72:/font/jost_medium.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/navigation_nav_graph.xml.flat",
-        "source": "product.truckkz.app-main-71:/navigation/nav_graph.xml"
+        "merged": "product.truckkz.app-merged_res-70:/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "product.truckkz.app-debug-71:/mipmap-xxxhdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/layout_item_chat.xml.flat",
-        "source": "product.truckkz.app-main-71:/layout/item_chat.xml"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_test_image3.png.flat",
+        "source": "product.truckkz.app-main-72:/drawable/test_image3.png"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_ic_exit.xml.flat",
-        "source": "product.truckkz.app-main-71:/drawable/ic_exit.xml"
+        "merged": "product.truckkz.app-merged_res-70:/mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "product.truckkz.app-debug-71:/mipmap-mdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "product.truckkz.app-debug-70:/mipmap-xhdpi/ic_launcher_round.png"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_info_1.xml.flat",
+        "source": "product.truckkz.app-main-72:/drawable/info_1.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable-v24_next.png.flat",
-        "source": "product.truckkz.app-main-71:/drawable-v24/next.png"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_loader.gif.flat",
+        "source": "product.truckkz.app-main-72:/drawable/loader.gif"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_ic_launcher_background.xml.flat",
-        "source": "product.truckkz.app-main-71:/drawable/ic_launcher_background.xml"
+        "merged": "product.truckkz.app-merged_res-70:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "product.truckkz.app-debug-71:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_ic_trash.xml.flat",
-        "source": "product.truckkz.app-main-71:/drawable/ic_trash.xml"
+        "merged": "product.truckkz.app-merged_res-70:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "product.truckkz.app-debug-71:/mipmap-mdpi/ic_launcher_round.png"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_ic_search.xml.flat",
-        "source": "product.truckkz.app-main-71:/drawable/ic_search.xml"
+        "merged": "product.truckkz.app-merged_res-70:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "product.truckkz.app-debug-71:/mipmap-xxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_gif_aut.gif.flat",
-        "source": "product.truckkz.app-main-71:/drawable/gif_aut.gif"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_test_image.png.flat",
+        "source": "product.truckkz.app-main-72:/drawable/test_image.png"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_map_image.png.flat",
-        "source": "product.truckkz.app-main-71:/drawable/map_image.png"
+        "merged": "product.truckkz.app-merged_res-70:/mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "product.truckkz.app-debug-71:/mipmap-hdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_test_image.png.flat",
-        "source": "product.truckkz.app-main-71:/drawable/test_image.png"
+        "merged": "product.truckkz.app-merged_res-70:/layout_activity_create.xml.flat",
+        "source": "product.truckkz.app-main-72:/layout/activity_create.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_ic_call.xml.flat",
-        "source": "product.truckkz.app-main-71:/drawable/ic_call.xml"
+        "merged": "product.truckkz.app-merged_res-70:/anim_zoom_back.xml.flat",
+        "source": "product.truckkz.app-main-72:/anim/zoom_back.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_ic_close.xml.flat",
-        "source": "product.truckkz.app-main-71:/drawable/ic_close.xml"
+        "merged": "product.truckkz.app-merged_res-70:/drawable-v24_bx_time.png.flat",
+        "source": "product.truckkz.app-main-72:/drawable-v24/bx_time.png"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_ic_line_step1.xml.flat",
-        "source": "product.truckkz.app-main-71:/drawable/ic_line_step1.xml"
+        "merged": "product.truckkz.app-merged_res-70:/anim_slide_out_left.xml.flat",
+        "source": "product.truckkz.app-main-72:/anim/slide_out_left.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/layout_fragment_search.xml.flat",
-        "source": "product.truckkz.app-main-71:/layout/fragment_search.xml"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_bottom.xml.flat",
+        "source": "product.truckkz.app-main-72:/drawable/bottom.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/layout_fragment_home.xml.flat",
-        "source": "product.truckkz.app-main-71:/layout/fragment_home.xml"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_test_svg_category2.xml.flat",
+        "source": "product.truckkz.app-main-72:/drawable/test_svg_category2.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/layout_dialog_user_remove.xml.flat",
-        "source": "product.truckkz.app-main-71:/layout/dialog_user_remove.xml"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_button_background2.xml.flat",
+        "source": "product.truckkz.app-main-72:/drawable/button_background2.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_ic_edit.xml.flat",
-        "source": "product.truckkz.app-main-71:/drawable/ic_edit.xml"
+        "merged": "product.truckkz.app-merged_res-70:/anim_zoom_exit.xml.flat",
+        "source": "product.truckkz.app-main-72:/anim/zoom_exit.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_baby_splash.png.flat",
-        "source": "product.truckkz.app-main-71:/drawable/baby_splash.png"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_ic_trash.xml.flat",
+        "source": "product.truckkz.app-main-72:/drawable/ic_trash.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/layout_item_category.xml.flat",
-        "source": "product.truckkz.app-main-71:/layout/item_category.xml"
+        "merged": "product.truckkz.app-merged_res-70:/layout_test.xml.flat",
+        "source": "product.truckkz.app-main-72:/layout/test.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
-        "source": "product.truckkz.app-debug-70:/mipmap-xxhdpi/ic_launcher_foreground.png"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_test_image4.png.flat",
+        "source": "product.truckkz.app-main-72:/drawable/test_image4.png"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/mipmap-hdpi_ic_launcher_foreground.png.flat",
-        "source": "product.truckkz.app-debug-70:/mipmap-hdpi/ic_launcher_foreground.png"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_logo_truck.png.flat",
+        "source": "product.truckkz.app-debug-71:/drawable/logo_truck.png"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/layout_fragment_show_image.xml.flat",
-        "source": "product.truckkz.app-main-71:/layout/fragment_show_image.xml"
+        "merged": "product.truckkz.app-merged_res-70:/layout_fragment_favorite.xml.flat",
+        "source": "product.truckkz.app-main-72:/layout/fragment_favorite.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/anim_zoom_enter.xml.flat",
-        "source": "product.truckkz.app-main-71:/anim/zoom_enter.xml"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_ic_profile_icon.xml.flat",
+        "source": "product.truckkz.app-main-72:/drawable/ic_profile_icon.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "product.truckkz.app-debug-70:/mipmap-xxxhdpi/ic_launcher.png"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_ic_add2.xml.flat",
+        "source": "product.truckkz.app-main-72:/drawable/ic_add2.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_arrow_right.xml.flat",
-        "source": "product.truckkz.app-main-71:/drawable/arrow_right.xml"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_ic_call.xml.flat",
+        "source": "product.truckkz.app-main-72:/drawable/ic_call.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_ic_user_remove.xml.flat",
-        "source": "product.truckkz.app-main-71:/drawable/ic_user_remove.xml"
+        "merged": "product.truckkz.app-merged_res-70:/layout_fragment_chat.xml.flat",
+        "source": "product.truckkz.app-main-72:/layout/fragment_chat.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/mipmap-hdpi_ic_launcher.png.flat",
-        "source": "product.truckkz.app-debug-70:/mipmap-hdpi/ic_launcher.png"
+        "merged": "product.truckkz.app-merged_res-70:/anim_zoom_out.xml.flat",
+        "source": "product.truckkz.app-main-72:/anim/zoom_out.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_dot_green.png.flat",
-        "source": "product.truckkz.app-main-71:/drawable/dot_green.png"
+        "merged": "product.truckkz.app-merged_res-70:/drawable-anydpi-v24_info_3.xml.flat",
+        "source": "product.truckkz.app-pngs-65:/drawable-anydpi-v24/info_3.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/layout_fragment_splash.xml.flat",
-        "source": "product.truckkz.app-main-71:/layout/fragment_splash.xml"
+        "merged": "product.truckkz.app-merged_res-70:/drawable-mdpi_info_3.png.flat",
+        "source": "product.truckkz.app-pngs-65:/drawable-mdpi/info_3.png"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_button_background.xml.flat",
-        "source": "product.truckkz.app-main-71:/drawable/button_background.xml"
+        "merged": "product.truckkz.app-merged_res-70:/font_lato_black.xml.flat",
+        "source": "product.truckkz.app-main-72:/font/lato_black.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable-v24_ic_launcher_background.xml.flat",
-        "source": "product.truckkz.app-main-71:/drawable-v24/ic_launcher_background.xml"
+        "merged": "product.truckkz.app-merged_res-70:/layout_activity_show_image.xml.flat",
+        "source": "product.truckkz.app-main-72:/layout/activity_show_image.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "product.truckkz.app-debug-70:/mipmap-xxhdpi/ic_launcher.png"
+        "merged": "product.truckkz.app-merged_res-70:/font_lato.xml.flat",
+        "source": "product.truckkz.app-main-72:/font/lato.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "product.truckkz.app-debug-70:/mipmap-hdpi/ic_launcher_round.png"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_ic_calendar_icon.xml.flat",
+        "source": "product.truckkz.app-main-72:/drawable/ic_calendar_icon.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "product.truckkz.app-debug-70:/drawable/ic_launcher_foreground.xml"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_ic_main_icon.xml.flat",
+        "source": "product.truckkz.app-main-72:/drawable/ic_main_icon.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_ic_step1.xml.flat",
-        "source": "product.truckkz.app-main-71:/drawable/ic_step1.xml"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_no_wifi.gif.flat",
+        "source": "product.truckkz.app-main-72:/drawable/no_wifi.gif"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/layout_swipe_instructor.xml.flat",
-        "source": "product.truckkz.app-main-71:/layout/swipe_instructor.xml"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_logo_svg.xml.flat",
+        "source": "product.truckkz.app-main-72:/drawable/logo_svg.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_logo_gif.gif.flat",
-        "source": "product.truckkz.app-main-71:/drawable/logo_gif.gif"
+        "merged": "product.truckkz.app-merged_res-70:/mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "product.truckkz.app-debug-71:/mipmap-xhdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_test_svg_category5.xml.flat",
-        "source": "product.truckkz.app-main-71:/drawable/test_svg_category5.xml"
+        "merged": "product.truckkz.app-merged_res-70:/layout_activity_refresh.xml.flat",
+        "source": "product.truckkz.app-main-72:/layout/activity_refresh.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/font_jost_medium.xml.flat",
-        "source": "product.truckkz.app-main-71:/font/jost_medium.xml"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_verifiedd.png.flat",
+        "source": "product.truckkz.app-main-72:/drawable/verifiedd.png"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_tenge.png.flat",
-        "source": "product.truckkz.app-main-71:/drawable/tenge.png"
+        "merged": "product.truckkz.app-merged_res-70:/layout_activity_home.xml.flat",
+        "source": "product.truckkz.app-main-72:/layout/activity_home.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/layout_fragment_settings.xml.flat",
-        "source": "product.truckkz.app-main-71:/layout/fragment_settings.xml"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_map_image.png.flat",
+        "source": "product.truckkz.app-main-72:/drawable/map_image.png"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable-xxhdpi_info_3.png.flat",
-        "source": "product.truckkz.app-pngs-64:/drawable-xxhdpi/info_3.png"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_image_success_register.xml.flat",
+        "source": "product.truckkz.app-main-72:/drawable/image_success_register.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_dot_red.png.flat",
-        "source": "product.truckkz.app-main-71:/drawable/dot_red.png"
+        "merged": "product.truckkz.app-merged_res-70:/drawable-ldpi_info_3.png.flat",
+        "source": "product.truckkz.app-pngs-65:/drawable-ldpi/info_3.png"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/xml_data_extraction_rules.xml.flat",
-        "source": "product.truckkz.app-main-71:/xml/data_extraction_rules.xml"
+        "merged": "product.truckkz.app-merged_res-70:/layout_item_recomend.xml.flat",
+        "source": "product.truckkz.app-main-72:/layout/item_recomend.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "product.truckkz.app-debug-70:/mipmap-xxxhdpi/ic_launcher_round.png"
+        "merged": "product.truckkz.app-merged_res-70:/layout_item_tovar.xml.flat",
+        "source": "product.truckkz.app-main-72:/layout/item_tovar.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/mipmap-mdpi_ic_launcher.png.flat",
-        "source": "product.truckkz.app-debug-70:/mipmap-mdpi/ic_launcher.png"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_test_svg_category4.xml.flat",
+        "source": "product.truckkz.app-main-72:/drawable/test_svg_category4.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_test_svg_category2.xml.flat",
-        "source": "product.truckkz.app-main-71:/drawable/test_svg_category2.xml"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_ic_line_step1.xml.flat",
+        "source": "product.truckkz.app-main-72:/drawable/ic_line_step1.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_bottom_right.xml.flat",
-        "source": "product.truckkz.app-main-71:/drawable/bottom_right.xml"
+        "merged": "product.truckkz.app-merged_res-70:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "product.truckkz.app-debug-71:/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/anim_slide_in_left.xml.flat",
-        "source": "product.truckkz.app-main-71:/anim/slide_in_left.xml"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_dot_red.png.flat",
+        "source": "product.truckkz.app-main-72:/drawable/dot_red.png"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_no_wifi.gif.flat",
-        "source": "product.truckkz.app-main-71:/drawable/no_wifi.gif"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_ic_facebook.xml.flat",
+        "source": "product.truckkz.app-main-72:/drawable/ic_facebook.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/layout_fragment_reset.xml.flat",
-        "source": "product.truckkz.app-main-71:/layout/fragment_reset.xml"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_ic_lamp_icon.xml.flat",
+        "source": "product.truckkz.app-main-72:/drawable/ic_lamp_icon.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_ic_favorite.xml.flat",
-        "source": "product.truckkz.app-main-71:/drawable/ic_favorite.xml"
+        "merged": "product.truckkz.app-merged_res-70:/font_pacifico.ttf.flat",
+        "source": "product.truckkz.app-main-72:/font/pacifico.ttf"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable-hdpi_info_3.png.flat",
-        "source": "product.truckkz.app-pngs-64:/drawable-hdpi/info_3.png"
+        "merged": "product.truckkz.app-merged_res-70:/anim_slide_in_right.xml.flat",
+        "source": "product.truckkz.app-main-72:/anim/slide_in_right.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_logo_truck.png.flat",
-        "source": "product.truckkz.app-debug-70:/drawable/logo_truck.png"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_circle_background.xml.flat",
+        "source": "product.truckkz.app-main-72:/drawable/circle_background.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable-v24_authtet.png.flat",
-        "source": "product.truckkz.app-main-71:/drawable-v24/authtet.png"
+        "merged": "product.truckkz.app-merged_res-70:/layout_fragment_search.xml.flat",
+        "source": "product.truckkz.app-main-72:/layout/fragment_search.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_circular.xml.flat",
-        "source": "product.truckkz.app-main-71:/drawable/circular.xml"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_buttontab_backgraund.xml.flat",
+        "source": "product.truckkz.app-main-72:/drawable/buttontab_backgraund.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_button_background2.xml.flat",
-        "source": "product.truckkz.app-main-71:/drawable/button_background2.xml"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_test_image2.png.flat",
+        "source": "product.truckkz.app-main-72:/drawable/test_image2.png"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "product.truckkz.app-debug-70:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "product.truckkz.app-merged_res-70:/layout_fragment_authorization.xml.flat",
+        "source": "product.truckkz.app-main-72:/layout/fragment_authorization.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_test_image3.png.flat",
-        "source": "product.truckkz.app-main-71:/drawable/test_image3.png"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_bottom_sheet_top_corve.xml.flat",
+        "source": "product.truckkz.app-main-72:/drawable/bottom_sheet_top_corve.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/layout_item_show_image.xml.flat",
-        "source": "product.truckkz.app-main-71:/layout/item_show_image.xml"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_ic_favorite2.xml.flat",
+        "source": "product.truckkz.app-main-72:/drawable/ic_favorite2.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/anim_slide_out_left.xml.flat",
-        "source": "product.truckkz.app-main-71:/anim/slide_out_left.xml"
+        "merged": "product.truckkz.app-merged_res-70:/layout_activity_favorite.xml.flat",
+        "source": "product.truckkz.app-main-72:/layout/activity_favorite.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable-v24_prev.png.flat",
-        "source": "product.truckkz.app-main-71:/drawable-v24/prev.png"
+        "merged": "product.truckkz.app-merged_res-70:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "product.truckkz.app-debug-71:/mipmap-xxxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/layout_fragment_create.xml.flat",
-        "source": "product.truckkz.app-main-71:/layout/fragment_create.xml"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_ic_step2.xml.flat",
+        "source": "product.truckkz.app-main-72:/drawable/ic_step2.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable-v24_ic_add.xml.flat",
-        "source": "product.truckkz.app-main-71:/drawable-v24/ic_add.xml"
+        "merged": "product.truckkz.app-merged_res-70:/color_bottom_nav_item_selector.xml.flat",
+        "source": "product.truckkz.app-main-72:/color/bottom_nav_item_selector.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_ic_clock.xml.flat",
-        "source": "product.truckkz.app-main-71:/drawable/ic_clock.xml"
+        "merged": "product.truckkz.app-merged_res-70:/drawable-v24_ic_add.xml.flat",
+        "source": "product.truckkz.app-main-72:/drawable-v24/ic_add.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_ic_eye.xml.flat",
-        "source": "product.truckkz.app-main-71:/drawable/ic_eye.xml"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_ic_search.xml.flat",
+        "source": "product.truckkz.app-main-72:/drawable/ic_search.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/font_jost.xml.flat",
-        "source": "product.truckkz.app-main-71:/font/jost.xml"
+        "merged": "product.truckkz.app-merged_res-70:/layout_item_show_image.xml.flat",
+        "source": "product.truckkz.app-main-72:/layout/item_show_image.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_loader2.gif.flat",
-        "source": "product.truckkz.app-main-71:/drawable/loader2.gif"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_success.png.flat",
+        "source": "product.truckkz.app-main-72:/drawable/success.png"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/layout_fragment_profile.xml.flat",
-        "source": "product.truckkz.app-main-71:/layout/fragment_profile.xml"
+        "merged": "product.truckkz.app-merged_res-70:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "product.truckkz.app-debug-71:/mipmap-hdpi/ic_launcher.png"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/font_nunito_sans.xml.flat",
-        "source": "product.truckkz.app-main-71:/font/nunito_sans.xml"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_tenge.png.flat",
+        "source": "product.truckkz.app-main-72:/drawable/tenge.png"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_ic_drawer.xml.flat",
-        "source": "product.truckkz.app-main-71:/drawable/ic_drawer.xml"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_ic_more.xml.flat",
+        "source": "product.truckkz.app-main-72:/drawable/ic_more.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_ic_warning.xml.flat",
-        "source": "product.truckkz.app-main-71:/drawable/ic_warning.xml"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_test_svg_category.xml.flat",
+        "source": "product.truckkz.app-main-72:/drawable/test_svg_category.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_dot_orange.png.flat",
-        "source": "product.truckkz.app-main-71:/drawable/dot_orange.png"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_buttontab_backgraund2.xml.flat",
+        "source": "product.truckkz.app-main-72:/drawable/buttontab_backgraund2.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_test_svg_category3.xml.flat",
-        "source": "product.truckkz.app-main-71:/drawable/test_svg_category3.xml"
+        "merged": "product.truckkz.app-merged_res-70:/drawable-v24_btn_bottom_left.xml.flat",
+        "source": "product.truckkz.app-main-72:/drawable-v24/btn_bottom_left.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/font_pacifico.ttf.flat",
-        "source": "product.truckkz.app-main-71:/font/pacifico.ttf"
+        "merged": "product.truckkz.app-merged_res-70:/anim_slide_out_right.xml.flat",
+        "source": "product.truckkz.app-main-72:/anim/slide_out_right.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_info_2.xml.flat",
-        "source": "product.truckkz.app-main-71:/drawable/info_2.xml"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_ic_warning.xml.flat",
+        "source": "product.truckkz.app-main-72:/drawable/ic_warning.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable-xxxhdpi_info_3.png.flat",
-        "source": "product.truckkz.app-pngs-64:/drawable-xxxhdpi/info_3.png"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_dot_orange.png.flat",
+        "source": "product.truckkz.app-main-72:/drawable/dot_orange.png"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_test_image4.png.flat",
-        "source": "product.truckkz.app-main-71:/drawable/test_image4.png"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_arrow_right.xml.flat",
+        "source": "product.truckkz.app-main-72:/drawable/arrow_right.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/font_lato.xml.flat",
-        "source": "product.truckkz.app-main-71:/font/lato.xml"
+        "merged": "product.truckkz.app-merged_res-70:/drawable-xhdpi_info_3.png.flat",
+        "source": "product.truckkz.app-pngs-65:/drawable-xhdpi/info_3.png"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/layout_fragment_registration.xml.flat",
-        "source": "product.truckkz.app-main-71:/layout/fragment_registration.xml"
+        "merged": "product.truckkz.app-merged_res-70:/layout_item_update_image_array.xml.flat",
+        "source": "product.truckkz.app-main-72:/layout/item_update_image_array.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/layout_fragment_update.xml.flat",
-        "source": "product.truckkz.app-main-71:/layout/fragment_update.xml"
+        "merged": "product.truckkz.app-merged_res-70:/layout_fragment_show_image.xml.flat",
+        "source": "product.truckkz.app-main-72:/layout/fragment_show_image.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_ic_back_arrow.xml.flat",
-        "source": "product.truckkz.app-main-71:/drawable/ic_back_arrow.xml"
+        "merged": "product.truckkz.app-merged_res-70:/anim_slide_in_left.xml.flat",
+        "source": "product.truckkz.app-main-72:/anim/slide_in_left.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/menu_bottom_navigation_menu.xml.flat",
-        "source": "product.truckkz.app-main-71:/menu/bottom_navigation_menu.xml"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_logo_gif.gif.flat",
+        "source": "product.truckkz.app-main-72:/drawable/logo_gif.gif"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/layout_dialog_error_auth.xml.flat",
-        "source": "product.truckkz.app-main-71:/layout/dialog_error_auth.xml"
+        "merged": "product.truckkz.app-merged_res-70:/layout_item_category.xml.flat",
+        "source": "product.truckkz.app-main-72:/layout/item_category.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/layout_item_recomend.xml.flat",
-        "source": "product.truckkz.app-main-71:/layout/item_recomend.xml"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_ic_back_arrow.xml.flat",
+        "source": "product.truckkz.app-main-72:/drawable/ic_back_arrow.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable-v24_bx_time.png.flat",
-        "source": "product.truckkz.app-main-71:/drawable-v24/bx_time.png"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_fon_header.png.flat",
+        "source": "product.truckkz.app-main-72:/drawable/fon_header.png"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/layout_item_update_image_array.xml.flat",
-        "source": "product.truckkz.app-main-71:/layout/item_update_image_array.xml"
+        "merged": "product.truckkz.app-merged_res-70:/layout_app_bar_main.xml.flat",
+        "source": "product.truckkz.app-main-72:/layout/app_bar_main.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_ic_facebook.xml.flat",
-        "source": "product.truckkz.app-main-71:/drawable/ic_facebook.xml"
+        "merged": "product.truckkz.app-merged_res-70:/navigation_nav_graph.xml.flat",
+        "source": "product.truckkz.app-main-72:/navigation/nav_graph.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable-xhdpi_info_3.png.flat",
-        "source": "product.truckkz.app-pngs-64:/drawable-xhdpi/info_3.png"
+        "merged": "product.truckkz.app-merged_res-70:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "product.truckkz.app-debug-71:/mipmap-xhdpi/ic_launcher.png"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable-v24_calendar_vector.png.flat",
-        "source": "product.truckkz.app-main-71:/drawable-v24/calendar_vector.png"
+        "merged": "product.truckkz.app-merged_res-70:/layout_fragment_my_products.xml.flat",
+        "source": "product.truckkz.app-main-72:/layout/fragment_my_products.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/anim_slide_in_right.xml.flat",
-        "source": "product.truckkz.app-main-71:/anim/slide_in_right.xml"
+        "merged": "product.truckkz.app-merged_res-70:/drawable-xxhdpi_info_3.png.flat",
+        "source": "product.truckkz.app-pngs-65:/drawable-xxhdpi/info_3.png"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "product.truckkz.app-debug-70:/mipmap-xhdpi/ic_launcher.png"
+        "merged": "product.truckkz.app-merged_res-70:/layout_fragment_reset.xml.flat",
+        "source": "product.truckkz.app-main-72:/layout/fragment_reset.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/layout_fragment_home_info.xml.flat",
-        "source": "product.truckkz.app-main-71:/layout/fragment_home_info.xml"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_circular_background.xml.flat",
+        "source": "product.truckkz.app-main-72:/drawable/circular_background.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_ic_profile_icon.xml.flat",
-        "source": "product.truckkz.app-main-71:/drawable/ic_profile_icon.xml"
+        "merged": "product.truckkz.app-merged_res-70:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "product.truckkz.app-debug-71:/mipmap-xxhdpi/ic_launcher.png"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_success.png.flat",
-        "source": "product.truckkz.app-main-71:/drawable/success.png"
+        "merged": "product.truckkz.app-merged_res-70:/layout_fragment_home.xml.flat",
+        "source": "product.truckkz.app-main-72:/layout/fragment_home.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/layout_activity_main.xml.flat",
-        "source": "product.truckkz.app-main-71:/layout/activity_main.xml"
+        "merged": "product.truckkz.app-merged_res-70:/drawable-v24_next.png.flat",
+        "source": "product.truckkz.app-main-72:/drawable-v24/next.png"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_test_svg_category4.xml.flat",
-        "source": "product.truckkz.app-main-71:/drawable/test_svg_category4.xml"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_ic_edit.xml.flat",
+        "source": "product.truckkz.app-main-72:/drawable/ic_edit.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/navigation_nav_create.xml.flat",
-        "source": "product.truckkz.app-main-71:/navigation/nav_create.xml"
+        "merged": "product.truckkz.app-merged_res-70:/layout_fragment_create.xml.flat",
+        "source": "product.truckkz.app-main-72:/layout/fragment_create.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_info_1.xml.flat",
-        "source": "product.truckkz.app-main-71:/drawable/info_1.xml"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_test_svg_category5.xml.flat",
+        "source": "product.truckkz.app-main-72:/drawable/test_svg_category5.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/layout_fragment_message_chat.xml.flat",
-        "source": "product.truckkz.app-main-71:/layout/fragment_message_chat.xml"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_loader2.gif.flat",
+        "source": "product.truckkz.app-main-72:/drawable/loader2.gif"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_ic_more.xml.flat",
-        "source": "product.truckkz.app-main-71:/drawable/ic_more.xml"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_ic_exit.xml.flat",
+        "source": "product.truckkz.app-main-72:/drawable/ic_exit.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/layout_fragment_favorite.xml.flat",
-        "source": "product.truckkz.app-main-71:/layout/fragment_favorite.xml"
+        "merged": "product.truckkz.app-merged_res-70:/drawable-hdpi_info_3.png.flat",
+        "source": "product.truckkz.app-pngs-65:/drawable-hdpi/info_3.png"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable-mdpi_info_3.png.flat",
-        "source": "product.truckkz.app-pngs-64:/drawable-mdpi/info_3.png"
+        "merged": "product.truckkz.app-merged_res-70:/drawable-v24_calendar_vector.png.flat",
+        "source": "product.truckkz.app-main-72:/drawable-v24/calendar_vector.png"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/layout_item_selected_category.xml.flat",
-        "source": "product.truckkz.app-main-71:/layout/item_selected_category.xml"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_ic_line_step2.xml.flat",
+        "source": "product.truckkz.app-main-72:/drawable/ic_line_step2.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "product.truckkz.app-debug-70:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_circular.xml.flat",
+        "source": "product.truckkz.app-main-72:/drawable/circular.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable-anydpi-v24_info_3.xml.flat",
-        "source": "product.truckkz.app-pngs-64:/drawable-anydpi-v24/info_3.xml"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_ic_launcher_background.xml.flat",
+        "source": "product.truckkz.app-main-72:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/layout_activity_show_image.xml.flat",
-        "source": "product.truckkz.app-main-71:/layout/activity_show_image.xml"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_info_2.xml.flat",
+        "source": "product.truckkz.app-main-72:/drawable/info_2.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "product.truckkz.app-debug-70:/mipmap-xxhdpi/ic_launcher_round.png"
+        "merged": "product.truckkz.app-merged_res-70:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "product.truckkz.app-debug-71:/mipmap-hdpi/ic_launcher_round.png"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_ic_lamp_icon.xml.flat",
-        "source": "product.truckkz.app-main-71:/drawable/ic_lamp_icon.xml"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_ic_favorite.xml.flat",
+        "source": "product.truckkz.app-main-72:/drawable/ic_favorite.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_ic_calendar_icon.xml.flat",
-        "source": "product.truckkz.app-main-71:/drawable/ic_calendar_icon.xml"
+        "merged": "product.truckkz.app-merged_res-70:/layout_fragment_profile.xml.flat",
+        "source": "product.truckkz.app-main-72:/layout/fragment_profile.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_ic_line_step2.xml.flat",
-        "source": "product.truckkz.app-main-71:/drawable/ic_line_step2.xml"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_gif_aut.gif.flat",
+        "source": "product.truckkz.app-main-72:/drawable/gif_aut.gif"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/layout_fragment_chat.xml.flat",
-        "source": "product.truckkz.app-main-71:/layout/fragment_chat.xml"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_ic_user_remove.xml.flat",
+        "source": "product.truckkz.app-main-72:/drawable/ic_user_remove.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/layout_test.xml.flat",
-        "source": "product.truckkz.app-main-71:/layout/test.xml"
+        "merged": "product.truckkz.app-merged_res-70:/layout_item_chat.xml.flat",
+        "source": "product.truckkz.app-main-72:/layout/item_chat.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/anim_zoom_out.xml.flat",
-        "source": "product.truckkz.app-main-71:/anim/zoom_out.xml"
+        "merged": "product.truckkz.app-merged_res-70:/xml_data_extraction_rules.xml.flat",
+        "source": "product.truckkz.app-main-72:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/layout_activity_create.xml.flat",
-        "source": "product.truckkz.app-main-71:/layout/activity_create.xml"
+        "merged": "product.truckkz.app-merged_res-70:/drawable-v24_authtet.png.flat",
+        "source": "product.truckkz.app-main-72:/drawable-v24/authtet.png"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/layout_fragment_my_products.xml.flat",
-        "source": "product.truckkz.app-main-71:/layout/fragment_my_products.xml"
+        "merged": "product.truckkz.app-merged_res-70:/font_nunito_sans.xml.flat",
+        "source": "product.truckkz.app-main-72:/font/nunito_sans.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_test_image2.png.flat",
-        "source": "product.truckkz.app-main-71:/drawable/test_image2.png"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_baby_splash.png.flat",
+        "source": "product.truckkz.app-main-72:/drawable/baby_splash.png"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/anim_zoom_exit.xml.flat",
-        "source": "product.truckkz.app-main-71:/anim/zoom_exit.xml"
+        "merged": "product.truckkz.app-merged_res-70:/layout_fragment_message_chat.xml.flat",
+        "source": "product.truckkz.app-main-72:/layout/fragment_message_chat.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/anim_zoom_back.xml.flat",
-        "source": "product.truckkz.app-main-71:/anim/zoom_back.xml"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_ic_step1.xml.flat",
+        "source": "product.truckkz.app-main-72:/drawable/ic_step1.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_image_success_register.xml.flat",
-        "source": "product.truckkz.app-main-71:/drawable/image_success_register.xml"
+        "merged": "product.truckkz.app-merged_res-70:/anim_zoom_enter.xml.flat",
+        "source": "product.truckkz.app-main-72:/anim/zoom_enter.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_buttontab_backgraund.xml.flat",
-        "source": "product.truckkz.app-main-71:/drawable/buttontab_backgraund.xml"
+        "merged": "product.truckkz.app-merged_res-70:/xml_backup_rules.xml.flat",
+        "source": "product.truckkz.app-main-72:/xml/backup_rules.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_ic_main_icon.xml.flat",
-        "source": "product.truckkz.app-main-71:/drawable/ic_main_icon.xml"
+        "merged": "product.truckkz.app-merged_res-70:/navigation_nav_create.xml.flat",
+        "source": "product.truckkz.app-main-72:/navigation/nav_create.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_fon_header.png.flat",
-        "source": "product.truckkz.app-main-71:/drawable/fon_header.png"
+        "merged": "product.truckkz.app-merged_res-70:/layout_fragment_splash.xml.flat",
+        "source": "product.truckkz.app-main-72:/layout/fragment_splash.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/layout_activity_home.xml.flat",
-        "source": "product.truckkz.app-main-71:/layout/activity_home.xml"
+        "merged": "product.truckkz.app-merged_res-70:/layout_item_selected_category.xml.flat",
+        "source": "product.truckkz.app-main-72:/layout/item_selected_category.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_ic_chad_icon.xml.flat",
-        "source": "product.truckkz.app-main-71:/drawable/ic_chad_icon.xml"
+        "merged": "product.truckkz.app-merged_res-70:/layout_dialog_user_remove.xml.flat",
+        "source": "product.truckkz.app-main-72:/layout/dialog_user_remove.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
-        "source": "product.truckkz.app-debug-70:/mipmap-xxxhdpi/ic_launcher_foreground.png"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_bottom_right.xml.flat",
+        "source": "product.truckkz.app-main-72:/drawable/bottom_right.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/mipmap-xhdpi_ic_launcher_foreground.png.flat",
-        "source": "product.truckkz.app-debug-70:/mipmap-xhdpi/ic_launcher_foreground.png"
+        "merged": "product.truckkz.app-merged_res-70:/layout_fragment_home_info.xml.flat",
+        "source": "product.truckkz.app-main-72:/layout/fragment_home_info.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_ic_google.xml.flat",
-        "source": "product.truckkz.app-main-71:/drawable/ic_google.xml"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "product.truckkz.app-debug-71:/drawable/ic_launcher_foreground.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable-ldpi_info_3.png.flat",
-        "source": "product.truckkz.app-pngs-64:/drawable-ldpi/info_3.png"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_dot_green.png.flat",
+        "source": "product.truckkz.app-main-72:/drawable/dot_green.png"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_ic_step2.xml.flat",
-        "source": "product.truckkz.app-main-71:/drawable/ic_step2.xml"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_ic_eye.xml.flat",
+        "source": "product.truckkz.app-main-72:/drawable/ic_eye.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/layout_item_tovar.xml.flat",
-        "source": "product.truckkz.app-main-71:/layout/item_tovar.xml"
+        "merged": "product.truckkz.app-merged_res-70:/layout_fragment_my_ads.xml.flat",
+        "source": "product.truckkz.app-main-72:/layout/fragment_my_ads.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable-v24_btn_bottom_left.xml.flat",
-        "source": "product.truckkz.app-main-71:/drawable-v24/btn_bottom_left.xml"
+        "merged": "product.truckkz.app-merged_res-70:/layout_swipe_instructor.xml.flat",
+        "source": "product.truckkz.app-main-72:/layout/swipe_instructor.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/layout_activity_favorite.xml.flat",
-        "source": "product.truckkz.app-main-71:/layout/activity_favorite.xml"
+        "merged": "product.truckkz.app-merged_res-70:/font_jost.xml.flat",
+        "source": "product.truckkz.app-main-72:/font/jost.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_verifiedd.png.flat",
-        "source": "product.truckkz.app-main-71:/drawable/verifiedd.png"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_ic_clock.xml.flat",
+        "source": "product.truckkz.app-main-72:/drawable/ic_clock.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "product.truckkz.app-debug-70:/mipmap-mdpi/ic_launcher_round.png"
+        "merged": "product.truckkz.app-merged_res-70:/drawable-v24_ic_launcher_background.xml.flat",
+        "source": "product.truckkz.app-main-72:/drawable-v24/ic_launcher_background.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_image_add.xml.flat",
-        "source": "product.truckkz.app-main-71:/drawable/image_add.xml"
+        "merged": "product.truckkz.app-merged_res-70:/drawable-xxxhdpi_info_3.png.flat",
+        "source": "product.truckkz.app-pngs-65:/drawable-xxxhdpi/info_3.png"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_buttontab_backgraund2.xml.flat",
-        "source": "product.truckkz.app-main-71:/drawable/buttontab_backgraund2.xml"
+        "merged": "product.truckkz.app-merged_res-70:/drawable_button_background.xml.flat",
+        "source": "product.truckkz.app-main-72:/drawable/button_background.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/layout_app_bar_main.xml.flat",
-        "source": "product.truckkz.app-main-71:/layout/app_bar_main.xml"
+        "merged": "product.truckkz.app-merged_res-70:/layout_fragment_registration.xml.flat",
+        "source": "product.truckkz.app-main-72:/layout/fragment_registration.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/color_bottom_nav_item_selector.xml.flat",
-        "source": "product.truckkz.app-main-71:/color/bottom_nav_item_selector.xml"
+        "merged": "product.truckkz.app-merged_res-70:/layout_fragment_settings.xml.flat",
+        "source": "product.truckkz.app-main-72:/layout/fragment_settings.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_bottom_sheet_top_corve.xml.flat",
-        "source": "product.truckkz.app-main-71:/drawable/bottom_sheet_top_corve.xml"
+        "merged": "product.truckkz.app-merged_res-70:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "product.truckkz.app-debug-71:/mipmap-mdpi/ic_launcher.png"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/layout_activity_refresh.xml.flat",
-        "source": "product.truckkz.app-main-71:/layout/activity_refresh.xml"
+        "merged": "product.truckkz.app-merged_res-70:/layout_fragment_update.xml.flat",
+        "source": "product.truckkz.app-main-72:/layout/fragment_update.xml"
     },
     {
-        "merged": "product.truckkz.app-merged_res-69:/drawable_loader.gif.flat",
-        "source": "product.truckkz.app-main-71:/drawable/loader.gif"
+        "merged": "product.truckkz.app-merged_res-70:/drawable-v24_prev.png.flat",
+        "source": "product.truckkz.app-main-72:/drawable-v24/prev.png"
     }
 ]

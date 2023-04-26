@@ -3,6 +3,10 @@ package product.truckkz.api
 import com.google.gson.GsonBuilder
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
+import product.truckkz.api.auth.AuthorizationService
+import product.truckkz.api.brands.BrandService
+import product.truckkz.api.category.CategoryService
+import product.truckkz.api.products.ProductService
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.converter.scalars.ScalarsConverterFactory
@@ -13,7 +17,6 @@ object RetroFitInstance {
     private val retrofit by lazy {
 
         val interceptor = HttpLoggingInterceptor()
-//        val interceptor = TokenInterceptor()
         interceptor.level = HttpLoggingInterceptor.Level.BODY
 
         val client = OkHttpClient.Builder()
@@ -21,7 +24,6 @@ object RetroFitInstance {
             .writeTimeout(2, TimeUnit.MINUTES) // write timeout
             .readTimeout(2, TimeUnit.MINUTES) // read timeout
             .addInterceptor(interceptor)
-//            .addInterceptor(OAuthInterceptor("Bearer", TOKEN_USER))
             .build()
 
         val gson = GsonBuilder()
@@ -34,8 +36,17 @@ object RetroFitInstance {
             .client(client)
             .build()
     }
-    val api: product.truckkz.api.ApiService by lazy {
-        product.truckkz.api.RetroFitInstance.retrofit.create(product.truckkz.api.ApiService::class.java)
+    val authorization: AuthorizationService by lazy {
+        retrofit.create(AuthorizationService::class.java)
+    }
+    val brand: BrandService by lazy {
+        retrofit.create(BrandService::class.java)
+    }
+    val category: CategoryService by lazy {
+        retrofit.create(CategoryService::class.java)
+    }
+    val product: ProductService by lazy {
+        retrofit.create(ProductService::class.java)
     }
 
 }

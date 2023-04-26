@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -36,12 +35,6 @@ public final class FragmentAuthorizationBinding implements ViewBinding {
   public final MaterialButton btnAuth;
 
   @NonNull
-  public final ImageView btnSignInFaceBook;
-
-  @NonNull
-  public final ImageView btnSignInGoogle;
-
-  @NonNull
   public final ConstraintLayout constraintLayoutAuth;
 
   @NonNull
@@ -49,12 +42,6 @@ public final class FragmentAuthorizationBinding implements ViewBinding {
 
   @NonNull
   public final GifImageView gifAut;
-
-  @NonNull
-  public final LinearLayout nextFaceBook;
-
-  @NonNull
-  public final LinearLayout nextGoogle;
 
   @NonNull
   public final CheckBox remember;
@@ -79,25 +66,18 @@ public final class FragmentAuthorizationBinding implements ViewBinding {
 
   private FragmentAuthorizationBinding(@NonNull ConstraintLayout rootView,
       @NonNull TextInputEditText authEditEmail, @NonNull TextInputEditText authEditPassword,
-      @NonNull MaterialButton btnAuth, @NonNull ImageView btnSignInFaceBook,
-      @NonNull ImageView btnSignInGoogle, @NonNull ConstraintLayout constraintLayoutAuth,
-      @NonNull LinearLayout createAccount, @NonNull GifImageView gifAut,
-      @NonNull LinearLayout nextFaceBook, @NonNull LinearLayout nextGoogle,
-      @NonNull CheckBox remember, @NonNull TextInputLayout textInputLayout,
-      @NonNull TextInputLayout textInputLayout2, @NonNull TextView textWelcome,
-      @NonNull TextView txtCenterAutTitle, @NonNull TextView txtReset,
-      @NonNull LinearLayout txtRestoreAuth) {
+      @NonNull MaterialButton btnAuth, @NonNull ConstraintLayout constraintLayoutAuth,
+      @NonNull LinearLayout createAccount, @NonNull GifImageView gifAut, @NonNull CheckBox remember,
+      @NonNull TextInputLayout textInputLayout, @NonNull TextInputLayout textInputLayout2,
+      @NonNull TextView textWelcome, @NonNull TextView txtCenterAutTitle,
+      @NonNull TextView txtReset, @NonNull LinearLayout txtRestoreAuth) {
     this.rootView = rootView;
     this.authEditEmail = authEditEmail;
     this.authEditPassword = authEditPassword;
     this.btnAuth = btnAuth;
-    this.btnSignInFaceBook = btnSignInFaceBook;
-    this.btnSignInGoogle = btnSignInGoogle;
     this.constraintLayoutAuth = constraintLayoutAuth;
     this.createAccount = createAccount;
     this.gifAut = gifAut;
-    this.nextFaceBook = nextFaceBook;
-    this.nextGoogle = nextGoogle;
     this.remember = remember;
     this.textInputLayout = textInputLayout;
     this.textInputLayout2 = textInputLayout2;
@@ -152,18 +132,6 @@ public final class FragmentAuthorizationBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.btnSignInFaceBook;
-      ImageView btnSignInFaceBook = ViewBindings.findChildViewById(rootView, id);
-      if (btnSignInFaceBook == null) {
-        break missingId;
-      }
-
-      id = R.id.btnSignInGoogle;
-      ImageView btnSignInGoogle = ViewBindings.findChildViewById(rootView, id);
-      if (btnSignInGoogle == null) {
-        break missingId;
-      }
-
       id = R.id.constraintLayoutAuth;
       ConstraintLayout constraintLayoutAuth = ViewBindings.findChildViewById(rootView, id);
       if (constraintLayoutAuth == null) {
@@ -179,18 +147,6 @@ public final class FragmentAuthorizationBinding implements ViewBinding {
       id = R.id.gif_aut;
       GifImageView gifAut = ViewBindings.findChildViewById(rootView, id);
       if (gifAut == null) {
-        break missingId;
-      }
-
-      id = R.id.nextFaceBook;
-      LinearLayout nextFaceBook = ViewBindings.findChildViewById(rootView, id);
-      if (nextFaceBook == null) {
-        break missingId;
-      }
-
-      id = R.id.nextGoogle;
-      LinearLayout nextGoogle = ViewBindings.findChildViewById(rootView, id);
-      if (nextGoogle == null) {
         break missingId;
       }
 
@@ -237,9 +193,9 @@ public final class FragmentAuthorizationBinding implements ViewBinding {
       }
 
       return new FragmentAuthorizationBinding((ConstraintLayout) rootView, authEditEmail,
-          authEditPassword, btnAuth, btnSignInFaceBook, btnSignInGoogle, constraintLayoutAuth,
-          createAccount, gifAut, nextFaceBook, nextGoogle, remember, textInputLayout,
-          textInputLayout2, textWelcome, txtCenterAutTitle, txtReset, txtRestoreAuth);
+          authEditPassword, btnAuth, constraintLayoutAuth, createAccount, gifAut, remember,
+          textInputLayout, textInputLayout2, textWelcome, txtCenterAutTitle, txtReset,
+          txtRestoreAuth);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

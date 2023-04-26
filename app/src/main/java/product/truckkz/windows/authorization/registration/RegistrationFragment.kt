@@ -1,12 +1,17 @@
 package product.truckkz.windows.authorization.registration
 
 import android.annotation.SuppressLint
+import android.app.Activity
 import android.app.Dialog
 import android.content.Context
+import android.content.Intent
 import android.content.SharedPreferences
+import android.graphics.Bitmap
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
+import android.net.Uri
 import android.os.Bundle
+import android.provider.MediaStore
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -18,11 +23,20 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import product.truckkz.R
 import product.truckkz.UserDate
-import product.truckkz.UserDate.USER_STATUS
 import product.truckkz.viewModels.HomeViewModels
 import com.google.gson.JsonObject
+import com.theartofdev.edmodo.cropper.CropImage
+import com.theartofdev.edmodo.cropper.CropImageView
+import okhttp3.MediaType.Companion.toMediaTypeOrNull
+import okhttp3.MultipartBody
+import okhttp3.RequestBody
+import okhttp3.RequestBody.Companion.toRequestBody
 import org.json.JSONObject
+import product.truckkz.MainActivity
+import product.truckkz.MyUtils
+import product.truckkz.databinding.ActivityMainBinding
 import product.truckkz.databinding.FragmentRegistrationBinding
+import java.io.ByteArrayOutputStream
 
 class RegistrationFragment : Fragment() {
     private var _binding: FragmentRegistrationBinding? = null
@@ -30,7 +44,11 @@ class RegistrationFragment : Fragment() {
     private lateinit var viewModel: HomeViewModels
     lateinit var dialog: Dialog
     lateinit var dialog2: Dialog
+    private var filePart: MultipartBody.Part? = null
+    private var stateSelectImageFirst = false
     private lateinit var preferencesUSERSTATUS: SharedPreferences
+
+    private var activityBinding: ActivityMainBinding? = null
 
 
     @Suppress("DEPRECATION")
@@ -57,24 +75,33 @@ class RegistrationFragment : Fragment() {
             activity?.onBackPressed()
         }
 
-        viewModel.myUserRegister.observe(viewLifecycleOwner) { list ->
+        viewModel.myRegisterList.observe(viewLifecycleOwner) { list ->
             if (list.isSuccessful) {
                 activity?.onBackPressed()
-                USER_STATUS = true
                 alertDialogCancel2()
             } else {
                 view.scrollConst.visibility = View.VISIBLE
                 view.loafer.visibility = View.GONE
                 val jsonObj = JSONObject(list.errorBody()!!.charStream().readText())
-                alertDialogCancel(
-                    jsonObj.getString("message").toString(),
-                    jsonObj.getString("errors").toString()
-                )
+                val jsonObjError = JSONObject(jsonObj.getString("errors"))
+                var message = ""
+
+                for (name in jsonObjError.keys()){
+
+                    val nameArray = jsonObjError.getJSONArray(name)
+
+                    for (i in 0 until nameArray.length()){
+                        message = nameArray.getString(i)
+                    }
+
+                }
+                alertDialogCancel(message)
             }
         }
 
         view.btnRegistration.setOnClickListener {
-            if (view.authEditName.text!!.isNotEmpty() &&
+            if (view.authPhone.text!!.isNotEmpty() &&
+                view.authEditName.text!!.isNotEmpty() &&
                 view.authEditEmail.text!!.isNotEmpty() &&
                 view.authEditPassword.text!!.isNotEmpty() &&
                 view.authEditPassword2.text!!.isNotEmpty()
@@ -94,7 +121,9 @@ class RegistrationFragment : Fragment() {
                             view.authEditPassword.text.toString().trim()
                         )
 
-                        viewModel.postUserRegister(paramObjectt)
+                        viewModel.pushRegist(rb(view.authEditName.text.toString()), rb(view.authEditEmail.text.toString()),
+                            rb(view.authEditPassword.text.toString()),rb(view.authEditPassword2.text.toString()),
+                            rb(view.authPhone.text.toString()), filePart)
                     } else {
                         Toast.makeText(
                             requireContext(),
@@ -116,19 +145,40 @@ class RegistrationFragment : Fragment() {
             }
 
         }
+
+        binding.authImg.setOnClickListener {
+            stateSelectImageFirst = false
+            val intent = Intent(Intent.ACTION_PICK)
+            intent.type = "image/*"
+            startActivityForResult(intent, 302)
+        }
+
         return view.root
     }
 
-    private fun alertDialogCancel(title: String, descrip: String) {
+    fun rb(value: String): RequestBody {
+        return value.toRequestBody("text/plain".toMediaTypeOrNull())
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        // Получаем ссылку на ViewBinding активити
+        activityBinding = (requireActivity() as? MainActivity)?.binding
+
+        // Используем ссылку на ViewBinding активити, чтобы получить доступ к View
+        activityBinding?.bottomAppBar?.visibility = View.GONE
+        activityBinding?.floatBottom?.visibility = View.GONE
+    }
+
+    private fun alertDialogCancel(descrip: String) {
 
         dialog.setCancelable(false)
         dialog.setCanceledOnTouchOutside(false)
         dialog.setContentView(R.layout.dialog_error_auth)
         dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
         val buttonYES = dialog.findViewById<ImageView>(R.id.dialog_yes)
-        val textTitle = dialog.findViewById<TextView>(R.id.txt_title)
         val textDescrip = dialog.findViewById<TextView>(R.id.txt_descript)
-        textTitle.text = title
         textDescrip.text = descrip
         buttonYES.setOnClickListener {
             dialog.dismiss()
@@ -151,9 +201,77 @@ class RegistrationFragment : Fragment() {
 
     }
 
+    private fun sendFileRequest(image: Bitmap) {
+        val stream = ByteArrayOutputStream()
+        image.compress(Bitmap.CompressFormat.JPEG, 80, stream)
+        val byteArray = stream.toByteArray()
+
+        filePart = MultipartBody.Part.createFormData(
+            "img",
+            "photo",
+            byteArray.toRequestBody("image/*".toMediaTypeOrNull(), 0, byteArray.size)
+        )
+
+    }
+
+    @Suppress("DEPRECATION")
+    @SuppressLint("Recycle")
+    private fun filePartScopMetod(uri: Uri) {
+        try {
+            binding.authImg.scaleType = ImageView.ScaleType.CENTER_CROP
+            MyUtils.uGlide(requireContext(), binding.authImg, uri)
+            sendFileRequest(
+                MediaStore.Images.Media.getBitmap(
+                    requireContext().contentResolver,
+                    uri
+                )
+            )
+            stateSelectImageFirst = true
+        } catch (e: Exception) {
+            e.printStackTrace()
+            binding.authImg.scaleType = ImageView.ScaleType.FIT_CENTER
+            MyUtils.uGlide(requireContext(), binding.authImg, R.drawable.ic_add)
+            Toast.makeText(
+                requireContext(),
+                resources.getText(R.string.not_selected_photo),
+                Toast.LENGTH_LONG
+            )
+                .show()
+        }
+    }
+
+
+
+    private fun startCropActivity(imageUri: Uri?) {
+
+        CropImage.activity(imageUri)
+            .setGuidelines(CropImageView.Guidelines.ON)
+            .setAspectRatio(1, 1)
+            .setMaxCropResultSize(2500, 2500)
+            .setCropShape(CropImageView.CropShape.RECTANGLE)
+            .start(requireActivity(), this)
+
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        if (requestCode == 302 && resultCode == Activity.RESULT_OK && data != null) {
+            startCropActivity(data.data)
+        } else if (requestCode == CropImage.CROP_IMAGE_ACTIVITY_REQUEST_CODE) {
+            if (data != null) {
+                val result: CropImage.ActivityResult = CropImage.getActivityResult(data)
+                if (resultCode == Activity.RESULT_OK) {
+                    filePartScopMetod(result.uri)
+                } else if (resultCode == CropImage.CROP_IMAGE_ACTIVITY_RESULT_ERROR_CODE) {
+                    Toast.makeText(requireContext(), "Opps image eerror", Toast.LENGTH_SHORT).show()
+                }
+            }
+        }
+    }
+
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
+        activityBinding = null
     }
 
 }

@@ -13,7 +13,7 @@ import product.truckkz.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityMainBinding
+    lateinit var binding: ActivityMainBinding
 
 //    val viewGroup = (findViewById<View>(android.R.id.content) as ViewGroup).getChildAt(0) as ViewGroup
 
@@ -47,7 +47,8 @@ class MainActivity : AppCompatActivity() {
         if (
             navController.currentDestination!!.id == R.id.favoriteFragment ||
             navController.currentDestination!!.id == R.id.chadFragment ||
-            navController.currentDestination!!.id == R.id.authorizationFragment
+            navController.currentDestination!!.id == R.id.authorizationFragment||
+            navController.currentDestination!!.id == R.id.profileFragment
         ) {
             navController.navigate(R.id.homeFragment)
         } else {

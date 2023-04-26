@@ -21,7 +21,7 @@ import product.truckkz.R
 import product.truckkz.UserDate
 import product.truckkz.databinding.FragmentHomeInfoBinding
 import product.truckkz.`interface`.IClickListnearUpdateImage
-import product.truckkz.models.get.productInfo.Images
+import product.truckkz.models.products.productInfo.Images
 import product.truckkz.viewModels.HomeViewModels
 import product.truckkz.windows.home.showImage.ShowImageActivity
 

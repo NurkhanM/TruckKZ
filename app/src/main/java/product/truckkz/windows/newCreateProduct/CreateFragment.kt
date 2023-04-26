@@ -144,7 +144,7 @@ class CreateFragment : Fragment() {
             activity?.onBackPressed()
         }
 
-        viewModel.myNewProductsCreate.observe(viewLifecycleOwner) { list ->
+     /*   viewModel.myNewProductsCreate.observe(viewLifecycleOwner) { list ->
             if (list.isSuccessful) {
                 if (shaffle.size != 0) {
                     for (i in 0 until filePartAll.size) {
@@ -183,7 +183,7 @@ class CreateFragment : Fragment() {
                     jsonObj.getString("errors").toString()
                 )
             }
-        }
+        }*/
 
         view.btnSendCreate.setOnClickListener {
 
@@ -221,7 +221,7 @@ class CreateFragment : Fragment() {
                         }
                         oneJSONObject.add("fieldValue", oneJSONObject2)
 
-                        viewModel.postNewProductsCreate("Bearer $TOKEN_USER", oneJSONObject)
+//                        viewModel.postNewProductsCreate("Bearer $TOKEN_USER", oneJSONObject)
 
                         view.constraintFon1.visibility = View.GONE
                         view.btnSendCreate.visibility = View.GONE
@@ -359,7 +359,7 @@ class CreateFragment : Fragment() {
     }
 
 
-    @SuppressLint("UseCompatLoadingForDrawables")
+  /*  @SuppressLint("UseCompatLoadingForDrawables")
     @Suppress("DEPRECATION")
     private fun uploadProductElectronic() {
 
@@ -438,7 +438,7 @@ class CreateFragment : Fragment() {
             binding.linFieldsFill.addView(linearLayout)
         }
 
-    }
+    }*/
 
     private fun alertDialogCancel(title: String, descrip: String) {
 
@@ -488,7 +488,7 @@ class CreateFragment : Fragment() {
                 ID_CATEGORY_SELECTED = baseID
                 binding.txtNameCategory.text = name
                 binding.txtNameCategory.setTextColor(ContextCompat.getColor(requireContext(), R.color.black))
-                uploadProductElectronic()
+//                uploadProductElectronic()
                 dialogSheet.dismiss()
             }
         })

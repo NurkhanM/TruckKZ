@@ -32,11 +32,8 @@ class RefreshActivity : AppCompatActivity() {
 
         preferencesTOKEN.edit().putString(KEY_TOKEN, "").apply()
 
-        USER_STATUS = false
-        USER_STATUS_FULL = false
         TOKEN_USER = ""
 
-//        idUser = "-1"
 
         refreshNextIntent()
 

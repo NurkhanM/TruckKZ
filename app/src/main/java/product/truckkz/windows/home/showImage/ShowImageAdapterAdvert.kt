@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import product.truckkz.R
 import product.truckkz.databinding.ItemShowImageBinding
-import product.truckkz.models.get.productInfo.Images
+import product.truckkz.models.products.productInfo.Images
 
 class ShowImageAdapterAdvert(private var images: List<Images>) :
     RecyclerView.Adapter<ShowImageAdapterAdvert.MyViewHolder>() {

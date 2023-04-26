@@ -1,6 +1,6 @@
 package product.truckkz
 
-import product.truckkz.models.get.productInfo.Images
+import product.truckkz.models.products.productInfo.Images
 
 object DataAllProducts {
 

@@ -7,11 +7,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import gun0912.tedimagepicker.util.ToastUtil
 import product.truckkz.R
 import product.truckkz.databinding.ItemUpdateImageArrayBinding
 import product.truckkz.`interface`.IClickListnearUpdateImage
-import product.truckkz.models.get.productInfo.Images
+import product.truckkz.models.products.productInfo.Images
 
 class UpdateDataAdapter(private val mIClickListnear: IClickListnearUpdateImage) :
     RecyclerView.Adapter<UpdateDataAdapter.MyViewHolder>() {

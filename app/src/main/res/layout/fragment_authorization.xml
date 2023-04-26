@@ -83,8 +83,8 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center_vertical"
             android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
             android:orientation="horizontal"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textInputLayout2">
@@ -97,7 +97,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Запомнить меня"/>
+                android:text="Запомнить меня" />
         </LinearLayout>
 
         <TextView
@@ -137,11 +137,18 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btn_auth">
 
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Нет аккаунта "
+                    android:textSize="16sp" />
 
                 <LinearLayout
                     android:id="@+id/create_account"
@@ -150,9 +157,10 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:textColor="@color/black_txt2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Создайте аккаунт"
+                        android:text="создайте аккаунт"
                         android:textSize="16sp" />
 
                     <View
@@ -162,68 +170,7 @@
 
                 </LinearLayout>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text=" или войдите с помощью"
-                    android:textSize="16sp" />
-
             </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                android:orientation="horizontal">
-
-                <LinearLayout
-                    android:id="@+id/nextGoogle"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
-                    android:layout_weight="1">
-
-                    <LinearLayout
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:background="@drawable/circle_background"
-                        android:padding="12dp">
-
-                        <ImageView
-                            android:id="@+id/btnSignInGoogle"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:src="@drawable/ic_google" />
-                    </LinearLayout>
-
-                </LinearLayout>
-
-
-                <LinearLayout
-                    android:id="@+id/nextFaceBook"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
-                    android:layout_weight="1">
-
-                    <LinearLayout
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:background="@drawable/circle_background"
-                        android:padding="12dp">
-
-                        <ImageView
-                            android:id="@+id/btnSignInFaceBook"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:src="@drawable/ic_facebook" />
-                    </LinearLayout>
-
-                </LinearLayout>
-            </LinearLayout>
-
 
         </LinearLayout>
 

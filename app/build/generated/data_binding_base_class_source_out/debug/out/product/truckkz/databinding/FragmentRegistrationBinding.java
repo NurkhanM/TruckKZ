@@ -40,37 +40,28 @@ public final class FragmentRegistrationBinding implements ViewBinding {
   public final TextInputEditText authEditPassword2;
 
   @NonNull
-  public final LinearLayout btnBackStack;
+  public final ImageView authImg;
+
+  @NonNull
+  public final TextInputEditText authPhone;
+
+  @NonNull
+  public final ImageView btnBackStack;
 
   @NonNull
   public final MaterialButton btnRegistration;
 
   @NonNull
-  public final ImageView btnSignInFaceBook;
-
-  @NonNull
-  public final ImageView btnSignInGoogle;
+  public final LinearLayout cardCons;
 
   @NonNull
   public final CheckBox checkboxState;
 
   @NonNull
-  public final LinearLayout linGoogle;
-
-  @NonNull
   public final GifImageView loafer;
 
   @NonNull
-  public final LinearLayout nextFaceBook;
-
-  @NonNull
-  public final LinearLayout nextGoogle;
-
-  @NonNull
   public final ScrollView scrollConst;
-
-  @NonNull
-  public final TextView text1;
 
   @NonNull
   public final TextInputLayout textInputLayout;
@@ -85,7 +76,13 @@ public final class FragmentRegistrationBinding implements ViewBinding {
   public final TextInputLayout textInputLayout4;
 
   @NonNull
-  public final TextView txtCenterAutTitle;
+  public final TextInputLayout textInputLayout5;
+
+  @NonNull
+  public final TextView textPhoto;
+
+  @NonNull
+  public final ConstraintLayout toolBar;
 
   @NonNull
   public final LinearLayout txtRestoreAuth;
@@ -93,35 +90,34 @@ public final class FragmentRegistrationBinding implements ViewBinding {
   private FragmentRegistrationBinding(@NonNull ConstraintLayout rootView,
       @NonNull TextInputEditText authEditEmail, @NonNull TextInputEditText authEditName,
       @NonNull TextInputEditText authEditPassword, @NonNull TextInputEditText authEditPassword2,
-      @NonNull LinearLayout btnBackStack, @NonNull MaterialButton btnRegistration,
-      @NonNull ImageView btnSignInFaceBook, @NonNull ImageView btnSignInGoogle,
-      @NonNull CheckBox checkboxState, @NonNull LinearLayout linGoogle,
-      @NonNull GifImageView loafer, @NonNull LinearLayout nextFaceBook,
-      @NonNull LinearLayout nextGoogle, @NonNull ScrollView scrollConst, @NonNull TextView text1,
-      @NonNull TextInputLayout textInputLayout, @NonNull TextInputLayout textInputLayout2,
-      @NonNull TextInputLayout textInputLayout3, @NonNull TextInputLayout textInputLayout4,
-      @NonNull TextView txtCenterAutTitle, @NonNull LinearLayout txtRestoreAuth) {
+      @NonNull ImageView authImg, @NonNull TextInputEditText authPhone,
+      @NonNull ImageView btnBackStack, @NonNull MaterialButton btnRegistration,
+      @NonNull LinearLayout cardCons, @NonNull CheckBox checkboxState, @NonNull GifImageView loafer,
+      @NonNull ScrollView scrollConst, @NonNull TextInputLayout textInputLayout,
+      @NonNull TextInputLayout textInputLayout2, @NonNull TextInputLayout textInputLayout3,
+      @NonNull TextInputLayout textInputLayout4, @NonNull TextInputLayout textInputLayout5,
+      @NonNull TextView textPhoto, @NonNull ConstraintLayout toolBar,
+      @NonNull LinearLayout txtRestoreAuth) {
     this.rootView = rootView;
     this.authEditEmail = authEditEmail;
     this.authEditName = authEditName;
     this.authEditPassword = authEditPassword;
     this.authEditPassword2 = authEditPassword2;
+    this.authImg = authImg;
+    this.authPhone = authPhone;
     this.btnBackStack = btnBackStack;
     this.btnRegistration = btnRegistration;
-    this.btnSignInFaceBook = btnSignInFaceBook;
-    this.btnSignInGoogle = btnSignInGoogle;
+    this.cardCons = cardCons;
     this.checkboxState = checkboxState;
-    this.linGoogle = linGoogle;
     this.loafer = loafer;
-    this.nextFaceBook = nextFaceBook;
-    this.nextGoogle = nextGoogle;
     this.scrollConst = scrollConst;
-    this.text1 = text1;
     this.textInputLayout = textInputLayout;
     this.textInputLayout2 = textInputLayout2;
     this.textInputLayout3 = textInputLayout3;
     this.textInputLayout4 = textInputLayout4;
-    this.txtCenterAutTitle = txtCenterAutTitle;
+    this.textInputLayout5 = textInputLayout5;
+    this.textPhoto = textPhoto;
+    this.toolBar = toolBar;
     this.txtRestoreAuth = txtRestoreAuth;
   }
 
@@ -176,8 +172,20 @@ public final class FragmentRegistrationBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.authImg;
+      ImageView authImg = ViewBindings.findChildViewById(rootView, id);
+      if (authImg == null) {
+        break missingId;
+      }
+
+      id = R.id.authPhone;
+      TextInputEditText authPhone = ViewBindings.findChildViewById(rootView, id);
+      if (authPhone == null) {
+        break missingId;
+      }
+
       id = R.id.btn_back_stack;
-      LinearLayout btnBackStack = ViewBindings.findChildViewById(rootView, id);
+      ImageView btnBackStack = ViewBindings.findChildViewById(rootView, id);
       if (btnBackStack == null) {
         break missingId;
       }
@@ -188,15 +196,9 @@ public final class FragmentRegistrationBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.btnSignInFaceBook;
-      ImageView btnSignInFaceBook = ViewBindings.findChildViewById(rootView, id);
-      if (btnSignInFaceBook == null) {
-        break missingId;
-      }
-
-      id = R.id.btnSignInGoogle;
-      ImageView btnSignInGoogle = ViewBindings.findChildViewById(rootView, id);
-      if (btnSignInGoogle == null) {
+      id = R.id.cardCons;
+      LinearLayout cardCons = ViewBindings.findChildViewById(rootView, id);
+      if (cardCons == null) {
         break missingId;
       }
 
@@ -206,39 +208,15 @@ public final class FragmentRegistrationBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.linGoogle;
-      LinearLayout linGoogle = ViewBindings.findChildViewById(rootView, id);
-      if (linGoogle == null) {
-        break missingId;
-      }
-
       id = R.id.loafer;
       GifImageView loafer = ViewBindings.findChildViewById(rootView, id);
       if (loafer == null) {
         break missingId;
       }
 
-      id = R.id.nextFaceBook;
-      LinearLayout nextFaceBook = ViewBindings.findChildViewById(rootView, id);
-      if (nextFaceBook == null) {
-        break missingId;
-      }
-
-      id = R.id.nextGoogle;
-      LinearLayout nextGoogle = ViewBindings.findChildViewById(rootView, id);
-      if (nextGoogle == null) {
-        break missingId;
-      }
-
       id = R.id.scrollConst;
       ScrollView scrollConst = ViewBindings.findChildViewById(rootView, id);
       if (scrollConst == null) {
-        break missingId;
-      }
-
-      id = R.id.text1;
-      TextView text1 = ViewBindings.findChildViewById(rootView, id);
-      if (text1 == null) {
         break missingId;
       }
 
@@ -266,9 +244,21 @@ public final class FragmentRegistrationBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.txt_center_aut_title;
-      TextView txtCenterAutTitle = ViewBindings.findChildViewById(rootView, id);
-      if (txtCenterAutTitle == null) {
+      id = R.id.textInputLayout5;
+      TextInputLayout textInputLayout5 = ViewBindings.findChildViewById(rootView, id);
+      if (textInputLayout5 == null) {
+        break missingId;
+      }
+
+      id = R.id.textPhoto;
+      TextView textPhoto = ViewBindings.findChildViewById(rootView, id);
+      if (textPhoto == null) {
+        break missingId;
+      }
+
+      id = R.id.toolBar;
+      ConstraintLayout toolBar = ViewBindings.findChildViewById(rootView, id);
+      if (toolBar == null) {
         break missingId;
       }
 
@@ -279,10 +269,10 @@ public final class FragmentRegistrationBinding implements ViewBinding {
       }
 
       return new FragmentRegistrationBinding((ConstraintLayout) rootView, authEditEmail,
-          authEditName, authEditPassword, authEditPassword2, btnBackStack, btnRegistration,
-          btnSignInFaceBook, btnSignInGoogle, checkboxState, linGoogle, loafer, nextFaceBook,
-          nextGoogle, scrollConst, text1, textInputLayout, textInputLayout2, textInputLayout3,
-          textInputLayout4, txtCenterAutTitle, txtRestoreAuth);
+          authEditName, authEditPassword, authEditPassword2, authImg, authPhone, btnBackStack,
+          btnRegistration, cardCons, checkboxState, loafer, scrollConst, textInputLayout,
+          textInputLayout2, textInputLayout3, textInputLayout4, textInputLayout5, textPhoto,
+          toolBar, txtRestoreAuth);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

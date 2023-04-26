@@ -60,11 +60,19 @@
     <string name="check_connections_internet">Пожалуйста проверьте соединения с интернетом</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="no_connection">Нет соединения</string>
+    <string name="not_selected_photo">Фотография не выбрано</string>
     <string name="server_error">На данный момент \n сервер обновляется… \n пожалуйста подождите немного</string>
     <string name="text_big">Floxy 1.0 - женская модель начального уровня для прогулок. Хороша для нерегулярного использования на плоском рельефе в спокойном режиме езды. Относительно небольшой диаметр колеса делает этой велосипед универсальным для использования как взрослыми, так и подростками. </string>
     <string name="text_big2">Диаметр: 26\nПередний переключатель: Shimano TZ-500\nЗадний переключатель: MicroShift RD-M21\nТип тормозов: Ободные\nРама: Alloy 6061\nКоличество скоростей: 21</string>
     <string name="text_big3">Серьезный подход к своему делу. Велосипед выкатили чистый, все работает. Причем цена  очень адекватная. В общем данным сервисом остался очень доволен.</string>
     <string name="todo">что-то</string>
+    <style name="AppTheme.TruckKZ" parent="Base.Theme.AppCompat">
+        
+        <item name="colorPrimary">@color/fon1</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/orange</item>
+        
+    </style>
     <style name="BottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
         <item name="bottomSheetStyle">@style/BottomSheetStyle</item>
     </style>
@@ -75,10 +83,12 @@
         <item name="colorAccent">@android:color/holo_blue_light</item>
     </style>
     <style name="Theme.Rentit" parent="Theme.MaterialComponents.Light.NoActionBar">
+
         
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/white</item>
+
         
         <item name="windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
@@ -91,9 +101,9 @@
         <item name="colorSecondary">@color/teal_200</item>
         <item name="colorSecondaryVariant">@color/teal_700</item>
         <item name="colorOnSecondary">@color/black</item>
+
         
-        <item name="android:statusBarColor" ns1:targetApi="l">@color/fon</item>
-        <item name="android:windowLightStatusBar" ns1:targetApi="m">true</item>
-        
+        <item name="android:statusBarColor">@color/fon</item>
+        <item name="android:windowLightStatusBar" ns1:targetApi="m">false</item>
     </style>
 </resources>

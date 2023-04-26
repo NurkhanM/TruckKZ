@@ -440,6 +440,38 @@ attr counterOverflowTextAppearance
 attr counterOverflowTextColor
 attr counterTextAppearance
 attr counterTextColor
+attr cropAspectRatioX
+attr cropAspectRatioY
+attr cropAutoZoomEnabled
+attr cropBackgroundColor
+attr cropBorderCornerColor
+attr cropBorderCornerLength
+attr cropBorderCornerOffset
+attr cropBorderCornerThickness
+attr cropBorderLineColor
+attr cropBorderLineThickness
+attr cropFixAspectRatio
+attr cropFlipHorizontally
+attr cropFlipVertically
+attr cropGuidelines
+attr cropGuidelinesColor
+attr cropGuidelinesThickness
+attr cropInitialCropWindowPaddingRatio
+attr cropMaxCropResultHeightPX
+attr cropMaxCropResultWidthPX
+attr cropMaxZoom
+attr cropMinCropResultHeightPX
+attr cropMinCropResultWidthPX
+attr cropMinCropWindowHeight
+attr cropMinCropWindowWidth
+attr cropMultiTouchEnabled
+attr cropSaveBitmapToInstanceState
+attr cropScaleType
+attr cropShape
+attr cropShowCropOverlay
+attr cropShowProgressBar
+attr cropSnapRadius
+attr cropTouchRadius
 attr crossfade
 attr currentState
 attr curveFit
@@ -3010,6 +3042,9 @@ drawable common_google_signin_btn_text_light
 drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
+drawable crop_image_menu_flip
+drawable crop_image_menu_rotate_left
+drawable crop_image_menu_rotate_right
 drawable day_item_background
 drawable day_picker_item_background
 drawable design_fab_background
@@ -3190,7 +3225,10 @@ id ALWAYS
 id BOTTOM_END
 id BOTTOM_START
 id CTRL
+id CropOverlayView
+id CropProgressBar
 id FUNCTION
+id ImageView_image
 id META
 id NEVER
 id NO_DEBUG
@@ -3291,8 +3329,10 @@ id authEditEmail
 id authEditName
 id authEditPassword
 id authEditPassword2
+id authImg
 id authNumberBig
 id authNumberSmall
+id authPhone
 id authorizationFragment
 id auto
 id autoComplete
@@ -3314,8 +3354,6 @@ id bounceEnd
 id bounceStart
 id btnBook
 id btnSendCreate
-id btnSignInFaceBook
-id btnSignInGoogle
 id btnSortSearch
 id btn_auth
 id btn_back_stack
@@ -3328,6 +3366,7 @@ id calendarHeader
 id calendarViewPager
 id callMeasure
 id cancel_button
+id cardCons
 id cardImage_1
 id cardImage_2
 id cardImage_3
@@ -3392,6 +3431,13 @@ id createFragment2
 id createProductConnect
 id createProductDisconnect
 id create_account
+id cropImageView
+id crop_image_menu_crop
+id crop_image_menu_flip
+id crop_image_menu_flip_horizontally
+id crop_image_menu_flip_vertically
+id crop_image_menu_rotate_left
+id crop_image_menu_rotate_right
 id currentDateLabel
 id currentState
 id custom
@@ -3566,7 +3612,6 @@ id linBig
 id linCountry
 id linDefault
 id linFieldsFill
-id linGoogle
 id linPrice
 id linSC
 id linSmall
@@ -3667,9 +3712,7 @@ id never
 id neverCompleteToEnd
 id neverCompleteToStart
 id nextExitUser
-id nextFaceBook
 id nextFullRegister
-id nextGoogle
 id nextMyAds
 id nextSelectedCategory
 id nextSettings
@@ -3687,10 +3730,12 @@ id on
 id onAttachStateChangeListener
 id onDateChanged
 id onInterceptTouchReturnSwipe
+id onTouch
 id one_day_picker
 id outline
 id outside
 id outward
+id oval
 id overshoot
 id packed
 id parallax
@@ -3720,6 +3765,7 @@ id radioSmall
 id radioStarted
 id range_picker
 id ratio
+id rectangle
 id rectangles
 id recyclerUpdate
 id registrationFragment
@@ -3847,7 +3893,6 @@ id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
 id text
-id text1
 id text2
 id textDate
 id textDescription
@@ -3858,8 +3903,10 @@ id textInputLayout1
 id textInputLayout2
 id textInputLayout3
 id textInputLayout4
+id textInputLayout5
 id textMyAds
 id textName
+id textPhoto
 id textPrice
 id textProfileEmail
 id textProfileName
@@ -3895,6 +3942,7 @@ id titleDividerNoCustom
 id title_template
 id todayButton
 id toggle
+id toolBar
 id toolbar
 id top
 id topPanel
@@ -4087,6 +4135,8 @@ layout calendar_view
 layout calendar_view_day
 layout calendar_view_grid
 layout calendar_view_picker_day
+layout crop_image_activity
+layout crop_image_view
 layout custom_dialog
 layout date_picker_dialog
 layout design_bottom_navigation_item
@@ -4205,6 +4255,7 @@ layout support_simple_spinner_dropdown_item
 layout swipe_instructor
 layout test
 menu bottom_navigation_menu
+menu crop_image_menu
 mipmap ic_launcher
 mipmap ic_launcher_foreground
 mipmap ic_launcher_round
@@ -4270,6 +4321,14 @@ string common_google_play_services_wear_update_text
 string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
+string crop_image_activity_no_permissions
+string crop_image_activity_title
+string crop_image_menu_crop
+string crop_image_menu_flip
+string crop_image_menu_flip_horizontally
+string crop_image_menu_flip_vertically
+string crop_image_menu_rotate_left
+string crop_image_menu_rotate_right
 string error_a11y_label
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
@@ -4387,11 +4446,13 @@ string mtrl_timepicker_confirm
 string nav_app_bar_navigate_up_description
 string nav_app_bar_open_drawer_description
 string no_connection
+string not_selected_photo
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string pick_image_intent_chooser_title
 string search_menu_title
 string searchbar_scrolling_view_behavior
 string searchview_clear_text_content_description
@@ -4422,6 +4483,7 @@ style Animation_Design_BottomSheetDialog
 style Animation_Material3_BottomSheetDialog
 style Animation_Material3_SideSheetDialog
 style Animation_MaterialComponents_BottomSheetDialog
+style AppTheme_TruckKZ
 style Base_AlertDialog_AppCompat
 style Base_AlertDialog_AppCompat_Light
 style Base_Animation_AppCompat_Dialog
@@ -5568,6 +5630,7 @@ styleable ConstraintSet android_orientation android_id android_visibility androi
 styleable CoordinatorLayout keylines statusBarBackground
 styleable CoordinatorLayout_Layout android_layout_gravity layout_anchor layout_anchorGravity layout_behavior layout_dodgeInsetEdges layout_insetEdge layout_keyline
 styleable CropAreaView gest_aspect gest_backgroundColor gest_borderColor gest_borderWidth gest_rounded gest_rulesHorizontal gest_rulesVertical gest_rulesWidth
+styleable CropImageView cropAspectRatioX cropAspectRatioY cropAutoZoomEnabled cropBackgroundColor cropBorderCornerColor cropBorderCornerLength cropBorderCornerOffset cropBorderCornerThickness cropBorderLineColor cropBorderLineThickness cropFixAspectRatio cropFlipHorizontally cropFlipVertically cropGuidelines cropGuidelinesColor cropGuidelinesThickness cropInitialCropWindowPaddingRatio cropMaxCropResultHeightPX cropMaxCropResultWidthPX cropMaxZoom cropMinCropResultHeightPX cropMinCropResultWidthPX cropMinCropWindowHeight cropMinCropWindowWidth cropMultiTouchEnabled cropSaveBitmapToInstanceState cropScaleType cropShape cropShowCropOverlay cropShowProgressBar cropSnapRadius cropTouchRadius
 styleable CustomAttribute attributeName customBoolean customColorDrawableValue customColorValue customDimension customFloatValue customIntegerValue customPixelDimension customReference customStringValue methodName
 styleable DialogFragmentNavigator android_name
 styleable DrawerArrowToggle arrowHeadLength arrowShaftLength barLength color drawableSize gapBetweenBars spinBars thickness

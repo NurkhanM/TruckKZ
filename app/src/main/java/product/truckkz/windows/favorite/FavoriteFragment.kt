@@ -15,6 +15,7 @@ import me.farahani.spaceitemdecoration.SpaceItemDecoration
 import product.truckkz.R
 import product.truckkz.UserDate
 import product.truckkz.databinding.FragmentFavoriteBinding
+import product.truckkz.databinding.ItemTovarBinding
 import product.truckkz.`interface`.IClickListnearHomeFavorite
 import product.truckkz.viewModels.HomeViewModels
 import product.truckkz.windows.home.TovarAdapterProduct
@@ -51,25 +52,11 @@ class FavoriteFragment : Fragment() {
                 @SuppressLint("UseCompatLoadingForDrawables", "NotifyDataSetChanged")
                 override fun clickListenerFavorite(
                     baseID: Int,
-                    v: View,
+                    v: ItemTovarBinding,
                     boolean: Boolean,
                     pos: Int
                 ) {
-                    if (!boolean) {
-//                        viewModel.addFavorite("Bearer ${UserDate.TOKEN_USER}", baseID)
-//                        v.img_favorite?.setImageDrawable(
-//                            requireContext().resources.getDrawable(
-//                                R.drawable.ic_favorite2
-//                            )
-//                        )
-                    } else {
-//                        viewModel.deleteFavorite("Bearer ${UserDate.TOKEN_USER}", baseID)
-//                        v.img_favorite?.setImageDrawable(
-//                            requireContext().resources.getDrawable(
-//                                R.drawable.ic_favorite
-//                            )
-//                        )
-                    }
+
                     Toast.makeText(requireContext(), "Удалено", Toast.LENGTH_SHORT).show()
 //                    adapterProduct.deleteMyEducations(pos)
                 }
@@ -86,10 +73,10 @@ class FavoriteFragment : Fragment() {
     override fun onResume() {
         super.onResume()
 
-        viewModel.getFavorite("Bearer ${UserDate.TOKEN_USER}")
-        viewModel.myGetProduct.observe(viewLifecycleOwner) {
-            adapterProduct.submitData(viewLifecycleOwner.lifecycle, it)
-        }
+//        viewModel.getFavorite("Bearer ${UserDate.TOKEN_USER}")
+//        viewModel.myGetProduct.observe(viewLifecycleOwner) {
+//            adapterProduct.submitData(viewLifecycleOwner.lifecycle, it)
+//        }
     }
 
     override fun onDestroyView() {

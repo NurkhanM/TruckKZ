@@ -1,6 +1,7 @@
 package product.truckkz.windows.home
 
 import android.annotation.SuppressLint
+import android.app.Activity
 import android.content.Context
 import android.content.SharedPreferences
 import android.os.Bundle
@@ -17,13 +18,15 @@ import product.truckkz.R
 import product.truckkz.UserDate.APP_PREFERENCES
 import product.truckkz.UserDate.KEY_USER_STATUS
 import product.truckkz.UserDate.TOKEN_USER
-import product.truckkz.UserDate.USER_STATUS
 import product.truckkz.`interface`.IClickListnearHomeFavorite
 import product.truckkz.`interface`.IClickListnearHomeTest
 import product.truckkz.models.TestRecomendModel
 import product.truckkz.viewModels.HomeViewModels
 import me.farahani.spaceitemdecoration.SpaceItemDecoration
+import product.truckkz.MainActivity
+import product.truckkz.databinding.ActivityMainBinding
 import product.truckkz.databinding.FragmentHomeBinding
+import product.truckkz.databinding.ItemTovarBinding
 import java.util.HashMap
 
 class HomeFragment : Fragment() {
@@ -31,9 +34,12 @@ class HomeFragment : Fragment() {
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!
 
-    lateinit var recyclerViewCategory: RecyclerView
+    private var activityBinding: ActivityMainBinding? = null
+
+
+    private lateinit var recyclerViewCategory: RecyclerView
     lateinit var recyclerViewProduct: RecyclerView
-    lateinit var recyclerViewProduct2: RecyclerView
+    private lateinit var recyclerViewProduct2: RecyclerView
     private lateinit var adapterCategory: TovarAdapterCategory
     private lateinit var adapterProduct: TovarAdapterProduct
     private lateinit var adapterProduct2: TovarAdapterProduct2
@@ -41,9 +47,6 @@ class HomeFragment : Fragment() {
     private val map = HashMap<String, String>()
 
     private lateinit var viewModel: HomeViewModels
-
-    private lateinit var preferencesUSERSTATUS: SharedPreferences
-
 
     @SuppressLint("UseCompatLoadingForDrawables", "NotifyDataSetChanged")
     override fun onCreateView(
@@ -54,16 +57,8 @@ class HomeFragment : Fragment() {
         viewModel = ViewModelProvider(this)[HomeViewModels::class.java]
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val view = binding
-//        (activity as AppCompatActivity).bottomAppBar.visibility = View.VISIBLE
-//        (activity as AppCompatActivity).floatBottom.visibility = View.VISIBLE
-//        (activity as AppCompatActivity).mainConst.setBackgroundColor(resources.getColor(R.color.white))
 
-        preferencesUSERSTATUS = (activity as AppCompatActivity).getSharedPreferences(
-            APP_PREFERENCES,
-            Context.MODE_PRIVATE
-        )
 
-        USER_STATUS = preferencesUSERSTATUS.getBoolean(KEY_USER_STATUS, false)
 
 
         arrayRecomend = arrayListOf(
@@ -141,7 +136,7 @@ class HomeFragment : Fragment() {
 
                 override fun clickListenerFavorite(
                     baseID: Int,
-                    v: View,
+                    v: ItemTovarBinding,
                     boolean: Boolean,
                     pos: Int
                 ) {
@@ -172,26 +167,11 @@ class HomeFragment : Fragment() {
 
                 override fun clickListenerFavorite(
                     baseID: Int,
-                    v: View,
+                    v: ItemTovarBinding,
                     boolean: Boolean,
                     pos: Int
                 ) {
-//                    if (!boolean) {
-//                        viewModel.addFavorite("Bearer $TOKEN_USER", baseID)
-//                        v.img_favorite?.setImageDrawable(
-//                            requireContext().resources.getDrawable(
-//                                R.drawable.ic_favorite2
-//                            )
-//                        )
-//                    } else {
-//                        viewModel.deleteFavorite("Bearer $TOKEN_USER", baseID)
-//                        v.img_favorite?.setImageDrawable(
-//                            requireContext().resources.getDrawable(
-//                                R.drawable.ic_favorite
-//                            )
-//                        )
-//
-//                    }
+
                 }
             })
 
@@ -201,6 +181,17 @@ class HomeFragment : Fragment() {
 
 
         return view.root
+    }
+
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        // Получаем ссылку на ViewBinding активити
+        activityBinding = (requireActivity() as? MainActivity)?.binding
+        // Используем ссылку на ViewBinding активити, чтобы получить доступ к View
+        activityBinding?.bottomAppBar?.visibility = View.VISIBLE
+        activityBinding?.floatBottom?.visibility = View.VISIBLE
     }
 
 
@@ -228,6 +219,7 @@ class HomeFragment : Fragment() {
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
+        activityBinding = null
     }
 
 

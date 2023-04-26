@@ -57,6 +57,15 @@
                 android:value="" />
         </activity>
         <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.TruckKZ" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name="product.truckkz.windows.home.showImage.ShowImageActivity"
             android:exported="false" >
             <meta-data

@@ -66,7 +66,7 @@
 36-->[androidx.core:core:1.9.0] /Users/nurxan/.gradle/caches/transforms-3/c961de5340f0768fc0218bac6037f1a9/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
 37
 38    <application
-38-->/Users/nurxan/StudioProjects/TruckKZ/app/src/main/AndroidManifest.xml:15:5-65:19
+38-->/Users/nurxan/StudioProjects/TruckKZ/app/src/main/AndroidManifest.xml:15:5-75:19
 39        android:allowBackup="true"
 39-->/Users/nurxan/StudioProjects/TruckKZ/app/src/main/AndroidManifest.xml:16:9-35
 40        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -105,251 +105,268 @@
 57-->/Users/nurxan/StudioProjects/TruckKZ/app/src/main/AndroidManifest.xml:32:17-33
 58        </activity>
 59        <activity
-59-->/Users/nurxan/StudioProjects/TruckKZ/app/src/main/AndroidManifest.xml:34:9-40:20
-60            android:name="product.truckkz.windows.home.showImage.ShowImageActivity"
-60-->/Users/nurxan/StudioProjects/TruckKZ/app/src/main/AndroidManifest.xml:35:13-69
-61            android:exported="false" >
+59-->/Users/nurxan/StudioProjects/TruckKZ/app/src/main/AndroidManifest.xml:34:9-43:20
+60            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+60-->/Users/nurxan/StudioProjects/TruckKZ/app/src/main/AndroidManifest.xml:35:13-76
+61            android:exported="false"
 61-->/Users/nurxan/StudioProjects/TruckKZ/app/src/main/AndroidManifest.xml:36:13-37
-62            <meta-data
-62-->/Users/nurxan/StudioProjects/TruckKZ/app/src/main/AndroidManifest.xml:30:13-32:36
-63                android:name="android.app.lib_name"
-63-->/Users/nurxan/StudioProjects/TruckKZ/app/src/main/AndroidManifest.xml:31:17-52
-64                android:value="" />
-64-->/Users/nurxan/StudioProjects/TruckKZ/app/src/main/AndroidManifest.xml:32:17-33
-65        </activity>
-66        <activity
-66-->/Users/nurxan/StudioProjects/TruckKZ/app/src/main/AndroidManifest.xml:41:9-47:20
-67            android:name="product.truckkz.windows.refresh.RefreshActivity"
-67-->/Users/nurxan/StudioProjects/TruckKZ/app/src/main/AndroidManifest.xml:42:13-60
-68            android:exported="false" >
-68-->/Users/nurxan/StudioProjects/TruckKZ/app/src/main/AndroidManifest.xml:43:13-37
-69            <meta-data
-69-->/Users/nurxan/StudioProjects/TruckKZ/app/src/main/AndroidManifest.xml:30:13-32:36
-70                android:name="android.app.lib_name"
-70-->/Users/nurxan/StudioProjects/TruckKZ/app/src/main/AndroidManifest.xml:31:17-52
-71                android:value="" />
-71-->/Users/nurxan/StudioProjects/TruckKZ/app/src/main/AndroidManifest.xml:32:17-33
-72        </activity>
-73        <activity
-73-->/Users/nurxan/StudioProjects/TruckKZ/app/src/main/AndroidManifest.xml:48:9-60:20
-74            android:name="product.truckkz.MainActivity"
-74-->/Users/nurxan/StudioProjects/TruckKZ/app/src/main/AndroidManifest.xml:49:13-56
-75            android:exported="true" >
-75-->/Users/nurxan/StudioProjects/TruckKZ/app/src/main/AndroidManifest.xml:50:13-36
-76            <intent-filter>
-76-->/Users/nurxan/StudioProjects/TruckKZ/app/src/main/AndroidManifest.xml:51:13-55:29
-77                <action android:name="android.intent.action.MAIN" />
-77-->/Users/nurxan/StudioProjects/TruckKZ/app/src/main/AndroidManifest.xml:52:17-69
-77-->/Users/nurxan/StudioProjects/TruckKZ/app/src/main/AndroidManifest.xml:52:25-66
-78
-79                <category android:name="android.intent.category.LAUNCHER" />
-79-->/Users/nurxan/StudioProjects/TruckKZ/app/src/main/AndroidManifest.xml:54:17-77
-79-->/Users/nurxan/StudioProjects/TruckKZ/app/src/main/AndroidManifest.xml:54:27-74
-80            </intent-filter>
-81
-82            <meta-data
-82-->/Users/nurxan/StudioProjects/TruckKZ/app/src/main/AndroidManifest.xml:30:13-32:36
-83                android:name="android.app.lib_name"
-83-->/Users/nurxan/StudioProjects/TruckKZ/app/src/main/AndroidManifest.xml:31:17-52
-84                android:value="" />
-84-->/Users/nurxan/StudioProjects/TruckKZ/app/src/main/AndroidManifest.xml:32:17-33
-85        </activity>
-86
-87        <meta-data
-87-->/Users/nurxan/StudioProjects/TruckKZ/app/src/main/AndroidManifest.xml:62:9-64:57
-88            android:name="preloaded_fonts"
-88-->/Users/nurxan/StudioProjects/TruckKZ/app/src/main/AndroidManifest.xml:63:13-43
-89            android:resource="@array/preloaded_fonts" />
-89-->/Users/nurxan/StudioProjects/TruckKZ/app/src/main/AndroidManifest.xml:64:13-54
+62            android:screenOrientation="portrait"
+62-->/Users/nurxan/StudioProjects/TruckKZ/app/src/main/AndroidManifest.xml:37:13-49
+63            android:theme="@style/AppTheme.TruckKZ" >
+63-->/Users/nurxan/StudioProjects/TruckKZ/app/src/main/AndroidManifest.xml:38:13-52
+64            <meta-data
+64-->/Users/nurxan/StudioProjects/TruckKZ/app/src/main/AndroidManifest.xml:30:13-32:36
+65                android:name="android.app.lib_name"
+65-->/Users/nurxan/StudioProjects/TruckKZ/app/src/main/AndroidManifest.xml:31:17-52
+66                android:value="" />
+66-->/Users/nurxan/StudioProjects/TruckKZ/app/src/main/AndroidManifest.xml:32:17-33
+67        </activity>
+68        <activity
+68-->/Users/nurxan/StudioProjects/TruckKZ/app/src/main/AndroidManifest.xml:44:9-50:20
+69            android:name="product.truckkz.windows.home.showImage.ShowImageActivity"
+69-->/Users/nurxan/StudioProjects/TruckKZ/app/src/main/AndroidManifest.xml:45:13-69
+70            android:exported="false" >
+70-->/Users/nurxan/StudioProjects/TruckKZ/app/src/main/AndroidManifest.xml:46:13-37
+71            <meta-data
+71-->/Users/nurxan/StudioProjects/TruckKZ/app/src/main/AndroidManifest.xml:30:13-32:36
+72                android:name="android.app.lib_name"
+72-->/Users/nurxan/StudioProjects/TruckKZ/app/src/main/AndroidManifest.xml:31:17-52
+73                android:value="" />
+73-->/Users/nurxan/StudioProjects/TruckKZ/app/src/main/AndroidManifest.xml:32:17-33
+74        </activity>
+75        <activity
+75-->/Users/nurxan/StudioProjects/TruckKZ/app/src/main/AndroidManifest.xml:51:9-57:20
+76            android:name="product.truckkz.windows.refresh.RefreshActivity"
+76-->/Users/nurxan/StudioProjects/TruckKZ/app/src/main/AndroidManifest.xml:52:13-60
+77            android:exported="false" >
+77-->/Users/nurxan/StudioProjects/TruckKZ/app/src/main/AndroidManifest.xml:53:13-37
+78            <meta-data
+78-->/Users/nurxan/StudioProjects/TruckKZ/app/src/main/AndroidManifest.xml:30:13-32:36
+79                android:name="android.app.lib_name"
+79-->/Users/nurxan/StudioProjects/TruckKZ/app/src/main/AndroidManifest.xml:31:17-52
+80                android:value="" />
+80-->/Users/nurxan/StudioProjects/TruckKZ/app/src/main/AndroidManifest.xml:32:17-33
+81        </activity>
+82        <activity
+82-->/Users/nurxan/StudioProjects/TruckKZ/app/src/main/AndroidManifest.xml:58:9-70:20
+83            android:name="product.truckkz.MainActivity"
+83-->/Users/nurxan/StudioProjects/TruckKZ/app/src/main/AndroidManifest.xml:59:13-56
+84            android:exported="true" >
+84-->/Users/nurxan/StudioProjects/TruckKZ/app/src/main/AndroidManifest.xml:60:13-36
+85            <intent-filter>
+85-->/Users/nurxan/StudioProjects/TruckKZ/app/src/main/AndroidManifest.xml:61:13-65:29
+86                <action android:name="android.intent.action.MAIN" />
+86-->/Users/nurxan/StudioProjects/TruckKZ/app/src/main/AndroidManifest.xml:62:17-69
+86-->/Users/nurxan/StudioProjects/TruckKZ/app/src/main/AndroidManifest.xml:62:25-66
+87
+88                <category android:name="android.intent.category.LAUNCHER" />
+88-->/Users/nurxan/StudioProjects/TruckKZ/app/src/main/AndroidManifest.xml:64:17-77
+88-->/Users/nurxan/StudioProjects/TruckKZ/app/src/main/AndroidManifest.xml:64:27-74
+89            </intent-filter>
 90
-91        <activity
-91-->[io.github.ParkSangGwon:tedimagepicker:1.4.2] /Users/nurxan/.gradle/caches/transforms-3/a48d1b58618c2cddfbfd583b1d68ada9/transformed/jetified-tedimagepicker-1.4.2/AndroidManifest.xml:28:9-30:58
-92            android:name="gun0912.tedimagepicker.TedImagePickerActivity"
-92-->[io.github.ParkSangGwon:tedimagepicker:1.4.2] /Users/nurxan/.gradle/caches/transforms-3/a48d1b58618c2cddfbfd583b1d68ada9/transformed/jetified-tedimagepicker-1.4.2/AndroidManifest.xml:29:13-73
-93            android:theme="@style/TedImagePickerTheme" />
-93-->[io.github.ParkSangGwon:tedimagepicker:1.4.2] /Users/nurxan/.gradle/caches/transforms-3/a48d1b58618c2cddfbfd583b1d68ada9/transformed/jetified-tedimagepicker-1.4.2/AndroidManifest.xml:30:13-55
-94        <activity
-94-->[io.github.ParkSangGwon:tedimagepicker:1.4.2] /Users/nurxan/.gradle/caches/transforms-3/a48d1b58618c2cddfbfd583b1d68ada9/transformed/jetified-tedimagepicker-1.4.2/AndroidManifest.xml:31:9-33:63
-95            android:name="gun0912.tedimagepicker.zoom.TedImageZoomActivity"
-95-->[io.github.ParkSangGwon:tedimagepicker:1.4.2] /Users/nurxan/.gradle/caches/transforms-3/a48d1b58618c2cddfbfd583b1d68ada9/transformed/jetified-tedimagepicker-1.4.2/AndroidManifest.xml:32:13-76
-96            android:theme="@style/TedImagePickerTheme.Zoom" />
-96-->[io.github.ParkSangGwon:tedimagepicker:1.4.2] /Users/nurxan/.gradle/caches/transforms-3/a48d1b58618c2cddfbfd583b1d68ada9/transformed/jetified-tedimagepicker-1.4.2/AndroidManifest.xml:33:13-60
-97
-98        <provider
-98-->[io.github.ParkSangGwon:tedimagepicker:1.4.2] /Users/nurxan/.gradle/caches/transforms-3/a48d1b58618c2cddfbfd583b1d68ada9/transformed/jetified-tedimagepicker-1.4.2/AndroidManifest.xml:35:9-38:40
-99            android:name="gun0912.tedimagepicker.util.TedImagePickerContentProvider"
-99-->[io.github.ParkSangGwon:tedimagepicker:1.4.2] /Users/nurxan/.gradle/caches/transforms-3/a48d1b58618c2cddfbfd583b1d68ada9/transformed/jetified-tedimagepicker-1.4.2/AndroidManifest.xml:36:13-85
-100            android:authorities="product.truckkz.tedimagepicker.provider"
-100-->[io.github.ParkSangGwon:tedimagepicker:1.4.2] /Users/nurxan/.gradle/caches/transforms-3/a48d1b58618c2cddfbfd583b1d68ada9/transformed/jetified-tedimagepicker-1.4.2/AndroidManifest.xml:37:13-75
-101            android:exported="false" />
-101-->[io.github.ParkSangGwon:tedimagepicker:1.4.2] /Users/nurxan/.gradle/caches/transforms-3/a48d1b58618c2cddfbfd583b1d68ada9/transformed/jetified-tedimagepicker-1.4.2/AndroidManifest.xml:38:13-37
-102        <provider
-102-->[io.github.ParkSangGwon:tedimagepicker:1.4.2] /Users/nurxan/.gradle/caches/transforms-3/a48d1b58618c2cddfbfd583b1d68ada9/transformed/jetified-tedimagepicker-1.4.2/AndroidManifest.xml:39:9-47:20
-103            android:name="androidx.core.content.FileProvider"
-103-->[io.github.ParkSangGwon:tedimagepicker:1.4.2] /Users/nurxan/.gradle/caches/transforms-3/a48d1b58618c2cddfbfd583b1d68ada9/transformed/jetified-tedimagepicker-1.4.2/AndroidManifest.xml:40:13-62
-104            android:authorities="product.truckkz.provider"
-104-->[io.github.ParkSangGwon:tedimagepicker:1.4.2] /Users/nurxan/.gradle/caches/transforms-3/a48d1b58618c2cddfbfd583b1d68ada9/transformed/jetified-tedimagepicker-1.4.2/AndroidManifest.xml:41:13-60
-105            android:exported="false"
-105-->[io.github.ParkSangGwon:tedimagepicker:1.4.2] /Users/nurxan/.gradle/caches/transforms-3/a48d1b58618c2cddfbfd583b1d68ada9/transformed/jetified-tedimagepicker-1.4.2/AndroidManifest.xml:42:13-37
-106            android:grantUriPermissions="true" >
-106-->[io.github.ParkSangGwon:tedimagepicker:1.4.2] /Users/nurxan/.gradle/caches/transforms-3/a48d1b58618c2cddfbfd583b1d68ada9/transformed/jetified-tedimagepicker-1.4.2/AndroidManifest.xml:43:13-47
-107            <meta-data
-107-->[io.github.ParkSangGwon:tedimagepicker:1.4.2] /Users/nurxan/.gradle/caches/transforms-3/a48d1b58618c2cddfbfd583b1d68ada9/transformed/jetified-tedimagepicker-1.4.2/AndroidManifest.xml:44:13-46:58
-108                android:name="android.support.FILE_PROVIDER_PATHS"
-108-->[io.github.ParkSangGwon:tedimagepicker:1.4.2] /Users/nurxan/.gradle/caches/transforms-3/a48d1b58618c2cddfbfd583b1d68ada9/transformed/jetified-tedimagepicker-1.4.2/AndroidManifest.xml:45:17-67
-109                android:resource="@xml/provider_paths" />
-109-->[io.github.ParkSangGwon:tedimagepicker:1.4.2] /Users/nurxan/.gradle/caches/transforms-3/a48d1b58618c2cddfbfd583b1d68ada9/transformed/jetified-tedimagepicker-1.4.2/AndroidManifest.xml:46:17-55
-110        </provider>
-111
-112        <activity
-112-->[io.github.ParkSangGwon:tedpermission:3.3.0] /Users/nurxan/.gradle/caches/transforms-3/7d5bcde2fa168fa794b9d9bc974792ed/transformed/jetified-tedpermission-3.3.0/AndroidManifest.xml:10:9-14:67
-113            android:name="com.gun0912.tedpermission.TedPermissionActivity"
-113-->[io.github.ParkSangGwon:tedpermission:3.3.0] /Users/nurxan/.gradle/caches/transforms-3/7d5bcde2fa168fa794b9d9bc974792ed/transformed/jetified-tedpermission-3.3.0/AndroidManifest.xml:11:13-75
-114            android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|screenLayout|fontScale|uiMode|orientation|screenSize|layoutDirection"
-114-->[io.github.ParkSangGwon:tedpermission:3.3.0] /Users/nurxan/.gradle/caches/transforms-3/7d5bcde2fa168fa794b9d9bc974792ed/transformed/jetified-tedpermission-3.3.0/AndroidManifest.xml:12:13-144
-115            android:screenOrientation="unspecified"
-115-->[io.github.ParkSangGwon:tedpermission:3.3.0] /Users/nurxan/.gradle/caches/transforms-3/7d5bcde2fa168fa794b9d9bc974792ed/transformed/jetified-tedpermission-3.3.0/AndroidManifest.xml:13:13-52
-116            android:theme="@style/Theme.Transparent.Permission" />
-116-->[io.github.ParkSangGwon:tedpermission:3.3.0] /Users/nurxan/.gradle/caches/transforms-3/7d5bcde2fa168fa794b9d9bc974792ed/transformed/jetified-tedpermission-3.3.0/AndroidManifest.xml:14:13-64
-117
-118        <provider
-118-->[io.github.ParkSangGwon:tedpermission:3.3.0] /Users/nurxan/.gradle/caches/transforms-3/7d5bcde2fa168fa794b9d9bc974792ed/transformed/jetified-tedpermission-3.3.0/AndroidManifest.xml:16:9-19:40
-119            android:name="com.gun0912.tedpermission.provider.TedPermissionProvider"
-119-->[io.github.ParkSangGwon:tedpermission:3.3.0] /Users/nurxan/.gradle/caches/transforms-3/7d5bcde2fa168fa794b9d9bc974792ed/transformed/jetified-tedpermission-3.3.0/AndroidManifest.xml:17:13-84
-120            android:authorities="product.truckkz.tedpermissionprovider"
-120-->[io.github.ParkSangGwon:tedpermission:3.3.0] /Users/nurxan/.gradle/caches/transforms-3/7d5bcde2fa168fa794b9d9bc974792ed/transformed/jetified-tedpermission-3.3.0/AndroidManifest.xml:18:13-73
-121            android:exported="false" />
-121-->[io.github.ParkSangGwon:tedpermission:3.3.0] /Users/nurxan/.gradle/caches/transforms-3/7d5bcde2fa168fa794b9d9bc974792ed/transformed/jetified-tedpermission-3.3.0/AndroidManifest.xml:19:13-37
-122
-123        <activity
-123-->[io.github.ParkSangGwon:tedonactivityresult:1.0.10] /Users/nurxan/.gradle/caches/transforms-3/bedb7f87b056f37ecc4ba481330f1fac/transformed/jetified-tedonactivityresult-1.0.10/AndroidManifest.xml:10:9-14:67
-124            android:name="com.gun0912.tedonactivityresult.ProxyActivity"
-124-->[io.github.ParkSangGwon:tedonactivityresult:1.0.10] /Users/nurxan/.gradle/caches/transforms-3/bedb7f87b056f37ecc4ba481330f1fac/transformed/jetified-tedonactivityresult-1.0.10/AndroidManifest.xml:11:13-73
-125            android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|screenLayout|fontScale|uiMode|orientation|screenSize|layoutDirection"
-125-->[io.github.ParkSangGwon:tedonactivityresult:1.0.10] /Users/nurxan/.gradle/caches/transforms-3/bedb7f87b056f37ecc4ba481330f1fac/transformed/jetified-tedonactivityresult-1.0.10/AndroidManifest.xml:12:13-144
-126            android:screenOrientation="unspecified"
-126-->[io.github.ParkSangGwon:tedonactivityresult:1.0.10] /Users/nurxan/.gradle/caches/transforms-3/bedb7f87b056f37ecc4ba481330f1fac/transformed/jetified-tedonactivityresult-1.0.10/AndroidManifest.xml:13:13-52
-127            android:theme="@style/Theme.AppCompat.Light.Dialog" />
-127-->[io.github.ParkSangGwon:tedonactivityresult:1.0.10] /Users/nurxan/.gradle/caches/transforms-3/bedb7f87b056f37ecc4ba481330f1fac/transformed/jetified-tedonactivityresult-1.0.10/AndroidManifest.xml:14:13-64
-128        <activity
-128-->[com.google.android.gms:play-services-auth:20.5.0] /Users/nurxan/.gradle/caches/transforms-3/6dd2e7eb4a22b85637177c8e3eb4119b/transformed/jetified-play-services-auth-20.5.0/AndroidManifest.xml:23:9-27:75
-129            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
-129-->[com.google.android.gms:play-services-auth:20.5.0] /Users/nurxan/.gradle/caches/transforms-3/6dd2e7eb4a22b85637177c8e3eb4119b/transformed/jetified-play-services-auth-20.5.0/AndroidManifest.xml:24:13-93
-130            android:excludeFromRecents="true"
-130-->[com.google.android.gms:play-services-auth:20.5.0] /Users/nurxan/.gradle/caches/transforms-3/6dd2e7eb4a22b85637177c8e3eb4119b/transformed/jetified-play-services-auth-20.5.0/AndroidManifest.xml:25:13-46
-131            android:exported="false"
-131-->[com.google.android.gms:play-services-auth:20.5.0] /Users/nurxan/.gradle/caches/transforms-3/6dd2e7eb4a22b85637177c8e3eb4119b/transformed/jetified-play-services-auth-20.5.0/AndroidManifest.xml:26:13-37
-132            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-132-->[com.google.android.gms:play-services-auth:20.5.0] /Users/nurxan/.gradle/caches/transforms-3/6dd2e7eb4a22b85637177c8e3eb4119b/transformed/jetified-play-services-auth-20.5.0/AndroidManifest.xml:27:13-72
-133        <!--
-134            Service handling Google Sign-In user revocation. For apps that do not integrate with
-135            Google Sign-In, this service will never be started.
-136        -->
-137        <service
-137-->[com.google.android.gms:play-services-auth:20.5.0] /Users/nurxan/.gradle/caches/transforms-3/6dd2e7eb4a22b85637177c8e3eb4119b/transformed/jetified-play-services-auth-20.5.0/AndroidManifest.xml:33:9-37:51
-138            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
-138-->[com.google.android.gms:play-services-auth:20.5.0] /Users/nurxan/.gradle/caches/transforms-3/6dd2e7eb4a22b85637177c8e3eb4119b/transformed/jetified-play-services-auth-20.5.0/AndroidManifest.xml:34:13-89
-139            android:exported="true"
-139-->[com.google.android.gms:play-services-auth:20.5.0] /Users/nurxan/.gradle/caches/transforms-3/6dd2e7eb4a22b85637177c8e3eb4119b/transformed/jetified-play-services-auth-20.5.0/AndroidManifest.xml:35:13-36
-140            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
-140-->[com.google.android.gms:play-services-auth:20.5.0] /Users/nurxan/.gradle/caches/transforms-3/6dd2e7eb4a22b85637177c8e3eb4119b/transformed/jetified-play-services-auth-20.5.0/AndroidManifest.xml:36:13-107
-141            android:visibleToInstantApps="true" />
-141-->[com.google.android.gms:play-services-auth:20.5.0] /Users/nurxan/.gradle/caches/transforms-3/6dd2e7eb4a22b85637177c8e3eb4119b/transformed/jetified-play-services-auth-20.5.0/AndroidManifest.xml:37:13-48
-142
-143        <activity
-143-->[com.google.android.gms:play-services-base:18.0.1] /Users/nurxan/.gradle/caches/transforms-3/1df32a5593262c7f56d504c20ec75770/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
-144            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-144-->[com.google.android.gms:play-services-base:18.0.1] /Users/nurxan/.gradle/caches/transforms-3/1df32a5593262c7f56d504c20ec75770/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
-145            android:exported="false"
-145-->[com.google.android.gms:play-services-base:18.0.1] /Users/nurxan/.gradle/caches/transforms-3/1df32a5593262c7f56d504c20ec75770/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
-146            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-146-->[com.google.android.gms:play-services-base:18.0.1] /Users/nurxan/.gradle/caches/transforms-3/1df32a5593262c7f56d504c20ec75770/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
-147
-148        <meta-data
-148-->[com.google.android.gms:play-services-basement:18.2.0] /Users/nurxan/.gradle/caches/transforms-3/6854052bc15323aa16cfebbc99b68395/transformed/jetified-play-services-basement-18.2.0/AndroidManifest.xml:21:9-23:69
-149            android:name="com.google.android.gms.version"
-149-->[com.google.android.gms:play-services-basement:18.2.0] /Users/nurxan/.gradle/caches/transforms-3/6854052bc15323aa16cfebbc99b68395/transformed/jetified-play-services-basement-18.2.0/AndroidManifest.xml:22:13-58
-150            android:value="@integer/google_play_services_version" />
-150-->[com.google.android.gms:play-services-basement:18.2.0] /Users/nurxan/.gradle/caches/transforms-3/6854052bc15323aa16cfebbc99b68395/transformed/jetified-play-services-basement-18.2.0/AndroidManifest.xml:23:13-66
+91            <meta-data
+91-->/Users/nurxan/StudioProjects/TruckKZ/app/src/main/AndroidManifest.xml:30:13-32:36
+92                android:name="android.app.lib_name"
+92-->/Users/nurxan/StudioProjects/TruckKZ/app/src/main/AndroidManifest.xml:31:17-52
+93                android:value="" />
+93-->/Users/nurxan/StudioProjects/TruckKZ/app/src/main/AndroidManifest.xml:32:17-33
+94        </activity>
+95
+96        <meta-data
+96-->/Users/nurxan/StudioProjects/TruckKZ/app/src/main/AndroidManifest.xml:72:9-74:57
+97            android:name="preloaded_fonts"
+97-->/Users/nurxan/StudioProjects/TruckKZ/app/src/main/AndroidManifest.xml:73:13-43
+98            android:resource="@array/preloaded_fonts" />
+98-->/Users/nurxan/StudioProjects/TruckKZ/app/src/main/AndroidManifest.xml:74:13-54
+99
+100        <activity
+100-->[io.github.ParkSangGwon:tedimagepicker:1.4.2] /Users/nurxan/.gradle/caches/transforms-3/a48d1b58618c2cddfbfd583b1d68ada9/transformed/jetified-tedimagepicker-1.4.2/AndroidManifest.xml:28:9-30:58
+101            android:name="gun0912.tedimagepicker.TedImagePickerActivity"
+101-->[io.github.ParkSangGwon:tedimagepicker:1.4.2] /Users/nurxan/.gradle/caches/transforms-3/a48d1b58618c2cddfbfd583b1d68ada9/transformed/jetified-tedimagepicker-1.4.2/AndroidManifest.xml:29:13-73
+102            android:theme="@style/TedImagePickerTheme" />
+102-->[io.github.ParkSangGwon:tedimagepicker:1.4.2] /Users/nurxan/.gradle/caches/transforms-3/a48d1b58618c2cddfbfd583b1d68ada9/transformed/jetified-tedimagepicker-1.4.2/AndroidManifest.xml:30:13-55
+103        <activity
+103-->[io.github.ParkSangGwon:tedimagepicker:1.4.2] /Users/nurxan/.gradle/caches/transforms-3/a48d1b58618c2cddfbfd583b1d68ada9/transformed/jetified-tedimagepicker-1.4.2/AndroidManifest.xml:31:9-33:63
+104            android:name="gun0912.tedimagepicker.zoom.TedImageZoomActivity"
+104-->[io.github.ParkSangGwon:tedimagepicker:1.4.2] /Users/nurxan/.gradle/caches/transforms-3/a48d1b58618c2cddfbfd583b1d68ada9/transformed/jetified-tedimagepicker-1.4.2/AndroidManifest.xml:32:13-76
+105            android:theme="@style/TedImagePickerTheme.Zoom" />
+105-->[io.github.ParkSangGwon:tedimagepicker:1.4.2] /Users/nurxan/.gradle/caches/transforms-3/a48d1b58618c2cddfbfd583b1d68ada9/transformed/jetified-tedimagepicker-1.4.2/AndroidManifest.xml:33:13-60
+106
+107        <provider
+107-->[io.github.ParkSangGwon:tedimagepicker:1.4.2] /Users/nurxan/.gradle/caches/transforms-3/a48d1b58618c2cddfbfd583b1d68ada9/transformed/jetified-tedimagepicker-1.4.2/AndroidManifest.xml:35:9-38:40
+108            android:name="gun0912.tedimagepicker.util.TedImagePickerContentProvider"
+108-->[io.github.ParkSangGwon:tedimagepicker:1.4.2] /Users/nurxan/.gradle/caches/transforms-3/a48d1b58618c2cddfbfd583b1d68ada9/transformed/jetified-tedimagepicker-1.4.2/AndroidManifest.xml:36:13-85
+109            android:authorities="product.truckkz.tedimagepicker.provider"
+109-->[io.github.ParkSangGwon:tedimagepicker:1.4.2] /Users/nurxan/.gradle/caches/transforms-3/a48d1b58618c2cddfbfd583b1d68ada9/transformed/jetified-tedimagepicker-1.4.2/AndroidManifest.xml:37:13-75
+110            android:exported="false" />
+110-->[io.github.ParkSangGwon:tedimagepicker:1.4.2] /Users/nurxan/.gradle/caches/transforms-3/a48d1b58618c2cddfbfd583b1d68ada9/transformed/jetified-tedimagepicker-1.4.2/AndroidManifest.xml:38:13-37
+111        <provider
+111-->[io.github.ParkSangGwon:tedimagepicker:1.4.2] /Users/nurxan/.gradle/caches/transforms-3/a48d1b58618c2cddfbfd583b1d68ada9/transformed/jetified-tedimagepicker-1.4.2/AndroidManifest.xml:39:9-47:20
+112            android:name="androidx.core.content.FileProvider"
+112-->[io.github.ParkSangGwon:tedimagepicker:1.4.2] /Users/nurxan/.gradle/caches/transforms-3/a48d1b58618c2cddfbfd583b1d68ada9/transformed/jetified-tedimagepicker-1.4.2/AndroidManifest.xml:40:13-62
+113            android:authorities="product.truckkz.provider"
+113-->[io.github.ParkSangGwon:tedimagepicker:1.4.2] /Users/nurxan/.gradle/caches/transforms-3/a48d1b58618c2cddfbfd583b1d68ada9/transformed/jetified-tedimagepicker-1.4.2/AndroidManifest.xml:41:13-60
+114            android:exported="false"
+114-->[io.github.ParkSangGwon:tedimagepicker:1.4.2] /Users/nurxan/.gradle/caches/transforms-3/a48d1b58618c2cddfbfd583b1d68ada9/transformed/jetified-tedimagepicker-1.4.2/AndroidManifest.xml:42:13-37
+115            android:grantUriPermissions="true" >
+115-->[io.github.ParkSangGwon:tedimagepicker:1.4.2] /Users/nurxan/.gradle/caches/transforms-3/a48d1b58618c2cddfbfd583b1d68ada9/transformed/jetified-tedimagepicker-1.4.2/AndroidManifest.xml:43:13-47
+116            <meta-data
+116-->[io.github.ParkSangGwon:tedimagepicker:1.4.2] /Users/nurxan/.gradle/caches/transforms-3/a48d1b58618c2cddfbfd583b1d68ada9/transformed/jetified-tedimagepicker-1.4.2/AndroidManifest.xml:44:13-46:58
+117                android:name="android.support.FILE_PROVIDER_PATHS"
+117-->[io.github.ParkSangGwon:tedimagepicker:1.4.2] /Users/nurxan/.gradle/caches/transforms-3/a48d1b58618c2cddfbfd583b1d68ada9/transformed/jetified-tedimagepicker-1.4.2/AndroidManifest.xml:45:17-67
+118                android:resource="@xml/provider_paths" />
+118-->[io.github.ParkSangGwon:tedimagepicker:1.4.2] /Users/nurxan/.gradle/caches/transforms-3/a48d1b58618c2cddfbfd583b1d68ada9/transformed/jetified-tedimagepicker-1.4.2/AndroidManifest.xml:46:17-55
+119        </provider>
+120
+121        <activity
+121-->[io.github.ParkSangGwon:tedpermission:3.3.0] /Users/nurxan/.gradle/caches/transforms-3/7d5bcde2fa168fa794b9d9bc974792ed/transformed/jetified-tedpermission-3.3.0/AndroidManifest.xml:10:9-14:67
+122            android:name="com.gun0912.tedpermission.TedPermissionActivity"
+122-->[io.github.ParkSangGwon:tedpermission:3.3.0] /Users/nurxan/.gradle/caches/transforms-3/7d5bcde2fa168fa794b9d9bc974792ed/transformed/jetified-tedpermission-3.3.0/AndroidManifest.xml:11:13-75
+123            android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|screenLayout|fontScale|uiMode|orientation|screenSize|layoutDirection"
+123-->[io.github.ParkSangGwon:tedpermission:3.3.0] /Users/nurxan/.gradle/caches/transforms-3/7d5bcde2fa168fa794b9d9bc974792ed/transformed/jetified-tedpermission-3.3.0/AndroidManifest.xml:12:13-144
+124            android:screenOrientation="unspecified"
+124-->[io.github.ParkSangGwon:tedpermission:3.3.0] /Users/nurxan/.gradle/caches/transforms-3/7d5bcde2fa168fa794b9d9bc974792ed/transformed/jetified-tedpermission-3.3.0/AndroidManifest.xml:13:13-52
+125            android:theme="@style/Theme.Transparent.Permission" />
+125-->[io.github.ParkSangGwon:tedpermission:3.3.0] /Users/nurxan/.gradle/caches/transforms-3/7d5bcde2fa168fa794b9d9bc974792ed/transformed/jetified-tedpermission-3.3.0/AndroidManifest.xml:14:13-64
+126
+127        <provider
+127-->[io.github.ParkSangGwon:tedpermission:3.3.0] /Users/nurxan/.gradle/caches/transforms-3/7d5bcde2fa168fa794b9d9bc974792ed/transformed/jetified-tedpermission-3.3.0/AndroidManifest.xml:16:9-19:40
+128            android:name="com.gun0912.tedpermission.provider.TedPermissionProvider"
+128-->[io.github.ParkSangGwon:tedpermission:3.3.0] /Users/nurxan/.gradle/caches/transforms-3/7d5bcde2fa168fa794b9d9bc974792ed/transformed/jetified-tedpermission-3.3.0/AndroidManifest.xml:17:13-84
+129            android:authorities="product.truckkz.tedpermissionprovider"
+129-->[io.github.ParkSangGwon:tedpermission:3.3.0] /Users/nurxan/.gradle/caches/transforms-3/7d5bcde2fa168fa794b9d9bc974792ed/transformed/jetified-tedpermission-3.3.0/AndroidManifest.xml:18:13-73
+130            android:exported="false" />
+130-->[io.github.ParkSangGwon:tedpermission:3.3.0] /Users/nurxan/.gradle/caches/transforms-3/7d5bcde2fa168fa794b9d9bc974792ed/transformed/jetified-tedpermission-3.3.0/AndroidManifest.xml:19:13-37
+131
+132        <activity
+132-->[io.github.ParkSangGwon:tedonactivityresult:1.0.10] /Users/nurxan/.gradle/caches/transforms-3/bedb7f87b056f37ecc4ba481330f1fac/transformed/jetified-tedonactivityresult-1.0.10/AndroidManifest.xml:10:9-14:67
+133            android:name="com.gun0912.tedonactivityresult.ProxyActivity"
+133-->[io.github.ParkSangGwon:tedonactivityresult:1.0.10] /Users/nurxan/.gradle/caches/transforms-3/bedb7f87b056f37ecc4ba481330f1fac/transformed/jetified-tedonactivityresult-1.0.10/AndroidManifest.xml:11:13-73
+134            android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|screenLayout|fontScale|uiMode|orientation|screenSize|layoutDirection"
+134-->[io.github.ParkSangGwon:tedonactivityresult:1.0.10] /Users/nurxan/.gradle/caches/transforms-3/bedb7f87b056f37ecc4ba481330f1fac/transformed/jetified-tedonactivityresult-1.0.10/AndroidManifest.xml:12:13-144
+135            android:screenOrientation="unspecified"
+135-->[io.github.ParkSangGwon:tedonactivityresult:1.0.10] /Users/nurxan/.gradle/caches/transforms-3/bedb7f87b056f37ecc4ba481330f1fac/transformed/jetified-tedonactivityresult-1.0.10/AndroidManifest.xml:13:13-52
+136            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+136-->[io.github.ParkSangGwon:tedonactivityresult:1.0.10] /Users/nurxan/.gradle/caches/transforms-3/bedb7f87b056f37ecc4ba481330f1fac/transformed/jetified-tedonactivityresult-1.0.10/AndroidManifest.xml:14:13-64
+137        <activity
+137-->[com.google.android.gms:play-services-auth:20.5.0] /Users/nurxan/.gradle/caches/transforms-3/6dd2e7eb4a22b85637177c8e3eb4119b/transformed/jetified-play-services-auth-20.5.0/AndroidManifest.xml:23:9-27:75
+138            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+138-->[com.google.android.gms:play-services-auth:20.5.0] /Users/nurxan/.gradle/caches/transforms-3/6dd2e7eb4a22b85637177c8e3eb4119b/transformed/jetified-play-services-auth-20.5.0/AndroidManifest.xml:24:13-93
+139            android:excludeFromRecents="true"
+139-->[com.google.android.gms:play-services-auth:20.5.0] /Users/nurxan/.gradle/caches/transforms-3/6dd2e7eb4a22b85637177c8e3eb4119b/transformed/jetified-play-services-auth-20.5.0/AndroidManifest.xml:25:13-46
+140            android:exported="false"
+140-->[com.google.android.gms:play-services-auth:20.5.0] /Users/nurxan/.gradle/caches/transforms-3/6dd2e7eb4a22b85637177c8e3eb4119b/transformed/jetified-play-services-auth-20.5.0/AndroidManifest.xml:26:13-37
+141            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+141-->[com.google.android.gms:play-services-auth:20.5.0] /Users/nurxan/.gradle/caches/transforms-3/6dd2e7eb4a22b85637177c8e3eb4119b/transformed/jetified-play-services-auth-20.5.0/AndroidManifest.xml:27:13-72
+142        <!--
+143            Service handling Google Sign-In user revocation. For apps that do not integrate with
+144            Google Sign-In, this service will never be started.
+145        -->
+146        <service
+146-->[com.google.android.gms:play-services-auth:20.5.0] /Users/nurxan/.gradle/caches/transforms-3/6dd2e7eb4a22b85637177c8e3eb4119b/transformed/jetified-play-services-auth-20.5.0/AndroidManifest.xml:33:9-37:51
+147            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+147-->[com.google.android.gms:play-services-auth:20.5.0] /Users/nurxan/.gradle/caches/transforms-3/6dd2e7eb4a22b85637177c8e3eb4119b/transformed/jetified-play-services-auth-20.5.0/AndroidManifest.xml:34:13-89
+148            android:exported="true"
+148-->[com.google.android.gms:play-services-auth:20.5.0] /Users/nurxan/.gradle/caches/transforms-3/6dd2e7eb4a22b85637177c8e3eb4119b/transformed/jetified-play-services-auth-20.5.0/AndroidManifest.xml:35:13-36
+149            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+149-->[com.google.android.gms:play-services-auth:20.5.0] /Users/nurxan/.gradle/caches/transforms-3/6dd2e7eb4a22b85637177c8e3eb4119b/transformed/jetified-play-services-auth-20.5.0/AndroidManifest.xml:36:13-107
+150            android:visibleToInstantApps="true" />
+150-->[com.google.android.gms:play-services-auth:20.5.0] /Users/nurxan/.gradle/caches/transforms-3/6dd2e7eb4a22b85637177c8e3eb4119b/transformed/jetified-play-services-auth-20.5.0/AndroidManifest.xml:37:13-48
 151
-152        <provider
-152-->[androidx.emoji2:emoji2:1.2.0] /Users/nurxan/.gradle/caches/transforms-3/c3db76cb949f3f5f96007310afa18088/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
-153            android:name="androidx.startup.InitializationProvider"
-153-->[androidx.emoji2:emoji2:1.2.0] /Users/nurxan/.gradle/caches/transforms-3/c3db76cb949f3f5f96007310afa18088/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
-154            android:authorities="product.truckkz.androidx-startup"
-154-->[androidx.emoji2:emoji2:1.2.0] /Users/nurxan/.gradle/caches/transforms-3/c3db76cb949f3f5f96007310afa18088/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
-155            android:exported="false" >
-155-->[androidx.emoji2:emoji2:1.2.0] /Users/nurxan/.gradle/caches/transforms-3/c3db76cb949f3f5f96007310afa18088/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
-156            <meta-data
-156-->[androidx.emoji2:emoji2:1.2.0] /Users/nurxan/.gradle/caches/transforms-3/c3db76cb949f3f5f96007310afa18088/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
-157                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-157-->[androidx.emoji2:emoji2:1.2.0] /Users/nurxan/.gradle/caches/transforms-3/c3db76cb949f3f5f96007310afa18088/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
-158                android:value="androidx.startup" />
-158-->[androidx.emoji2:emoji2:1.2.0] /Users/nurxan/.gradle/caches/transforms-3/c3db76cb949f3f5f96007310afa18088/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
-159            <meta-data
-159-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/nurxan/.gradle/caches/transforms-3/162efd47b8e0a8dc4e2f847b4dd94d3b/transformed/jetified-lifecycle-process-2.6.1/AndroidManifest.xml:29:13-31:52
-160                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-160-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/nurxan/.gradle/caches/transforms-3/162efd47b8e0a8dc4e2f847b4dd94d3b/transformed/jetified-lifecycle-process-2.6.1/AndroidManifest.xml:30:17-78
-161                android:value="androidx.startup" />
-161-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/nurxan/.gradle/caches/transforms-3/162efd47b8e0a8dc4e2f847b4dd94d3b/transformed/jetified-lifecycle-process-2.6.1/AndroidManifest.xml:31:17-49
-162            <meta-data
-162-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/nurxan/.gradle/caches/transforms-3/c3ec3f1b8271aa977e8fdeb2c007f28f/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
-163                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-163-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/nurxan/.gradle/caches/transforms-3/c3ec3f1b8271aa977e8fdeb2c007f28f/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
-164                android:value="androidx.startup" />
-164-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/nurxan/.gradle/caches/transforms-3/c3ec3f1b8271aa977e8fdeb2c007f28f/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
-165        </provider>
-166
-167        <uses-library
-167-->[androidx.window:window:1.0.0] /Users/nurxan/.gradle/caches/transforms-3/38e86ccd42ca29ec378b771456056ae3/transformed/jetified-window-1.0.0/AndroidManifest.xml:25:9-27:40
-168            android:name="androidx.window.extensions"
-168-->[androidx.window:window:1.0.0] /Users/nurxan/.gradle/caches/transforms-3/38e86ccd42ca29ec378b771456056ae3/transformed/jetified-window-1.0.0/AndroidManifest.xml:26:13-54
-169            android:required="false" />
-169-->[androidx.window:window:1.0.0] /Users/nurxan/.gradle/caches/transforms-3/38e86ccd42ca29ec378b771456056ae3/transformed/jetified-window-1.0.0/AndroidManifest.xml:27:13-37
-170        <uses-library
-170-->[androidx.window:window:1.0.0] /Users/nurxan/.gradle/caches/transforms-3/38e86ccd42ca29ec378b771456056ae3/transformed/jetified-window-1.0.0/AndroidManifest.xml:28:9-30:40
-171            android:name="androidx.window.sidecar"
-171-->[androidx.window:window:1.0.0] /Users/nurxan/.gradle/caches/transforms-3/38e86ccd42ca29ec378b771456056ae3/transformed/jetified-window-1.0.0/AndroidManifest.xml:29:13-51
-172            android:required="false" />
-172-->[androidx.window:window:1.0.0] /Users/nurxan/.gradle/caches/transforms-3/38e86ccd42ca29ec378b771456056ae3/transformed/jetified-window-1.0.0/AndroidManifest.xml:30:13-37
-173
-174        <receiver
-174-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/nurxan/.gradle/caches/transforms-3/c3ec3f1b8271aa977e8fdeb2c007f28f/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
-175            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-175-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/nurxan/.gradle/caches/transforms-3/c3ec3f1b8271aa977e8fdeb2c007f28f/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
-176            android:directBootAware="false"
-176-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/nurxan/.gradle/caches/transforms-3/c3ec3f1b8271aa977e8fdeb2c007f28f/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
-177            android:enabled="true"
-177-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/nurxan/.gradle/caches/transforms-3/c3ec3f1b8271aa977e8fdeb2c007f28f/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
-178            android:exported="true"
-178-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/nurxan/.gradle/caches/transforms-3/c3ec3f1b8271aa977e8fdeb2c007f28f/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
-179            android:permission="android.permission.DUMP" >
-179-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/nurxan/.gradle/caches/transforms-3/c3ec3f1b8271aa977e8fdeb2c007f28f/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
-180            <intent-filter>
-180-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/nurxan/.gradle/caches/transforms-3/c3ec3f1b8271aa977e8fdeb2c007f28f/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
-181                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-181-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/nurxan/.gradle/caches/transforms-3/c3ec3f1b8271aa977e8fdeb2c007f28f/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
-181-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/nurxan/.gradle/caches/transforms-3/c3ec3f1b8271aa977e8fdeb2c007f28f/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
-182            </intent-filter>
-183            <intent-filter>
-183-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/nurxan/.gradle/caches/transforms-3/c3ec3f1b8271aa977e8fdeb2c007f28f/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
-184                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-184-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/nurxan/.gradle/caches/transforms-3/c3ec3f1b8271aa977e8fdeb2c007f28f/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
-184-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/nurxan/.gradle/caches/transforms-3/c3ec3f1b8271aa977e8fdeb2c007f28f/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
-185            </intent-filter>
-186            <intent-filter>
-186-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/nurxan/.gradle/caches/transforms-3/c3ec3f1b8271aa977e8fdeb2c007f28f/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
-187                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-187-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/nurxan/.gradle/caches/transforms-3/c3ec3f1b8271aa977e8fdeb2c007f28f/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
-187-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/nurxan/.gradle/caches/transforms-3/c3ec3f1b8271aa977e8fdeb2c007f28f/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
-188            </intent-filter>
+152        <activity
+152-->[com.google.android.gms:play-services-base:18.0.1] /Users/nurxan/.gradle/caches/transforms-3/1df32a5593262c7f56d504c20ec75770/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+153            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+153-->[com.google.android.gms:play-services-base:18.0.1] /Users/nurxan/.gradle/caches/transforms-3/1df32a5593262c7f56d504c20ec75770/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+154            android:exported="false"
+154-->[com.google.android.gms:play-services-base:18.0.1] /Users/nurxan/.gradle/caches/transforms-3/1df32a5593262c7f56d504c20ec75770/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+155            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+155-->[com.google.android.gms:play-services-base:18.0.1] /Users/nurxan/.gradle/caches/transforms-3/1df32a5593262c7f56d504c20ec75770/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+156
+157        <meta-data
+157-->[com.google.android.gms:play-services-basement:18.2.0] /Users/nurxan/.gradle/caches/transforms-3/6854052bc15323aa16cfebbc99b68395/transformed/jetified-play-services-basement-18.2.0/AndroidManifest.xml:21:9-23:69
+158            android:name="com.google.android.gms.version"
+158-->[com.google.android.gms:play-services-basement:18.2.0] /Users/nurxan/.gradle/caches/transforms-3/6854052bc15323aa16cfebbc99b68395/transformed/jetified-play-services-basement-18.2.0/AndroidManifest.xml:22:13-58
+159            android:value="@integer/google_play_services_version" />
+159-->[com.google.android.gms:play-services-basement:18.2.0] /Users/nurxan/.gradle/caches/transforms-3/6854052bc15323aa16cfebbc99b68395/transformed/jetified-play-services-basement-18.2.0/AndroidManifest.xml:23:13-66
+160
+161        <provider
+161-->[androidx.emoji2:emoji2:1.2.0] /Users/nurxan/.gradle/caches/transforms-3/c3db76cb949f3f5f96007310afa18088/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+162            android:name="androidx.startup.InitializationProvider"
+162-->[androidx.emoji2:emoji2:1.2.0] /Users/nurxan/.gradle/caches/transforms-3/c3db76cb949f3f5f96007310afa18088/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
+163            android:authorities="product.truckkz.androidx-startup"
+163-->[androidx.emoji2:emoji2:1.2.0] /Users/nurxan/.gradle/caches/transforms-3/c3db76cb949f3f5f96007310afa18088/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
+164            android:exported="false" >
+164-->[androidx.emoji2:emoji2:1.2.0] /Users/nurxan/.gradle/caches/transforms-3/c3db76cb949f3f5f96007310afa18088/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
+165            <meta-data
+165-->[androidx.emoji2:emoji2:1.2.0] /Users/nurxan/.gradle/caches/transforms-3/c3db76cb949f3f5f96007310afa18088/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+166                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+166-->[androidx.emoji2:emoji2:1.2.0] /Users/nurxan/.gradle/caches/transforms-3/c3db76cb949f3f5f96007310afa18088/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
+167                android:value="androidx.startup" />
+167-->[androidx.emoji2:emoji2:1.2.0] /Users/nurxan/.gradle/caches/transforms-3/c3db76cb949f3f5f96007310afa18088/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
+168            <meta-data
+168-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/nurxan/.gradle/caches/transforms-3/162efd47b8e0a8dc4e2f847b4dd94d3b/transformed/jetified-lifecycle-process-2.6.1/AndroidManifest.xml:29:13-31:52
+169                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+169-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/nurxan/.gradle/caches/transforms-3/162efd47b8e0a8dc4e2f847b4dd94d3b/transformed/jetified-lifecycle-process-2.6.1/AndroidManifest.xml:30:17-78
+170                android:value="androidx.startup" />
+170-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/nurxan/.gradle/caches/transforms-3/162efd47b8e0a8dc4e2f847b4dd94d3b/transformed/jetified-lifecycle-process-2.6.1/AndroidManifest.xml:31:17-49
+171            <meta-data
+171-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/nurxan/.gradle/caches/transforms-3/c3ec3f1b8271aa977e8fdeb2c007f28f/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+172                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+172-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/nurxan/.gradle/caches/transforms-3/c3ec3f1b8271aa977e8fdeb2c007f28f/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+173                android:value="androidx.startup" />
+173-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/nurxan/.gradle/caches/transforms-3/c3ec3f1b8271aa977e8fdeb2c007f28f/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+174        </provider>
+175
+176        <uses-library
+176-->[androidx.window:window:1.0.0] /Users/nurxan/.gradle/caches/transforms-3/38e86ccd42ca29ec378b771456056ae3/transformed/jetified-window-1.0.0/AndroidManifest.xml:25:9-27:40
+177            android:name="androidx.window.extensions"
+177-->[androidx.window:window:1.0.0] /Users/nurxan/.gradle/caches/transforms-3/38e86ccd42ca29ec378b771456056ae3/transformed/jetified-window-1.0.0/AndroidManifest.xml:26:13-54
+178            android:required="false" />
+178-->[androidx.window:window:1.0.0] /Users/nurxan/.gradle/caches/transforms-3/38e86ccd42ca29ec378b771456056ae3/transformed/jetified-window-1.0.0/AndroidManifest.xml:27:13-37
+179        <uses-library
+179-->[androidx.window:window:1.0.0] /Users/nurxan/.gradle/caches/transforms-3/38e86ccd42ca29ec378b771456056ae3/transformed/jetified-window-1.0.0/AndroidManifest.xml:28:9-30:40
+180            android:name="androidx.window.sidecar"
+180-->[androidx.window:window:1.0.0] /Users/nurxan/.gradle/caches/transforms-3/38e86ccd42ca29ec378b771456056ae3/transformed/jetified-window-1.0.0/AndroidManifest.xml:29:13-51
+181            android:required="false" />
+181-->[androidx.window:window:1.0.0] /Users/nurxan/.gradle/caches/transforms-3/38e86ccd42ca29ec378b771456056ae3/transformed/jetified-window-1.0.0/AndroidManifest.xml:30:13-37
+182
+183        <receiver
+183-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/nurxan/.gradle/caches/transforms-3/c3ec3f1b8271aa977e8fdeb2c007f28f/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+184            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+184-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/nurxan/.gradle/caches/transforms-3/c3ec3f1b8271aa977e8fdeb2c007f28f/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+185            android:directBootAware="false"
+185-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/nurxan/.gradle/caches/transforms-3/c3ec3f1b8271aa977e8fdeb2c007f28f/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+186            android:enabled="true"
+186-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/nurxan/.gradle/caches/transforms-3/c3ec3f1b8271aa977e8fdeb2c007f28f/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+187            android:exported="true"
+187-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/nurxan/.gradle/caches/transforms-3/c3ec3f1b8271aa977e8fdeb2c007f28f/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+188            android:permission="android.permission.DUMP" >
+188-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/nurxan/.gradle/caches/transforms-3/c3ec3f1b8271aa977e8fdeb2c007f28f/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
 189            <intent-filter>
-189-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/nurxan/.gradle/caches/transforms-3/c3ec3f1b8271aa977e8fdeb2c007f28f/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
-190                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-190-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/nurxan/.gradle/caches/transforms-3/c3ec3f1b8271aa977e8fdeb2c007f28f/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
-190-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/nurxan/.gradle/caches/transforms-3/c3ec3f1b8271aa977e8fdeb2c007f28f/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+189-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/nurxan/.gradle/caches/transforms-3/c3ec3f1b8271aa977e8fdeb2c007f28f/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+190                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+190-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/nurxan/.gradle/caches/transforms-3/c3ec3f1b8271aa977e8fdeb2c007f28f/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+190-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/nurxan/.gradle/caches/transforms-3/c3ec3f1b8271aa977e8fdeb2c007f28f/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
 191            </intent-filter>
-192        </receiver>
-193    </application>
-194
-195</manifest>
+192            <intent-filter>
+192-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/nurxan/.gradle/caches/transforms-3/c3ec3f1b8271aa977e8fdeb2c007f28f/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+193                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+193-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/nurxan/.gradle/caches/transforms-3/c3ec3f1b8271aa977e8fdeb2c007f28f/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+193-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/nurxan/.gradle/caches/transforms-3/c3ec3f1b8271aa977e8fdeb2c007f28f/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+194            </intent-filter>
+195            <intent-filter>
+195-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/nurxan/.gradle/caches/transforms-3/c3ec3f1b8271aa977e8fdeb2c007f28f/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+196                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+196-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/nurxan/.gradle/caches/transforms-3/c3ec3f1b8271aa977e8fdeb2c007f28f/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+196-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/nurxan/.gradle/caches/transforms-3/c3ec3f1b8271aa977e8fdeb2c007f28f/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+197            </intent-filter>
+198            <intent-filter>
+198-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/nurxan/.gradle/caches/transforms-3/c3ec3f1b8271aa977e8fdeb2c007f28f/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+199                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+199-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/nurxan/.gradle/caches/transforms-3/c3ec3f1b8271aa977e8fdeb2c007f28f/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+199-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/nurxan/.gradle/caches/transforms-3/c3ec3f1b8271aa977e8fdeb2c007f28f/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+200            </intent-filter>
+201        </receiver>
+202    </application>
+203
+204</manifest>

@@ -21,19 +21,21 @@ import product.truckkz.R
 import product.truckkz.UserDate.APP_PREFERENCES
 import product.truckkz.UserDate.KEY_TOKEN
 import product.truckkz.UserDate.TOKEN_USER
-import product.truckkz.UserDate.USER_STATUS
 import product.truckkz.viewModels.HomeViewModels
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import org.json.JSONObject
+import product.truckkz.MainActivity
+import product.truckkz.databinding.ActivityMainBinding
 import product.truckkz.databinding.FragmentAuthorizationBinding
 
 class AuthorizationFragment : Fragment() {
 
     private var _binding: FragmentAuthorizationBinding? = null
     private val binding get() = _binding!!
+    private var activityBinding: ActivityMainBinding? = null
 
     private lateinit var viewModel: HomeViewModels
     private lateinit var dialog: Dialog
@@ -51,11 +53,7 @@ class AuthorizationFragment : Fragment() {
         _binding = FragmentAuthorizationBinding.inflate(inflater, container, false)
         val view = binding
 
-//        (activity as AppCompatActivity).bottomAppBar.visibility = View.VISIBLE
-//        (activity as AppCompatActivity).floatBottom.visibility = View.VISIBLE
-
         dialog = Dialog(requireContext())
-
 
         preferencesTOKEN = (activity as AppCompatActivity).getSharedPreferences(
             APP_PREFERENCES,
@@ -69,13 +67,11 @@ class AuthorizationFragment : Fragment() {
             Navigation.findNavController(view.root).navigate(R.id.action_authorizationFragment_to_resetFragment)
         }
 
-        viewModel.myUserSignIn.observe(viewLifecycleOwner) { list ->
+        viewModel.mySendLogin.observe(viewLifecycleOwner) { list ->
             if (list.isSuccessful) {
                 view.constraintLayoutAuth.visibility = View.GONE
                 view.gifAut.visibility = View.GONE
                 view.textWelcome.visibility = View.VISIBLE
-                USER_STATUS = true
-                view.gifAut.visibility = View.GONE
 
                 TOKEN_USER = list.body()?.token.toString()
 //                idUser = list.body()?.user?.id.toString()
@@ -86,10 +82,12 @@ class AuthorizationFragment : Fragment() {
                 }
 
                 preferencesTOKEN.edit().putString(KEY_TOKEN, TOKEN_USER).apply()
+
             } else {
                 view.constraintLayoutAuth.visibility = View.VISIBLE
                 view.gifAut.visibility = View.GONE
                 view.textWelcome.visibility = View.GONE
+
                 val jsonObj = JSONObject(list.errorBody()!!.charStream().readText())
                 alertDialogCancel(jsonObj.getString("message").toString(),jsonObj.getString("error").toString())
             }
@@ -111,10 +109,7 @@ class AuthorizationFragment : Fragment() {
                     profileAuth["remember"] = "0"
                 }
 
-                view.btnAuth.backgroundTintList =
-                    resources.getColorStateList(R.color.black_txt4)
-
-                viewModel.postUserSignIn(profileAuth)
+                viewModel.sendLogin(profileAuth)
 
 
             } else {
@@ -125,6 +120,20 @@ class AuthorizationFragment : Fragment() {
         }
 
         return view.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        // Получаем ссылку на ViewBinding активити
+        activityBinding = (requireActivity() as? MainActivity)?.binding
+
+        // Используем ссылку на ViewBinding активити, чтобы получить доступ к View
+        activityBinding?.bottomAppBar?.visibility = View.VISIBLE
+        activityBinding?.floatBottom?.visibility = View.VISIBLE
+        if (preferencesTOKEN.getString(KEY_TOKEN, "") != ""){
+            Navigation.findNavController(binding.root).navigate(R.id.action_authorizationFragment_to_profileFragment)
+        }
     }
 
     private fun alertDialogCancel(title: String, descrip: String) {
@@ -148,6 +157,7 @@ class AuthorizationFragment : Fragment() {
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
+        activityBinding = null
     }
 
 }
