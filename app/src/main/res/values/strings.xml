@@ -11,4 +11,19 @@
     <string name="no_connection">Нет соединения</string>
     <string name="check_connections_internet">Пожалуйста проверьте соединения с интернетом</string>
     <string name="not_selected_photo">Фотография не выбрано</string>
+    <string name="maximum_10">Максимальная количество 10</string>
+    <string name="add_description">Добавьте описание</string>
+    <string name="category_catalog">Каталог категории</string>
+    <string name="select_category">Выберите категорию</string>
+    <string name="review">Отзывы</string>
+    <string name="register_message_email">Без подтверждения телефонного номера , Вы не можете создавать продукты</string>
+    <string name="message">Написать</string>
+    <string name="successfully">УСПЕШНО!</string>
+    <string name="yeah_product">Вы создали продукт!</string>
+    <string name="exit">Выйти</string>
+    <string name="close">Закрыть</string>
+    <string name="wait">Подождите немного </string>
+    <string name="create_ads">Создать объявление</string>
+    <string name="selected_photo">Выберите фотографии</string>
+
 </resources>

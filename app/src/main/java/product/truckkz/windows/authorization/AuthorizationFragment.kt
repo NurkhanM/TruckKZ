@@ -77,7 +77,7 @@ class AuthorizationFragment : Fragment() {
 //                idUser = list.body()?.user?.id.toString()
 
                 CoroutineScope(Dispatchers.Main).launch {
-                    delay(2000)
+                    delay(1000)
                     Navigation.findNavController(view.root).navigate(R.id.action_authorizationFragment_to_profileFragment)
                 }
 

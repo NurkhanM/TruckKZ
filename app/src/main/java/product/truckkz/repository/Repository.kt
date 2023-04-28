@@ -8,9 +8,11 @@ import androidx.paging.liveData
 import okhttp3.MultipartBody
 import okhttp3.RequestBody
 import product.truckkz.api.RetroFitInstance
+import product.truckkz.models.brand.BrandModels
 import product.truckkz.paging.ProductPaging
 import product.truckkz.paging.SearchPaging
 import product.truckkz.models.category.CategoryModels
+import product.truckkz.models.categoryShow.CategoryShowModels
 import product.truckkz.models.products.index.ProductsModels
 import product.truckkz.models.products.show.ProductShowModels
 import product.truckkz.models.register.RegisterModels
@@ -55,10 +57,38 @@ class Repository {
         return RetroFitInstance.product.getProduct2(auth)
     }
 
+    suspend fun pushProductCreate(
+        auth: String,
+        params: HashMap<String, RequestBody>,
+        fields: HashMap<String, RequestBody>,
+        img: MultipartBody.Part?,
+        images: List<MultipartBody.Part>,
+
+        ): Response<String> {
+        return RetroFitInstance.product.pushProductCreate(
+            auth,
+            params,
+            fields,
+            img,
+            images
+        )
+    }
 
     suspend fun getCategoryRepository(
     ): Response<CategoryModels> {
         return RetroFitInstance.category.getCategory()
+    }
+
+    suspend fun getBrandRepository(
+    ): Response<BrandModels> {
+        return RetroFitInstance.brand.getBrand()
+    }
+
+    suspend fun getCategoryIDRepository(
+        auth: String,
+        number: Int,
+    ): Response<CategoryShowModels> {
+        return RetroFitInstance.category.getCategoryID(auth, number)
     }
 
     fun getSortRepository(

@@ -12,10 +12,12 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -26,25 +28,10 @@ public final class FragmentCreateBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final ConstraintLayout Toolbar;
+  public final MaterialButton addButton;
 
   @NonNull
   public final MaterialButton btnSendCreate;
-
-  @NonNull
-  public final CardView cardImage1;
-
-  @NonNull
-  public final CardView cardImage2;
-
-  @NonNull
-  public final CardView cardImage3;
-
-  @NonNull
-  public final CardView cardImage4;
-
-  @NonNull
-  public final CardView cardImage5;
 
   @NonNull
   public final CardView cardImageAdd;
@@ -65,97 +52,73 @@ public final class FragmentCreateBinding implements ViewBinding {
   public final TextInputEditText editPrice;
 
   @NonNull
-  public final TextInputEditText editRent;
-
-  @NonNull
   public final TextInputEditText editTitle;
 
   @NonNull
-  public final ImageView image1;
+  public final ImageView imgLin;
 
   @NonNull
-  public final ImageView image2;
+  public final ImageView imgMain;
 
   @NonNull
-  public final ImageView image3;
+  public final LinearLayout linearLayout;
 
   @NonNull
-  public final ImageView image4;
-
-  @NonNull
-  public final ImageView image5;
-
-  @NonNull
-  public final ImageView imageDelete1;
-
-  @NonNull
-  public final ImageView imageDelete2;
-
-  @NonNull
-  public final ImageView imageDelete3;
-
-  @NonNull
-  public final ImageView imageDelete4;
-
-  @NonNull
-  public final ImageView imageDelete5;
-
-  @NonNull
-  public final LinearLayout linFieldsFill;
+  public final LinearLayout nextSelectedBrand;
 
   @NonNull
   public final LinearLayout nextSelectedCategory;
 
   @NonNull
-  public final TextView txtNameCategory;
+  public final RecyclerView rvCreate;
 
   @NonNull
-  public final TextView txtNameCity;
+  public final TextInputLayout textInputLayoutPro2;
+
+  @NonNull
+  public final TextView textTitle;
+
+  @NonNull
+  public final ConstraintLayout toolBar;
+
+  @NonNull
+  public final TextView txtNameBrand;
+
+  @NonNull
+  public final TextView txtNameCategory;
 
   private FragmentCreateBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ConstraintLayout Toolbar, @NonNull MaterialButton btnSendCreate,
-      @NonNull CardView cardImage1, @NonNull CardView cardImage2, @NonNull CardView cardImage3,
-      @NonNull CardView cardImage4, @NonNull CardView cardImage5, @NonNull CardView cardImageAdd,
-      @NonNull ImageView clickBackCard, @NonNull ScrollView constraintFon1,
-      @NonNull LinearLayout constraintFon2, @NonNull TextInputEditText editDescription,
-      @NonNull TextInputEditText editPrice, @NonNull TextInputEditText editRent,
-      @NonNull TextInputEditText editTitle, @NonNull ImageView image1, @NonNull ImageView image2,
-      @NonNull ImageView image3, @NonNull ImageView image4, @NonNull ImageView image5,
-      @NonNull ImageView imageDelete1, @NonNull ImageView imageDelete2,
-      @NonNull ImageView imageDelete3, @NonNull ImageView imageDelete4,
-      @NonNull ImageView imageDelete5, @NonNull LinearLayout linFieldsFill,
-      @NonNull LinearLayout nextSelectedCategory, @NonNull TextView txtNameCategory,
-      @NonNull TextView txtNameCity) {
+      @NonNull MaterialButton addButton, @NonNull MaterialButton btnSendCreate,
+      @NonNull CardView cardImageAdd, @NonNull ImageView clickBackCard,
+      @NonNull ScrollView constraintFon1, @NonNull LinearLayout constraintFon2,
+      @NonNull TextInputEditText editDescription, @NonNull TextInputEditText editPrice,
+      @NonNull TextInputEditText editTitle, @NonNull ImageView imgLin, @NonNull ImageView imgMain,
+      @NonNull LinearLayout linearLayout, @NonNull LinearLayout nextSelectedBrand,
+      @NonNull LinearLayout nextSelectedCategory, @NonNull RecyclerView rvCreate,
+      @NonNull TextInputLayout textInputLayoutPro2, @NonNull TextView textTitle,
+      @NonNull ConstraintLayout toolBar, @NonNull TextView txtNameBrand,
+      @NonNull TextView txtNameCategory) {
     this.rootView = rootView;
-    this.Toolbar = Toolbar;
+    this.addButton = addButton;
     this.btnSendCreate = btnSendCreate;
-    this.cardImage1 = cardImage1;
-    this.cardImage2 = cardImage2;
-    this.cardImage3 = cardImage3;
-    this.cardImage4 = cardImage4;
-    this.cardImage5 = cardImage5;
     this.cardImageAdd = cardImageAdd;
     this.clickBackCard = clickBackCard;
     this.constraintFon1 = constraintFon1;
     this.constraintFon2 = constraintFon2;
     this.editDescription = editDescription;
     this.editPrice = editPrice;
-    this.editRent = editRent;
     this.editTitle = editTitle;
-    this.image1 = image1;
-    this.image2 = image2;
-    this.image3 = image3;
-    this.image4 = image4;
-    this.image5 = image5;
-    this.imageDelete1 = imageDelete1;
-    this.imageDelete2 = imageDelete2;
-    this.imageDelete3 = imageDelete3;
-    this.imageDelete4 = imageDelete4;
-    this.imageDelete5 = imageDelete5;
-    this.linFieldsFill = linFieldsFill;
+    this.imgLin = imgLin;
+    this.imgMain = imgMain;
+    this.linearLayout = linearLayout;
+    this.nextSelectedBrand = nextSelectedBrand;
     this.nextSelectedCategory = nextSelectedCategory;
+    this.rvCreate = rvCreate;
+    this.textInputLayoutPro2 = textInputLayoutPro2;
+    this.textTitle = textTitle;
+    this.toolBar = toolBar;
+    this.txtNameBrand = txtNameBrand;
     this.txtNameCategory = txtNameCategory;
-    this.txtNameCity = txtNameCity;
   }
 
   @Override
@@ -185,45 +148,15 @@ public final class FragmentCreateBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.Toolbar;
-      ConstraintLayout Toolbar = ViewBindings.findChildViewById(rootView, id);
-      if (Toolbar == null) {
+      id = R.id.add_button;
+      MaterialButton addButton = ViewBindings.findChildViewById(rootView, id);
+      if (addButton == null) {
         break missingId;
       }
 
       id = R.id.btnSendCreate;
       MaterialButton btnSendCreate = ViewBindings.findChildViewById(rootView, id);
       if (btnSendCreate == null) {
-        break missingId;
-      }
-
-      id = R.id.cardImage_1;
-      CardView cardImage1 = ViewBindings.findChildViewById(rootView, id);
-      if (cardImage1 == null) {
-        break missingId;
-      }
-
-      id = R.id.cardImage_2;
-      CardView cardImage2 = ViewBindings.findChildViewById(rootView, id);
-      if (cardImage2 == null) {
-        break missingId;
-      }
-
-      id = R.id.cardImage_3;
-      CardView cardImage3 = ViewBindings.findChildViewById(rootView, id);
-      if (cardImage3 == null) {
-        break missingId;
-      }
-
-      id = R.id.cardImage_4;
-      CardView cardImage4 = ViewBindings.findChildViewById(rootView, id);
-      if (cardImage4 == null) {
-        break missingId;
-      }
-
-      id = R.id.cardImage_5;
-      CardView cardImage5 = ViewBindings.findChildViewById(rootView, id);
-      if (cardImage5 == null) {
         break missingId;
       }
 
@@ -263,81 +196,33 @@ public final class FragmentCreateBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.editRent;
-      TextInputEditText editRent = ViewBindings.findChildViewById(rootView, id);
-      if (editRent == null) {
-        break missingId;
-      }
-
       id = R.id.editTitle;
       TextInputEditText editTitle = ViewBindings.findChildViewById(rootView, id);
       if (editTitle == null) {
         break missingId;
       }
 
-      id = R.id.image_1;
-      ImageView image1 = ViewBindings.findChildViewById(rootView, id);
-      if (image1 == null) {
+      id = R.id.imgLin;
+      ImageView imgLin = ViewBindings.findChildViewById(rootView, id);
+      if (imgLin == null) {
         break missingId;
       }
 
-      id = R.id.image_2;
-      ImageView image2 = ViewBindings.findChildViewById(rootView, id);
-      if (image2 == null) {
+      id = R.id.imgMain;
+      ImageView imgMain = ViewBindings.findChildViewById(rootView, id);
+      if (imgMain == null) {
         break missingId;
       }
 
-      id = R.id.image_3;
-      ImageView image3 = ViewBindings.findChildViewById(rootView, id);
-      if (image3 == null) {
+      id = R.id.linear_layout;
+      LinearLayout linearLayout = ViewBindings.findChildViewById(rootView, id);
+      if (linearLayout == null) {
         break missingId;
       }
 
-      id = R.id.image_4;
-      ImageView image4 = ViewBindings.findChildViewById(rootView, id);
-      if (image4 == null) {
-        break missingId;
-      }
-
-      id = R.id.image_5;
-      ImageView image5 = ViewBindings.findChildViewById(rootView, id);
-      if (image5 == null) {
-        break missingId;
-      }
-
-      id = R.id.imageDelete_1;
-      ImageView imageDelete1 = ViewBindings.findChildViewById(rootView, id);
-      if (imageDelete1 == null) {
-        break missingId;
-      }
-
-      id = R.id.imageDelete_2;
-      ImageView imageDelete2 = ViewBindings.findChildViewById(rootView, id);
-      if (imageDelete2 == null) {
-        break missingId;
-      }
-
-      id = R.id.imageDelete_3;
-      ImageView imageDelete3 = ViewBindings.findChildViewById(rootView, id);
-      if (imageDelete3 == null) {
-        break missingId;
-      }
-
-      id = R.id.imageDelete_4;
-      ImageView imageDelete4 = ViewBindings.findChildViewById(rootView, id);
-      if (imageDelete4 == null) {
-        break missingId;
-      }
-
-      id = R.id.imageDelete_5;
-      ImageView imageDelete5 = ViewBindings.findChildViewById(rootView, id);
-      if (imageDelete5 == null) {
-        break missingId;
-      }
-
-      id = R.id.linFieldsFill;
-      LinearLayout linFieldsFill = ViewBindings.findChildViewById(rootView, id);
-      if (linFieldsFill == null) {
+      id = R.id.nextSelectedBrand;
+      LinearLayout nextSelectedBrand = ViewBindings.findChildViewById(rootView, id);
+      if (nextSelectedBrand == null) {
         break missingId;
       }
 
@@ -347,23 +232,46 @@ public final class FragmentCreateBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.rv_create;
+      RecyclerView rvCreate = ViewBindings.findChildViewById(rootView, id);
+      if (rvCreate == null) {
+        break missingId;
+      }
+
+      id = R.id.textInputLayoutPro2;
+      TextInputLayout textInputLayoutPro2 = ViewBindings.findChildViewById(rootView, id);
+      if (textInputLayoutPro2 == null) {
+        break missingId;
+      }
+
+      id = R.id.textTitle;
+      TextView textTitle = ViewBindings.findChildViewById(rootView, id);
+      if (textTitle == null) {
+        break missingId;
+      }
+
+      id = R.id.toolBar;
+      ConstraintLayout toolBar = ViewBindings.findChildViewById(rootView, id);
+      if (toolBar == null) {
+        break missingId;
+      }
+
+      id = R.id.txtNameBrand;
+      TextView txtNameBrand = ViewBindings.findChildViewById(rootView, id);
+      if (txtNameBrand == null) {
+        break missingId;
+      }
+
       id = R.id.txtNameCategory;
       TextView txtNameCategory = ViewBindings.findChildViewById(rootView, id);
       if (txtNameCategory == null) {
         break missingId;
       }
 
-      id = R.id.txtNameCity;
-      TextView txtNameCity = ViewBindings.findChildViewById(rootView, id);
-      if (txtNameCity == null) {
-        break missingId;
-      }
-
-      return new FragmentCreateBinding((ConstraintLayout) rootView, Toolbar, btnSendCreate,
-          cardImage1, cardImage2, cardImage3, cardImage4, cardImage5, cardImageAdd, clickBackCard,
-          constraintFon1, constraintFon2, editDescription, editPrice, editRent, editTitle, image1,
-          image2, image3, image4, image5, imageDelete1, imageDelete2, imageDelete3, imageDelete4,
-          imageDelete5, linFieldsFill, nextSelectedCategory, txtNameCategory, txtNameCity);
+      return new FragmentCreateBinding((ConstraintLayout) rootView, addButton, btnSendCreate,
+          cardImageAdd, clickBackCard, constraintFon1, constraintFon2, editDescription, editPrice,
+          editTitle, imgLin, imgMain, linearLayout, nextSelectedBrand, nextSelectedCategory,
+          rvCreate, textInputLayoutPro2, textTitle, toolBar, txtNameBrand, txtNameCategory);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

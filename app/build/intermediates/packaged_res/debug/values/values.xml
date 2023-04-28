@@ -41,7 +41,7 @@
     <color name="ic_launcher_background">#F3F3F3</color>
     <color name="orange">#FFA200</color>
     <color name="orange_txt">#EA6C6C</color>
-    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_200">#990000</color>
     <color name="purple_500">#88A8B6</color>
     <color name="purple_700">#FF3700B3</color>
     <color name="red">#FF6D76</color>
@@ -56,16 +56,31 @@
     <color name="white3">#F5F5F5</color>
     <color name="white_alpha">#CDFFFFFF</color>
     <color name="yellow">#FFEB3B</color>
+    <dimen name="corner_radius">12dp</dimen>
+    <string name="add_description">Добавьте описание</string>
     <string name="app_name">General Machinery Group</string>
+    <string name="category_catalog">Каталог категории</string>
     <string name="check_connections_internet">Пожалуйста проверьте соединения с интернетом</string>
+    <string name="close">Закрыть</string>
+    <string name="create_ads">Создать объявление</string>
+    <string name="exit">Выйти</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="maximum_10">Максимальная количество 10</string>
+    <string name="message">Написать</string>
     <string name="no_connection">Нет соединения</string>
     <string name="not_selected_photo">Фотография не выбрано</string>
+    <string name="register_message_email">Без подтверждения телефонного номера , Вы не можете создавать продукты</string>
+    <string name="review">Отзывы</string>
+    <string name="select_category">Выберите категорию</string>
+    <string name="selected_photo">Выберите фотографии</string>
     <string name="server_error">На данный момент \n сервер обновляется… \n пожалуйста подождите немного</string>
+    <string name="successfully">УСПЕШНО!</string>
     <string name="text_big">Floxy 1.0 - женская модель начального уровня для прогулок. Хороша для нерегулярного использования на плоском рельефе в спокойном режиме езды. Относительно небольшой диаметр колеса делает этой велосипед универсальным для использования как взрослыми, так и подростками. </string>
     <string name="text_big2">Диаметр: 26\nПередний переключатель: Shimano TZ-500\nЗадний переключатель: MicroShift RD-M21\nТип тормозов: Ободные\nРама: Alloy 6061\nКоличество скоростей: 21</string>
     <string name="text_big3">Серьезный подход к своему делу. Велосипед выкатили чистый, все работает. Причем цена  очень адекватная. В общем данным сервисом остался очень доволен.</string>
     <string name="todo">что-то</string>
+    <string name="wait">Подождите немного </string>
+    <string name="yeah_product">Вы создали продукт!</string>
     <style name="AppTheme.TruckKZ" parent="Base.Theme.AppCompat">
         
         <item name="colorPrimary">@color/fon1</item>
@@ -79,8 +94,19 @@
     <style name="BottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
         <item name="background">@android:color/transparent</item>
     </style>
+    <style name="Divider">
+        <item name="android:background">?android:attr/listDivider</item>
+    </style>
+    <style name="Divider.Horizontal" parent="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
     <style name="EditTextThemeOverlay" parent="ThemeOverlay.AppCompat">
         <item name="colorAccent">@android:color/holo_blue_light</item>
+    </style>
+    <style name="TextInputStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundMode">none</item>
+        <item name="boxStrokeWidth">0dp</item>
     </style>
     <style name="Theme.Rentit" parent="Theme.MaterialComponents.Light.NoActionBar">
 

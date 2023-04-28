@@ -6,22 +6,25 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
-import product.truckkz.windows.newCreateProduct.CreateActivity
+import product.truckkz.windows.createProduct.CreateActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import product.truckkz.MyUtils.uToast
+import product.truckkz.UserDate.TOKEN_USER
 import product.truckkz.databinding.ActivityMainBinding
-
 
 class MainActivity : AppCompatActivity() {
 
     lateinit var binding: ActivityMainBinding
-
-//    val viewGroup = (findViewById<View>(android.R.id.content) as ViewGroup).getChildAt(0) as ViewGroup
 
     @SuppressLint("UseCompatLoadingForDrawables")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+
+
+
 
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottom_navigatin_view)
         val navController = findNavController(R.id.nav_host)
@@ -30,13 +33,17 @@ class MainActivity : AppCompatActivity() {
 
 
         binding.floatBottom.setOnClickListener {
+            if(TOKEN_USER.isNotEmpty()){
+                val intent = Intent(this, CreateActivity::class.java)
+                startActivity(intent)
+                overridePendingTransition(
+                    R.anim.slide_in_right,
+                    R.anim.slide_out_left
+                )
+            }else {
+                uToast(this, "Нужно авторизоваться!")
+            }
 
-            val intent = Intent(this, CreateActivity::class.java)
-            startActivity(intent)
-            overridePendingTransition(
-                R.anim.slide_in_right,
-                R.anim.slide_out_left
-            )
         }
     }
 

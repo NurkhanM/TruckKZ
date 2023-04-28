@@ -8,8 +8,6 @@ import android.os.Bundle
 import product.truckkz.UserDate.APP_PREFERENCES
 import product.truckkz.UserDate.KEY_TOKEN
 import product.truckkz.UserDate.TOKEN_USER
-import product.truckkz.UserDate.USER_STATUS
-import product.truckkz.UserDate.USER_STATUS_FULL
 import product.truckkz.databinding.ActivityRefreshBinding
 import java.io.File
 

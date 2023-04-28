@@ -1,11 +1,10 @@
-package product.truckkz.windows.newCreateProduct
+package product.truckkz.windows.createProduct
 
 import android.annotation.SuppressLint
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import gun0912.tedimagepicker.util.ToastUtil
 import product.truckkz.databinding.ItemSelectedCategoryBinding
 import product.truckkz.`interface`.IClickListnearHomeCategory
 import product.truckkz.models.category.Children

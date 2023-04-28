@@ -22,6 +22,19 @@
         <item name="bottomSheetStyle">@style/BottomSheetStyle</item>
     </style>
 
+    <style name="TextInputStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundMode">none</item>
+        <item name="boxStrokeWidth">0dp</item>
+    </style>
+
+    <style name="Divider">
+        <item name="android:background">?android:attr/listDivider</item>
+    </style>
+
+    <style name="Divider.Horizontal" parent="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
 
 
 

@@ -52,7 +52,7 @@
         tools:layout="@layout/fragment_reset" />
     <fragment
         android:id="@+id/createFragment"
-        android:name="product.truckkz.windows.newCreateProduct.CreateFragment"
+        android:name="product.truckkz.windows.createProduct.CreateFragment"
         android:label="fragment_create"
         tools:layout="@layout/fragment_create" />
     <fragment
