@@ -1,4 +1,4 @@
-package product.truckkz.windows.newCreateProduct
+package product.truckkz.windows.createProduct
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
