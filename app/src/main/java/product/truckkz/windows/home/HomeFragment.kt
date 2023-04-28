@@ -37,7 +37,6 @@ class HomeFragment : Fragment() {
     private lateinit var adapterCategory: TovarAdapterCategory
     private lateinit var adapterProduct: TovarAdapterProduct
     private lateinit var adapterProduct2: TovarAdapterProduct2
-    private var arrayRecomend = ArrayList<TestRecomendModel>()
     private val map = HashMap<String, String>()
 
     private lateinit var viewModel: HomeViewModels
@@ -51,22 +50,6 @@ class HomeFragment : Fragment() {
         viewModel = ViewModelProvider(this)[HomeViewModels::class.java]
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val view = binding
-
-
-
-
-        arrayRecomend = arrayListOf(
-            TestRecomendModel(R.drawable.test_image3),
-            TestRecomendModel(R.drawable.test_image),
-            TestRecomendModel(R.drawable.test_image2),
-            TestRecomendModel(R.drawable.test_image4),
-            TestRecomendModel(R.drawable.test_image3),
-            TestRecomendModel(R.drawable.test_image),
-            TestRecomendModel(R.drawable.test_image2),
-            TestRecomendModel(R.drawable.test_image4),
-            TestRecomendModel(R.drawable.test_image3),
-            TestRecomendModel(R.drawable.test_image)
-        )
 
 
 
