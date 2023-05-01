@@ -4,13 +4,18 @@ import android.annotation.SuppressLint
 import android.app.Activity
 import android.app.Dialog
 import android.content.Intent
+import android.content.res.ColorStateList
+import android.content.res.Resources
 import android.graphics.Bitmap
 import android.graphics.Color
+import android.graphics.Typeface
 import android.graphics.drawable.ColorDrawable
 import android.net.Uri
 import android.os.Bundle
 import android.provider.MediaStore
 import android.util.Log
+import android.util.TypedValue
+import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -37,10 +42,9 @@ import okhttp3.RequestBody.Companion.toRequestBody
 import org.json.JSONException
 import org.json.JSONObject
 import product.truckkz.MyUtils
-import product.truckkz.MyUtils.uLogD
 import product.truckkz.UserDate.GET_BRAND_ID
 import product.truckkz.UserDate.GET_CATEGORY_ID
-import product.truckkz.UserDate.TOKEN_USER
+import product.truckkz.UserDate.USER_TOKEN
 import product.truckkz.databinding.FragmentCreateBinding
 import product.truckkz.`interface`.IClickListnearUpdateImage
 import product.truckkz.windows.createProduct.brandSelect.BrandSelectFragment
@@ -250,7 +254,7 @@ class CreateFragment : Fragment() {
 
 
         viewModel.pushProductCreate(
-            "Bearer $TOKEN_USER",
+            "Bearer $USER_TOKEN",
             params,
             fields,
             filePart,
@@ -259,6 +263,7 @@ class CreateFragment : Fragment() {
     }
 
 
+    @Suppress("DEPRECATION")
     @SuppressLint("UseCompatLoadingForDrawables")
     private fun newCreateViewFields() {
 
@@ -267,26 +272,37 @@ class CreateFragment : Fragment() {
             val containerLayout = LinearLayout(requireContext())
             containerLayout.orientation = LinearLayout.VERTICAL
             containerLayout.background = resources.getDrawable(R.drawable.button_background2)
+            containerLayout.setPadding(16.dpToPx(), 16.dpToPx(), 16.dpToPx(), 16.dpToPx()) // add padding
+
+            // Set marginBottom of 16dp
             val layoutParams = LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.MATCH_PARENT,
                 LinearLayout.LayoutParams.WRAP_CONTENT
             )
-            layoutParams.setMargins(0, 16, 0, 0)
+            layoutParams.setMargins(0, 8.dpToPx(), 0, 8.dpToPx())
+            containerLayout.layoutParams = layoutParams
 
             val editTextName = EditText(requireContext())
             editTextName.hint = "Введите имя"
             containerLayout.addView(editTextName)
             editTextListName.add(editTextName)
 
-
             val editTextValue = EditText(requireContext())
             editTextValue.hint = "Введите значение"
             containerLayout.addView(editTextValue)
             editTextListValue.add(editTextValue) // сохраняем ссылку на созданный EditText в списке
 
-
-            val deleteButton = Button(requireContext())
-            deleteButton.text = "Delete"
+            val deleteButton = TextView(requireContext())
+            deleteButton.text = resources.getString(R.string.delete)
+            deleteButton.layoutParams = LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.WRAP_CONTENT,
+                LinearLayout.LayoutParams.WRAP_CONTENT
+            ).apply {
+                gravity = Gravity.END
+            }
+            deleteButton.setTextColor(Color.RED)
+            deleteButton.setTypeface(null, Typeface.NORMAL)
+            deleteButton.setPadding(0, 10.dpToPx(), 6.dpToPx(), 0)
 
             // Сохраняем ссылки на созданные элементы
             val viewsToDelete = listOf(containerLayout, editTextName, editTextValue, deleteButton)
@@ -297,13 +313,17 @@ class CreateFragment : Fragment() {
                 editTextListName.remove(editTextName)
                 editTextListValue.remove(editTextValue) // удаляем ссылку на удаленный EditText из списка
 
-
             }
 
             containerLayout.addView(deleteButton)
             binding.linearLayout.addView(containerLayout)
         }
 
+    }
+
+    private fun Int.dpToPx(): Int {
+        val displayMetrics = Resources.getSystem().displayMetrics
+        return TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, this.toFloat(), displayMetrics).toInt()
     }
 
 

@@ -28,7 +28,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:tint="@color/black_txt3" />
+            app:tint="@color/fon" />
 
         <TextView
             android:layout_width="wrap_content"

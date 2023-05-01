@@ -14,9 +14,7 @@ import product.truckkz.databinding.ItemTovarBinding
 import product.truckkz.models.products.index.Data
 
 class TovarAdapterProduct(private val mIClickListnear: IClickListnearHomeFavorite) :
-    PagingDataAdapter<Data,
-            TovarAdapterProduct.MyViewHolder>(diffCallback) {
-
+    PagingDataAdapter<Data, TovarAdapterProduct.MyViewHolder>(diffCallback) {
 
     companion object {
         val diffCallback = object : DiffUtil.ItemCallback<Data>() {
@@ -29,6 +27,8 @@ class TovarAdapterProduct(private val mIClickListnear: IClickListnearHomeFavorit
             }
         }
     }
+
+
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
@@ -44,8 +44,9 @@ class TovarAdapterProduct(private val mIClickListnear: IClickListnearHomeFavorit
 
         Glide.with(context).load(currentItem?.img)
             .thumbnail(Glide.with(context).load(R.drawable.loader2))
-//            .fitCenter()
             .into(holder.binding.itemHomeImages)
+
+
 
 
 

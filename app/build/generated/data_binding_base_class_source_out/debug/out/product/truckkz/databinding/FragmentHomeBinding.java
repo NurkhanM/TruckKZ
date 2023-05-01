@@ -41,9 +41,6 @@ public final class FragmentHomeBinding implements ViewBinding {
   public final RecyclerView rvProduct;
 
   @NonNull
-  public final RecyclerView rvProduct2;
-
-  @NonNull
   public final SwipeRefreshLayout tiRefreshLayout;
 
   @NonNull
@@ -53,8 +50,7 @@ public final class FragmentHomeBinding implements ViewBinding {
       @NonNull ImageView clickUpdateBackCard, @NonNull NestedScrollView fragmentContainerUpdate,
       @NonNull ConstraintLayout homeToolbar, @NonNull ImageView imgAuthHome,
       @NonNull RecyclerView rvCategory, @NonNull RecyclerView rvProduct,
-      @NonNull RecyclerView rvProduct2, @NonNull SwipeRefreshLayout tiRefreshLayout,
-      @NonNull ConstraintLayout updateToolbar) {
+      @NonNull SwipeRefreshLayout tiRefreshLayout, @NonNull ConstraintLayout updateToolbar) {
     this.rootView = rootView;
     this.clickUpdateBackCard = clickUpdateBackCard;
     this.fragmentContainerUpdate = fragmentContainerUpdate;
@@ -62,7 +58,6 @@ public final class FragmentHomeBinding implements ViewBinding {
     this.imgAuthHome = imgAuthHome;
     this.rvCategory = rvCategory;
     this.rvProduct = rvProduct;
-    this.rvProduct2 = rvProduct2;
     this.tiRefreshLayout = tiRefreshLayout;
     this.updateToolbar = updateToolbar;
   }
@@ -130,12 +125,6 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.rv_product2;
-      RecyclerView rvProduct2 = ViewBindings.findChildViewById(rootView, id);
-      if (rvProduct2 == null) {
-        break missingId;
-      }
-
       id = R.id.tiRefreshLayout;
       SwipeRefreshLayout tiRefreshLayout = ViewBindings.findChildViewById(rootView, id);
       if (tiRefreshLayout == null) {
@@ -149,8 +138,8 @@ public final class FragmentHomeBinding implements ViewBinding {
       }
 
       return new FragmentHomeBinding((ConstraintLayout) rootView, clickUpdateBackCard,
-          fragmentContainerUpdate, homeToolbar, imgAuthHome, rvCategory, rvProduct, rvProduct2,
-          tiRefreshLayout, updateToolbar);
+          fragmentContainerUpdate, homeToolbar, imgAuthHome, rvCategory, rvProduct, tiRefreshLayout,
+          updateToolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

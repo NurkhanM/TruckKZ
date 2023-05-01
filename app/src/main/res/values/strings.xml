@@ -25,5 +25,6 @@
     <string name="wait">Подождите немного </string>
     <string name="create_ads">Создать объявление</string>
     <string name="selected_photo">Выберите фотографии</string>
+    <string name="delete">Удалить</string>
 
 </resources>

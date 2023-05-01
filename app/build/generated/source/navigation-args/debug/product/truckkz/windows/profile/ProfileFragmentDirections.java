@@ -18,4 +18,9 @@ public class ProfileFragmentDirections {
   public static NavDirections actionProfileFragmentToSettingsFragment() {
     return new ActionOnlyNavDirections(R.id.action_profileFragment_to_settingsFragment);
   }
+
+  @NonNull
+  public static NavDirections actionProfileFragmentToFavoriteFragment() {
+    return new ActionOnlyNavDirections(R.id.action_profileFragment_to_favoriteFragment);
+  }
 }

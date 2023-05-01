@@ -53,7 +53,7 @@ class HomeInfoFragment : Fragment() {
 //        (activity as AppCompatActivity).bottomAppBar.visibility = View.VISIBLE
 //        (activity as AppCompatActivity).floatBottom.visibility = View.VISIBLE
 
-        viewModels.getProductInfo("Bearer ${UserDate.TOKEN_USER}", ALL_ID_PRODUCTS)
+        viewModels.getProductInfo("Bearer ${UserDate.USER_TOKEN}", ALL_ID_PRODUCTS)
         viewModels.myProductInfo.observe(viewLifecycleOwner) { list ->
             if (list.isSuccessful) {
                 view.textTitle.text = list.body()?.data?.title

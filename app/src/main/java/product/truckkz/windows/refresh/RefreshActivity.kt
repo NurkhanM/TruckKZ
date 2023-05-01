@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import product.truckkz.UserDate.APP_PREFERENCES
 import product.truckkz.UserDate.KEY_TOKEN
-import product.truckkz.UserDate.TOKEN_USER
+import product.truckkz.UserDate.USER_TOKEN
 import product.truckkz.databinding.ActivityRefreshBinding
 import java.io.File
 
@@ -30,7 +30,7 @@ class RefreshActivity : AppCompatActivity() {
 
         preferencesTOKEN.edit().putString(KEY_TOKEN, "").apply()
 
-        TOKEN_USER = ""
+        USER_TOKEN = ""
 
 
         refreshNextIntent()

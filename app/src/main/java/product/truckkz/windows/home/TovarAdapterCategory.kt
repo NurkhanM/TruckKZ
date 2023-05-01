@@ -19,15 +19,30 @@ class TovarAdapterCategory(private val mIClickListnear: IClickListnearHomeTest) 
 
     var listTovar = ArrayList<Children>()
 
+    // Переменная, хранящая индекс элемента для закрашивания
+    var selectedPosition = 0
+
+    // Метод для обновления индекса выбранного элемента
+    @SuppressLint("NotifyDataSetChanged")
+    fun selectItem(position: Int) {
+        selectedPosition = position
+        notifyDataSetChanged()
+    }
+
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val binding = ItemCategoryBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         context = parent.context
         return MyViewHolder(binding)
     }
-    @SuppressLint("NewApi")
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         val currentItem = listTovar[position]
 
+        if (position == selectedPosition) {
+            holder.binding.rowCostom.setBackgroundResource(R.drawable.button_background2)
+        } else {
+            holder.binding.rowCostom.setBackgroundResource(0)
+        }
 
         Glide.with(context).load(R.drawable.test_svg_category2)
             .thumbnail(Glide.with(context).load(R.drawable.loader2))
@@ -36,11 +51,22 @@ class TovarAdapterCategory(private val mIClickListnear: IClickListnearHomeTest) 
 
         holder.binding.textName.text = currentItem.name
 
+        // Изменяем цвет фона, если текущий элемент соответствует выбранному индексу
+        holder.binding.rowCostom.setBackgroundResource(
+            if (position == selectedPosition) {
+                R.drawable.button_background2
+            } else {
+                R.drawable.fon_white
+            }
+        )
+
 
         holder.binding.rowCostom.setOnClickListener {
             mIClickListnear.clickListener(currentItem.id)
+            selectItem(position) // Вызываем метод для обновления выбранного индекса
         }
     }
+
 
     override fun getItemCount(): Int {
         return listTovar.size
@@ -48,7 +74,22 @@ class TovarAdapterCategory(private val mIClickListnear: IClickListnearHomeTest) 
 
     @SuppressLint("NotifyDataSetChanged")
     fun setList(list: ArrayList<Children>) {
-        listTovar = list
+        val newItem = Children(
+            children = emptyList(),
+            created_at = "",
+            description = "",
+            id = 0,
+            img = "",
+            name = "Все категории",
+            parent_id = -1,
+            slug = ""
+        )
+        listTovar.add(0, newItem)
+
+        // Добавляем элементы из переданного списка
+        listTovar.addAll(list)
+
+        // Уведомляем адаптер об изменениях в списке
         notifyDataSetChanged()
     }
 

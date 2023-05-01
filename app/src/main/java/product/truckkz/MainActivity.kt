@@ -9,7 +9,7 @@ import androidx.navigation.ui.setupWithNavController
 import product.truckkz.windows.createProduct.CreateActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import product.truckkz.MyUtils.uToast
-import product.truckkz.UserDate.TOKEN_USER
+import product.truckkz.UserDate.USER_TOKEN
 import product.truckkz.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
 
 
         binding.floatBottom.setOnClickListener {
-            if(TOKEN_USER.isNotEmpty()){
+            if(USER_TOKEN.isNotEmpty()){
                 val intent = Intent(this, CreateActivity::class.java)
                 startActivity(intent)
                 overridePendingTransition(
@@ -47,13 +47,12 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    @Suppress("DEPRECATION")
     @Deprecated("Deprecated in Java")
     override fun onBackPressed() {
         val navController = findNavController(R.id.nav_host)
 
         if (
-            navController.currentDestination!!.id == R.id.favoriteFragment ||
-            navController.currentDestination!!.id == R.id.chadFragment ||
             navController.currentDestination!!.id == R.id.authorizationFragment||
             navController.currentDestination!!.id == R.id.profileFragment
         ) {

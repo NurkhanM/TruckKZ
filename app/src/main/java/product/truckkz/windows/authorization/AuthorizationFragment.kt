@@ -20,7 +20,7 @@ import androidx.navigation.Navigation
 import product.truckkz.R
 import product.truckkz.UserDate.APP_PREFERENCES
 import product.truckkz.UserDate.KEY_TOKEN
-import product.truckkz.UserDate.TOKEN_USER
+import product.truckkz.UserDate.USER_TOKEN
 import product.truckkz.viewModels.HomeViewModels
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -73,7 +73,7 @@ class AuthorizationFragment : Fragment() {
                 view.gifAut.visibility = View.GONE
                 view.textWelcome.visibility = View.VISIBLE
 
-                TOKEN_USER = list.body()?.token.toString()
+                USER_TOKEN = list.body()?.token.toString()
 //                idUser = list.body()?.user?.id.toString()
 
                 CoroutineScope(Dispatchers.Main).launch {
@@ -81,7 +81,7 @@ class AuthorizationFragment : Fragment() {
                     Navigation.findNavController(view.root).navigate(R.id.action_authorizationFragment_to_profileFragment)
                 }
 
-                preferencesTOKEN.edit().putString(KEY_TOKEN, TOKEN_USER).apply()
+                preferencesTOKEN.edit().putString(KEY_TOKEN, USER_TOKEN).apply()
 
             } else {
                 view.constraintLayoutAuth.visibility = View.VISIBLE

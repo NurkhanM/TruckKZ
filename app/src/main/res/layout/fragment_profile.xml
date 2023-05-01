@@ -34,9 +34,11 @@
 
 
     <ScrollView
+        android:id="@+id/consHome"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:orientation="vertical"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -97,6 +99,48 @@
 
 
                 <LinearLayout
+                    android:id="@+id/nextSettings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:layout_marginEnd="20dp"
+                            android:src="@drawable/bottom_right" />
+
+                        <TextView
+                            android:id="@+id/textSettings"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Редактировать"
+                            android:textColor="@color/black_txt"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/fon" />
+
+                </LinearLayout>
+
+                <LinearLayout
                     android:id="@+id/nextMyAds"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -105,10 +149,15 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
-                        android:layout_marginBottom="10dp"
+                        android:layout_marginVertical="10dp"
                         android:gravity="center_vertical"
                         android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:layout_marginEnd="20dp"
+                            android:src="@drawable/bottom_right" />
 
                         <TextView
                             android:id="@+id/textMyAds"
@@ -117,14 +166,9 @@
                             android:layout_weight="1"
                             android:text="Мои объявления"
                             android:textColor="@color/black_txt"
-                            android:textSize="22sp"
+                            android:textSize="18sp"
                             android:textStyle="bold" />
 
-                        <ImageView
-                            android:layout_width="12dp"
-                            android:layout_height="12dp"
-                            android:layout_marginEnd="20dp"
-                            android:src="@drawable/bottom_right" />
                     </LinearLayout>
 
                     <View
@@ -136,8 +180,9 @@
                 </LinearLayout>
 
 
+
                 <LinearLayout
-                    android:id="@+id/nextSettings"
+                    android:id="@+id/nextFavorite"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -149,22 +194,21 @@
                         android:layout_marginVertical="10dp"
                         android:gravity="center_vertical"
                         android:orientation="horizontal">
-
-                        <TextView
-                            android:id="@+id/textSettings"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="Настройки"
-                            android:textColor="@color/black_txt"
-                            android:textSize="22sp"
-                            android:textStyle="bold" />
-
                         <ImageView
                             android:layout_width="12dp"
                             android:layout_height="12dp"
                             android:layout_marginEnd="20dp"
                             android:src="@drawable/bottom_right" />
+                        <TextView
+                            android:id="@+id/textFavorite"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Избранные"
+                            android:textColor="@color/black_txt"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
                     </LinearLayout>
 
                     <View
@@ -173,45 +217,6 @@
                         android:layout_marginTop="5dp"
                         android:background="@color/fon" />
 
-                </LinearLayout>
-
-
-                <LinearLayout
-                    android:visibility="gone"
-                    android:id="@+id/nextFullRegister"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginVertical="10dp"
-                        android:gravity="center_vertical"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="Полная регистрация"
-                            android:textColor="@color/black_txt"
-                            android:textSize="22sp"
-                            android:textStyle="bold" />
-
-                        <ImageView
-                            android:layout_width="12dp"
-                            android:layout_height="12dp"
-                            android:layout_marginEnd="20dp"
-                            android:src="@drawable/bottom_right" />
-                    </LinearLayout>
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:layout_marginTop="5dp"
-                        android:background="@color/fon" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -225,32 +230,44 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="10dp"
-                        android:layout_marginTop="20dp"
                         android:orientation="horizontal">
 
                         <ImageView
-                            android:layout_width="40dp"
+                            android:layout_width="30dp"
                             android:layout_height="30dp"
-                            app:tint="@color/orange_txt"
-                            android:src="@drawable/ic_exit" />
+                            android:padding="5dp"
+                            android:src="@drawable/ic_exit"
+                            app:tint="@color/orange_txt" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Выход"
+                            android:text="Выйти с аккаунта"
                             android:textColor="@color/orange_txt"
-                            android:textSize="20sp"
+                            android:textSize="18sp"
                             android:textStyle="bold" />
                     </LinearLayout>
+
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
-                        android:layout_marginTop="5dp"
                         android:background="@color/fon" />
                 </LinearLayout>
             </LinearLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/loader"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/loader"
+        android:tint="@color/fon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

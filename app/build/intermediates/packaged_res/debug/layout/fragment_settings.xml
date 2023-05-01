@@ -27,14 +27,14 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:tint="@color/black_txt3" />
+            app:tint="@color/fon" />
 
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Настройки"
+            android:text="Редактирования"
             android:textColor="@color/black_txt"
             android:textSize="24sp"
             android:textStyle="bold"
@@ -46,58 +46,20 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ScrollView
+        android:id="@+id/profilteRegisterConstreite"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Toolbar">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="20dp"
             android:layout_marginTop="20dp"
-            android:orientation="vertical"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Toolbar">
-
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Личные настройки"
-                android:textColor="@color/black"
-                android:textSize="24sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="Валюта"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/button_background2"
-                android:gravity="center_vertical"
-                android:orientation="horizontal"
-                android:paddingHorizontal="10dp"
-                android:paddingVertical="10dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="KGS" />
-
-                <ImageView
-                    android:layout_width="10dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
-                    android:src="@drawable/bottom_right" />
-
-            </LinearLayout>
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -110,7 +72,7 @@
                     android:layout_marginTop="20dp"
                     android:text="Фото профиля"
                     android:textColor="@color/black"
-                    android:textSize="24sp"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
 
                 <LinearLayout
@@ -121,11 +83,13 @@
                     android:orientation="horizontal">
 
                     <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/userImg"
                         android:layout_width="65dp"
                         android:layout_height="65dp"
-                        android:src="@drawable/map_image" />
+                        android:src="@drawable/dot_red" />
 
                     <LinearLayout
+                        android:id="@+id/selectImg"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="20dp"
@@ -136,20 +100,13 @@
                             android:layout_height="wrap_content"
                             android:text="Выбрать файл"
                             android:textColor="@color/black_txt"
-                            android:textSize="20sp" />
+                            android:textSize="16sp" />
 
                         <View
                             android:layout_width="match_parent"
                             android:layout_height="1dp"
                             android:background="@color/fon" />
                     </LinearLayout>
-
-                    <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:layout_marginStart="10dp"
-                        android:src="@drawable/ic_trash"
-                        android:scaleType="centerInside"/>
 
 
                 </LinearLayout>
@@ -163,7 +120,7 @@
                 android:layout_marginTop="20dp"
                 android:text="Личная информация"
                 android:textColor="@color/black"
-                android:textSize="24sp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -182,7 +139,10 @@
                 android:hint="Name"
                 android:inputType="text"
                 android:paddingHorizontal="10dp"
-                android:paddingVertical="15dp" />
+                android:paddingVertical="15dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textColorHint="@color/black_txt3" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -201,7 +161,10 @@
                 android:hint="Email"
                 android:inputType="text"
                 android:paddingHorizontal="10dp"
-                android:paddingVertical="15dp" />
+                android:paddingVertical="15dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black_txt3"
+                android:textSize="16sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -209,44 +172,13 @@
                 android:layout_marginTop="20dp"
                 android:text="Изменение пароля"
                 android:textColor="@color/black"
-                android:textSize="24sp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Текущий пароль"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:endIconMode="password_toggle"
-                app:hintEnabled="false"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textInputLayout2">
-
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/editCurrentPassword"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/button_background2"
-                    android:hint="Пароль"
-                    android:inputType="textPassword"
-                    android:maxLength="18"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:text="Новый пароль"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
@@ -269,6 +201,9 @@
                     android:hint="Пароль"
                     android:inputType="textPassword"
                     android:maxLength="18"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black_txt3"
+                    android:textSize="16sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent" />
 
@@ -300,6 +235,9 @@
                     android:hint="Пароль"
                     android:inputType="textPassword"
                     android:maxLength="18"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black_txt3"
+                    android:textSize="16sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent" />
 
@@ -316,23 +254,26 @@
                 <ImageView
                     android:layout_width="35dp"
                     android:layout_height="35dp"
-                    android:src="@drawable/ic_user_remove"/>
+                    android:src="@drawable/ic_user_remove" />
 
                 <TextView
-                    android:layout_marginStart="20dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
                     android:text="Деактивировать профиль"
                     android:textColor="@color/black"
-                    android:textSize="18sp" />
+                    android:textStyle="bold"
+                    android:textSize="16sp" />
 
             </LinearLayout>
 
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/authBtnPost"
                 android:layout_width="300dp"
                 android:layout_height="65dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
+                android:textColor="@color/white"
                 android:backgroundTint="@color/fon"
                 android:text="Сохранить"
                 android:textAllCaps="false"
@@ -342,12 +283,22 @@
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="120dp" />
+                android:layout_height="300dp" />
 
         </LinearLayout>
 
 
     </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/profileProgress"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

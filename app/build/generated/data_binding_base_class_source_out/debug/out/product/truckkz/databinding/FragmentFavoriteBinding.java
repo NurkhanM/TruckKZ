@@ -4,7 +4,7 @@ package product.truckkz.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
+import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -21,21 +21,21 @@ public final class FragmentFavoriteBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final ConstraintLayout Toolbar;
-
-  @NonNull
-  public final LinearLayout linTab;
+  public final ImageView ochBackCard;
 
   @NonNull
   public final RecyclerView rvFavorite;
 
+  @NonNull
+  public final ConstraintLayout toolbar;
+
   private FragmentFavoriteBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ConstraintLayout Toolbar, @NonNull LinearLayout linTab,
-      @NonNull RecyclerView rvFavorite) {
+      @NonNull ImageView ochBackCard, @NonNull RecyclerView rvFavorite,
+      @NonNull ConstraintLayout toolbar) {
     this.rootView = rootView;
-    this.Toolbar = Toolbar;
-    this.linTab = linTab;
+    this.ochBackCard = ochBackCard;
     this.rvFavorite = rvFavorite;
+    this.toolbar = toolbar;
   }
 
   @Override
@@ -65,15 +65,9 @@ public final class FragmentFavoriteBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.Toolbar;
-      ConstraintLayout Toolbar = ViewBindings.findChildViewById(rootView, id);
-      if (Toolbar == null) {
-        break missingId;
-      }
-
-      id = R.id.linTab;
-      LinearLayout linTab = ViewBindings.findChildViewById(rootView, id);
-      if (linTab == null) {
+      id = R.id.ochBackCard;
+      ImageView ochBackCard = ViewBindings.findChildViewById(rootView, id);
+      if (ochBackCard == null) {
         break missingId;
       }
 
@@ -83,7 +77,14 @@ public final class FragmentFavoriteBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentFavoriteBinding((ConstraintLayout) rootView, Toolbar, linTab, rvFavorite);
+      id = R.id.toolbar;
+      ConstraintLayout toolbar = ViewBindings.findChildViewById(rootView, id);
+      if (toolbar == null) {
+        break missingId;
+      }
+
+      return new FragmentFavoriteBinding((ConstraintLayout) rootView, ochBackCard, rvFavorite,
+          toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

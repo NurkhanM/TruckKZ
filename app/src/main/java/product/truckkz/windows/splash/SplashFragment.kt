@@ -15,7 +15,7 @@ import androidx.navigation.Navigation
 import product.truckkz.R
 import product.truckkz.UserDate.APP_PREFERENCES
 import product.truckkz.UserDate.KEY_TOKEN
-import product.truckkz.UserDate.TOKEN_USER
+import product.truckkz.UserDate.USER_TOKEN
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
@@ -46,7 +46,7 @@ class SplashFragment : Fragment() {
             Context.MODE_PRIVATE
         )
 
-        TOKEN_USER = preferencesTOKEN.getString(KEY_TOKEN, "").toString()
+        USER_TOKEN = preferencesTOKEN.getString(KEY_TOKEN, "").toString()
 
         // Метод для показа полно экранного режима
         fullScreen()

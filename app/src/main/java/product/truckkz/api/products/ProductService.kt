@@ -1,5 +1,9 @@
 package product.truckkz.api.products
 
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.flow
+import kotlinx.coroutines.flow.flowOn
 import okhttp3.MultipartBody
 import okhttp3.RequestBody
 import product.truckkz.models.products.index.ProductsModels
@@ -25,25 +29,17 @@ interface ProductService {
         @Path("idProduct") number: Int,
     ): Response<ProductShowModels>
 
-    @GET("api/products")
-    @Headers("Accept: application/json")
-    suspend fun getProduct(
-        @Header("Authorization") auth: String
-    ): Response<ProductsModels>
 
-    @GET("api/products")
-    @Headers("Accept: application/json")
-    suspend fun getProduct2(
-        @Header("Authorization") auth: String
-    ): Response<ProductsModels>
+
 
     @GET("api/products")
     @Headers("Accept: application/json")
     suspend fun getSortProducts(
         @Header("Authorization") auth: String,
         @QueryMap allPro: HashMap<String, String>,
-        @Query("page") page: Int,
+//        @Query("page") page: Int,
     ): Response<ProductsModels>
+
 
     @Multipart
     @Headers("Accept: application/json")

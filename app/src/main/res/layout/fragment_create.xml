@@ -88,7 +88,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:text="Загрузить фото (до 5 шт)"
+                    android:text="Загрузить фото (до 10 шт)"
                     android:textColor="@color/black_txt3"
                     android:textSize="18sp" />
 
@@ -340,6 +340,7 @@
                     android:id="@+id/linear_layout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
                     android:orientation="vertical" />
 
                 <com.google.android.material.button.MaterialButton

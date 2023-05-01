@@ -13,7 +13,6 @@ import androidx.recyclerview.widget.RecyclerView
 import product.truckkz.DataAllProducts.ALL_ID_PRODUCTS
 import me.farahani.spaceitemdecoration.SpaceItemDecoration
 import product.truckkz.R
-import product.truckkz.UserDate
 import product.truckkz.databinding.FragmentFavoriteBinding
 import product.truckkz.databinding.ItemTovarBinding
 import product.truckkz.`interface`.IClickListnearHomeFavorite
@@ -64,6 +63,11 @@ class FavoriteFragment : Fragment() {
 
         recyclerViewProduct.adapter = adapterProduct
         recyclerViewProduct.setHasFixedSize(true)
+
+
+        binding.ochBackCard.setOnClickListener {
+            activity?.onBackPressed()
+        }
 
 
         return view.root

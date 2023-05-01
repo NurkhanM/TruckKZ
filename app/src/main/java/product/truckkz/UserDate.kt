@@ -2,7 +2,8 @@ package product.truckkz
 
 object UserDate {
 
-    var TOKEN_USER = ""
+    var USER_TOKEN = ""
+    var USER_ID = -1
     const val APP_PREFERENCES = "APP_PREFERENCES"
     const val KEY_TOKEN = "KEY_TOKEN"
 

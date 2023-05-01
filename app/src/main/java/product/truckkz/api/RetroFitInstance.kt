@@ -7,6 +7,7 @@ import product.truckkz.api.auth.AuthorizationService
 import product.truckkz.api.brands.BrandService
 import product.truckkz.api.category.CategoryService
 import product.truckkz.api.products.ProductService
+import product.truckkz.api.user.UserService
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.converter.scalars.ScalarsConverterFactory
@@ -47,6 +48,9 @@ object RetroFitInstance {
     }
     val product: ProductService by lazy {
         retrofit.create(ProductService::class.java)
+    }
+    val user: UserService by lazy {
+        retrofit.create(UserService::class.java)
     }
 
 }

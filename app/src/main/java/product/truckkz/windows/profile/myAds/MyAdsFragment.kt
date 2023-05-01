@@ -13,6 +13,7 @@ class MyAdsFragment : Fragment() {
     private val binding get() = _binding!!
 
 
+    @Suppress("DEPRECATION")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -20,6 +21,11 @@ class MyAdsFragment : Fragment() {
         // Inflate the layout for this fragment
         _binding = FragmentMyAdsBinding.inflate(inflater, container, false)
 
+
+
+        binding.ochBackCard.setOnClickListener {
+            activity?.onBackPressed()
+        }
 
         return binding.root
     }

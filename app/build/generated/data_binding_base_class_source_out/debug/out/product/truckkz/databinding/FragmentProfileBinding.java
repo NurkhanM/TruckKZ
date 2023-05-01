@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -15,6 +16,7 @@ import de.hdodenhof.circleimageview.CircleImageView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
+import pl.droidsonroids.gif.GifImageView;
 import product.truckkz.R;
 
 public final class FragmentProfileBinding implements ViewBinding {
@@ -25,19 +27,28 @@ public final class FragmentProfileBinding implements ViewBinding {
   public final ConstraintLayout Toolbar;
 
   @NonNull
+  public final ScrollView consHome;
+
+  @NonNull
   public final LinearLayout isProfileLiner;
+
+  @NonNull
+  public final GifImageView loader;
 
   @NonNull
   public final LinearLayout nextExitUser;
 
   @NonNull
-  public final LinearLayout nextFullRegister;
+  public final LinearLayout nextFavorite;
 
   @NonNull
   public final LinearLayout nextMyAds;
 
   @NonNull
   public final LinearLayout nextSettings;
+
+  @NonNull
+  public final TextView textFavorite;
 
   @NonNull
   public final TextView textMyAds;
@@ -55,19 +66,23 @@ public final class FragmentProfileBinding implements ViewBinding {
   public final CircleImageView userImage;
 
   private FragmentProfileBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ConstraintLayout Toolbar, @NonNull LinearLayout isProfileLiner,
-      @NonNull LinearLayout nextExitUser, @NonNull LinearLayout nextFullRegister,
+      @NonNull ConstraintLayout Toolbar, @NonNull ScrollView consHome,
+      @NonNull LinearLayout isProfileLiner, @NonNull GifImageView loader,
+      @NonNull LinearLayout nextExitUser, @NonNull LinearLayout nextFavorite,
       @NonNull LinearLayout nextMyAds, @NonNull LinearLayout nextSettings,
-      @NonNull TextView textMyAds, @NonNull TextView textProfileEmail,
-      @NonNull TextView textProfileName, @NonNull TextView textSettings,
-      @NonNull CircleImageView userImage) {
+      @NonNull TextView textFavorite, @NonNull TextView textMyAds,
+      @NonNull TextView textProfileEmail, @NonNull TextView textProfileName,
+      @NonNull TextView textSettings, @NonNull CircleImageView userImage) {
     this.rootView = rootView;
     this.Toolbar = Toolbar;
+    this.consHome = consHome;
     this.isProfileLiner = isProfileLiner;
+    this.loader = loader;
     this.nextExitUser = nextExitUser;
-    this.nextFullRegister = nextFullRegister;
+    this.nextFavorite = nextFavorite;
     this.nextMyAds = nextMyAds;
     this.nextSettings = nextSettings;
+    this.textFavorite = textFavorite;
     this.textMyAds = textMyAds;
     this.textProfileEmail = textProfileEmail;
     this.textProfileName = textProfileName;
@@ -108,9 +123,21 @@ public final class FragmentProfileBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.consHome;
+      ScrollView consHome = ViewBindings.findChildViewById(rootView, id);
+      if (consHome == null) {
+        break missingId;
+      }
+
       id = R.id.isProfileLiner;
       LinearLayout isProfileLiner = ViewBindings.findChildViewById(rootView, id);
       if (isProfileLiner == null) {
+        break missingId;
+      }
+
+      id = R.id.loader;
+      GifImageView loader = ViewBindings.findChildViewById(rootView, id);
+      if (loader == null) {
         break missingId;
       }
 
@@ -120,9 +147,9 @@ public final class FragmentProfileBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.nextFullRegister;
-      LinearLayout nextFullRegister = ViewBindings.findChildViewById(rootView, id);
-      if (nextFullRegister == null) {
+      id = R.id.nextFavorite;
+      LinearLayout nextFavorite = ViewBindings.findChildViewById(rootView, id);
+      if (nextFavorite == null) {
         break missingId;
       }
 
@@ -135,6 +162,12 @@ public final class FragmentProfileBinding implements ViewBinding {
       id = R.id.nextSettings;
       LinearLayout nextSettings = ViewBindings.findChildViewById(rootView, id);
       if (nextSettings == null) {
+        break missingId;
+      }
+
+      id = R.id.textFavorite;
+      TextView textFavorite = ViewBindings.findChildViewById(rootView, id);
+      if (textFavorite == null) {
         break missingId;
       }
 
@@ -168,9 +201,9 @@ public final class FragmentProfileBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentProfileBinding((ConstraintLayout) rootView, Toolbar, isProfileLiner,
-          nextExitUser, nextFullRegister, nextMyAds, nextSettings, textMyAds, textProfileEmail,
-          textProfileName, textSettings, userImage);
+      return new FragmentProfileBinding((ConstraintLayout) rootView, Toolbar, consHome,
+          isProfileLiner, loader, nextExitUser, nextFavorite, nextMyAds, nextSettings, textFavorite,
+          textMyAds, textProfileEmail, textProfileName, textSettings, userImage);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
