@@ -1,4 +1,4 @@
-package product.truckkz.windows.home
+package product.truckkz.windows.home.adapter
 
 import android.annotation.SuppressLint
 import android.content.Context

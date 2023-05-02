@@ -9,6 +9,10 @@ import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 import product.truckkz.DataAllProducts.ALL_ID_PRODUCTS
 import product.truckkz.R
 import product.truckkz.UserDate.USER_TOKEN
@@ -17,10 +21,14 @@ import product.truckkz.`interface`.IClickListnearHomeTest
 import product.truckkz.viewModels.HomeViewModels
 import me.farahani.spaceitemdecoration.SpaceItemDecoration
 import product.truckkz.MainActivity
-import product.truckkz.MyUtils.uToast
+import product.truckkz.MyUtils.uLogD
 import product.truckkz.databinding.ActivityMainBinding
 import product.truckkz.databinding.FragmentHomeBinding
 import product.truckkz.databinding.ItemTovarBinding
+import product.truckkz.models.category.Children
+import product.truckkz.windows.home.adapter.TovarAdapterCategory
+import product.truckkz.windows.home.paging.PagingAdapterCategory
+import product.truckkz.windows.home.paging.PagingAdapterProducts
 import java.util.HashMap
 
 class HomeFragment : Fragment() {
@@ -33,8 +41,13 @@ class HomeFragment : Fragment() {
 
     private lateinit var recyclerViewCategory: RecyclerView
     lateinit var recyclerViewProduct: RecyclerView
-    private lateinit var adapterCategory: TovarAdapterCategory
-    private lateinit var adapterProduct: ProductsCategoryAdapterCategory
+//    private lateinit var adapterCategory: TovarAdapterCategory
+    private lateinit var adapterCategory: PagingAdapterCategory
+//    private lateinit var adapterProduct: ProductAdapter
+    private lateinit var adapterProduct: PagingAdapterProducts
+
+
+
     private val map = HashMap<String, String>()
     private lateinit var viewModel: HomeViewModels
 
@@ -49,16 +62,16 @@ class HomeFragment : Fragment() {
         val view = binding
 
         recyclerViewCategory = view.rvCategory
-        adapterCategory = TovarAdapterCategory(object : IClickListnearHomeTest {
+        adapterCategory = PagingAdapterCategory(object : IClickListnearHomeTest {
             override fun clickListener(baseID: Int) {
                 map.clear()
-                if (baseID != 0){
+                if (baseID != 0) {
                     map["category"] = baseID.toString()
-                }else{
+                } else {
                     map["category"] = ""
                 }
-                rfCategory()
-                adapterProduct.notifyDataSetChanged()
+                onResume()
+//                recyclerViewCategory.removeAllViewsInLayout()
                 recyclerViewProduct.removeAllViewsInLayout()
             }
         })
@@ -66,21 +79,20 @@ class HomeFragment : Fragment() {
         recyclerViewCategory.setHasFixedSize(true)
 
 
-        view.tiRefreshLayout.setOnRefreshListener {
-            rfCategory()
-            recyclerViewCategory.removeAllViewsInLayout()
-            recyclerViewProduct.removeAllViewsInLayout()
+        binding.tiRefreshLayout.setOnRefreshListener {
+//            adapterProduct.refresh()
+            CoroutineScope(Dispatchers.Main).launch {
+                delay(700)
+                binding.tiRefreshLayout.isRefreshing = false
+            }
 
-            adapterProduct.notifyDataSetChanged()
-            adapterCategory.notifyDataSetChanged()
-            view.tiRefreshLayout.isRefreshing = false
         }
 
 
 
         recyclerViewProduct = view.rvProduct
         recyclerViewProduct.addItemDecoration(SpaceItemDecoration(30, false))
-        adapterProduct = ProductsCategoryAdapterCategory(
+        adapterProduct = PagingAdapterProducts(
             object : IClickListnearHomeFavorite {
                 override fun clickListener(baseID: Int) {
                     ALL_ID_PRODUCTS = baseID
@@ -94,29 +106,38 @@ class HomeFragment : Fragment() {
                     boolean: Boolean,
                     pos: Int
                 ) {
+                    if (!boolean) {
+                        v.imgFavorite.setImageResource(R.drawable.ic_favorite2)
+                    } else {
+                        v.imgFavorite.setImageResource(R.drawable.ic_favorite)
+                    }
+
+                    viewModel.postLike("Bearer $USER_TOKEN", baseID.toString())
 
                 }
             })
 
         recyclerViewProduct.adapter = adapterProduct
         recyclerViewProduct.setHasFixedSize(true)
-        rfProduct()
 
 
+//        uLogD("TEST -> onCreate")
+//        viewModel.getCategory()
+//        viewModel.myCategory.observe(viewLifecycleOwner) { list ->
+//            if (list.isSuccessful) {
+//                list.body()?.data!![0].children.let { adapterCategory.setList(it) }
+//            }
+//        }
 
-
-
-        viewModel.getCategory()
-        viewModel.myCategory.observe(viewLifecycleOwner) { list ->
-            if (list.isSuccessful) {
-                list.body()?.data!![0].children.let { adapterCategory.setList(it) }
-            }
+        viewModel.getCategoryPagingLiveData().observe(viewLifecycleOwner) { pagingData ->
+            adapterCategory.submitData(viewLifecycleOwner.lifecycle, pagingData)
         }
 
         return view.root
     }
 
 
+    @SuppressLint("NotifyDataSetChanged")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -125,41 +146,21 @@ class HomeFragment : Fragment() {
         // Используем ссылку на ViewBinding активити, чтобы получить доступ к View
         activityBinding?.bottomAppBar?.visibility = View.VISIBLE
         activityBinding?.floatBottom?.visibility = View.VISIBLE
-
-
     }
 
-
-    @SuppressLint("NotifyDataSetChanged")
-    private fun rfProduct() {
-        map["category"] = ""
-        viewModel.getProductsCategory("Bearer $USER_TOKEN", map)
-        viewModel.myProductsCategory.observe(viewLifecycleOwner) { list ->
-
-            if (list.isSuccessful){
-                list.body()?.data?.let { adapterProduct.setList(it) }
-            }else {
-                uToast(requireContext(), "NULL")
-            }
+    override fun onResume() {
+        super.onResume()
+        viewModel.getCategoryProductLiveData("Bearer $USER_TOKEN", map).observe(viewLifecycleOwner) { pagingData ->
+            adapterProduct.submitData(viewLifecycleOwner.lifecycle, pagingData)
         }
-    }
 
-    private fun rfCategory() {
-        viewModel.getProductsCategory("Bearer $USER_TOKEN", map)
-        viewModel.myProductsCategory.observe(viewLifecycleOwner) { list ->
-
-            if (list.isSuccessful){
-                list.body()?.data?.let { adapterProduct.setList(it) }
-            }else {
-                uToast(requireContext(), "NULL")
-            }
-        }
     }
 
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
         activityBinding = null
+
     }
 
 

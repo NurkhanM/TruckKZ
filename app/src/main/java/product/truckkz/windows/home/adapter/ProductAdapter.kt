@@ -1,4 +1,4 @@
-package product.truckkz.windows.home
+package product.truckkz.windows.home.adapter
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -13,12 +13,20 @@ import product.truckkz.`interface`.IClickListnearHomeFavorite
 import product.truckkz.models.products.index.Data
 import kotlin.collections.ArrayList
 
-class ProductsCategoryAdapterCategory(private val mIClickListnear: IClickListnearHomeFavorite) :
+class ProductAdapter(private val mIClickListnear: IClickListnearHomeFavorite) :
 
-    RecyclerView.Adapter<ProductsCategoryAdapterCategory.MyViewHolder>() {
+    RecyclerView.Adapter<ProductAdapter.MyViewHolder>() {
     lateinit var context: Context
 
     var listTovar = ArrayList<Data>()
+
+    @SuppressLint("NotifyDataSetChanged")
+    fun deleteMyEducations(position: Int) {
+        listTovar.removeAt(position)
+        notifyItemRemoved(position)
+        notifyItemRangeChanged(position, listTovar.size)
+        notifyDataSetChanged()
+    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val binding = ItemTovarBinding.inflate(LayoutInflater.from(parent.context), parent, false)
@@ -29,15 +37,31 @@ class ProductsCategoryAdapterCategory(private val mIClickListnear: IClickListnea
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         val currentItem = listTovar[position]
 
-        Glide.with(ToastUtil.context).load(currentItem.img)
+        Glide.with(context).load(currentItem.img)
             .thumbnail(Glide.with(ToastUtil.context).load(R.drawable.loader2))
             .into(holder.binding.itemHomeImages)
+
+        if (currentItem.isLike) {
+            holder.binding.imgFavorite.setImageResource(R.drawable.ic_favorite2)
+        } else {
+            holder.binding.imgFavorite.setImageResource(R.drawable.ic_favorite)
+        }
 
         holder.binding.textName.text = currentItem.title
         holder.binding.textPrice.text = currentItem.price + " $"
 
         holder.binding.rowCostom.setOnClickListener {
             currentItem.id.let { it1 -> mIClickListnear.clickListener(it1) }
+        }
+
+        holder.binding.itemFavorite.setOnClickListener {
+            mIClickListnear.clickListenerFavorite(
+                currentItem.id, holder.binding, currentItem.isLike, position
+            )
+
+            currentItem.isLike = !currentItem.isLike
+            notifyItemChanged(position)
+
         }
     }
 

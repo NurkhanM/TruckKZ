@@ -1,6 +1,5 @@
 package product.truckkz.`interface`
 
-import android.view.View
 import product.truckkz.databinding.ItemTovarBinding
 
 interface IClickListnearHomeFavorite {

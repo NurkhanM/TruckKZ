@@ -1,12 +1,15 @@
 package product.truckkz.viewModels
 
 import androidx.lifecycle.*
+import androidx.paging.cachedIn
 import product.truckkz.repository.Repository
 import kotlinx.coroutines.launch
 import okhttp3.MultipartBody
 import okhttp3.RequestBody
+import product.truckkz.data.retrofit.api.RetroFitInstance
 import product.truckkz.models.brand.BrandModels
 import product.truckkz.models.category.CategoryModels
+import product.truckkz.models.favorite.FavoriteModels
 import product.truckkz.models.products.index.ProductsModels
 import product.truckkz.models.products.show.ProductShowModels
 import product.truckkz.models.register.RegisterModels
@@ -28,6 +31,9 @@ class HomeViewModels : ViewModel() {
     val myUser: MutableLiveData<Response<UserModels>> = MutableLiveData()
     val myUpdateUserPost: MutableLiveData<Response<UserModels>> = MutableLiveData()
     val myProductsCategory: MutableLiveData<Response<ProductsModels>> = MutableLiveData()
+    val myGetFavorite: MutableLiveData<Response<ProductsModels>> = MutableLiveData()
+    val myGetMyProducts: MutableLiveData<Response<ProductsModels>> = MutableLiveData()
+    private val posLikeList: MutableLiveData<Response<FavoriteModels>> = MutableLiveData()
     fun getProductInfo(auth: String, number: Int) {
         viewModelScope.launch {
             myProductInfo.value = repo.getProductInfoRepository(auth, number)
@@ -97,6 +103,34 @@ class HomeViewModels : ViewModel() {
         }
     }
 
+    fun getFavorite(
+        auth: String
+    ) {
+        viewModelScope.launch {
+            myGetFavorite.value = repo.getFavoriteRepository(
+                auth
+            )
+        }
+    }
+
+    fun postLike(auth: String, number: String) {
+        viewModelScope.launch {
+            posLikeList.value = repo.postLikeRepository(auth, number)
+        }
+    }
+
+    fun getMyProducts(
+        auth: String,
+        idUser: String
+    ) {
+        viewModelScope.launch {
+            myGetMyProducts.value = repo.getMyProductsRepository(
+                auth,
+                idUser
+            )
+        }
+    }
+
     fun getCategory() {
         viewModelScope.launch {
             myCategory.value = repo.getCategoryRepository()
@@ -126,6 +160,10 @@ class HomeViewModels : ViewModel() {
             )
         }
     }
+
+
+    fun getCategoryPagingLiveData() = repo.getCategoryPagingRepository().cachedIn(viewModelScope)
+    fun getCategoryProductLiveData(auth: String, allPro: HashMap<String, String>) = repo.getCategoryProductRepository(auth, allPro).cachedIn(viewModelScope)
 
 
 }

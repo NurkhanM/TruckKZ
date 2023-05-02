@@ -58,6 +58,7 @@
     <color name="yellow">#FFEB3B</color>
     <dimen name="corner_radius">12dp</dimen>
     <string name="add_description">Добавьте описание</string>
+    <string name="ads_number">ID:</string>
     <string name="app_name">General Machinery Group</string>
     <string name="category_catalog">Каталог категории</string>
     <string name="check_connections_internet">Пожалуйста проверьте соединения с интернетом</string>
@@ -65,6 +66,7 @@
     <string name="create_ads">Создать объявление</string>
     <string name="delete">Удалить</string>
     <string name="exit">Выйти</string>
+    <string name="fovarite_to">в избранные</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="maximum_10">Максимальная количество 10</string>
     <string name="message">Написать</string>
@@ -80,8 +82,10 @@
     <string name="text_big2">Диаметр: 26\nПередний переключатель: Shimano TZ-500\nЗадний переключатель: MicroShift RD-M21\nТип тормозов: Ободные\nРама: Alloy 6061\nКоличество скоростей: 21</string>
     <string name="text_big3">Серьезный подход к своему делу. Велосипед выкатили чистый, все работает. Причем цена  очень адекватная. В общем данным сервисом остался очень доволен.</string>
     <string name="todo">что-то</string>
+    <string name="update_date">Обновлено:</string>
     <string name="wait">Подождите немного </string>
     <string name="yeah_product">Вы создали продукт!</string>
+    <string name="you_added">Вы добавили</string>
     <style name="AppTheme.TruckKZ" parent="Base.Theme.AppCompat">
         
         <item name="colorPrimary">@color/fon1</item>

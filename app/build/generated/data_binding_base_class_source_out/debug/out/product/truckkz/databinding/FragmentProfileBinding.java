@@ -36,6 +36,9 @@ public final class FragmentProfileBinding implements ViewBinding {
   public final GifImageView loader;
 
   @NonNull
+  public final LinearLayout nextEdit;
+
+  @NonNull
   public final LinearLayout nextExitUser;
 
   @NonNull
@@ -45,7 +48,7 @@ public final class FragmentProfileBinding implements ViewBinding {
   public final LinearLayout nextMyAds;
 
   @NonNull
-  public final LinearLayout nextSettings;
+  public final TextView textEdit;
 
   @NonNull
   public final TextView textFavorite;
@@ -60,33 +63,30 @@ public final class FragmentProfileBinding implements ViewBinding {
   public final TextView textProfileName;
 
   @NonNull
-  public final TextView textSettings;
-
-  @NonNull
   public final CircleImageView userImage;
 
   private FragmentProfileBinding(@NonNull ConstraintLayout rootView,
       @NonNull ConstraintLayout Toolbar, @NonNull ScrollView consHome,
       @NonNull LinearLayout isProfileLiner, @NonNull GifImageView loader,
-      @NonNull LinearLayout nextExitUser, @NonNull LinearLayout nextFavorite,
-      @NonNull LinearLayout nextMyAds, @NonNull LinearLayout nextSettings,
-      @NonNull TextView textFavorite, @NonNull TextView textMyAds,
+      @NonNull LinearLayout nextEdit, @NonNull LinearLayout nextExitUser,
+      @NonNull LinearLayout nextFavorite, @NonNull LinearLayout nextMyAds,
+      @NonNull TextView textEdit, @NonNull TextView textFavorite, @NonNull TextView textMyAds,
       @NonNull TextView textProfileEmail, @NonNull TextView textProfileName,
-      @NonNull TextView textSettings, @NonNull CircleImageView userImage) {
+      @NonNull CircleImageView userImage) {
     this.rootView = rootView;
     this.Toolbar = Toolbar;
     this.consHome = consHome;
     this.isProfileLiner = isProfileLiner;
     this.loader = loader;
+    this.nextEdit = nextEdit;
     this.nextExitUser = nextExitUser;
     this.nextFavorite = nextFavorite;
     this.nextMyAds = nextMyAds;
-    this.nextSettings = nextSettings;
+    this.textEdit = textEdit;
     this.textFavorite = textFavorite;
     this.textMyAds = textMyAds;
     this.textProfileEmail = textProfileEmail;
     this.textProfileName = textProfileName;
-    this.textSettings = textSettings;
     this.userImage = userImage;
   }
 
@@ -141,6 +141,12 @@ public final class FragmentProfileBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.nextEdit;
+      LinearLayout nextEdit = ViewBindings.findChildViewById(rootView, id);
+      if (nextEdit == null) {
+        break missingId;
+      }
+
       id = R.id.nextExitUser;
       LinearLayout nextExitUser = ViewBindings.findChildViewById(rootView, id);
       if (nextExitUser == null) {
@@ -159,9 +165,9 @@ public final class FragmentProfileBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.nextSettings;
-      LinearLayout nextSettings = ViewBindings.findChildViewById(rootView, id);
-      if (nextSettings == null) {
+      id = R.id.textEdit;
+      TextView textEdit = ViewBindings.findChildViewById(rootView, id);
+      if (textEdit == null) {
         break missingId;
       }
 
@@ -189,12 +195,6 @@ public final class FragmentProfileBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textSettings;
-      TextView textSettings = ViewBindings.findChildViewById(rootView, id);
-      if (textSettings == null) {
-        break missingId;
-      }
-
       id = R.id.userImage;
       CircleImageView userImage = ViewBindings.findChildViewById(rootView, id);
       if (userImage == null) {
@@ -202,8 +202,8 @@ public final class FragmentProfileBinding implements ViewBinding {
       }
 
       return new FragmentProfileBinding((ConstraintLayout) rootView, Toolbar, consHome,
-          isProfileLiner, loader, nextExitUser, nextFavorite, nextMyAds, nextSettings, textFavorite,
-          textMyAds, textProfileEmail, textProfileName, textSettings, userImage);
+          isProfileLiner, loader, nextEdit, nextExitUser, nextFavorite, nextMyAds, textEdit,
+          textFavorite, textMyAds, textProfileEmail, textProfileName, userImage);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

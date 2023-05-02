@@ -1,9 +1,5 @@
-package product.truckkz.api.products
+package product.truckkz.data.retrofit.api.products
 
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.flow
-import kotlinx.coroutines.flow.flowOn
 import okhttp3.MultipartBody
 import okhttp3.RequestBody
 import product.truckkz.models.products.index.ProductsModels
@@ -30,14 +26,20 @@ interface ProductService {
     ): Response<ProductShowModels>
 
 
-
-
     @GET("api/products")
     @Headers("Accept: application/json")
     suspend fun getSortProducts(
         @Header("Authorization") auth: String,
         @QueryMap allPro: HashMap<String, String>,
 //        @Query("page") page: Int,
+    ): Response<ProductsModels>
+
+
+    @GET("api/products")
+    @Headers("Accept: application/json")
+    suspend fun getMyProducts(
+        @Header("Authorization") auth: String,
+        @Query("user_id") idUser: String
     ): Response<ProductsModels>
 
 
@@ -51,6 +53,14 @@ interface ProductService {
         @Part img: MultipartBody.Part?,
         @Part images: List<MultipartBody.Part>
     ): Response<String>
+
+    @GET("api/products")
+    @Headers("Accept: application/json")
+    suspend fun getCategoryProducts(
+        @Header("Authorization") auth: String,
+        @QueryMap allPro: HashMap<String, String>,
+        @Query("page") page: Int,
+    ): Response<ProductsModels>
 
 
 }

@@ -87,12 +87,16 @@
         tools:layout="@layout/fragment_my_ads" />
     <fragment
         android:id="@+id/settingsFragment"
-        android:name="product.truckkz.windows.setting.SettingsFragment"
+        android:name="product.truckkz.windows.profile.edit.EditFragment"
         android:label="fragment_settings"
-        tools:layout="@layout/fragment_settings" />
+        tools:layout="@layout/fragment_edit" />
     <fragment
         android:id="@+id/favoriteFragment"
-        android:name="product.truckkz.windows.favorite.FavoriteFragment"
+        android:name="product.truckkz.windows.profile.favorite.FavoriteFragment"
         android:label="fragment_favorite"
-        tools:layout="@layout/fragment_favorite" />
+        tools:layout="@layout/fragment_favorite" >
+        <action
+            android:id="@+id/action_favoriteFragment_to_homeInfoFragment"
+            app:destination="@id/homeInfoFragment" />
+    </fragment>
 </navigation>

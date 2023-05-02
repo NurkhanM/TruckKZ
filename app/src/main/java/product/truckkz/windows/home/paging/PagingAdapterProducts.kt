@@ -1,4 +1,4 @@
-package product.truckkz.windows.home
+package product.truckkz.windows.home.paging
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
@@ -9,12 +9,15 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import gun0912.tedimagepicker.util.ToastUtil.context
 import product.truckkz.R
-import product.truckkz.`interface`.IClickListnearHomeFavorite
 import product.truckkz.databinding.ItemTovarBinding
+import product.truckkz.`interface`.IClickListnearHomeFavorite
 import product.truckkz.models.products.index.Data
 
-class TovarAdapterProduct(private val mIClickListnear: IClickListnearHomeFavorite) :
-    PagingDataAdapter<Data, TovarAdapterProduct.MyViewHolder>(diffCallback) {
+
+class PagingAdapterProducts(private val mIClickListnear: IClickListnearHomeFavorite) :
+    PagingDataAdapter<Data,
+            PagingAdapterProducts.MyViewHolder>(diffCallback) {
+
 
     companion object {
         val diffCallback = object : DiffUtil.ItemCallback<Data>() {
@@ -29,8 +32,6 @@ class TovarAdapterProduct(private val mIClickListnear: IClickListnearHomeFavorit
     }
 
 
-
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val binding = ItemTovarBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         context = parent.context
@@ -42,32 +43,32 @@ class TovarAdapterProduct(private val mIClickListnear: IClickListnearHomeFavorit
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         val currentItem = getItem(position)
 
-        Glide.with(context).load(currentItem?.img)
+        Glide.with(context).load(currentItem!!.img)
             .thumbnail(Glide.with(context).load(R.drawable.loader2))
             .into(holder.binding.itemHomeImages)
 
+        if (currentItem.isLike) {
+            holder.binding.imgFavorite.setImageResource(R.drawable.ic_favorite2)
+        } else {
+            holder.binding.imgFavorite.setImageResource(R.drawable.ic_favorite)
+        }
 
-
-
-
-//        if (currentItem.favorite) {
-//            holder.itemView.img_favorite?.setImageDrawable(context.resources.getDrawable(R.drawable.ic_favorite2))
-//        } else{
-//            holder.itemView.img_favorite?.setImageDrawable(context.resources.getDrawable(R.drawable.ic_favorite))
-//        }
-
-
-        holder.binding.textName.text = currentItem?.title
-        holder.binding.textPrice.text = currentItem?.price + " $"
+        holder.binding.textName.text = currentItem.title
+        holder.binding.textPrice.text = currentItem.price + " $"
 
         holder.binding.rowCostom.setOnClickListener {
-            currentItem?.id?.let { it1 -> mIClickListnear.clickListener(it1) }
+            currentItem.id.let { it1 -> mIClickListnear.clickListener(it1) }
         }
-//        holder.itemView.item_favorite.setOnClickListener {
-//            mIClickListnear.clickListenerFavorite(currentItem.id, holder.itemView, currentItem.favorite, position)
-//            currentItem.favorite = !currentItem.favorite
-//            notifyItemChanged(position)
-//        }
+
+        holder.binding.itemFavorite.setOnClickListener {
+            mIClickListnear.clickListenerFavorite(
+                currentItem.id, holder.binding, currentItem.isLike, position
+            )
+
+            currentItem.isLike = !currentItem.isLike
+            notifyItemChanged(position)
+
+        }
     }
 
 

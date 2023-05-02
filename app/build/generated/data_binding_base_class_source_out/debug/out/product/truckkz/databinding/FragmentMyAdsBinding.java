@@ -8,6 +8,7 @@ import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import java.lang.NullPointerException;
@@ -20,16 +21,20 @@ public final class FragmentMyAdsBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final ConstraintLayout Toolbar;
-
-  @NonNull
   public final ImageView ochBackCard;
 
-  private FragmentMyAdsBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ConstraintLayout Toolbar, @NonNull ImageView ochBackCard) {
+  @NonNull
+  public final RecyclerView rvMyAds;
+
+  @NonNull
+  public final ConstraintLayout toolbar;
+
+  private FragmentMyAdsBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView ochBackCard,
+      @NonNull RecyclerView rvMyAds, @NonNull ConstraintLayout toolbar) {
     this.rootView = rootView;
-    this.Toolbar = Toolbar;
     this.ochBackCard = ochBackCard;
+    this.rvMyAds = rvMyAds;
+    this.toolbar = toolbar;
   }
 
   @Override
@@ -59,19 +64,25 @@ public final class FragmentMyAdsBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.Toolbar;
-      ConstraintLayout Toolbar = ViewBindings.findChildViewById(rootView, id);
-      if (Toolbar == null) {
-        break missingId;
-      }
-
       id = R.id.ochBackCard;
       ImageView ochBackCard = ViewBindings.findChildViewById(rootView, id);
       if (ochBackCard == null) {
         break missingId;
       }
 
-      return new FragmentMyAdsBinding((ConstraintLayout) rootView, Toolbar, ochBackCard);
+      id = R.id.rvMyAds;
+      RecyclerView rvMyAds = ViewBindings.findChildViewById(rootView, id);
+      if (rvMyAds == null) {
+        break missingId;
+      }
+
+      id = R.id.toolbar;
+      ConstraintLayout toolbar = ViewBindings.findChildViewById(rootView, id);
+      if (toolbar == null) {
+        break missingId;
+      }
+
+      return new FragmentMyAdsBinding((ConstraintLayout) rootView, ochBackCard, rvMyAds, toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

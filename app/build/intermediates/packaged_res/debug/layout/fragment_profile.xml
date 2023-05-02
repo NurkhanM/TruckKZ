@@ -38,7 +38,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:orientation="vertical"
-        android:visibility="visible"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -99,7 +99,7 @@
 
 
                 <LinearLayout
-                    android:id="@+id/nextSettings"
+                    android:id="@+id/nextEdit"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
@@ -120,7 +120,7 @@
                             android:src="@drawable/bottom_right" />
 
                         <TextView
-                            android:id="@+id/textSettings"
+                            android:id="@+id/textEdit"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"

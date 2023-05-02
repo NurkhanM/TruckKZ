@@ -1,4 +1,4 @@
-package product.truckkz.windows.setting
+package product.truckkz.windows.profile.edit
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -29,22 +29,21 @@ import okhttp3.MultipartBody
 import okhttp3.RequestBody
 import okhttp3.RequestBody.Companion.toRequestBody
 import org.json.JSONObject
-import product.truckkz.MyUtils
 import product.truckkz.MyUtils.uGlide
 import product.truckkz.MyUtils.uToast
 import product.truckkz.R
 import product.truckkz.UserDate.USER_TOKEN
-import product.truckkz.databinding.FragmentSettingsBinding
+import product.truckkz.databinding.FragmentEditBinding
 import product.truckkz.viewModels.HomeViewModels
 import java.io.ByteArrayOutputStream
 
-class SettingsFragment : Fragment() {
+class EditFragment : Fragment() {
 
-    private var _binding: FragmentSettingsBinding? = null
+    private var _binding: FragmentEditBinding? = null
     private val binding get() = _binding!!
     private var filePart: MultipartBody.Part? = null
 
-    lateinit var dialog: Dialog
+    private lateinit var dialog: Dialog
 
     private var userImg = ""
     private var userName = ""
@@ -60,7 +59,7 @@ class SettingsFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         viewModel = ViewModelProvider(this)[HomeViewModels::class.java]
-        _binding = FragmentSettingsBinding.inflate(inflater, container, false)
+        _binding = FragmentEditBinding.inflate(inflater, container, false)
         dialog = Dialog(requireContext())
 
         val args = arguments

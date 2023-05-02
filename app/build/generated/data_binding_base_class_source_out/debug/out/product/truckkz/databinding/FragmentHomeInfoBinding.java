@@ -40,6 +40,15 @@ public final class FragmentHomeInfoBinding implements ViewBinding {
   public final NestedScrollView fragmentContainerUpdate;
 
   @NonNull
+  public final TextView idCreate;
+
+  @NonNull
+  public final TextView idProduct;
+
+  @NonNull
+  public final TextView idUpdate;
+
+  @NonNull
   public final ImageView imageMove;
 
   @NonNull
@@ -47,6 +56,9 @@ public final class FragmentHomeInfoBinding implements ViewBinding {
 
   @NonNull
   public final ImageView imgFavorite;
+
+  @NonNull
+  public final LinearLayout information;
 
   @NonNull
   public final LinearLayout itemFavorite;
@@ -67,7 +79,7 @@ public final class FragmentHomeInfoBinding implements ViewBinding {
   public final TextView textDescription;
 
   @NonNull
-  public final TextView textHarakter;
+  public final LinearLayout textHarakter;
 
   @NonNull
   public final TextView textPrice;
@@ -84,22 +96,28 @@ public final class FragmentHomeInfoBinding implements ViewBinding {
   private FragmentHomeInfoBinding(@NonNull ConstraintLayout rootView,
       @NonNull LinearLayout UpdateWorkError, @NonNull MaterialButton btnBook,
       @NonNull ImageView clickUpdateBackCard, @NonNull TextView dopTextUpdate,
-      @NonNull NestedScrollView fragmentContainerUpdate, @NonNull ImageView imageMove,
+      @NonNull NestedScrollView fragmentContainerUpdate, @NonNull TextView idCreate,
+      @NonNull TextView idProduct, @NonNull TextView idUpdate, @NonNull ImageView imageMove,
       @NonNull ImageView imageShow, @NonNull ImageView imgFavorite,
-      @NonNull LinearLayout itemFavorite, @NonNull LinearLayout liner2first,
-      @NonNull LinearLayout linerImageMove, @NonNull LinearLayout linerfirst,
-      @NonNull RecyclerView recyclerUpdate, @NonNull TextView textDescription,
-      @NonNull TextView textHarakter, @NonNull TextView textPrice, @NonNull TextView textTitle,
-      @NonNull TextView updatePrice, @NonNull ConstraintLayout updateToolbar) {
+      @NonNull LinearLayout information, @NonNull LinearLayout itemFavorite,
+      @NonNull LinearLayout liner2first, @NonNull LinearLayout linerImageMove,
+      @NonNull LinearLayout linerfirst, @NonNull RecyclerView recyclerUpdate,
+      @NonNull TextView textDescription, @NonNull LinearLayout textHarakter,
+      @NonNull TextView textPrice, @NonNull TextView textTitle, @NonNull TextView updatePrice,
+      @NonNull ConstraintLayout updateToolbar) {
     this.rootView = rootView;
     this.UpdateWorkError = UpdateWorkError;
     this.btnBook = btnBook;
     this.clickUpdateBackCard = clickUpdateBackCard;
     this.dopTextUpdate = dopTextUpdate;
     this.fragmentContainerUpdate = fragmentContainerUpdate;
+    this.idCreate = idCreate;
+    this.idProduct = idProduct;
+    this.idUpdate = idUpdate;
     this.imageMove = imageMove;
     this.imageShow = imageShow;
     this.imgFavorite = imgFavorite;
+    this.information = information;
     this.itemFavorite = itemFavorite;
     this.liner2first = liner2first;
     this.linerImageMove = linerImageMove;
@@ -170,6 +188,24 @@ public final class FragmentHomeInfoBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.idCreate;
+      TextView idCreate = ViewBindings.findChildViewById(rootView, id);
+      if (idCreate == null) {
+        break missingId;
+      }
+
+      id = R.id.idProduct;
+      TextView idProduct = ViewBindings.findChildViewById(rootView, id);
+      if (idProduct == null) {
+        break missingId;
+      }
+
+      id = R.id.idUpdate;
+      TextView idUpdate = ViewBindings.findChildViewById(rootView, id);
+      if (idUpdate == null) {
+        break missingId;
+      }
+
       id = R.id.imageMove;
       ImageView imageMove = ViewBindings.findChildViewById(rootView, id);
       if (imageMove == null) {
@@ -185,6 +221,12 @@ public final class FragmentHomeInfoBinding implements ViewBinding {
       id = R.id.img_favorite;
       ImageView imgFavorite = ViewBindings.findChildViewById(rootView, id);
       if (imgFavorite == null) {
+        break missingId;
+      }
+
+      id = R.id.information;
+      LinearLayout information = ViewBindings.findChildViewById(rootView, id);
+      if (information == null) {
         break missingId;
       }
 
@@ -225,7 +267,7 @@ public final class FragmentHomeInfoBinding implements ViewBinding {
       }
 
       id = R.id.textHarakter;
-      TextView textHarakter = ViewBindings.findChildViewById(rootView, id);
+      LinearLayout textHarakter = ViewBindings.findChildViewById(rootView, id);
       if (textHarakter == null) {
         break missingId;
       }
@@ -255,9 +297,10 @@ public final class FragmentHomeInfoBinding implements ViewBinding {
       }
 
       return new FragmentHomeInfoBinding((ConstraintLayout) rootView, UpdateWorkError, btnBook,
-          clickUpdateBackCard, dopTextUpdate, fragmentContainerUpdate, imageMove, imageShow,
-          imgFavorite, itemFavorite, liner2first, linerImageMove, linerfirst, recyclerUpdate,
-          textDescription, textHarakter, textPrice, textTitle, updatePrice, updateToolbar);
+          clickUpdateBackCard, dopTextUpdate, fragmentContainerUpdate, idCreate, idProduct,
+          idUpdate, imageMove, imageShow, imgFavorite, information, itemFavorite, liner2first,
+          linerImageMove, linerfirst, recyclerUpdate, textDescription, textHarakter, textPrice,
+          textTitle, updatePrice, updateToolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

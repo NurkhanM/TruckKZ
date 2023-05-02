@@ -26,5 +26,9 @@
     <string name="create_ads">Создать объявление</string>
     <string name="selected_photo">Выберите фотографии</string>
     <string name="delete">Удалить</string>
+    <string name="ads_number">ID:</string>
+    <string name="update_date">Обновлено:</string>
+    <string name="you_added">Вы добавили</string>
+    <string name="fovarite_to">в избранные</string>
 
 </resources>

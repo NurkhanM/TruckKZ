@@ -109,6 +109,7 @@ id UpdateWorkError
 id action_authorizationFragment_to_profileFragment
 id action_authorizationFragment_to_registrationFragment
 id action_authorizationFragment_to_resetFragment
+id action_favoriteFragment_to_homeInfoFragment
 id action_homeFragment_to_homeInfoFragment
 id action_profileFragment_to_favoriteFragment
 id action_profileFragment_to_myAdsFragment
@@ -186,6 +187,9 @@ id homeBack
 id homeFragment
 id homeInfoFragment
 id homeToolbar
+id idCreate
+id idProduct
+id idUpdate
 id imageMove
 id image_array_update
 id image_show
@@ -196,6 +200,7 @@ id imgObzas
 id img_auth_home
 id img_favorite
 id indicator_circular_show
+id information
 id isProfileLiner
 id item_favorite
 id item_home_images
@@ -224,12 +229,12 @@ id nav_create
 id nav_grav
 id nav_host
 id nav_host_create_product
+id nextEdit
 id nextExitUser
 id nextFavorite
 id nextMyAds
 id nextSelectedBrand
 id nextSelectedCategory
-id nextSettings
 id ochBackCard
 id profileFragment
 id profileProgress
@@ -246,6 +251,7 @@ id removeUser
 id resetFragment
 id rowCostom
 id rowCostomCaSelect
+id rvMyAds
 id rv_category
 id rv_category_select
 id rv_create
@@ -261,6 +267,7 @@ id splashFragment
 id splashScreen1
 id textDate
 id textDescription
+id textEdit
 id textFavorite
 id textHarakter
 id textInputLayout
@@ -276,7 +283,6 @@ id textPhoto
 id textPrice
 id textProfileEmail
 id textProfileName
-id textSettings
 id textTitle
 id textWelcome
 id text_header
@@ -328,6 +334,7 @@ layout fragment_authorization
 layout fragment_category_select
 layout fragment_chat
 layout fragment_create
+layout fragment_edit
 layout fragment_favorite
 layout fragment_home
 layout fragment_home_info
@@ -338,7 +345,6 @@ layout fragment_profile
 layout fragment_registration
 layout fragment_reset
 layout fragment_search
-layout fragment_settings
 layout fragment_show_image
 layout fragment_splash
 layout fragment_update
@@ -358,6 +364,7 @@ mipmap ic_launcher_round
 navigation nav_create
 navigation nav_graph
 string add_description
+string ads_number
 string app_name
 string category_catalog
 string check_connections_internet
@@ -365,6 +372,7 @@ string close
 string create_ads
 string delete
 string exit
+string fovarite_to
 string hello_blank_fragment
 string maximum_10
 string message
@@ -380,8 +388,10 @@ string text_big
 string text_big2
 string text_big3
 string todo
+string update_date
 string wait
 string yeah_product
+string you_added
 style AppTheme.TruckKZ
 style BottomSheetDialogTheme
 style BottomSheetStyle

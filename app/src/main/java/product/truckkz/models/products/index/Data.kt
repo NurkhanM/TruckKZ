@@ -7,6 +7,7 @@ data class Data(
     val gallery: List<String>,
     val id: Int,
     val img: String,
+    var isLike: Boolean,
     val key: Any,
     val price: String,
     val slug: String,

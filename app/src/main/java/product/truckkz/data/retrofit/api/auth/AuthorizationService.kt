@@ -1,4 +1,4 @@
-package product.truckkz.api.auth
+package product.truckkz.data.retrofit.api.auth
 
 import okhttp3.MultipartBody
 import okhttp3.RequestBody

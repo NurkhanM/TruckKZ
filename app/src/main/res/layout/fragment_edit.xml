@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".windows.setting.SettingsFragment">
+    tools:context=".windows.profile.edit.EditFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/Toolbar"
@@ -34,7 +34,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Редактирования"
+            android:text="Редактировать"
             android:textColor="@color/black_txt"
             android:textSize="24sp"
             android:textStyle="bold"

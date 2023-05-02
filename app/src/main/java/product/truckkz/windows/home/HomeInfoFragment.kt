@@ -3,13 +3,19 @@ package product.truckkz.windows.home
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.content.res.Resources
+import android.graphics.Typeface
 import android.net.Uri
 import android.os.Bundle
 import android.util.TypedValue
+import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.LinearLayout
+import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.core.widget.NestedScrollView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
@@ -19,10 +25,12 @@ import product.truckkz.DataAllProducts.ALL_ID_PRODUCTS
 import product.truckkz.DataAllProducts.IMAGES_INFO_ARRAY
 import product.truckkz.R
 import product.truckkz.UserDate
+import product.truckkz.UserDate.USER_TOKEN
 import product.truckkz.databinding.FragmentHomeInfoBinding
 import product.truckkz.`interface`.IClickListnearUpdateImage
 import product.truckkz.models.products.productInfo.Images
 import product.truckkz.viewModels.HomeViewModels
+import product.truckkz.windows.home.adapter.UpdateDataAdapter
 import product.truckkz.windows.home.showImage.ShowImageActivity
 
 
@@ -37,8 +45,10 @@ class HomeInfoFragment : Fragment() {
     lateinit var viewModels: HomeViewModels
     private var isMoreState: Boolean = true
     private var indexShow: Int = 0
+    private var isLike: Boolean = false
 
-    var callInfo = ""
+    private var callInfo = ""
+    var productName = ""
 
     @SuppressLint("SetTextI18n", "UseCompatLoadingForDrawables")
     override fun onCreateView(
@@ -50,21 +60,20 @@ class HomeInfoFragment : Fragment() {
         _binding = FragmentHomeInfoBinding.inflate(inflater, container, false)
         val view = binding
 
-//        (activity as AppCompatActivity).bottomAppBar.visibility = View.VISIBLE
-//        (activity as AppCompatActivity).floatBottom.visibility = View.VISIBLE
 
         viewModels.getProductInfo("Bearer ${UserDate.USER_TOKEN}", ALL_ID_PRODUCTS)
         viewModels.myProductInfo.observe(viewLifecycleOwner) { list ->
             if (list.isSuccessful) {
                 view.textTitle.text = list.body()?.data?.title
                 view.textPrice.text = list.body()?.data?.price.toString() + " $"
-                if (list.body()?.data?.description.toString() == "null"){
+                if (list.body()?.data?.description.toString() == "null") {
                     view.textDescription.text = ""
-                } else{
+                } else {
                     view.textDescription.text = list.body()?.data?.description.toString()
                 }
 
                 callInfo = list.body()?.data?.user?.phone.toString()
+
 //                if (list.body()?.favorite == true){
 //                    view.img_favorite.setImageDrawable(requireContext().resources.getDrawable(R.drawable.ic_favorite2))
 //                }else{
@@ -72,18 +81,74 @@ class HomeInfoFragment : Fragment() {
 //                }
 
 
-
-
-                val arrayList = ArrayList<String>()
-                for (i in 0 until list.body()?.data?.characteristics?.size!!){
-                    arrayList.add(list.body()?.data?.characteristics!![i].name + ": ")
-                    arrayList.add(list.body()?.data?.characteristics!![i].value + "\n\n")
+                isLike = if (list.body()?.data?.isLike == false) {
+                    binding.imgFavorite.setImageResource(R.drawable.ic_favorite)
+                    false
+                } else {
+                    binding.imgFavorite.setImageResource(R.drawable.ic_favorite2)
+                    true
                 }
 
+                binding.idProduct.text = " " + list.body()?.data?.id.toString()
+                binding.idCreate.text = " " + list.body()?.data?.created_at.toString()
+                binding.idUpdate.text = " " + list.body()?.data?.updated_at.toString()
+                productName = list.body()?.data?.title.toString()
 
-                view.textHarakter.text = removeStartEnDChars(arrayList.toString()).replace(",","")
 
+                val linearLayout = LinearLayout(context) // создание LinearLayout
+                linearLayout.orientation = LinearLayout.VERTICAL // задание ориентации
+                val layoutParams = LinearLayout.LayoutParams(
+                    LinearLayout.LayoutParams.MATCH_PARENT,
+                    LinearLayout.LayoutParams.WRAP_CONTENT
+                ).apply {
+                    topMargin = 50
+                } // задание параметров макета
 
+                for (i in 0 until list.body()?.data?.characteristics?.size!!) {
+                    val innerLinearLayout =
+                        LinearLayout(context) // создание внутреннего LinearLayout
+                    innerLinearLayout.orientation = LinearLayout.HORIZONTAL // задание ориентации
+                    innerLinearLayout.layoutParams = layoutParams // задание параметров макета
+
+                    // создание TextView для name
+                    val nameTextView = TextView(context)
+                    nameTextView.layoutParams = LinearLayout.LayoutParams(
+                        0,
+                        LinearLayout.LayoutParams.WRAP_CONTENT,
+                        1.0f
+                    )// задание параметров макета с весом 1
+                    nameTextView.text = list.body()?.data?.characteristics!![i].name + ": "
+                    // получение цвета из ресурсов
+                    val colorName = ContextCompat.getColor(requireContext(), R.color.black_txt4)
+                    // установка цвета текста для внутреннего TextView
+                    nameTextView.setTextColor(colorName)
+                    nameTextView.textSize = 13f
+                    // установка жирного стиля для текста в TextView
+                    nameTextView.setTypeface(null, Typeface.BOLD)
+
+                    // создание TextView для value
+                    val valueTextView = TextView(context)
+                    valueTextView.layoutParams = LinearLayout.LayoutParams(
+                        0,
+                        LinearLayout.LayoutParams.WRAP_CONTENT,
+                        2.0f
+                    ).apply {
+                        gravity = Gravity.CENTER_HORIZONTAL
+                    } // задание параметров макета с весом 1
+                    valueTextView.text = list.body()?.data?.characteristics!![i].value
+                    val colorValue = ContextCompat.getColor(requireContext(), R.color.black)
+                    // установка цвета текста для внутреннего TextView
+                    valueTextView.setTextColor(colorValue)
+
+                    // добавление TextView во внутренний LinearLayout
+                    innerLinearLayout.addView(nameTextView)
+                    innerLinearLayout.addView(valueTextView)
+
+                    // добавление внутреннего LinearLayout в основной LinearLayout
+                    linearLayout.addView(innerLinearLayout)
+                }
+
+                view.textHarakter.addView(linearLayout) // добавление основного LinearLayout в TextView
 
 
                 IMAGES_INFO_ARRAY.clear()
@@ -115,6 +180,29 @@ class HomeInfoFragment : Fragment() {
 
 
 
+
+        view.itemFavorite.setOnClickListener {
+            isLike = if (isLike) {
+                view.imgFavorite.setImageResource(R.drawable.ic_favorite)
+                false
+            } else {
+                Toast.makeText(
+                    requireContext(),
+                    "${resources.getText(R.string.you_added)} $productName ${
+                        resources.getText(
+                            R.string.fovarite_to
+                        )
+                    }",
+                    Toast.LENGTH_SHORT
+                ).show()
+                view.imgFavorite.setImageResource(R.drawable.ic_favorite2)
+                true
+            }
+
+            viewModels.postLike("Bearer $USER_TOKEN", ALL_ID_PRODUCTS.toString())
+        }
+
+
         view.imageShow.setOnClickListener {
             val intent = Intent(requireActivity(), ShowImageActivity::class.java)
             intent.putExtra("index", indexShow)
@@ -139,13 +227,6 @@ class HomeInfoFragment : Fragment() {
 
         view.btnBook.setOnClickListener {
             callPhone()
-//            if (USER_STATUS_FULL) {
-//                Navigation.findNavController(view)
-//                    .navigate(R.id.action_homeInfoFragment_to_calendarFragment)
-//            } else {
-//                Navigation.findNavController(view)
-//                    .navigate(R.id.action_homeInfoFragment_to_fullRegistrationFragment)
-//            }
         }
 
 
@@ -165,6 +246,7 @@ class HomeInfoFragment : Fragment() {
 
         view.clickUpdateBackCard.setOnClickListener {
             activity?.onBackPressed()
+//            Navigation.findNavController(view.root).navigateUp()
         }
 
         return view.root

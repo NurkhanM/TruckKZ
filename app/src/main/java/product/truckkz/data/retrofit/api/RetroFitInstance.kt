@@ -1,13 +1,14 @@
-package product.truckkz.api
+package product.truckkz.data.retrofit.api
 
 import com.google.gson.GsonBuilder
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
-import product.truckkz.api.auth.AuthorizationService
-import product.truckkz.api.brands.BrandService
-import product.truckkz.api.category.CategoryService
-import product.truckkz.api.products.ProductService
-import product.truckkz.api.user.UserService
+import product.truckkz.data.retrofit.api.auth.AuthorizationService
+import product.truckkz.data.retrofit.api.brands.BrandService
+import product.truckkz.data.retrofit.api.category.CategoryService
+import product.truckkz.data.retrofit.api.favorite.FavoriteService
+import product.truckkz.data.retrofit.api.products.ProductService
+import product.truckkz.data.retrofit.api.user.UserService
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.converter.scalars.ScalarsConverterFactory
@@ -51,6 +52,9 @@ object RetroFitInstance {
     }
     val user: UserService by lazy {
         retrofit.create(UserService::class.java)
+    }
+    val favorite: FavoriteService by lazy {
+        retrofit.create(FavoriteService::class.java)
     }
 
 }

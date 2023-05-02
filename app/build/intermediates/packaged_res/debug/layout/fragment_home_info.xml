@@ -121,7 +121,7 @@
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/fon"
                     android:drawableLeft="@drawable/ic_call"
-                    android:text="Пgзвонить"
+                    android:text="Позвонить"
                     android:textAllCaps="false"
                     android:textSize="16sp"
                     android:textStyle="bold"
@@ -131,6 +131,7 @@
 
 
             <LinearLayout
+                android:id="@+id/information"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="20dp"
@@ -181,12 +182,12 @@
                 </LinearLayout>
 
 
-                <TextView
+                <LinearLayout
                     android:id="@+id/textHarakter"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:textSize="18sp" />
+                    android:orientation="vertical" />
 
 
                 <View
@@ -197,9 +198,86 @@
             </LinearLayout>
 
 
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white3"
+                android:orientation="horizontal"
+                android:paddingTop="20dp"
+                android:paddingBottom="70dp"
+                app:layout_constraintTop_toBottomOf="@+id/information"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ads_number"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/idProduct"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Создано:"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/idCreate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/update_date"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/idUpdate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
-
-
     </androidx.core.widget.NestedScrollView>
 
     <androidx.constraintlayout.widget.ConstraintLayout

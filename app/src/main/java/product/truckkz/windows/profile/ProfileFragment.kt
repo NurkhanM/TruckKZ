@@ -14,6 +14,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.Navigation
+import product.truckkz.MyUtils
 import product.truckkz.MyUtils.uGlide
 import product.truckkz.MyUtils.uToast
 import product.truckkz.R
@@ -28,7 +29,8 @@ class ProfileFragment : Fragment() {
     private val binding get() = _binding!!
 
     private lateinit var viewModel: HomeViewModels
-    var imgUser = ""
+    private var imgUser = ""
+    private var idUser = ""
     lateinit var dialog: Dialog
 
     override fun onCreateView(
@@ -52,6 +54,7 @@ class ProfileFragment : Fragment() {
 
                 uGlide(requireContext(), view.userImage, list.body()?.data?.img)
                 imgUser = list.body()?.data?.img.toString()
+                idUser = list.body()?.data?.id.toString()
                 view.textProfileName.text = list.body()?.data?.name
                 view.textProfileEmail.text = list.body()?.data?.email
             } else {
@@ -59,12 +62,13 @@ class ProfileFragment : Fragment() {
             }
         }
 
-        view.textMyAds.setOnClickListener {
+        view.nextMyAds.setOnClickListener {
+            bundle.putString("User_id", idUser)
             Navigation.findNavController(view.root)
-                .navigate(R.id.action_profileFragment_to_myAdsFragment)
+                .navigate(R.id.action_profileFragment_to_myAdsFragment, bundle)
         }
 
-        view.textSettings.setOnClickListener {
+        view.nextEdit.setOnClickListener {
             bundle.putString("User_img", imgUser)
             bundle.putString("User_name", view.textProfileName.text.toString())
             bundle.putString("User_email", view.textProfileEmail.text.toString())
@@ -73,8 +77,8 @@ class ProfileFragment : Fragment() {
         }
 
         view.nextFavorite.setOnClickListener {
-                Navigation.findNavController(view.root)
-                    .navigate(R.id.action_profileFragment_to_favoriteFragment)
+            Navigation.findNavController(view.root)
+                .navigate(R.id.action_profileFragment_to_favoriteFragment)
         }
 
         view.nextExitUser.setOnClickListener {

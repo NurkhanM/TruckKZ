@@ -1,4 +1,4 @@
-package product.truckkz.api.brands
+package product.truckkz.data.retrofit.api.brands
 
 import product.truckkz.models.brand.BrandModels
 import retrofit2.Response

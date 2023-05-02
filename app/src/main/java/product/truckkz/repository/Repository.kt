@@ -2,18 +2,24 @@ package product.truckkz.repository
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.liveData
+import androidx.paging.Pager
+import androidx.paging.PagingConfig
+import androidx.paging.liveData
 import okhttp3.MultipartBody
 import okhttp3.RequestBody
-import product.truckkz.api.RetroFitInstance
+import product.truckkz.data.retrofit.api.RetroFitInstance
 import product.truckkz.models.brand.BrandModels
 import product.truckkz.models.category.CategoryModels
+import product.truckkz.models.favorite.FavoriteModels
 import product.truckkz.models.products.index.ProductsModels
 import product.truckkz.models.products.show.ProductShowModels
 import product.truckkz.models.register.RegisterModels
 import product.truckkz.models.user.UserModels
+import product.truckkz.windows.home.paging.CategorySource
+import product.truckkz.windows.home.paging.ProductsSourceCategory
 import retrofit2.Response
 
-class Repository {
+class Repository() {
 
     suspend fun getProductInfoRepository(
         auth: String,
@@ -86,6 +92,7 @@ class Repository {
     }
 
 
+
     suspend fun getProductsCategoryRepository(
         auth: String,
         allPro: HashMap<String, String>
@@ -95,6 +102,50 @@ class Repository {
             allPro
         )
     }
+
+
+
+    suspend fun getFavoriteRepository(
+        auth: String
+    ): Response<ProductsModels> {
+        return RetroFitInstance.favorite.getFavorite(
+            auth
+        )
+    }
+
+    suspend fun postLikeRepository(auth: String, number: String): Response<FavoriteModels> {
+        return RetroFitInstance.favorite.postLike(auth, number)
+    }
+
+    suspend fun getMyProductsRepository(
+        auth: String,
+        idUser: String
+    ): Response<ProductsModels> {
+        return RetroFitInstance.product.getMyProducts(
+            auth,
+            idUser
+        )
+    }
+
+    fun getCategoryPagingRepository(
+    ) = Pager(
+        config = PagingConfig(
+            pageSize = 1,
+            enablePlaceholders = false
+        ),
+        pagingSourceFactory = { CategorySource(RetroFitInstance.category) }
+    ).liveData
+
+    fun getCategoryProductRepository(
+        auth: String,
+        allPro: HashMap<String, String>
+    ) = Pager(
+        config = PagingConfig(
+            pageSize = 1,
+            enablePlaceholders = false
+        ),
+        pagingSourceFactory = { ProductsSourceCategory(RetroFitInstance.product, auth, allPro) }
+    ).liveData
 
     suspend fun getBrandRepository(
     ): Response<BrandModels> {
