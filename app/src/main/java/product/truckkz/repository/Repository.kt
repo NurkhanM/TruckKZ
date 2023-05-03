@@ -92,7 +92,6 @@ class Repository() {
     }
 
 
-
     suspend fun getProductsCategoryRepository(
         auth: String,
         allPro: HashMap<String, String>
@@ -102,7 +101,6 @@ class Repository() {
             allPro
         )
     }
-
 
 
     suspend fun getFavoriteRepository(
@@ -130,7 +128,7 @@ class Repository() {
     fun getCategoryPagingRepository(
     ) = Pager(
         config = PagingConfig(
-            pageSize = 1,
+            pageSize = 3,
             enablePlaceholders = false
         ),
         pagingSourceFactory = { CategorySource(RetroFitInstance.category) }
@@ -141,7 +139,7 @@ class Repository() {
         allPro: HashMap<String, String>
     ) = Pager(
         config = PagingConfig(
-            pageSize = 1,
+            pageSize = 5,
             enablePlaceholders = false
         ),
         pagingSourceFactory = { ProductsSourceCategory(RetroFitInstance.product, auth, allPro) }

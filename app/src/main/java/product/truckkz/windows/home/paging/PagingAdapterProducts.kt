@@ -2,6 +2,7 @@ package product.truckkz.windows.home.paging
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
@@ -15,9 +16,9 @@ import product.truckkz.models.products.index.Data
 
 
 class PagingAdapterProducts(private val mIClickListnear: IClickListnearHomeFavorite) :
-    PagingDataAdapter<Data,
-            PagingAdapterProducts.MyViewHolder>(diffCallback) {
+    PagingDataAdapter<Data, PagingAdapterProducts.MyViewHolder>(diffCallback) {
 
+    private var isLoading = false
 
     companion object {
         val diffCallback = object : DiffUtil.ItemCallback<Data>() {
@@ -42,6 +43,24 @@ class PagingAdapterProducts(private val mIClickListnear: IClickListnearHomeFavor
     @SuppressLint("NewApi", "SetTextI18n", "UseCompatLoadingForDrawables")
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         val currentItem = getItem(position)
+
+        if (isLoading) {
+            //Показать прогресс-бар
+            holder.binding.progressBar.visibility = View.VISIBLE
+            holder.binding.itemHomeImages.visibility = View.GONE
+            holder.binding.textName.visibility = View.GONE
+            holder.binding.textPrice.visibility = View.GONE
+            holder.binding.itemFavorite.visibility = View.GONE
+            holder.binding.rowCostom.setOnClickListener(null)
+            return
+        } else {
+            holder.binding.progressBar.visibility = View.GONE
+            holder.binding.itemHomeImages.visibility = View.VISIBLE
+            holder.binding.textName.visibility = View.VISIBLE
+            holder.binding.textPrice.visibility = View.VISIBLE
+            holder.binding.itemFavorite.visibility = View.VISIBLE
+        }
+
 
         Glide.with(context).load(currentItem!!.img)
             .thumbnail(Glide.with(context).load(R.drawable.loader2))
@@ -75,5 +94,16 @@ class PagingAdapterProducts(private val mIClickListnear: IClickListnearHomeFavor
     inner class MyViewHolder(val binding: ItemTovarBinding) : RecyclerView.ViewHolder(binding.root)
 
 
+    @SuppressLint("NotifyDataSetChanged")
+    fun showLoading() {
+        isLoading = true
+        notifyDataSetChanged()
+    }
+
+    @SuppressLint("NotifyDataSetChanged")
+    fun hideLoading() {
+        isLoading = false
+        notifyDataSetChanged()
+    }
 
 }

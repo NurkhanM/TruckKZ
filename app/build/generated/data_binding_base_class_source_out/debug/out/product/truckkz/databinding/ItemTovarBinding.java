@@ -42,6 +42,9 @@ public final class ItemTovarBinding implements ViewBinding {
   public final CardView itemStateFast;
 
   @NonNull
+  public final LinearLayout progressBar;
+
+  @NonNull
   public final ConstraintLayout rowCostom;
 
   @NonNull
@@ -53,8 +56,9 @@ public final class ItemTovarBinding implements ViewBinding {
   private ItemTovarBinding(@NonNull ConstraintLayout rootView, @NonNull CardView cardV,
       @NonNull ConstraintLayout constraintLayout, @NonNull ImageView imgFavorite,
       @NonNull LinearLayout itemFavorite, @NonNull GifImageView itemHomeImages,
-      @NonNull CardView itemStateFast, @NonNull ConstraintLayout rowCostom,
-      @NonNull TextView textName, @NonNull TextView textPrice) {
+      @NonNull CardView itemStateFast, @NonNull LinearLayout progressBar,
+      @NonNull ConstraintLayout rowCostom, @NonNull TextView textName,
+      @NonNull TextView textPrice) {
     this.rootView = rootView;
     this.cardV = cardV;
     this.constraintLayout = constraintLayout;
@@ -62,6 +66,7 @@ public final class ItemTovarBinding implements ViewBinding {
     this.itemFavorite = itemFavorite;
     this.itemHomeImages = itemHomeImages;
     this.itemStateFast = itemStateFast;
+    this.progressBar = progressBar;
     this.rowCostom = rowCostom;
     this.textName = textName;
     this.textPrice = textPrice;
@@ -130,6 +135,12 @@ public final class ItemTovarBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.progressBar;
+      LinearLayout progressBar = ViewBindings.findChildViewById(rootView, id);
+      if (progressBar == null) {
+        break missingId;
+      }
+
       ConstraintLayout rowCostom = (ConstraintLayout) rootView;
 
       id = R.id.text_name;
@@ -145,7 +156,7 @@ public final class ItemTovarBinding implements ViewBinding {
       }
 
       return new ItemTovarBinding((ConstraintLayout) rootView, cardV, constraintLayout, imgFavorite,
-          itemFavorite, itemHomeImages, itemStateFast, rowCostom, textName, textPrice);
+          itemFavorite, itemHomeImages, itemStateFast, progressBar, rowCostom, textName, textPrice);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

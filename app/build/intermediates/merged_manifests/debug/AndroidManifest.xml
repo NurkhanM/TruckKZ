@@ -49,6 +49,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.Rentit" >
         <activity
+            android:name="product.truckkz.windows.homeInfo.HomeInfoActivity"
+            android:exported="false" />
+        <activity
             android:name="product.truckkz.windows.createProduct.CreateActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustPan|stateAlwaysHidden" >

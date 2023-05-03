@@ -1,5 +1,6 @@
 package product.truckkz.viewModels
 
+import android.os.Bundle
 import androidx.lifecycle.*
 import androidx.paging.cachedIn
 import product.truckkz.repository.Repository
@@ -34,6 +35,8 @@ class HomeViewModels : ViewModel() {
     val myGetFavorite: MutableLiveData<Response<ProductsModels>> = MutableLiveData()
     val myGetMyProducts: MutableLiveData<Response<ProductsModels>> = MutableLiveData()
     private val posLikeList: MutableLiveData<Response<FavoriteModels>> = MutableLiveData()
+
+
     fun getProductInfo(auth: String, number: Int) {
         viewModelScope.launch {
             myProductInfo.value = repo.getProductInfoRepository(auth, number)

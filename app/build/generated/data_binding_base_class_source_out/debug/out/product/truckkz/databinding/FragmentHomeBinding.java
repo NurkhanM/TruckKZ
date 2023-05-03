@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -35,6 +36,9 @@ public final class FragmentHomeBinding implements ViewBinding {
   public final ImageView imgAuthHome;
 
   @NonNull
+  public final LinearLayout loaderItem;
+
+  @NonNull
   public final RecyclerView rvCategory;
 
   @NonNull
@@ -49,13 +53,15 @@ public final class FragmentHomeBinding implements ViewBinding {
   private FragmentHomeBinding(@NonNull ConstraintLayout rootView,
       @NonNull ImageView clickUpdateBackCard, @NonNull NestedScrollView fragmentContainerUpdate,
       @NonNull ConstraintLayout homeToolbar, @NonNull ImageView imgAuthHome,
-      @NonNull RecyclerView rvCategory, @NonNull RecyclerView rvProduct,
-      @NonNull SwipeRefreshLayout tiRefreshLayout, @NonNull ConstraintLayout updateToolbar) {
+      @NonNull LinearLayout loaderItem, @NonNull RecyclerView rvCategory,
+      @NonNull RecyclerView rvProduct, @NonNull SwipeRefreshLayout tiRefreshLayout,
+      @NonNull ConstraintLayout updateToolbar) {
     this.rootView = rootView;
     this.clickUpdateBackCard = clickUpdateBackCard;
     this.fragmentContainerUpdate = fragmentContainerUpdate;
     this.homeToolbar = homeToolbar;
     this.imgAuthHome = imgAuthHome;
+    this.loaderItem = loaderItem;
     this.rvCategory = rvCategory;
     this.rvProduct = rvProduct;
     this.tiRefreshLayout = tiRefreshLayout;
@@ -113,6 +119,12 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.loaderItem;
+      LinearLayout loaderItem = ViewBindings.findChildViewById(rootView, id);
+      if (loaderItem == null) {
+        break missingId;
+      }
+
       id = R.id.rv_category;
       RecyclerView rvCategory = ViewBindings.findChildViewById(rootView, id);
       if (rvCategory == null) {
@@ -138,8 +150,8 @@ public final class FragmentHomeBinding implements ViewBinding {
       }
 
       return new FragmentHomeBinding((ConstraintLayout) rootView, clickUpdateBackCard,
-          fragmentContainerUpdate, homeToolbar, imgAuthHome, rvCategory, rvProduct, tiRefreshLayout,
-          updateToolbar);
+          fragmentContainerUpdate, homeToolbar, imgAuthHome, loaderItem, rvCategory, rvProduct,
+          tiRefreshLayout, updateToolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

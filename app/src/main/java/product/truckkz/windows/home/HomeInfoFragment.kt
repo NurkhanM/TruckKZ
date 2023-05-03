@@ -30,6 +30,7 @@ import product.truckkz.databinding.FragmentHomeInfoBinding
 import product.truckkz.`interface`.IClickListnearUpdateImage
 import product.truckkz.models.products.productInfo.Images
 import product.truckkz.viewModels.HomeViewModels
+import product.truckkz.viewModels.SharedViewModel
 import product.truckkz.windows.home.adapter.UpdateDataAdapter
 import product.truckkz.windows.home.showImage.ShowImageActivity
 
@@ -49,6 +50,8 @@ class HomeInfoFragment : Fragment() {
 
     private var callInfo = ""
     var productName = ""
+
+    private lateinit var viewModel: SharedViewModel
 
     @SuppressLint("SetTextI18n", "UseCompatLoadingForDrawables")
     override fun onCreateView(
@@ -248,6 +251,9 @@ class HomeInfoFragment : Fragment() {
             activity?.onBackPressed()
 //            Navigation.findNavController(view.root).navigateUp()
         }
+
+
+
 
         return view.root
     }

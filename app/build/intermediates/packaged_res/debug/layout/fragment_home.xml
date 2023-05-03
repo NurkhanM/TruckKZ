@@ -145,6 +145,7 @@
                     android:layout_marginHorizontal="15dp"
                     android:layout_marginTop="10dp"
                     android:orientation="vertical"
+                    android:visibility="gone"
                     android:paddingBottom="100dp"
                     app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -155,7 +156,27 @@
                     tools:listitem="@layout/item_tovar" />
 
 
+                <LinearLayout
+                    android:id="@+id/loaderItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="15dp"
+                    android:visibility="visible"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:paddingBottom="100dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rv_category">
+
+                    <include layout="@layout/item_tovar_loader"/>
+                </LinearLayout>
+
+
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.core.widget.NestedScrollView>
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

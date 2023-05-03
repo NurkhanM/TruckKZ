@@ -77,6 +77,7 @@ drawable ic_favorite
 drawable ic_favorite2
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable ic_loader_tovar
 drawable ic_main_icon
 drawable ic_more
 drawable ic_profile_icon
@@ -147,6 +148,7 @@ id checkboxState
 id clickBackCard
 id clickShowBackCard
 id clickUpdateBackCard
+id companyConnect
 id cons1
 id consHome
 id constSort1
@@ -155,6 +157,7 @@ id constraintFon1
 id constraintFon2
 id constraintLayout
 id constraintLayoutAuth
+id containerCompany
 id containerFavorite
 id containerHome
 id containerShowActivity
@@ -222,6 +225,7 @@ id liner2first
 id linerImageMove
 id linerfirst
 id loader
+id loaderItem
 id loafer
 id mainConst
 id myAdsFragment
@@ -239,6 +243,7 @@ id ochBackCard
 id profileFragment
 id profileProgress
 id profilteRegisterConstreite
+id progressBar
 id progressNewCreatePro
 id radioBig
 id radioDefault
@@ -319,6 +324,7 @@ id zero
 layout activity_create
 layout activity_favorite
 layout activity_home
+layout activity_home_info
 layout activity_main
 layout activity_refresh
 layout activity_show_image
@@ -326,10 +332,12 @@ layout app_bar_main
 layout bottom_category
 layout bottom_sheet_dialog
 layout castom_select_category
+layout custom_loader
 layout dialog_error_auth
 layout dialog_succes_register
 layout dialog_user_exit
 layout dialog_user_remove
+layout error_link_server
 layout fragment_authorization
 layout fragment_category_select
 layout fragment_chat
@@ -355,6 +363,7 @@ layout item_recomend
 layout item_selected_category
 layout item_show_image
 layout item_tovar
+layout item_tovar_loader
 layout item_update_image_array
 layout test
 menu bottom_navigation_menu
