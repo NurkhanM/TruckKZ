@@ -16,6 +16,7 @@ import product.truckkz.R
 import product.truckkz.UserDate.USER_TOKEN
 import product.truckkz.databinding.FragmentMyAdsBinding
 import product.truckkz.databinding.ItemTovarBinding
+import product.truckkz.databinding.ItemTovarOrdinaryBinding
 import product.truckkz.`interface`.IClickListnearHomeFavorite
 import product.truckkz.viewModels.HomeViewModels
 import product.truckkz.windows.home.adapter.ProductAdapter
@@ -51,21 +52,21 @@ class MyAdsFragment : Fragment() {
                 override fun clickListener(baseID: Int) {
                     DataAllProducts.ALL_ID_PRODUCTS = baseID
                     Navigation.findNavController(view.root)
-                        .navigate(R.id.action_favoriteFragment_to_homeInfoFragment)
+                        .navigate(R.id.action_myAdsFragment_to_homeInfoFragment)
                 }
 
                 @SuppressLint("UseCompatLoadingForDrawables", "NotifyDataSetChanged")
                 override fun clickListenerFavorite(
                     baseID: Int,
-                    v: ItemTovarBinding,
+                    v: Any,
                     boolean: Boolean,
                     pos: Int
                 ) {
 
                     if (!boolean) {
-                        v.imgFavorite.setImageResource(R.drawable.ic_favorite2)
+                        (v as ItemTovarOrdinaryBinding).imgFavorite.setImageResource(R.drawable.ic_favorite2)
                     } else {
-                        v.imgFavorite.setImageResource(R.drawable.ic_favorite)
+                        (v as ItemTovarOrdinaryBinding).imgFavorite.setImageResource(R.drawable.ic_favorite)
                     }
 
                     viewModel.postLike("Bearer $USER_TOKEN", baseID.toString())

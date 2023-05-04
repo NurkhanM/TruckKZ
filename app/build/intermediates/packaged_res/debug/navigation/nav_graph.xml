@@ -35,11 +35,7 @@
         android:id="@+id/homeFragment"
         android:name="product.truckkz.windows.home.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" >
-        <action
-            android:id="@+id/action_homeFragment_to_homeInfoFragment"
-            app:destination="@id/homeInfoFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/registrationFragment"
         android:name="product.truckkz.windows.authorization.registration.RegistrationFragment"
@@ -84,7 +80,11 @@
         android:id="@+id/myAdsFragment"
         android:name="product.truckkz.windows.profile.myAds.MyAdsFragment"
         android:label="fragment_my_ads"
-        tools:layout="@layout/fragment_my_ads" />
+        tools:layout="@layout/fragment_my_ads" >
+        <action
+            android:id="@+id/action_myAdsFragment_to_homeInfoFragment"
+            app:destination="@id/homeInfoFragment" />
+    </fragment>
     <fragment
         android:id="@+id/settingsFragment"
         android:name="product.truckkz.windows.profile.edit.EditFragment"

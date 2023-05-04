@@ -111,7 +111,7 @@ id action_authorizationFragment_to_profileFragment
 id action_authorizationFragment_to_registrationFragment
 id action_authorizationFragment_to_resetFragment
 id action_favoriteFragment_to_homeInfoFragment
-id action_homeFragment_to_homeInfoFragment
+id action_myAdsFragment_to_homeInfoFragment
 id action_profileFragment_to_favoriteFragment
 id action_profileFragment_to_myAdsFragment
 id action_profileFragment_to_settingsFragment
@@ -364,6 +364,7 @@ layout item_selected_category
 layout item_show_image
 layout item_tovar
 layout item_tovar_loader
+layout item_tovar_ordinary
 layout item_update_image_array
 layout test
 menu bottom_navigation_menu

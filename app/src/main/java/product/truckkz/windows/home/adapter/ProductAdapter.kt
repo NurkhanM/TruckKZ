@@ -9,6 +9,7 @@ import com.bumptech.glide.Glide
 import gun0912.tedimagepicker.util.ToastUtil
 import product.truckkz.R
 import product.truckkz.databinding.ItemTovarBinding
+import product.truckkz.databinding.ItemTovarOrdinaryBinding
 import product.truckkz.`interface`.IClickListnearHomeFavorite
 import product.truckkz.models.products.index.Data
 import kotlin.collections.ArrayList
@@ -29,7 +30,7 @@ class ProductAdapter(private val mIClickListnear: IClickListnearHomeFavorite) :
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
-        val binding = ItemTovarBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val binding = ItemTovarOrdinaryBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         context = parent.context
         return MyViewHolder(binding)
     }
@@ -76,7 +77,7 @@ class ProductAdapter(private val mIClickListnear: IClickListnearHomeFavorite) :
         notifyDataSetChanged()
     }
 
-    inner class MyViewHolder(val binding: ItemTovarBinding) : RecyclerView.ViewHolder(binding.root)
+    inner class MyViewHolder(val binding: ItemTovarOrdinaryBinding) : RecyclerView.ViewHolder(binding.root)
 
 
 

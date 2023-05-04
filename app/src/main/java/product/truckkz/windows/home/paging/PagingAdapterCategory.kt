@@ -16,6 +16,8 @@ import product.truckkz.models.category.Children
 class PagingAdapterCategory(private val mIClickListnear: IClickListnearHomeTest) :
     PagingDataAdapter<Children, PagingAdapterCategory.MyViewHolder>(diffCallback) {
 
+    private var selectedPosition = 0
+
     companion object {
         val diffCallback = object : DiffUtil.ItemCallback<Children>() {
             override fun areItemsTheSame(oldItem: Children, newItem: Children): Boolean {
@@ -69,8 +71,6 @@ class PagingAdapterCategory(private val mIClickListnear: IClickListnearHomeTest)
 
     inner class MyViewHolder(val binding: ItemCategoryBinding) :
         RecyclerView.ViewHolder(binding.root)
-
-    private var selectedPosition = 0
 
     @SuppressLint("NotifyDataSetChanged")
     fun selectItem(position: Int) {

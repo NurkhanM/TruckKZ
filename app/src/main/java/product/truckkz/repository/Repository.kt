@@ -16,7 +16,7 @@ import product.truckkz.models.products.show.ProductShowModels
 import product.truckkz.models.register.RegisterModels
 import product.truckkz.models.user.UserModels
 import product.truckkz.windows.home.paging.CategorySource
-import product.truckkz.windows.home.paging.ProductsSourceCategory
+import product.truckkz.windows.home.paging.ProductsSource
 import retrofit2.Response
 
 class Repository() {
@@ -142,7 +142,7 @@ class Repository() {
             pageSize = 5,
             enablePlaceholders = false
         ),
-        pagingSourceFactory = { ProductsSourceCategory(RetroFitInstance.product, auth, allPro) }
+        pagingSourceFactory = { ProductsSource(RetroFitInstance.product, auth, allPro) }
     ).liveData
 
     suspend fun getBrandRepository(

@@ -4,5 +4,5 @@ import product.truckkz.databinding.ItemTovarBinding
 
 interface IClickListnearHomeFavorite {
     fun clickListener(baseID: Int)
-    fun clickListenerFavorite(baseID: Int, v: ItemTovarBinding, boolean: Boolean, pos: Int)
+    fun clickListenerFavorite(baseID: Int, v: Any, boolean: Boolean, pos: Int)
 }
